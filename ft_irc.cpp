@@ -15,6 +15,7 @@ int main(int ac, char **av)
 	struct sockaddr_in serv_addr, client_addr;
 	socklen_t client_len;
 
+	//opening server socket
 	sockfd = socket(AF_INET, SOCK_STREAM, 0);
 	if (sockfd < 0)
 	{
@@ -22,22 +23,29 @@ int main(int ac, char **av)
 		return 1;
 	}
 
+	//clear server address
 	bzero((char *) &serv_addr, sizeof(serv_addr));
+
+	//get port
 	portnb = atoi(av[1]);
 
-	serv_addr.sin_family = AF_INET;
+	//set server address
+	serv_addr.sin_family = AF_INET; // TCP
 	serv_addr.sin_addr.s_addr = INADDR_ANY;
 	serv_addr.sin_port = htons(portnb);
 
+	//bind server address
 	if (bind(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0)
 	{
 		std::cout << "Binding Failed" << std::endl;
 		return 1;
 	}
 
+	//start listning for 5 clients
 	listen(sockfd, 5);
 	client_len = sizeof(client_addr);
 
+	//opening client socket
 	newsockfd = accept(sockfd, (struct sockaddr *) &client_addr, &client_len);
 	if (newsockfd < 0)
 	{
@@ -45,20 +53,26 @@ int main(int ac, char **av)
 		return 1;
 	}
 
+	//open chat loop
 	while (1)
 	{
 		bzero(buffer, 255);
+
+		//read client message from socket
 		n = read(newsockfd, buffer, 255);
 		if (n < 0)
 		{
 			std::cout << "Error reading" << std::endl;
 			return 1;
 		}
-
 		printf("client : %s\n", buffer);
+
 		bzero(buffer, 255);
+
+		//write message to client
 		fgets(buffer, 255, stdin);
 
+		//write message in socket
 		n = write(newsockfd, buffer, strlen(buffer));
 		if (n < 0)
 		{
