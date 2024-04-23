@@ -2,9 +2,9 @@ NAME = ircserv
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = ft_irc.cpp
+SRC = ft_irc.cpp poll.cpp client.cpp
 
-HEADER = ft_irc.hpp
+HEADER = ft_irc.hpp poll.hpp client.hpp
 
 OBJ = ${SRC:.cpp=.o}
 

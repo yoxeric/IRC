@@ -1,77 +1,37 @@
 
-#include "ft_irc.hpp"
+#include "client.hpp"
 
-int main(int ac, char **av)
+void s_client::cap(std::string str)
 {
-	if (ac != 3)
-	{
-		std::cout << "usage: ./irc_client <hosname> <port>" << std::endl;
-		return 1;
-	}
+	(void)(str);
+}
 
-	int sockfd, portnb, n;
-	char buffer[255];
+void s_client::nick(std::string str)
+{
+	nickname = str;
+}
 
-	struct sockaddr_in serv_addr;
-	struct hostent *server;
+void s_client::user(std::string user, std::string addr)
+{
 
-	portnb = atoi(av[2]);
-	sockfd = socket(AF_INET, SOCK_STREAM, 0);
-	if (sockfd < 0)
-	{
-		std::cout << "Error openning server socket" << std::endl;
-		return 1;
-	}
+	username = user;
+	address = addr;
+	
+}
 
-	server = gethostbyname(av[1]);
-	if (server == NULL)
-	{
-		std::cout << "Error : no such host" << std::endl;
-		return 1;
-	}
-
-	bzero((char *) &serv_addr, sizeof(serv_addr));
-	serv_addr.sin_family = AF_INET;
-	bcopy((char *) server->h_addr,(char *) &serv_addr.sin_addr.s_addr, server->h_length);
-	serv_addr.sin_port = htons(portnb);
-
-	if (connect(sockfd, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0)
-	{
-		std::cout << "Error connecting" << std::endl;
-		return 1;
-	}
-
-	while (1)
-	{
-		bzero(buffer, 255);
-
-		//write message to client
-		fgets(buffer, 255, stdin);
-
-		//write message in socket
-		n = write(sockfd, buffer, strlen(buffer));
-		if (n < 0)
-		{
-			std::cout << "Error writing" << std::endl;
-			return 1;
-		}
-
-		bzero(buffer, 255);
-
-		//read client message from socket
-		n = read(sockfd, buffer, 255);
-		if (n < 0)
-		{
-			std::cout << "Error reading" << std::endl;
-			return 1;
-		}
-		printf("client : %s\n", buffer);
+void s_client::join(std::string str)
+{
+	chan.push_back(str);
+}
 
 
-		if (strncmp("close", buffer, 5) == 0)
-			break ;
-	}
+void s_client::print()
+{
+	std::cout << "nickname :" << nickname << std::endl;
+	std::cout << "username :" << username << std::endl;
+	std::cout << "address  :" << address << std::endl;
+	// std::cout << "pass     :" << pass << std::endl;
 
-	close(sockfd);
-	return 0;
+	// std::cout << "chan    :" << chan << std::endl;
+	// std::cout << "chanops :" << chanops << std::endl;
 }

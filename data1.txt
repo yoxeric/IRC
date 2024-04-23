@@ -1,0 +1,225 @@
+<< CAP LS
+<< NICK yh1
+<< USER yh2 yh2 irc.data.lt :realname
+>> :irc.data.lt NOTICE AUTH :*** Looking up your hostname...
+>> :irc.data.lt NOTICE AUTH :*** Checking ident...
+>> :irc.data.lt NOTICE AUTH :*** Couldn't resolve your hostname; using your IP address instead
+>> :irc.data.lt NOTICE AUTH :*** No ident response; username prefixed with ~
+>> :irc.data.lt CAP * LS :account-notify away-notify multi-prefix tls userhost-in-names
+<< CAP REQ :account-notify away-notify multi-prefix userhost-in-names
+<< CAP END
+>> PING :1DFE4A2F
+<< PONG :1DFE4A2F
+>> :irc.data.lt CAP yh1 ACK :account-notify away-notify multi-prefix userhost-in-names 
+>> :irc.data.lt 001 yh1 :Welcome to the Aitvaras IRC Network yh1!~yh2@197.230.24.20
+>> :irc.data.lt 002 yh1 :Your host is irc.data.lt, running version Unreal3.2.10.6
+>> :irc.data.lt 003 yh1 :This server was created Tue Jan 19 2016 at 13:55:31 EET
+>> :irc.data.lt 004 yh1 irc.data.lt Unreal3.2.10.6 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+>> :irc.data.lt 005 yh1 CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:100,e:100,I:100 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+<< PROTOCTL NAMESX
+>> :irc.data.lt 005 yh1 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=Aitvaras CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
+>> :irc.data.lt 005 yh1 STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+>> :irc.data.lt NOTICE yh1 :*** You are connected to irc.data.lt with TLSv1-AES256-SHA-256bits
+>> :irc.data.lt 251 yh1 :There are 11 users and 259 invisible on 5 servers
+>> :irc.data.lt 252 yh1 10 :operator(s) online
+>> :irc.data.lt 254 yh1 238 :channels formed
+>> :irc.data.lt 255 yh1 :I have 213 clients and 1 servers
+>> :irc.data.lt 265 yh1 213 2038 :Current local users 213, max 2038
+>> :irc.data.lt 266 yh1 270 27698 :Current global users 270, max 27698
+>> :irc.data.lt 375 yh1 :- irc.data.lt Message of the Day - 
+>> :irc.data.lt 372 yh1 :- 20/1/2016 13:45
+>> :irc.data.lt 372 yh1 :-                      _                      _
+>> :irc.data.lt 372 yh1 :-                     ,/                        \,
+>> :irc.data.lt 372 yh1 :-           _________{(                          )}_________
+>> :irc.data.lt 372 yh1 :-          /.-------./\\                        //\.-------.\          
+>> :irc.data.lt 372 yh1 :-         //@@@@@@@//@@\\  )                (  //@@\\@@@@@@@\\
+>> :irc.data.lt 372 yh1 :-        //@@@@@@@//@@@@>>/                  \<<@@@@\\@@@@@@@\\
+>> :irc.data.lt 372 yh1 :-       //O@O@O@O//@O@O@//                    \\@O@O@\\O@O@O@O\\
+>> :irc.data.lt 372 yh1 :-      //OOOOOOOO// OOOO||        \  /         ||OOOO\\OOOOOOOO\\
+>> :irc.data.lt 372 yh1 :-     //O%O%O%O%// O%O%O%\\       ))((        //%O%O%O\\%O%O%O%O\\
+>> :irc.data.lt 372 yh1 :-    ||%%%%%%%%//'   `%%%%\\     //  \\      //%%%%'   `\\%%%%%%%||
+>> :irc.data.lt 372 yh1 :-    ((%%%%%%%((      %%%%%\\   ((    ))    //%%%%%      ))%%%%%%))
+>> :irc.data.lt 372 yh1 :-    \:::' `::\\      `:::::\\   \)~~(/    //:::::'     //::' `:::/
+>> :irc.data.lt 372 yh1 :-     )'     `;)'      (`  ` \\ `<@  @>' / / '  ')     `(;'     `(
+>> :irc.data.lt 372 yh1 :-             (               \`\ )^^( /` /              )
+>> :irc.data.lt 372 yh1 :-           _                  ) \\oo//  (
+>> :irc.data.lt 372 yh1 :-          (@)                  \  `'   /                      _
+>> :irc.data.lt 372 yh1 :-          |-|\__________________\__^__<________oOo__________ (@)
+>> :irc.data.lt 372 yh1 :-          | |                                  VVV          \|-|
+>> :irc.data.lt 372 yh1 :-          |-|  Welcome To Aitvaras Network www.aitvaras.eu   |-|
+>> :irc.data.lt 372 yh1 :-          |_|\_____________________________________________  | |
+>> :irc.data.lt 372 yh1 :-          (@)                 / ,/ \_____/ \\ ~\/~         `\|-|
+>> :irc.data.lt 372 yh1 :-           ~             ___//^~      \____/\\               (@)
+>> :irc.data.lt 372 yh1 :-                        <<<  \     __  <____/||               ~
+>> :irc.data.lt 372 yh1 :-                                  <   \ <___/||
+>> :irc.data.lt 372 yh1 :-                                     || <___//
+>> :irc.data.lt 372 yh1 :-                                     \ \/__//
+>> :irc.data.lt 372 yh1 :-                                      ~----~
+>> :irc.data.lt 372 yh1 :-                                      
+>> :irc.data.lt 372 yh1 :-  Sveiki Uzsuke i Aitvaro IRC tinklo irc.data.lt serveri ! 
+>> :irc.data.lt 372 yh1 :-  
+>> :irc.data.lt 372 yh1 :-  Serveris skirtas ramiam bendravimui. Karai, floodai, klonavimai
+>> :irc.data.lt 372 yh1 :-  ir kitoks naudojimas ne pagal paskirti nebus toleruojamas.   
+>> :irc.data.lt 372 yh1 :-  
+>> :irc.data.lt 372 yh1 :-  Tinklo taisykles galite perskaityti surinke /RULES
+>> :irc.data.lt 372 yh1 :-  
+>> :irc.data.lt 372 yh1 :-  Default Services language is Lithuanian, if you wish to use English
+>> :irc.data.lt 372 yh1 :-  change it by typing /msg NickServ SET language 2
+>> :irc.data.lt 372 yh1 :-  for more help type /msg NickServ HELP SET language
+>> :irc.data.lt 372 yh1 :- 
+>> :irc.data.lt 376 yh1 :End of /MOTD command.
+>> :yh1 MODE yh1 :+isxz
+>> :Aitvaras!ubaldas@aitvarasnet.org NOTICE yh1 :[Prisijungimo pranešimas - Spa 06 2009] Aitvaro taisyklės: http://www.aitvaras.eu/taisykles
+<< LIST >4,<10000
+>> :irc.data.lt 321 yh1 Channel :Users  Name
+>> :irc.data.lt 322 yh1 #special 9 :[+ntrM] ©2003 #Special .All rights reserved
+>> :irc.data.lt 322 yh1 #baras 30 :[+ntrSCTGfj] Слава  Україні
+>> :irc.data.lt 322 yh1 #sala 22 :[+ntrCTf] 53🌀 🌴 Pᴀʙᴇɢᴛɪ ɴᴜᴏ ᴠɪSᴜ 👅 🦧
+>> :irc.data.lt 322 yh1 #velniai 26 :[+ntrQCT]  😈 😈 😈 | 🎶 http://80s.lt:8000/live 📡 | Ciuchinames..
+>> :irc.data.lt 322 yh1 #delfi 41 :[+ntr] Kiekvienas šūdas nori būti sasyska.
+>> :irc.data.lt 322 yh1 #adult 24 :[+ntrSCTGfj] 
+>> :irc.data.lt 322 yh1 #macos 5 :[+ntr] www.apple.com - MacOS Sonoma 14.4
+>> :irc.data.lt 322 yh1 #vilnius 7 :[+ntrM] LIANKYNAZ
+>> :irc.data.lt 322 yh1 #astraliniai_maumai 13 :[+ntrRl] kongratuliacijos, ponuli kli0rfenz!
+>> :irc.data.lt 322 yh1 #torrent 19 :[+ntrSCTf] Web Site: ON Announce: ON [AutoUpdate/ 1hrs.] | FB; http://on.fb.me/ZG1f4Q Pries isjungiant Torrent client, atlikite veiksma: STOP / START
+>> :irc.data.lt 322 yh1 #paklydeliai 14 :[+ntrQ] CARTOON NETWORK
+>> :irc.data.lt 322 yh1 #ladies 5 :[+ntr] 
+>> :irc.data.lt 322 yh1 #21+ 22 :[+ntrCTG] £~*~£ Welcome to #21+. Enjoy your stay here. :) £~*~£
+>> :irc.data.lt 322 yh1 #WorldChat 10 :[+ntr] Draugai: #Aitvaras kanalas.
+>> :irc.data.lt 322 yh1 #mibbit 22 :[+ntrCT] 6#mibbit 🌀https://wiki.mibbit.com 💫 🐸
+>> :irc.data.lt 322 yh1 #gothic 7 :[+ntr] nė dienos, be gothic.
+>> :irc.data.lt 322 yh1 #ircops 16 :[+ntrRM] 
+>> :irc.data.lt 322 yh1 #europa 21 :[+ntrCT] Eᴜʀᴏᴘᴀ Zᴏᴘᴀ
+>> :irc.data.lt 322 yh1 #nimfomanes 7 :[+ntrM] Kugeli ar dar gyvas? Su Naujais metais visus!
+>> :irc.data.lt 322 yh1 #irc 8 :[+ntrCTfj] keiciam tema
+>> :irc.data.lt 322 yh1 #atsipusk 33 :[+ntr] Mes randame gyvenime tai, ką patys jam suteikiame.
+>> :irc.data.lt 322 yh1 #php 11 :[+ntrR] < pranukas> kada bus galima pasiskiepyt nuo php | https://www.php.net/supported-versions.php | https://coub.com/view/bgkvn |
+>> :irc.data.lt 322 yh1 #Trance 9 :[+ntr] https://www.youtube.com/watch?v=1ipe8D--cGQ to start off 2020
+>> :irc.data.lt 322 yh1 #klaipeda 10 :[+ntrSM] West Coast
+>> :irc.data.lt 322 yh1 #kilmingieji 7 :[+ntr] Čia renkasi tik kiečiausi | http://45.125.66.159:9808/listen.pls - išjungta!
+>> :irc.data.lt 322 yh1 #pyzdukai 20 :[+ntrS] 16:30 <Lauras> O kaip W4rninG atbulai myzo ar dar myza man liko paslaptis
+>> :irc.data.lt 322 yh1 * 13 : 
+>> :irc.data.lt 322 yh1 #banga.lt 6 :[+ntrT] www.banga.lt
+>> :irc.data.lt 322 yh1 #geraxebra 23 :[+ntrCf] 'GᴇʀᴀXᴇʙʀᴀ'
+>> :irc.data.lt 322 yh1 #pianistas 5 :[+ntir] video iš myto: https://www.youtube.com/watch?v=hjsu3SGAdLs
+>> :irc.data.lt 322 yh1 #landyne 21 :[+ntrVCT] ©º°¨¨°º©©º°¨¨°º© \\/\//elcome To #Landyne ©º°¨¨°º©©º°¨¨°º©
+>> :irc.data.lt 322 yh1 #irchelp 11 :[+ntrRCTf] http://www.aitvaras.eu nebeveike
+>> :irc.data.lt 322 yh1 #veryganai 28 :[+ntrcQVCTGf] Klausom streamo: http://80s.lt:8000/live ir pagaunam sinchrona... | http://80s.lt/Ufiokas.jpg
+>> :irc.data.lt 322 yh1 #lietuva 7 :[+ntr] ...ir Nieko, nieko panašaus į šį pasaulį...
+>> :irc.data.lt 322 yh1 #patogiai 29 :[+ntrfj] Viktorina Jusu Paslaugoms Visa Para! ;) ..together we make a perfect storm!.. :)
+>> :irc.data.lt 322 yh1 #phphelp 6 :[+ntrM] Sveikiname Klaipėdos merą Medutį laimėjus rinkimus!
+>> :irc.data.lt 322 yh1 #mokslas 7 :[+r] XxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXx
+>> :irc.data.lt 322 yh1 #kosmosas 43 :[+ntr] Stream'as pakeliui - http://a2.lt:8000/a2 - A2 Sostines Radijas *** http://80s.lt:8000/live - Testuojasi *** http://jaunimolinija.lt - esant slegenciai nuotaikai / 0037080028888 - if sad mood.
+>> :irc.data.lt 323 yh1 :End of /LIST
+<< JOIN #kosmosas
+>> :yh1!~yh2@60CCA6D2.A5193C4D.9C9BAFEA.IP JOIN :#kosmosas
+<< MODE #kosmosas
+<< WHO #kosmosas
+>> :irc.data.lt 332 yh1 #kosmosas :Stream'as pakeliui - http://a2.lt:8000/a2 - A2 Sostines Radijas *** http://80s.lt:8000/live - Testuojasi *** http://jaunimolinija.lt - esant slegenciai nuotaikai / 0037080028888 - if sad mood.
+>> :irc.data.lt 333 yh1 #kosmosas Kaimas 1711097534
+>> :irc.data.lt 353 yh1 = #kosmosas :yh1!~yh2@60CCA6D2.A5193C4D.9C9BAFEA.IP rayfer!~ahqiwa@FC7596F1.D4AA9034.C4B1DBC5.IP tynese!~lgvwgk@FC7596F1.D4AA9034.C4B1DBC5.IP devon!~fjyphb@FC7596F1.D4AA9034.C4B1DBC5.IP amalia!~xvuaji@FC7596F1.D4AA9034.C4B1DBC5.IP elespenciu!~umahdj@FC7596F1.D4AA9034.C4B1DBC5.IP 
+>> :irc.data.lt 353 yh1 = #kosmosas :lavincente!~bcwiww@FC7596F1.D4AA9034.C4B1DBC5.IP angeline!~axdimq@FC7596F1.D4AA9034.C4B1DBC5.IP carina!~rbhrqy@FC7596F1.D4AA9034.C4B1DBC5.IP janelleemi!~ikkssb@FC7596F1.D4AA9034.C4B1DBC5.IP clyde!~oeozav@FC7596F1.D4AA9034.C4B1DBC5.IP dwayne!~cqyude@FC7596F1.D4AA9034.C4B1DBC5.IP 
+>> :irc.data.lt 353 yh1 = #kosmosas :everett!~maxwba@FC7596F1.D4AA9034.C4B1DBC5.IP blair!~nfptfw@FC7596F1.D4AA9034.C4B1DBC5.IP yulitza!~fnvvau@FC7596F1.D4AA9034.C4B1DBC5.IP justinaz!~qetidq@FC7596F1.D4AA9034.C4B1DBC5.IP marlana!~xeycjf@FC7596F1.D4AA9034.C4B1DBC5.IP jocelyne!~ptqylv@FC7596F1.D4AA9034.C4B1DBC5.IP 
+>> :irc.data.lt 353 yh1 = #kosmosas :guinevere!~ufyzuz@FC7596F1.D4AA9034.C4B1DBC5.IP aspen!~xqpnrj@FC7596F1.D4AA9034.C4B1DBC5.IP %Scopex!~inf@A957C2C.E1AF3694.690438FD.IP +Buckis!~info@A957C2C.E1AF3694.690438FD.IP +dyc520!~dyc520@B9570418.7F572142.81D88A46.IP Kaimas!Lauras@80s.lt +Hell!hells@aitvaras-9B878F53.xshellz.com 
+>> :irc.data.lt 353 yh1 = #kosmosas :+F0ma!Liudas@aitvaras-9B878F53.xshellz.com +Raimioox!Raimis@aitvaras-9B878F53.xshellz.com +Emmanuel_Chanel!~emmanuel@aitvaras-D6784DEE.ppp.dion.ne.jp @EmmaBot!~emmanuel@aitvaras-D6784DEE.ppp.dion.ne.jp @+[Elina]!bot@aitvaras-303925AC.me @+[Natasha]!bot@90s.fr ~@Alie!bot@90s.fr 
+>> :irc.data.lt 353 yh1 = #kosmosas :+kazaaakas!Arnas@marsas.me +iso!~user@klaipedacity.lt ______{_}______!cccl@aitvaras-7E5EA15B.lt __________A_C__!cccl@aitvaras-7E5EA15B.lt _________L_O___!cccl@aitvaras-7E5EA15B.lt ________O_C____!cccl@aitvaras-7E5EA15B.lt _______C_A_____!cccl@aitvaras-7E5EA15B.lt _____A_C_______!cccl@aitvaras-7E5EA15B.lt 
+>> :irc.data.lt 353 yh1 = #kosmosas :____C_O________!cccl@aitvaras-7E5EA15B.lt ___O_L_________!cccl@aitvaras-7E5EA15B.lt __C_A__________!cccl@aitvaras-7E5EA15B.lt &@savas!ubaldas@aitvaras.eu 
+>> :irc.data.lt 366 yh1 #kosmosas :End of /NAMES list.
+>> :ChanServ!ubaldas@aitvarasnet.org NOTICE yh1 :[#kosmosas] *** Welcome to #kosmosas @ Aitvaras! *(Cosmos / Space @ Kite)* Channel commands: .seen <nick>, !stat, !ttop10, !top10, !ttop20, !top20, !tstat, !place. Graphic stats: https://80s.lt/IRCStats/kosmosas.html ChatGPT models: [Elina]: <message>, cerepaska: <message>, cere: <message>. We friendly with YouTube: shows URLID + !yt <video title>. Good luck! ***
+>> :irc.data.lt 324 yh1 #kosmosas +ntr 
+>> :irc.data.lt 329 yh1 #kosmosas 1672320120
+>> :irc.data.lt 352 yh1 #kosmosas ~yh2 60CCA6D2.A5193C4D.9C9BAFEA.IP irc.data.lt yh1 H :0 realname
+>> :irc.data.lt 352 yh1 #kosmosas ~ahqiwa FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt rayfer H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~lgvwgk FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt tynese H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~fjyphb FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt devon H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~xvuaji FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt amalia H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~umahdj FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt elespenciu H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~bcwiww FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt lavincente H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~axdimq FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt angeline H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~rbhrqy FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt carina H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~ikkssb FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt janelleemi H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~oeozav FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt clyde H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~cqyude FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt dwayne H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~maxwba FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt everett H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~nfptfw FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt blair H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~fnvvau FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt yulitza H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~qetidq FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt justinaz H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~xeycjf FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt marlana H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~ptqylv FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt jocelyne H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~ufyzuz FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt guinevere H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~xqpnrj FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt aspen H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~inf A957C2C.E1AF3694.690438FD.IP irc.data.lt Scopex Hr% :0 Mr.
+>> :irc.data.lt 352 yh1 #kosmosas ~info A957C2C.E1AF3694.690438FD.IP irc.data.lt Buckis Hr+ :0 no
+>> :irc.data.lt 352 yh1 #kosmosas ~dyc520 B9570418.7F572142.81D88A46.IP irc.data.lt dyc520 H+ :0 realname
+>> :irc.data.lt 352 yh1 #kosmosas Lauras 80s.lt irc.data.lt Kaimas Hr :0 Laurynas
+>> :irc.data.lt 352 yh1 #kosmosas hells aitvaras-9B878F53.xshellz.com aitvarasnet.org Hell Gr+ :1 Manfredas
+>> :irc.data.lt 352 yh1 #kosmosas Liudas aitvaras-9B878F53.xshellz.com irc.data.lt F0ma Hr+ :0 B@stard
+>> :irc.data.lt 352 yh1 #kosmosas Raimis aitvaras-9B878F53.xshellz.com irc.data.lt Raimioox Gr+ :0 Raimundas
+>> :irc.data.lt 352 yh1 #kosmosas ~emmanuel aitvaras-D6784DEE.ppp.dion.ne.jp irc.data.lt Emmanuel_Chanel Hr+ :0 realname
+>> :irc.data.lt 352 yh1 #kosmosas ~emmanuel aitvaras-D6784DEE.ppp.dion.ne.jp irc.data.lt EmmaBot HB@ :0 Emmanuel Chanel's Omikuji Bot
+>> :irc.data.lt 352 yh1 #kosmosas bot aitvaras-303925AC.me aitvarasnet.org [Elina] Hr@ :1 Elina
+>> :irc.data.lt 352 yh1 #kosmosas bot 90s.fr irc.data.lt [Natasha] Hr@ :0 I
+>> :irc.data.lt 352 yh1 #kosmosas bot 90s.fr irc.data.lt Alie Hr~ :0 Relax and smile :)
+>> :irc.data.lt 352 yh1 #kosmosas Arnas marsas.me irc.data.lt kazaaakas Hr+ :0 Arnoldas
+>> :irc.data.lt 352 yh1 #kosmosas ~user klaipedacity.lt irc.data.lt iso Hr+ :0 Audrius
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt ______{_}______ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt __________A_C__ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt _________L_O___ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt ________O_C____ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt _______C_A_____ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt _____A_C_______ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt ____C_O________ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt ___O_L_________ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt __C_A__________ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas ubaldas aitvaras.eu hidden savas H& :0 bicas
+>> :irc.data.lt 315 yh1 #kosmosas :End of /WHO list.
+<< WHO #kosmosas
+>> :irc.data.lt 352 yh1 #kosmosas ~yh2 60CCA6D2.A5193C4D.9C9BAFEA.IP irc.data.lt yh1 H :0 realname
+>> :irc.data.lt 352 yh1 #kosmosas ~ahqiwa FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt rayfer H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~lgvwgk FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt tynese H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~fjyphb FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt devon H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~xvuaji FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt amalia H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~umahdj FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt elespenciu H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~bcwiww FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt lavincente H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~axdimq FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt angeline H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~rbhrqy FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt carina H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~ikkssb FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt janelleemi H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~oeozav FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt clyde H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~cqyude FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt dwayne H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~maxwba FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt everett H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~nfptfw FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt blair H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~fnvvau FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt yulitza H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~qetidq FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt justinaz H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~xeycjf FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt marlana H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~ptqylv FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt jocelyne H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~ufyzuz FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt guinevere H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~xqpnrj FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt aspen H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
+>> :irc.data.lt 352 yh1 #kosmosas ~inf A957C2C.E1AF3694.690438FD.IP irc.data.lt Scopex Hr% :0 Mr.
+>> :irc.data.lt 352 yh1 #kosmosas ~info A957C2C.E1AF3694.690438FD.IP irc.data.lt Buckis Hr+ :0 no
+>> :irc.data.lt 352 yh1 #kosmosas ~dyc520 B9570418.7F572142.81D88A46.IP irc.data.lt dyc520 H+ :0 realname
+>> :irc.data.lt 352 yh1 #kosmosas Lauras 80s.lt irc.data.lt Kaimas Hr :0 Laurynas
+>> :irc.data.lt 352 yh1 #kosmosas hells aitvaras-9B878F53.xshellz.com aitvarasnet.org Hell Gr+ :1 Manfredas
+>> :irc.data.lt 352 yh1 #kosmosas Liudas aitvaras-9B878F53.xshellz.com irc.data.lt F0ma Hr+ :0 B@stard
+>> :irc.data.lt 352 yh1 #kosmosas Raimis aitvaras-9B878F53.xshellz.com irc.data.lt Raimioox Gr+ :0 Raimundas
+>> :irc.data.lt 352 yh1 #kosmosas ~emmanuel aitvaras-D6784DEE.ppp.dion.ne.jp irc.data.lt Emmanuel_Chanel Hr+ :0 realname
+>> :irc.data.lt 352 yh1 #kosmosas ~emmanuel aitvaras-D6784DEE.ppp.dion.ne.jp irc.data.lt EmmaBot HB@ :0 Emmanuel Chanel's Omikuji Bot
+>> :irc.data.lt 352 yh1 #kosmosas bot aitvaras-303925AC.me aitvarasnet.org [Elina] Hr@ :1 Elina
+>> :irc.data.lt 352 yh1 #kosmosas bot 90s.fr irc.data.lt [Natasha] Hr@ :0 I
+>> :irc.data.lt 352 yh1 #kosmosas bot 90s.fr irc.data.lt Alie Hr~ :0 Relax and smile :)
+>> :irc.data.lt 352 yh1 #kosmosas Arnas marsas.me irc.data.lt kazaaakas Hr+ :0 Arnoldas
+>> :irc.data.lt 352 yh1 #kosmosas ~user klaipedacity.lt irc.data.lt iso Hr+ :0 Audrius
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt ______{_}______ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt __________A_C__ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt _________L_O___ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt ________O_C____ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt _______C_A_____ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt _____A_C_______ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt ____C_O________ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt ___O_L_________ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt __C_A__________ H :0 Coca-Cola
+>> :irc.data.lt 352 yh1 #kosmosas ubaldas aitvaras.eu hidden savas H& :0 bicas
+>> :irc.data.lt 315 yh1 #kosmosas :End of /WHO list.
+<< PING LAG1713845613403
+>> :irc.data.lt PONG irc.data.lt :LAG1713845613403
+<< PING LAG1713845643577
+>> :irc.data.lt PONG irc.data.lt :LAG1713845643577

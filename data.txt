@@ -1,0 +1,1807 @@
+<< CAP LS
+<< NICK yh1
+<< USER yh2 yh2 us.undernet.org :realname
+>> NOTICE AUTH :*** Looking up your hostname
+>> NOTICE AUTH :*** Checking Ident
+>> PING :1869259028
+<< PONG :1869259028
+>> NOTICE AUTH :*** Couldn't look up your hostname
+>> NOTICE AUTH :*** No ident response
+>> :Seattle.WA.US.Undernet.Org 001 yh1 :Welcome to the UnderNet IRC Network, yh1
+>> :Seattle.WA.US.Undernet.Org 002 yh1 :Your host is Seattle.WA.US.Undernet.Org, running version u2.10.12.19
+>> :Seattle.WA.US.Undernet.Org 003 yh1 :This server was created Mon Dec 21 2020 at 11:00:30 EST
+>> :Seattle.WA.US.Undernet.Org 004 yh1 Seattle.WA.US.Undernet.Org u2.10.12.19 diOoswkgx biklmnopstvrDdRcC bklov
+>> :Seattle.WA.US.Undernet.Org 005 yh1 WHOX WALLCHOPS WALLVOICES USERIP CPRIVMSG CNOTICE SILENCE=25 MODES=6 MAXCHANNELS=40 MAXBANS=100 NICKLEN=12 :are supported by this server
+>> :Seattle.WA.US.Undernet.Org 005 yh1 MAXNICKLEN=15 TOPICLEN=160 AWAYLEN=160 KICKLEN=160 CHANNELLEN=200 MAXCHANNELLEN=200 CHANTYPES=#& PREFIX=(ov)@+ STATUSMSG=@+ CHANMODES=b,k,l,imnpstrDdRcC CASEMAPPING=rfc1459 NETWORK=UnderNet :are supported by this server
+>> :Seattle.WA.US.Undernet.Org 251 yh1 :There are 4915 users and 11497 invisible on 35 servers
+>> :Seattle.WA.US.Undernet.Org 252 yh1 40 :operator(s) online
+>> :Seattle.WA.US.Undernet.Org 253 yh1 12 :unknown connection(s)
+>> :Seattle.WA.US.Undernet.Org 254 yh1 5949 :channels formed
+>> :Seattle.WA.US.Undernet.Org 255 yh1 :I have 312 clients and 1 servers
+>> :Seattle.WA.US.Undernet.Org NOTICE yh1 :Highest connection count: 314 (313 clients)
+>> :Seattle.WA.US.Undernet.Org 422 yh1 :MOTD File is missing
+<< PRIVMSG x@channels.undernet.org :login yh2 
+>> :Seattle.WA.US.Undernet.Org NOTICE yh1 :on 1 ca 1(4) ft 10(10)
+>> :X!cservice@undernet.org NOTICE yh1 :SYNTAX: LOGIN <username> <password>
+<< LIST >4,<10000
+>> :Seattle.WA.US.Undernet.Org 321 yh1 Channel :Users  Name
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vh 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #chat 67 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #netcat 45 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Casa 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hosting 16 :WE HOST YOUR DREAMS! ( web: https://www.atw.hu [HU/EN] - https://www.hostsailor.com [EN] - https://www.sharktech.net [EN] )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tuffgong 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nastycode 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oldTeam 14 :Welcome to #oldTeam ( Join: #localhost )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gov 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ignore 40 :Welcome and join www.jw.org ( https://www.cpu-monkey.com/en/cpu_family-amd_ryzen-32 )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hermetics 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #aguilas 80 :-=  WeLcOmE To YoUr BesT ChanNeL #Aguilas ® =- ( -= � #Aguilas � =- )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #kicevo 18 :Kicevo, the paradise city.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #FreshChat 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Lesbiro 8 :Welcome to #Lesbiro/Bun venit pe canalul #Lesbiro
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ploiesti 9 :Welcome to #ploiesti!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #women 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Mereny 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ircguide 24 :Welcome to #ircguide - Have a nice chat and enjoy your stay. IF you have a question just ask and an @oper will assist you. Type in *EN* Only in channel.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dos 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bucuresti 86 :Bun venit pe #Bucuresti ( https://ircbucuresti.ro/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #meditation 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #orthodox 5 :Welcome to channel Orthodox ( https://www.goarch.org/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SoundWave 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #http 40 :https://www.youtube.com/watch?v=c0-hvjV2A5Y
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Y 27 :Welcome to #Y channel !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ircdhelp 57 :Happy Birthday to #ircdhelp (13 years) | Hello - Please ask your questions in the open channel and wait for a reply. ( Please do not /msg the Ops. Thank you. )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #GlobalNews 19 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #BaiaMare 31 :Bine ati venit ! ( www.baiamare.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #AutoOp 32 :Welcome on #AutoOp ! Please behave and have a nice chat
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gr 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #italmetal 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #troubleEstDansLeTrouble 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #clubfilipino 37 :Welcome everyone... No Bashing or Trolling or face a permanent ban.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #UnBan 15 : You are welcome on #UnBan. This channel has helped many users on the Undernet.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bong 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #britain 12 :Welcome to Britain -- ! -- https://www.britannica.com/place/United-Kingdom
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tabarnak 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #diablo 20 :#Diablo Immortal now on iOS and Android !!! ( http://us.battle.net/d3/en/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #virus 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TarguJiu 207 :Bun venit pe #TarguJiu si viziteaza  ☺ https://FilmeOnline.Uk ☺  *
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #security 25 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #K&K 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #inbox 8 :Manager has failed to login, a vote for a new MGR will be held. Level 400+ ops mail nopurge@undernet.org from username email address with your vote.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pagan 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #targoviste 14 :Bine ati venit !!! ( Targoviste, RO ______ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Vaslui 8 :Bine ati venit, chat placut!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gaybareback 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #proxy 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mx 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Sports 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #japan 6 :Welcome to #Japan | #Japan he yohkoso!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #GotRice? 7 :🍚
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vhost 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mircu 90 :A True Friend Is Hard To Find, Hard To Leave And Impossible To Forget
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #timis 12 :Bine ati venit pe #TIMIS ! Pentru a porni Jocul Scrabble tastati: !scrabble (  https://www.facebook.com/groups/TIMI.Videos )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #california 9 :Welcome To California ! United State of America ! ( https://www.visitcalifornia.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #starfactory 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #serbia 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vbots 19 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ayuda 47 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #leyte 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ro 65 :.:: #RO ::. Bine ati venit pe #RO ! [ URL: www.virustotal.com | www.scamadviser.com/ro ]
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RebelYell 63 :Welcome to #RebelYell ... Politics, Culture, etc.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rammstein 25 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Barranquilla 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TriviaOasis 11 : T  R  i  V  i  A  O  a  S  i  S  the Kewlest Trivia on the Net!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #adjud 31 :Bun venit pe #Adjud ( http://xtrivia.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RegHost 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Cata 23 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rasnov 56 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #LayerHost 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #guitar 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #kavadarci 7 :Welcome to #kavadarci City of Wine ( http://www.kavadarci.info/ :: http://kavadarci.gov.mk/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dumbraveni 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dauin 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #aYuKi.Stream 48 :Rest in Paradise cirzhie ( [www.AFKRadio.rocks] )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bios 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #scrabble.ph 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #borsa 6 :Welcome to Borsa!! Acesta este canalul oficial Undernet. Enjoy!! ( http://www.primariaborsamm.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RCS 6 :Support for Radical Computer Systems * General Eggdrop Chat
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #erowid 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #brasov 50 :Bun venit pe canalul #Brasov!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sniff 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Mild 16 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #egghelp 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #flacpassion 17 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #trois-rivieres 13 :   I R c a p    ViVe TROiS-RiViERES (    I R c a p    RESPECT MC 1% TROiS-RiViERES )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dedibox 39 :Welcome ( www.jw.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #roma 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gayjackoff 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #unitedkingdom 16 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #IPv6-Help 9 :Questions/Help regarding IPv6 and Undernet IRC Network !!! IPv6 Range blocks/IPv6 ( https://www.mediawiki.org/wiki/Help:Range_blocks/IPv6 )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #CyberCafe 6 :Welcome to #CyberCafe ! Enjoy our free coffee \\`/! Have a great chat;)! ( 1st lang=Eng )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #avon 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oz 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #underland 120 :Bine ati venit ! ( https://underland.team - https://underland.team/radio - https://underland.team/poze - https://underland.team/statistici )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Marihuana 5 :Don`t drink and Drive just SMOKE and FLY !!! ( WwW.MaRiHuAnA.CoM  )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tunnelbroker 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #political 66 :“I wouldn’t believe Donald Trump if his tongue were notarized” - The late former NYC Mayor Ed Koch
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #U 33 :http://Ucluj.ro
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #allnitecafe 120 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rolinux 31 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3download 73 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Macedonia 284 :Welcome to #Macedonia - Official Chat Channel from our Country ( http://forums.vmacedonia.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dew 62 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Kali 7 :Kali
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #banat 10 :Bun venit pe #banat ( https://Radio-Earth.live )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gayslavemarket 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Cristianos 10 :Bienvenido a Cristianos © Y les dijo: Id por todo el mundo y predicad el evangelio a toda criatura. Marcos 16:15 RVR1960 ( https://radiocristianos.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #freenode 20 :Welcome to #freenode
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Panda 10 :https://www.youtube.com/watch?v=S_xH7noaqTA
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #AcMilan 24 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bad 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mIRCLife 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #classic 7 :Unii oameni sunt investitii, altii doar facturi ;)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Lua 30 :Welcome ! ( https://www.lua.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Quit 148 :Welcome! Willkommen! Bienvenue! Bienvenido! Benvenuto! Bine ați venit! ( this is irc, not real life :) )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #N&N 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MP3Speed 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #leb 23 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Crestini 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Uruguay 13 :�|�|Welvome to #Uruguay canal de chat amistad latino sudamericano - gracias por su preferencia IRC Uruguay UnderNet|!|! ( https://turismo.gub.uy )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bifemsex 15 :+18 polite bi/les/str8 women, Ask in chan B4 /msg, No Posers,pedophiles,trolls,incest,assholes TG/TS/CD must ID
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gayfriends 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Discworld 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #eof 23 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #wx 11 :No significant wx forecast
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Karaoke+mp3s 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cd 9 :Welcome to #cd . ?? help = Coming soon !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #uurrt 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #makati 193 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Kosovo 61 :Kosovo, officially the Republic of Kosovo, is a country in Southeast Europe with partial diplomatic recognition.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ctcp 38 :Welcome to #ctcp. ( www.jw.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #wareznorth 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #CyberWorld 5 :Welcome to #CyberWorld. Enjoy your stay
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #F1.hu 7 :Welcome Udvozollek Bun venit ( http://orban-szabolcs.5mp.eu )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #thelounge 9 :Welcome!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #amos 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #filipina 11 :Welcome to BEAUTY with a HEART #filipina ( www.afkradio.rocks )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #NS 46 :Manager has logged back in. Channel unlocked. Please login regularly to avoid getting your channel purged
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hellas 8 :Official channel of Hellas since 1996 - Keeping the Light on!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #IRC 25 :Welcome on #IRC Undernet Channel ! ( www.irc.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Norway 9 :Welcome to #Norway
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mobilelegends 30 :Congrats AP BREN, MLBB M5 World Champion! ( https://www.ph-mpl.com/news or https://www.facebook.com/mobilelegendsgame )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Windrop 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hockey 11 :COL 5 @ WPG 7 ||| CAR 1@NYI 0 | BOS 1@TOR 0 | FLO 1@TBL 0 | NYR 1@WSH@ 0
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nin 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bistrita 21 :welcome to #bistrita
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MoldovaNoua 36 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nightcafe 7 :Scrabble | Joci Trivia si castigi crypto -> https://discord.gg/aythYZj
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #botcentral 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #12-15teenz 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dumaguete 29 :Welcome to Dumaguete -= !uno  =- ( http://dumagueteunitown.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #disconnect 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #industrial 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #palermo 5 :Benvenuti nel canale siciliano della città di palermo ( https://it.wikipedia.org/wiki/Palermo )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cold 6 :Welcome to #cold ( https://9gag.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #music 31 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ellada 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #AHS 8 :👻 American Horror Story - ugh, Kim Kardashian 🤮 has been added to the cast of S12, the final death nail in the series' coffin.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #northmacedonia 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #test 8 :welcome
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3servers 53 :Pearl Jam |Taylor Swift |Beyonce|The National | Metallica | boygenius | Depeche Mode | M83 | U2 | Skee Mask | Periphery | Fever Ray | Miley Cyrus |
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #linuxwarez 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vps 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mordor 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #failed 38 :Mai da si tu un semn de viata nasule :) ( https://whiteheaven.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Genova 6 :'©º°¨¨°º© W E L C O M E ©º°¨¨°º© ( https://it.wikipedia.org/wiki/Genova )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Official 43 :This is #Official !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #diapers 7 :Welcome to #Diapers! Have fun and play safe. No /msg without asking. G-rated and ages 13+ welcome. No co-channeling with #incest.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #PnoiPnai 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MOTHERFUCKER 44 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lover 5 :<3
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oradea 29 :Welcome To #Oradea ! ( https://oneqrl.com/zond/ - One Quantum Resistant Ledger )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #KTM 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sshd 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ireland 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #main 26 :The main thing to do is relax, be nice to everyone and alaways smile.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #silliman 13 :#Silliman Welcome to Silliman! ( http://v3.su.edu.ph/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #timisoara 50 :Welcome to our home! Enter freely of your own will and leave some of the happiness you bring
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Arges 26 :Bine ati venit pe canalul Municipiului Curtea de Arges! ( https://www.facebook.com/groups/curteadearges )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #localhost 50 :★Welcome★ #localhost ( Respect: [Users & Operators] )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fagaras 39 :Canalul cu amintiri si oameni faini. Bine ati venit! ( www.selfnet.org ) ( DANCE & HOUSE => https://RadioPlay.RO )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #goal 5 :GoaL@UnderNET.org http://www.GoaL.com
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oldschool 47 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #thecats 47 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ircfun 38 :If I'm not back in five minutes, just wait longer.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #starwars 5 :Welcome to #StarWars | Channel Created: Sep 28 2004
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #feel 65 :Welcome to my mad world !❤️
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #knittelfeld 30 :ShootYourself !!!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #reghin 46 :Bine ati venit pe #Reghin .. chat placut !!!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #kid 7 :Wilkomme ! ( http://youtube.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #UST 15 : UNIVERSITY  OF SANTO  TOMAS Undernet!   FB: https://facebook.com/USTdalnet.official ( http://
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Roman 9 :Welcome to #Roman ( Live https://www.webcamromania.ro/webcam-piscine/webcam-piata-roman-voda/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #filelist 23 :16 ani de Filelist! Enjoy ! ( https://filelist.io/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lebanese 22 :Listen Without Defending ... Speak Without Offending ... Welcome to #Lebanese. ( http://Lebanese.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #darkcode 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #}{ 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #botservice 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #friendly 10 :Welcome to our #friendly channel. Trivia Available.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #30+Tunes_and_Brews 11 :Happy 422!! Random suprise drug tests all over! - Listen at https://cast6.asurahosting.com/start/smalltimeradio18/ 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Cosmin 87 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Worldchat 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #linuxfr 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sightsnsounds 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gayphonesex 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rhodes 5 : Welcome . For covid stats type !covid (country) For weather type !w (city)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #winscp 20 :welcome ( www.winscp.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #irc4fun 10 :👋 Welcome to the IRC4Fun Chat Channel 💬 [Relayed across many IRC networks] ( https://www.IRC4Fun.net )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #paris 27 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #simplu 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sysadmin 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #higher-fire 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pokemongo 9 :Welcome :)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #peace 5 :i feel so good
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MacDudes 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Offline 142 :Remember that simplicity as a person, is the greatness of a human being and be polite all languages are allowed ! (  Listen https://phatradio.stream )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Noruega 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tigersden 9 :Welcome Tigers! Go Maga! Go Maga! Go Maga! Just leave congress already and let the demns do what you should have done.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #noob 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pordenone 5 :Benvenuti a tutti nel canale ufficiale di Pordenone,Citta Nel Veneto. ( https://en.wikipedia.org/wiki/Pordenone )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Snuffsex 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #math 22 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #?? 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #com 17 :Welcome!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #europe 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #game 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fatchat 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #weekend 56 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ghosts 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mIRCguide 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #UFOs 35 :From LoVe Ins to MoSh pits > just go with the flow :-) 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bi-married-men 115 :Welcome to the channel! RULES: 16+, english on main, ads 10' apt. Be respectful, enjoy. ( http://goo.gl/ZJ4ICX )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Romanya 25 : Bine Ati Venit...Va Uram Un Chat Placut
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #easymovies 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #romania 191 :Bine ati venit! Welcome! Willkommen! Bienvenue! Bienvenido! Isten hozott! Benvenuto! Bem-Vindo! ( https://ircstats.net/romania )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #detroit 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MADNESS 54 :RIP dear friend ( https://youtu.be/PnLXTQmQSMo?si=wNQ9CylFJ06gh89n )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ALLMETALWORLD 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #metalscene 14 :Welcome to #MetalScene & www.MetalScene.org | WebSite: In Build
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #muist 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ufc 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #High-Tech 19 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rdl 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #slatina 21 :Bine ati venit pe chanul orasului #Slatina ! Chat plăcut!!! ( http://www.primariaslatina.ro/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #virtualfriends 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #athens 11 :Welcome to #athens - The capital of GREECE - please, type in *GR* or *EN*. Enjoy your stay & be respectful. (  http://www.greece-athens.com  )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sex 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #DeepHouse 5 :Welcome! Track of the day: https://youtu.be/ziAqB9nb_To
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #formula1 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mIRCBeginners 29 :Welcome to mIRCBeginners! ( No war/mp3/p0rn Help www.ircbeginner.com/ircinfo/mirc.html )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #brazil 62 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ChileTrivia 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #eggs 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3master 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #panicatthedisco 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #baia 5 :æ,`ææ,`ææ,`ææ, Bine Ati Venit Pe #Baia!!! Party Enjoy!!!   ⚾⚽
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #stillrockinradio 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #klan 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3_80s 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #php 21 :Welcome ! ( https://www.php.net/ or https://www.w3schools.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #World-Chat 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Zeus 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #brit_trivia 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #piatraneamt 12 :Bine Ati Venit la Piatra-Neamt ! ( https://www.facebook.com/fanPiatraNeamt/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rixhosting 47 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #siargao 166 :Welcome to the Surfing Capital of the Philippines..Have Fun 😊 Everyone.God Bless ( https://www.ircsiargao.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dogfucking_girls 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #judit 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #toiletbowlstumpsex 7 :The best channel on Undernet.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #BALER 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #darkweb 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #GNU 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Earth 31 :La multi ani de Sfantul Gheorghe ... Gherghina, Gica, Geo, Ghita si derivate  Website: https://web.radio-earth.live - Stats: https://ircstats.net/earth 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #holybible 17 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #humboldt 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #belle 17 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #australia 53 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #maynila 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3blues 20 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #clicksud 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Underworld 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Black&Blue 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Hungary 6 :welcome ( https://budapest.hu/Lapok/default.aspx )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fuckmywife 112 :Welcome to #fuckmywife for fun chat experience. Enjoy yourselves
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #HappyMind 16 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #wordpress 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #wow 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Asia 13 :Welcome to #asia. if trivia is stopped, you can restart it by typing .t2 on chan. enjoy your stay. happy chatting
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Dubai 53 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Status 306 :Welcome To #Status have nice stay
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dUck 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #janyce 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #darkness 28 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Bahrain 16 :May Allah guide us to the good of the kingdom of Bahrain and its loyal people. ( https://www.bna.bh/en/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #darkside 31 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #padova 22 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #leather-n-lace 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lebanon 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #analsex 20 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cagayandeoro 8 :``%%,`%%,`% Welcome to #CagayanDeOro! The City of Golden Friendship!%,`%%,,%%`` ( http://cagayandeoro.gov.ph/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lotr 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #callahans 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #madrid 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Help4U 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #adelaide 6 :Welcome to #adelaide !! Please join #aussiechat for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RadioRazna 9 :....::: Bienvenido a RadioRazna  "Trivia Para Amigos"  Eschuchar: http://tender.radio12345.com  Buena Suerte! :::....
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Motorola 46 :http://www.jw.org ( http://www.codexsinaiticus.org/en/ http://www.cnas.ro/page/verificare-asigurat.html )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bookz 262 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #worldcup 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #²²d(¬_¬)b²² 37 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Covasna 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #enjoy 26 :Statistici Scramble » http://irc.xtrivia.ro/enjoy.php ( Pentru a asculta Radio EnjoyChat => http://radio.enjoychat.net:8024 )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #greecechat 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #0!fuckmywife 103 : 18+ Lovely Ladys Wanted,NO PIC TRADING,NO FSERVERS,NO HTTP-WWW,NO KIDDY OR INCEST CHANNELS, ENGLISH ONLY IN CHANNEL
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #40ans&+ 18 :N'ignore jamais quelqu'un qui tient à toi, car un jour tu réaliseras que tu as perdu un diamant lorsque tu étais occupé à ramasser des pierres !!!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #scripture2 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Txtworld 8 :mIRC questions , kawaii faces , wavs , ascii ! -= English Only =- ( http://hawkee.com/profile/725519/?a=post&tt=snippet_id )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ddx 8 :Welcome to ddx. Be positive, stay healthy, keep fit! Like us -> ( https://www.facebook.com/Handstand.where.I.stand )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #wild 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #animelover 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #IRCNow-Shells 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ilocos 10 :Welcome to #Ilocos Undernet - Known for its beautiful beaches and historical sites.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #valendrix 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #warrior 9 :*** Welcome To Channel #warrior ***
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oldwarezmc 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Nufaru 5 :Welcome !!! ( www.nufaru.eu )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cair 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #iasi 22 :Bun venit la #iasi
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ilfov 20 :Welcome To ilfov
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Makedonija 101 :SAMO EDNA IMA VISTINA, IMA EDNA MAKEDONIJA! Dobrodojovte na #Makedonija kanal!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #philippines 31 :Welcome to #Philippines! ( Enjoy your stay and have fun! :) )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #komiti 7 :topic Welcome to channel #komiti Best Ultras of MACEDONIA - KOMITI ZAPAD ( https://www.youtube.com/watch?v=gU6WHr9PmqU&ab_channel=UltrasAvanti )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gaysexe 5 :Bienvenue sur #Gaysexe. Bon séjour sur votre canal préféré! Amusez-vous bien!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #iubirea.ta 11 :'Un prieten adevarat e greu de gasit,dificil de parasit si imposibil de uitat ( Daca esti prost de mic ..cand esti mare numa te joci. )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Kali.owned.gg 81 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #singapore 8 :Welcome to #Singapore - Singapore.SG.AS.Undernet.Org
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #CARACAL 55 :Bun venit pe #Caracal ( http://asculta.radiosibiu.ro:8080/RS )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bacau 30 :Bine ati venit pe chanul orasului #Bacau !!!! ( http://bacau.boards.net/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #abuse 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #enforcers 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Writers 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cool-canal 7 :Cea mai tare retea IRC /server -m irc.europeirc.eu sau direct de pe pagina ( www.Chat.EuropeIRC.eu mersi va asteptam cu un click sau de pe mIRC )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #femsubmissionsex 73 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SempiternaL 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #thunderirc 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #coruba 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Fenerbahçe 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #radioklass 16 :Bine Ai Venit ( Te astept si pe /server -m irc.radioklass.eu )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #montreal 108 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #depecheMODE 23 :WELCOME , www.depecheMODE.com ( http://www.depeche-mode.com Radio --> http://rmfdepechemode.radio.net )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Chat-World 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ayuda-Eggdrop 29 :Bienvenidos a #Ayuda-Eggdrop | Nueva versión disponible 1.9.5, más info: https://canal-ayuda.com/blog/eggheads-vuelve-a-sorprendernos-nueva-version-eggdrop-
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vietnamese 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #america 14 :Trivia Games & Friendship
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MoonRoom 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #istorya 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TmHelp 9 :Canal de ajutor pentru #Timisoara
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #perl 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #spiritual 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #PuTTY 20 :Spirit | Network Pentest Tools (https://github.com/theaog/spirit) | Spirit is FREE on port 22 any CIDR
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #linux 57 :Welcome to #Linux ! Please visit - https://www.linux.org 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Tavi 59 :Bun venit pe #Tavi. Mai cheamă-ți un prieten şi plecați în pula mea amândoi. ( DANCE & HOUSE => https://RadioPlay.RO -> https://ClubbingRadio.FR )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #transfagarasan 408 :#transfagarasan  Welcome And Have Fun Transfagarasan ( www.transfagarasan.info )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #GNU/Linux 10 :Welcome to #GNU/Linux . ( www.gnu.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #back 9 :back back back ;) ( Welcome ;) )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #legend 55 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #friends 8 :Welcome to #Friends channel. Have a nice stay.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #home 7 :.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #thelema 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #turkey 13 :Welcome to #Turkey | Grab a drink, Pull up a seat, and have a chat!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #femsubmission 6 :~~ WELCOME!  Behave!  Play Trivia by typing !t2 ~~
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #forum 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Lyon 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Catalin 23 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #DayZ 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #evil 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hugs 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #log 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #eggheads 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ohrid 25 :Welcome To #Ohrid The Best City Of Macedonia https://www.ohridnews.com
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Nudiste 26 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SpartanHost 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Z&Z 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #unix 9 :Welcome to #UNIX | Generally nerdy discussions and rants.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tijuana 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #thebreakfastclub 27 :Chat over coffee with friends old and new. Go ahead and put your feet up and enjoy your stay!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dallas 72 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Sydney 6 :Welcome to #sydney !! Please join #aussiechat for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Husi 20 :Bine ai venit pe #Husi . Chat plãcut ! www.husi.ro
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #OnePlus 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #DDoSer 148 :🄽🄾🅃🄷🄸🄽🄶 🄸🅂 🄷🄰🅁🄼 🄴🅇🄲🄴🄿🅃 🅈🄾🅄🅁 🄿🅁🄸🄳🄴 http://ddoser.org
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SintexIndustries 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #movieclub 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #trip 9 :Trippy.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #c++ 7 :C++ and related discussions | Paste: https://wandbox.org/ | Just ask! ( https://cppreference.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Mehedinti 40 :Bun venit pe #Mehedinti ( wWw.Mehedinti.iRc )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Webchat 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #PULA 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #arlington 32 :Welcome in #arlington, Please ask your question on the channel and wait for an answer. We do not help any channel related to warez/music.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #christmas 24 :There are *ONLY* 245 days, 09 hours, 34 minutes and 16 seconds until Christmas :o) www.xmasclock.com
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #chaoticanime 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #CooLmeN 5 :Bine ati venit pe canalul #CooLmeN
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #newyork 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #USpolitics 10 :Manager Change has been successfully completed.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #latitude 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #geokanta 11 :Cand poti fi orice, alege sa fii bun! ! !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ghost 29 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SbHosting 21 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #metal 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Laravel 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #chanfix 19 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #occult 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #save 24 :welcome
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #turda 8 : ® Bun Venit pe #Turda ® '
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #FcRapid 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #prahova 32 :Bun venit pe canalul judetului Prahova, va dorim un chat cat mai placut. (  https://Prahova.Site )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Allowed 52 :Bine ati venit! Welcome! Herzlich Willkommen!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #astronomy 11 :Welcome in our lives James Webb Space Telescope ( https://www.jwst.nasa.gov/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #newbies 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #anonymous 5 :Stay anonymous in a world of surveillence
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Orange 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #eRgeaN 42 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Alexandria 12 :Bine ati venit pe chanul orasului Alexandria !!! ( Www.Alexandria.Ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sun 17 :Learned to stay alive to the real side of the curb.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #xtrivia 43 : x  T  r  i  v  i  a  * Testeaza-ti cultura generala * Spor la puncte *  ( www.xtrivia.ro | http://radio.mindtime.ro:4192/
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #copilas 6 :Welcome ! have a nice chat
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pc-maintenance 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #key 5 :welcome ( www.key.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Kiev 39 : Bud' laska ! ( Ro/Ua/Uk/It/69 language only allowed ! )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #op_help 9 :Welcome To The Help Channal #Op_Help
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #redhack 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #power 22 :It is actually a word of dark power and blood magic.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sharktech 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #warez4free 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #southmacedonia 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #triviacity 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sextrivia 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #arsenal 5 :ArsenaL@UnderNET.org http://www.arsenal.com
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ucna 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #davao 27 :``%%,`%%,`%Welcome to #Davao! The DuRian Capital of the Philippines!%,`%%,,%%``
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #LinUxers 19 :El poder transformador de la Inteligencia Artificial en la Tecnología ( https://linuxers.xyz )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cagayan 29 :``%%,`%%,`% Welcome to #cagayan! Sit back and relax!%,`%%,,%%`` ( http://www.blissradio.net )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pc-mirc-help 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bisaya 14 :Manager has logged back in. Channel unlocked. Please login regularly to avoid getting your channel purged
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #foonet 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mothers 92 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Chasse&Peche 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #writer 17 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #swu 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #linuxguide 24 :[ Welcome to #linuxguide! Enjoy your stay! | General discussion welcome! ] ( We do not endorse illegal activity. Bots are not allowed in the channel! )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #languages 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #aussies 26 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ClujNapoca 12 :Bine Ai Venit!!! ( https://callofduty.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mIRCHelper 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ascii 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sage.com 9 :Welcome to #Sage.com where you can do that WoW Magic ( www.underx.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gentoo 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bdsm 36 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #carding 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #craiova 37 :Bun venit pe #Craiova ( www.craiova.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #overclockers 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #underground 32 :WELCOME to UG! Legions Arise! ~ https://zeno.fm/radio/undergroundmusic | https://zeno.fm/radio/1643nufm
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #londontrivia 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #coffee 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #All-Metal 37 :Welcome to #All-Metal | Commands Available: @Find & !List & !New
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #LinuxCracker 40 :http://www.ip-tracker.org/locator/ip-lookup.php ( www.jw.org  )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #userguide 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #apache 6 :Read error_log, Ask the question, Patience - CURRENT: Apache httpd 2.4.58 Released 2023-10-19 ( http://httpd.apache.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #beast 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #racadau 23 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cybersex 110 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Nasaud 161 :Accese pe acet canal este OFF Welcome To Nasaud Town (  https://radio4ever.ro/public/radio4ever )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #LGBTQ 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #deutschland 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #visitors 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #moscow 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #maldito 19 :Where #Maldito Reside! ( ( http://maldito.eu5.org/ ) )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #LunarBNC 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #BuKiDnOn 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SexArt 13 :cele mai multe curve nu-s femei!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lxc 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Oregon 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Tagbilaran 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Trivia 67 :Bine ati venit pe #Trivia | Pentru statistica si scor in timp real acceseaza site-ul https://trivia.ro ( Pentru a reporni Trivia folositi comanda !start )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hacker 25 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MD 7 :let's be human ... we have enough animals ... ( www.prime.md )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bailefelix 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #israel 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #freeirc 21 : Welcome Român , English , Francais !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pantelimon 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gayhumiliation 11 :Welcome to #gayhumiliation, so come in and join in
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dracula 12 :Welcome to Count Dracula's land! - Enjoy your stay and have a nice chat.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pcirc 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #filipinas 19 :Welcome to #Filipinas | You can’t separate peace and freedom. ( https://filipinasph.weebly.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RU 83 :Avem Wi-Fi! ( www.bursadefericire.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #social 30 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #u_mad_bro? 14 :frauf's email address- waytogojericho@gmail.com falgocharm@gmail.com ip.omikse@gmail.com dariu_xen@gmail.com
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RadioBeat 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #weed 23 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ciucas 24 :Welcome to #Ciucas Berea Tuturor Romanilor.. Ciucas Brasov.. ( Cerbul Ciucas )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Latinos 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #slovenia 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #caraga 94 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Dark-Tech 25 :-= Dark-Tech Communication =- Status: *** Dedicated: UP -- Virtualizor: UP *** //server -m irc.dark-tech.ca -j #Dark-Tech
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #crypto.ph 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Salaj 61 :O iubire alb -albastra!!!Forta Corvinul Hunedoara!!! ( http://asculta.radioselect.eu:8002/RS )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #URLATI 7 :Welcome to #URLATI - www.instagram.com/URLATI.ro ( www.URLATI.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pantyhose 27 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #football 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #KoЯn 15 :Black is the soul that's led astray. Happiness is found in the darkest ways.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TrumpBashing 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cc-trade 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #salajan 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ircpassage 35 :Welcome to #IRCPassage! Newest generation of a channel of the UnderNet! ( www.ircpassage.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Help 54 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #blackwhitesex 20 :"Welcome to BWS: 18+ No co-channeling on banned channels (this includes channels that permit under 18) ////3 hr idle = 10 hr ban  Enjoy!!!!"
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cluj2 5 :+_()*&^%$#@!~ Stone House Village ~!@#$%^&*()_+ ( www.romanianphototours.co.uk )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #BoxShells 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #aslpls 36 :♥ ASL PLEASE ♥ ( https://RadioMania.rocks )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Brussels 30 :Welcome/Welkom/Bienvenue. Visiting Brussels? Surf for free using our FREE wifi network: wifi.brussels Enjoy :-) ( www.brussels.be )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #clan 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #globalchat 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Go 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #JavaScript 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #area69 154 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dumanjug 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #kaos 10 :Welcome! Enjoy on http://radio.enjoychat.net:8024
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #colombia 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #billy 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Younger4older 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #terror 14 :'Bun venit , Welcome , Willkommen Bienvenue !'
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #7 93 :someone is with my ex right now realising why I left..
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mirchelp 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TNT 228 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #LinuxGeeks 26 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ghencea 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #FreeZNC 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #beta 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #incest 141 :16+ - Welcome to #incest - Commands: !seen, !girl and !rules
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Scrabble 103 :#Scrabble joc al mintii si cuvintelor, unde fiecare cuvant conteaza! ( www.scrabble.tk )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #quiz 19 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Marxism 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #finland 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Radio 74 :Hi and Welcome to #Radio ! ( www.radio-undernet.org | IOS : http://tiny.cc/4q4jnz | Android : http://tiny.cc/cxcpnz )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Legenda.ro 6 :Welcome !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #USAPolitics 21 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #iarba 6 :“Struggle is the enemy but weed is the remedy.” ( https://www.youtube.com/watch?v=wpnPS1B9hW4&list=RDwpnPS1B9hW4 )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #weather 5 :- 241200Z...THERE IS A SLIGHT RISK OF SEVERE THUNDERSTORMS LATE THISAFTERNOON/EVENING ACROSS NORTHWEST TX... <http://mesonet.agron.iastate.edu/wx/afos/p.php?pil
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ftpwarez 44 :'FREE WAREZ --Request Bot Back No !list, No @find, No @search, or No trade | Pour Some Out for SnoBrdr, Sport, Fyba, Rabx, TwoSour & FreakyB
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #StarTrek 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #aek 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #starry-night 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #science 17 :https://www.theguardian.com/science/2024/apr/22/when-old-age-starts-perception-study
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #R&R 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #melbourne 20 :Welcome to #melbourne !! Please join #aussiechat for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Bologna 7 :Benvenuti Nel Canale Ufficiale della Citta di Bologna. ( https://it.wikipedia.org/wiki/Bologna )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mircchat 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #operhelp 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #barlad 125 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Console 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MacOSX 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Costinesti 19 :*** Ultimul JACKPOT l-a castigat Serena (48500 €) in data de 19.04.2024 la ora 08:42 *** ( ......... )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #basarabia 7 :Basarabia pământ românesc! ( https://www.youtube.com/watch?v=jT64Dd8FJuo )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lesbian 15 :/!\\ love  Welcome to l e s b i a n  love /!\\
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Scripture 27 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Bath 10 : ( Come and visit us please https://visitbath.co.uk/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #brasil 25 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #astro 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #iceland 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rom 63 :#rom short for România. ( Enjoy The Silence ! )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ink 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #macedonija 24 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #switch 65 :Welcome !! Nu vrei sa stai si ai primit access !! Da-ti remuser si parasesti chann !!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #archlinux 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Catholic 9 :Welcome to Catholic, Enjoy your stay.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #transilvania 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #radiocontact 10 :Feel free to listen Radio Contact at >>>>> ( https://www.radiocontact.be/player/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #antichrist 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #montréal 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SB 77 :Bine ati venit! Welcome! Willkommen! Bienvenue! Bienvenido! Isten hozott! Benvenuto! Bem-Vindo! to Sibiu(Hermannstadt), Romania!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #anxiety 15 :Welcome to #anxiety; channel rules: https://anxietyirc.dyndns.info
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #CoreShells 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #UnixCoD 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #russian 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Albaiulia 8 :Bine Ati Venit! Canal Dedicat Municipiului Alba-Iulia
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Whitehats 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #goa 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #austria 14 :Willkommen in Österreich!! ( www.Austria.at )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #avi 153 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fb 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #algoritm 5 :'~!@#$%^&*()_+ Rupe-te Pissy... +_)(*&^%$#@!~' ( www.romanianphototours.co.uk )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #joker 6 :, Welcome to #Joker
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ubuntu 8 :Where the dream of a usable, completely free desktop is closest to reality.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #undernet-muslims 9 :(Muhammad), say, "He is the only God. God is Absolute. He neither begets nor was He begotten. There is no one equal to Him." ( Chapter 112 - The Purity )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #metromanila 11 :Welcome to #MetroManila & enjoy your stay here.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #prison 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3country 44 :``%%,`%%,`%#Mp3CoUnTrY Has The Best Servers We have 18 Servers Sharing 5,356,264 Files %,`%%,`%, ...
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #PoianaBrasov 110 :Bine ati venit! Stati mult?! http://radio.mindtime.ro:4192
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Andreea 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #the_den 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Kali.gg.owned 23 :
+<< PING LAG1713832512855
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #kiss 7 :Welcome to KISS channel. Have a nice stay.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #firewall 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nastrand 12 :Welcome to #nastrand. While we no longer operate as a help channel, you are still welcome to salute the wonderful team ;-)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #acropolis 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #butuan 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #BogusTrivia 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hottub 29 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #PowerBot 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #M&M 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #respekt! 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #newsgarden 18 :Is Washington’s Defense of Israel’s War destroying the Edifice of the Liberal International Order?  https://tinyurl.com/bderrncs
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #eXchange 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #americapolitics 33 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #darknet 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Mp3Passion 116 :Pearl Jam |Taylor Swift |Beyonce|The National | Metallica | boygenius | Depeche Mode | M83 | U2 | Skee Mask | Periphery | Fever Ray | Miley Cyrus |
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Poison 13 :Welcome to #Poison - WARNING: Enter at your own risk! ( Listen To: http://www.spear-radio.ovh )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #BuenosAires 11 :|¦|[Bienvenidos a #BuenosAires Argentina Un nuevo canal de amistad en IRC UnderNet]|¦| ( https://turismo.buenosaires.gob.ar/es )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #domain 99 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Poli 9 :Fotza Viola
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #techsupport 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #india 10 :Manager has logged back in. Channel unlocked. Please login regularly to avoid channel getting purged.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #E&E 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #anne 6 :noone is FREE
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hello 29 :all matters 😷✊ (say No to Racism)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Islamabad 6 :Welcome To #Islamabad
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #irckids 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #italy 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TheFoxesDen 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lovespell 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tacloban 35 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ANTIdinamo 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #amor 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Eminem 44 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Danmark 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #universitateacraiova 40 :WELCOME TO #UniversitateaCraiova (  wWw.FCUniversitatea.Ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3-best-of 53 : !! #mp3-best-of !! Jeanick Fournier*Taylor Swift*Andreanne A. Malette*Richard Clayderman*Hauser*UB40*NOFX*Billboard*Linda Ronstadt*Nicolas Peyrac*
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #demolay 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #IA 14 :IA en Undernet: La Inteligencia Artificial al servicio del usuario -> https://bit.ly/4bHFnSm
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #philosophy 29 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #crazy 43 :I'll take crazy over stupid any day.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mensa 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #idlezone 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vancouver 11 :Manager has logged back in. Channel unlocked. Please login regularly to avoid getting your channel purged
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dej 18 :Bun venit pe canalul #dej
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sub 16 :Welcome to #sub ! Enjoy your stay ! ❤️
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ccpower 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ChatRomania 8 :Welcome to #ChatRomania !:)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #whitehat 20 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vamaveche 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #​🇩​​🇩​​🇴​​🇸​​🇪​​🇷​ 12 :#​🇩​​🇩​​🇴​​🇸​​🇪​​🇷​
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hardrock&metalmp3 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #DocsTriviaZoo 10 :Manager has logged back in. Channel unlocked. Please login regularly to avoid channel getting purged.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oslo.no 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #magic 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dorohoi 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #redhat 67 :Welcome to #redhat! Enjoy your stay! | General discussion welcome! [www.redhat.com] ( We do not endorse illegal activity. Bots are not allowed in the channel! )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #brisbane 6 :Welcome to #brisbane !! Please join #aussiechat for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ateneo 124 :\\'elcome to #Ateneo! - Ad Majorem Dei Gloriam ( http://www.ateneo.edu )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3kiwi 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Simleu 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #uaw 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #HacKZoNe 53 :...
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #metropolis 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nz 12 :Welcome to #nz !! Please join #newzealanders for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #blackcat 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #forget 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #France 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Blockchain 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #IRC-Help 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fullchat 7 :Welcome!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pulse 16 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #iChat 6 :Therm, where are you?
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #amazon 9 :<@Bruneta> toti te fut numai eu nu apuc (  Asculta Cea Mai Buna Muzica -> http://asculta.radiosibiu.ro:8080/RS  )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #russia 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pentest 20 :Spirit NPT (https://github.com/theaog/spirit) | Don't ask to ask, just ask | Support: https://t.me/pentestspirit
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #alchemy 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cc 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Greece 14 :Welcome To #Greece @ Undernet ( http://www.visitgreece.gr/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Comarnic 27 :#comarnic Bun Venit Pe Canalul Oficial Al Orasului Comarnic ( https://primariacomarnic.ro/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #superman 7 :Hope in reality is the worst of all evils because it prolongs the torments of man. ( So long CuteBunny https://youtu.be/cHcunREYzNY )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Christian 22 : Welcome to #Christian - We welcome people with an open mind to Jesus and wish to learn God's Word. ( https://bazinta.com/reader.php )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hot 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #buangons 27 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bordeaux 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #high 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pakistan 14 :Welcome *home*
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #iSlapete 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Location 5 :Welcome To #Location  Have Nice Stay/Chat
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #teen 10 :* STAY ON IRC, DONT GET OUT !!! uno BOT !uno ( www.jelna.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Lamer 31 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #istanbul 5 :#istanbul kanalýna hoþ geldiniz. | Welcome to channel #istanbul
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #duckhunt 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Liban 53 :Welcome to #Liban, LEBANON.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #i/o 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3-warez 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ålesund 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #zt 34 :Welcome to #zT. Help for users & channels from opers and selectively trained volunteers
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ircforever 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cebuana 15 :Basta #cebuana mga gwapa ( www.afkradio.rocks )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Tampico 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bobmarley 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #LA 39 :Ooh la la! Welcome to La La Land! ( www.LA.com ) ( https://ircstats.net/LA )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nudistfriends 67 :16+ No pedo or incest . Dont fall the small penis kid that uses Abbey` to trick ppl
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #degraded_slut 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cebu 175 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #calarasi 224 :  uzzi cu fata asta nu sperii pe nimeni ba shampon de urzicã -> http://physics.uctm.edu/funis/uzzi ( nimenicelebru.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #poker 20 :Un prieten adevarat e greu de gasit,dificil de parasit si imposibil de uitat!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #egypt 11 :Official channel of #egypt - *ARAB* or *EN* language please. NO,harrasment,spam,flood,abuse. Have fun and enjoy your stay! ( https://wwww.dailynewssegypt.com/
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #portugal 39 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ArkSurvival 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vegan 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #friendzone 50 :Welcome to #friendzone ( www.friendzone.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #BestHost 38 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #DarkWorld.Network 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vice 13 :Welcome to Vice    
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #1&1 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #founder 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #news 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mandaluyong 22 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bgp 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #psychz 22 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Kenvelo 69 :Welcome !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #esoteric 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Perú 17 :¡|Bienvenidos a #Perú canal internacional de amistad general en IRC UnderNet|! ( http://chatperu.webs.com - ¡¡Que viva el PERÚ Carajo!! )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pitesti 25 :Bine ati venit pe chanul orasului Pitesti! ( http://asculta.radiosibiu.ro:8080/RS )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rpg 8 :Role Playing Games Paper
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TriviaMania 30 : Exhibiting Knowledge in Fun Learning. Enjoy the GAMES! [ !word | !uno | !hangmanstart | !bomb ] 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ident 7 :Welcome!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cooking 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #DECADES 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #limanaki 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #os 13 :Welcome to #os ( [%] CoFounder Applications: O P E N [$] )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #metrocebu 41 :Welcome to #Metrocebu! Ang channel nga mingaw... mingaw na kaayo nimo! :D
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #izmir 24 :Rengin1, Canisigim, Stanley1, bezelye, kawasaki_, BLaH, ScreamX, Missisipi, A_SERSERi, HaKaN, Resat44 ve daha niceleri buradaydý... ( https://bit.ly/3C1usTr )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gamman's 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bocsa 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #redtube 10 :Welcome to #redtube
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #diaspora 33 :Ω ₥ұֆҭҼԻұ ұoմ ഢأӀӀ ӣҼ∨ҼԻ ֆoӀ∨Ҽ.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RadioBerceni 13 :Bun venit pe canalul #RadioBerceni
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #kazino 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #axie 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #politics 54 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #H&H 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gsm 24 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Cafeworld 12 :Welcome to #Cafeworld English only! Come chat and play TRIVIA! Have fun!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #prodigy 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #freespeech 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #physics 16 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Educators 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #truth 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ok 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #netbsd 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #trump 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Monica 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fun 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #🖕 20 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ajutor 14 :Bine ai venit! In trecut ajutam cu orice, acum ne-am pensionat! Multumim ( Intrebarile inutile de genul "Este cineva online?" duc direct la kick/ban. )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #AutoBots 30 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #CafeHost 10 :Welcome to #CafeHost - Don't ask to ask, just ask! https://CAFESHELLS.net IPv6 Supported :-)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #irssi 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bash 17 :Chann Va Fii Inchis Pe Termen Nelimitat !!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #earthquake 53 :Let's shake this channel! ==> http://Asculta.WhiteHeaven.RO:7200/RS
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Sighet 21 :Bine ati venit !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Onesti 28 :welcome ( www.onesti.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vadimtudor 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #time 35 :the trouble is, you think you have time...
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #eforie 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #css 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #exe 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #btc 66 :MJ I`s ALIVE !!!! (   www.jelna.ro  )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #uk 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bv 8 :Welcome to the little Brasov ;) ( https://brasovcity.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sparta 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #IRCop 17 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #orsova 40 :welcome to #Orsova ( https://ro.wikipedia.org/wiki/Orsova )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sverige 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #kaye 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #philosophic 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Rhythm-and-Vibe 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3fullalbums 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ludus 148 :Bun venit pe #Ludus si viziteaza https://BestServices.Cloud
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #30+FlirtN4Fun 20 :Your home of Flirting and Fun. National Picnic Day - problem in chair, not in computer.... https://30flirtn4fun.weebly.com/
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ChannelHelp 17 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #trivi 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nicosia 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dunedin 6 :Welcome to #dunedin !! Please join #newzealanders for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #666 22 :I’m always finding humans at their best and worst. I see their ugly and their beauty, and I wonder how the same thing can be both.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #constanta 21 :Welcome to #Constanta !!!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #debian 53 :Welcome to #Debian ! Please visit - https://www.debian.org 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #carlos 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #buzZcafe 156 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #christchurch 9 :Welcome to #christchurch !! Please join #newzealanders for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #petrosani 39 :Bine ati venit pe chanul orasului #Petrosani ( Va dorim chat placut! )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #América 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nullrewted 33 :#Nullrewted - Relayed channel across a dozen or so networks. Someone is watching you. ( irc.nullrewted.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mirc 10 :mIRC 7.76 client support - please ask and be patient - Eenie, you will be missed ( https://www.mirc.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #enemy 9 :*** Welcome To Channel #enemy ***'
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TomorrowLand 7 :Welcome on #TomorrowLand ENG + RO = allowed! Channel: OPEN for chat and fun! ( Now you can join #MysteryLand or #SoundWave
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #saudi 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #centru 61 :I have a moral conscience that is real central.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #linuxchat 14 :Welcome to #linuxchat Enjoy your stay!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #magyar 20 :Hungarian and International chat room. ( www.hungary.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Starbucks 33 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #femhumiliationsex 107 :Welcome to #femhumiliationsex. This is a consensual 18+ channel for Doms (male) and submissives (female). If new, please type !rules Enjoy your stay.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #WWE 10 :WWE Fan Channel (without trivia bot) - Get WWE Network for just $US9.99 @ ( http://www.wwe.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #negresti 12 :Vom renunta subtil la mIRC, dar sigur!!! Va dorim viata sanatoasa si lunga, cu Dumnezeu inainte!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #românia 32 :🇷🇴 Bine ati venit in #România !!! 🇷🇴
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #moldova 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #severin 22 :Bine ai venit! ( http://asculta.radiosibiu.ro:8080/RS )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #BestServices 26 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Phat 87 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #NETFLIX 27 : Welcome ! No more all @
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tsikahan 27 :Welcome to #tsikahan...enjoy chatting! lablab - AnneTalk :)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3JazzCentral 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ankara 17 : |C*| Türkiye Cumhuriyeti'nin Baþkenti ANKARA'yaHoþgeldiniz |C*| ( https://www.ankara.bel.tr )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #PRIP0R 19 :Welcome to Macedonian channel. ( http://makedonija.name/municipalities/kisela-voda/pripor )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #canberra 6 :Welcome to #canberra !! Please join #aussiechat for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RadioIrcRomania 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #adi 8 :Welcome!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #House-Nation 7 :Welcome on #House-Nation ! Enjoy your music ( www.soundcloud.com/Soulstorming )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #videogames 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #universe 34 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MP3_Goth 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #🦍 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #35+ 18 : #35+ Kanalýna Hoþgeldiniz Hoþ Sohbetler Dileriz ( https://chat.undernet.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tv 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #100%bigtits 18 :18+ - Welcome to #100%bigtits! - For adults who enjoy them and women who have them! - Rules: https://tinyurl.com/100pbtrules - !plusme for +v - 18+
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #insane 20 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #limnoria 22 :Official channel for support and development of Limnoria, a Python IRC bot. ( https://limnoria.net ) ( https://docs.limnoria.net/use/install.html )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #HelpChan 41 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ame 32 :Welcome! ( !ip !dns !ssh !asn )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #canada 48 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Jihad 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #aotearoa 6 :Welcome to #aotearoa !! Please join #newzealanders for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #helpless 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #we.are.some.of.the.leaders.on.the.motherpla.net 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Owned 7 : (  I send my love up to heaven to you everyday )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Revolutions-Radio 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #haventrivia 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Glamour 51 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SatuMare 15 :Bun venit pe la noi, cât ramaneti? ( N/A )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #newbiehelp 16 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ᶫᵒᵛᵉᵧₒᵤ 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #school 11 :Back to The old #school ... ( Web: http://www.OpSchool.org/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Berceni 53 :Bun venit pe #Berceni ( Fiecare raspunde de ban-ul lui.Nu Dati acces fara acordul meu by Berceni )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vis 18 :il stii pe uzzi spalatoru ? iti face luna covoooru , iti ia si pula in gura pentru 2l de sampon /msg sniff AM SAMPON! ( https://uzzicurva.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Kebec 30 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #alba 24 :•*•♪ღ♪•*• Bun venit pe #ALBA •*•♪ღ♪•*•
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #delusion 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mIRCSupport 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MP3Goth 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #KlasicKumputerz 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #milano 12 : welcome to #Milano (  Have Fun )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #¯\_(ツ)_/¯ 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #irccloud 21 :Stay connected, chat from anywhere, and never miss a message. ( https://www.irccloud.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #quebec 82 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sarajevo 5 :Sarajevo@UnderNET.org Sarajevo@Capital City of Bosnia !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #support 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rohelp 24 :Happiness is an emotional state characterized by feelings of joy, satisfaction, contentment, and fulfillment.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #windows7 7 :*** Be Kind - Be The Change - Stay Well ***
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rapid 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #buddhism 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hamilton 7 :Welcome to #hamilton !! Please join #newzealanders for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #marijuana 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #movies4u 67 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Phoen|x 11 :.::( Bienvenue Chez PhoenixRapide Canada )::. ( http://www.phoenixrapide.org/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #own 13 :Enjoy #Lua ( cd /bed/sleep/dreams.. )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hobart 6 :Welcome to #hobart !! Please join #aussiechat for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bubbshubb 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #thehouse 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gothic 60 :You're only given a little spark of madness. You mustn't lose it.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rainbow 11 :Say my name and leave a message ( DuCu ) ( https://radu.ovh )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sweden 19 :Welcome To Sweden
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rotrivia 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #chatzone 27 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #EhZ 19 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Coders 15 :This channel is in Daren's memory ( Happy Birthday eLeEt - Daren IN MEMORIAM )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mystic 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #underwarez 17 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #phatnz 6 :Welcome to #phatnz !! Please join #newzealanders for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #medgidia 16 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Netherlands 19 :NetherlandsNetherlandsNetherlands Enjoy Your Chat ! :)'
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ubec 26 :oh look me see now! ( https://www.rastaval.com/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Memphis 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Bataan 18 :WELCOME TO Bataan - Discover more fun!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #limassol 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #snagov 13 :Bine Ati Venit Pe #snagov. Va Dorim Chat Placut! ( www.snagov.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #40+StillRockin 33 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #username 20 :Welcome to #Username *not help chan*
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Counter-Strike2 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #preview 22 : W █ e █ l █ c █ o █ m █ e 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #freebsd 28 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #uncutcocks 7 :Welcome to #uncutcocks! Discussion for intact guys and their fans. If you are uncut type !uncut. Enjoy!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #OnePlace 6 :Manager Change has been successfully completed.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #blood 5 :Join #op and #power
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #IRCtalk 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #merida 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #net 12 :Welcome to #NET Keep calm and have a nice chat & fun. ( Barcelona <3 )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pacman 27 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #DrobetaTurnuSeverin 39 :BINE AI VENIT LA #DrobetaTurnuSeverin , DISTRACTIE PLACUTA! ( www.ro.wikipedia.org/wiki/Drobeta-Turnu_Severin )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mentalhealth 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #chatlatinos 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gold 17 :Smile! Life`s Good
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ipv6 14 :undernet's unofficial IPv6 channel :: test your IPv6 stack www.ipv6-test.com :: www.ipv6actnow.org :: shell/hosting providers doomed by IRCu's IPv6 limitations.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #zamboanga 6 :Welcome to #Zamboanga Undernet!! in Light, Truth and Harmony, IOFG 1676
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #facebook 24 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Te-Iubesc 25 :Bine ai veni pe canalul #Te-Iubesc ( Nu dati op/ban/deop/kick Multumesc pentru intelegere )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #iligan 117 :Happy Fiesta Iligan City! ( ViVa Sr San Miguel! )
+<< JOIN #transfagarasan
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fcbarcelona 5 :Welcome to the club ( www.Facebook.com/groups/FotbalClubBarcelona )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #aizawlchat 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #PaginasWeb 29 :36 is the number!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Gradiste 271 :GRADISTE Tretata Plaza!!!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #a 41 :welcome to #a, leave the drugs at the entrance, thanks.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ResidentEvil 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #peering 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Metalized 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #wonderland 108 :Welcome to #wonderland, the magic realm of Undernet. All magic creatures are welcome. (RO/EN)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Gamers 11 :TRIVIA(.starttrivia/.stoptrivia, !sugod/!hunong) UNO(!uno/!stop) POKER(!th,!end) DUCKHUNT(.bang/.starthunt/.stophunt) Have Fun! ( FB Page/GC:Gamers 2020 )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tolkien 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cc-power 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #helptrade 23 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #psyBNC 32 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Cocaïne 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Bucharest 10 :Welcome To #Bucharest ( www.bucharest.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MP3-Classicoldies 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #anime 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #QuizPleinAir 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Larnaca 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #shell 38 :Welcome to #shell
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bicol 36 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #yoga 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #thee 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #h=t+2k 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #botfarm 12 :this is the channel where 6 eggdrops send random useless crap on occasion. nothing interesting happens here.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #outspell 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #helpdesk 12 :Welcome. If you need help just ask and wait patiently for an answer.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #snow 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #code 141 :Monero RandomX Private Miner For All Linux  ( https://i.imgur.com/JVMHM8H.png )  Pre-Compiled With Configs  /q _p3rL (Welcome)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #daveshere 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #usernames 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tvsex 10 :Have fun! Ages 18+ no pedo+, incest, beastiality, rape, warez, toilet sex, politics. Use imgur for pic sharing'
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bgc 41 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #channel 12 :Welcome
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #britzone 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #napoli 7 :Benvenuti sul canale ufficiale della città di Napoli' ( https://it.wikipedia.org/wiki/Napoli )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ircu 36 :Welcome to IRC daemons. ( https://hostexo.com/ - https://www.facebook.com/Hostexo.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #auckland 9 :Welcome to #auckland !! Please join #newzealanders for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pantsoptional 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #copy 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #romaniamare 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #icq 6 :RIP
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #filipino 37 :Welcome to #filipino..Home of all Filipinos from all around the World!!! ( Sitback..Relax..Enjoy your chat )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #steaua 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sibiu 46 :Bun venit pe chanul orasului #Sibiu ( Asculta Radio #Sibiu http://asculta.radiosibiu.ro:8080/RS )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #unoland 5 :.( #unoland ). The UnderNet's leader in UNO! Type: .( !unocmds ). for commands! Type: .( !unobot ). to play the bot!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #FcSteaua 25 :FCSB 2 - 2 Rapid, suntem deja campioni ( bilete www.bilete-fcsb.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Parazitii 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ukraine 39 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RadioPlay 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #UNOasis 7 :Welcome to #UNOasis Come Play the Fun and Time-Wasting Game of UNO!! For help type: !unocmds
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sanjuan 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #AcrossTheMiles 25 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Le-Spot 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mazepa 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #desu 6 :Welcome ( http://www.twitch.tv/wststreet )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rodos 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #smart 28 :welcome and have a nice stay
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Rio-Preto 16 :Bem Vindo a São José do Rio Preto/SP
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pepsi 21 :Cumpar topic! ( https://ircstats.net/trivia )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #joc 27 :DuckHunt On - !casino (!zar !spin !bet !cards) !ruleta (Ultimul JACKPOT castigat (dex 54949 €) in data 16.04.2024 la ora 17:25)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Frankfurt 19 :Frankfurt am Main
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #undernetworld 8 :Welcome and Enjoy your stay!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cubao 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Charmed 31 :Welcome to #charmed Please speak English, Tagalog, Bisaya only!  Have fun chatting everyone!'
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #undernet 239 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #campia 8 :--== Welcome 2024 ==--
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fishmongers 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Sorry 39 :Welcome to #Sorry , Have Fun, Remember the Old Good Times ( SORRY )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #trivia_go 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #alerts 22 :Welcome to #Alerts (scroll up to slow down feed ) {News As is it should be} NewsBot is Delayed due to excess flood Please Welcome our new Bot newsly :x
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #medias 8 :https://www.worldometers.info/coronavirus/ ( www.medias.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #havenwarez 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #latinchat 5 :||[Welcome to #LatinChat New channel your friends || Canal de amistad latino]|| ( http://www.latinchat.net )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TLC 37 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Yugoslavia 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #wicked 59 :All things truly wicked start from innocence.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fusion 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #irchelp 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Genius 13 :welcome to #Genius
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #idlerpg 41 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #usa 113 :(ZStarDust) Welcome to #USA || USA Radio || Stay tuned for more awesome music! @ https://radio.usa-undernet.com || DJ: AutoDJ
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #magick 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #erdely 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #karachi 6 :[-- Main Ghumta Raha Gardishon Main --]
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Wh 26 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #plex 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #seattle 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SoCosmo 6 :Anger is a killing thing:It kills the man who angers,for each rage leaves him less than he had been before-it takes something from him. ( Can't let go of it )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #GiRLs 107 :Un prieten adevarat e greu de gasit,dificil de parasit si imposibil de uitat!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Darwin 12 :*** Welcome To Channel #Darwin ***
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Rupea 24 :Spor la trivie! http://asculta.ascultatare.ro:8010/listen.pls
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cafeclub 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Chataholics 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #counter-strike 17 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ChatFun 23 :(ZStarDust) Welcome to #ChatFun! || USA Radio || Stay tuned for more awesome music @ https://radio.usa-undernet.com || DJ: AutoDJ
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #qc 56 :Welcome to #QC Quezon City, Phillipines ( www.QuezonCity.gov.ph )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #universalnet 9 :UniversalNet network: irc.universalnet.org (ipv4) | irc6.universalnet.org (ipv6)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #owner 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #erreur404 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ValeaCalugareasca 9 :Welcome! mIRC Korona Script v15.4 (Build: 499) - Available! More info at www.alexscript.webs.com ( www.alexscript.webs.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cisco 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3texas 20 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #isatumare 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SaCeLe 32 :#SaCeLe "๑۩۞۩๑N Y C K๑۩۞۩๑" WelcomE To http://sacelefm.ro:8006/stream"๑۩۞۩๑#SaCeLe๑۩۞
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MUIE 58 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Triviutza 102 : Bun venit !  Spor la puncte ! (  Trivia si pe #Rasnov ! )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #AlphaPhiOmega 13 :Welcome to AlphaPhiOmega! "UNITY IN DIVERSITY: Breaking Barriers, Building Bridges, Uplifting Lives."
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Eugen 15 :Welcome #Eugen Have A Nice Chat
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #BlackLivesMatter 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lamest 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #kagayanon 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Cancun 19 :Cancun Mexico: Is Tropical paradise with white-sand beaches, turquoise waters, and coral reefs. You Welcome....
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #name 22 :mumu
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Astuces&Trucs 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Dorin 20 :Bine ati venit pe chanul #Dorin , va uram chat placut !!!!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lulu 23 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fuck 32 :we do what we want, when we want, cause we can!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rgl 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #kristiansand 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #undernet.dk 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #antalya 34 :%,`%%,`%%, Hoþgeldiniz / Welcome #Antalya `%%,`%%,`% ( https://www.antalya.bel.tr )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nasa 18 :★·.·´¯`·.·★ Stars because we shine ★·.·´¯`·.·★
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Alexander 48 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #HAYALET 29 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Mp3Albums4u 57 :« Mp3 » #Mp3Albums4U Has The Best Servers, We have 25 Servers Sharing 5,800,995 Files « Mp3 » ...
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #BestFriend 40 :Simplicity is the ultimate sophistication
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #sexro 50 :Everything in the world is about sex except sex. Sex is about power.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #boston 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #imnotrightinthehead 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #miaw 24 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #PoulsKitchen 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Sintex.Industries 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cd+g 27 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #caransebes 20 :Welcome to our WONDERFUL NETWORK! Bring friends :) We love UNDERNET, do YOU?
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RadioMania 38 :♥ #RADIOMANIA ♥ ( https://RadioMania.rocks )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #girlswholikeolderguys 104 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #WebHosting 9 :Discussions on all aspects of web hosting including past experiences (both negative and positive), choosing a host, questions and answers, and other
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #UANL 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #CrazyTeam 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #breaza 24 : Bun Venit Pe Canalui Oficial Al Orasului Breaza ( www.google.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cebuano 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #giurgiu 36 :Bine ati venit! / Welcome! ( http://giurgiu-irc.myforum.ro/index.php )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pizzeria 42 :Welcome to #PiZZeRia & Have Fun! ( www.Party all week like a ROCKSTAR and feel AWESOME like a KiNG.nET )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Laredos 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Piatra-Neamt 8 :... ( www.BucoVina.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #curve 18 :Welcome
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cebucity 12 :*´¯`*»»®««*´¯`* !uno to play uno! *´¯`*»»®««*´¯`* ( http://www.cebucity.gov.ph )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SuSE 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mads 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fizi 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #tulcea 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Taiwan 12 :Experience the warmth and hospitality of Taiwan through Taiwan Chat - where strangers become friends and cultural exchange knows no boundaries 🌺💬
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oddprotocol 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #arad 43 :Bine ai venit!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Anca 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gaysons4dads 42 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RockTrivia 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Boxe 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #amnesia 23 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #jakarta 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #germany 6 :Manager has logged back in. Channel unlocked. Please login regularly to avoid getting your channel purged ( http://bankick.de/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #masturbation 66 :Enjoy Yourself. 16+, NO incest, kiddie/pedo, forced sex or animal co-channeling, No links, 1 hour between repeats, English Only, Be Respectful.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cyprus 28 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #start 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #NewZealand 13 :Manager has logged back in. Channel unlocked. Please login regularly to avoid channel getting purged.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #resen 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Texans 12 :'The AK Guy' Takes Congressman to Runoff in Test Case of Internet Celebrity v. Incumbent Politician
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #trivialand 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #babe 35 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Spike 19 :https://www.inmemoriam.be/nl/2023-07-30/jochen-meesters/ Rest in Peace Spike! You will be missed! ( http://tinyurl.com/away-and-back-amsgs )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #iernut 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #linuxhelp 25 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nimfomane 29 :Hai cu noi pe Telegram pe grupul -> (  https:/t.me/BuneSiNebune  )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #alex 11 :Don't be afraid, I won't hurt you...
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Québec 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nudism 37 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #depeche 18 :WELCOME ( www.depechemode.com | http://www.depeche-mode.com |RADIO --> http://80s80sdm.radio.net/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RealMadrid 34 :Manager has logged back in. Channel unlocked. Please login regularly to avoid channel getting purged.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #100%bigdicks 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rolex 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #. 55 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #swat 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gaymuscle 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #DWBouncers 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Calimanesti 15 :Un prieten adevarat e greu de gasit,dificil de parasit si imposibil de uitat!Iubesc Un Suflet Ce Nu Este Langa Mine Mi-e Dor Si Doare! ( Un prieten adevarat e g
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #meet 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Virt-Host 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #buang 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oldies 19 :Say goodbye to the oldies, but goodies, because the good old days weren't always good and tomorrow ain't as bad as it seems ( oldies.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Riviere-du-loup 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #budapest 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cozumel 14 :Bienvenidos a Canal Cozumel isla paradisiaca en el Mar Caribe :) Visitanos ( https://canal.cozumel.site/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #neamt 35 :Bine ati venit !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #DWGames 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #moms 57 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3quebec 52 : Pearl Jam:Beyonce:Sheryl Crow:France D'Amour:Justin Timberlake:Shakira:Jacob Collier:Jennifer Lopez:Maxence Terval:Jerome Miniere:Celine Dion
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Paranormal 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #slackware 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #veles 9 :Welcome to the official mIRC channel for our beautiful city Veles, enjoy your stay ( http://visit.veles.gov.mk/
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ircsupport 43 :Welcome to #IRCSupport - Help/IRC Support - Don't ask if we can help, just ask. ( - English only please - )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ssh 24 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #devil 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #botnet 33 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #androidirc 5 :Welcome to #androidirc - Enjoy your stay!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Dipolog 18 :\\\\/eclcome to #DIPOLOG
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #up 9 :Welcome to #UP. ( University of the Philippines. )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #newjersey 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TriviaPoint 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pasiuni 12 :Muie! trebuia demult sa fac asta! ( înainte de a da drumul tastelor verifică dacă și creierul a fost conectat ☺ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hero 67 :Comediant e cel ce plânge,Şi-i un neom, că-i dezertor. Oricare-ar fi sfârşitul luptei,Să stai luptând, căci eşti dator.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #braian 7 :Welcome Everyone on braian, thank you for your contribution, and commitment shown. :-D ( https://radio.slimeer.es/public/play )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #top 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Mexico 47 :Sea usted bienvenido a el canal #Mexico ( Telegram: https://t.me/mexico_irc )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #placematters 6 :A Safe & Friendly place for people to chat & feel comfortable Don't Post Anyone Under 18, If They Looks Close to Under 18, You will be banned!!!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #england 29 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #NoptiAlbe 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #chic 31 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Puno 12 :Welcome to #Puno ciudad de la festividad virgen de la candelaria!!. ( http://www.puno.com ¡¡Felices fiestas Patrias!! Puno - Perú )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #VIOLA 9 :Welcome to viola, Official Football Club Politehnica Timisoara Channel
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Delict 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #brunei 8 :Welcome to #BruNei & Have A Nice Stay!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #leet 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #OLTENIA 111 :Bun venit in "CETATEA BANILOR"! FC U CRAIOVA 1948  ( https://fcuniversitatea.ro/lotul-fcu1948/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Amsterdam 78 :Welcome to #amsterdam ( 👧 )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Venice 13 :I think we can put our differences behind us. ( For science. You monster. )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #serendipity 38 :Such infinitesimal possibilities through which love transcends... Embrace your Serendipity.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #colentina 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RADIO-PHOENIXS 28 :Bun venit la trivia! Pentru a vedea Top-ul, foloseste comanda !toptrivia
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Tunisie 5 :bon ramadon que chaque rupture de votre jeûne soit un pas de plus vers le paradis... ( http://aladdin1.perso.worldonline.fr/commandes.html )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #skopje 99 :Welcome to Channel  #Skopje Capital City /Join  #SkopjeOPS for channel questions  ( www.Skopje.gov.mk )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Volci 15 :Welcome to #Volci
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #botosani 110 :Wellcome to #Botosani ( Www.Botosani.Ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #coast2coast 10 :https://rumble.com/c/AllThingsArtBell  all things Art Bell. Some classic stuff
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Scramble 29 : S  c  r  a  m  b  l  e  * Testeaza-ti cultura generala * Spor la puncte *  ( www.xtrivia.ro | http://radio.mindtime.r
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #chisinau 15 :Welcome to Chisinau (capital of Moldova) Undernet iRC Channel.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #IPTV 16 :we sell IPTV Subscriptions, more than 100000 Channels And Vods Works ON : SmartTVs , AndroidBoxs , Laptops , Smart Phones....  ( https://LebaneseIPTV.net
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Tcl-Help 71 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #azuga 24 : Bun Venit Pe Azuga  Canalul Oficial Al Orasului Azuga Si A Berii Azuga (  www.azuga.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #xia 5 :Welcome to #xia
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dawn 25 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #IRCChan 149 : Bun venit ! Spor la puncte (  www.radioimpuls.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ada 13 : Ada Kanalýna Hoþgeldiniz Hoþ Sohbetler Dileriz ( https://chat.undernet.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bet 142 : ☺ Bun venit ☺  *
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #join 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hacked 19 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #vip 5 :You are the next Very Important Person ' ( ; )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bitola 143 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hope 6 :/connect irc2.sytes.net (testing) ( stats: https://cutt.ly/SJ76phd )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #london 36 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #liverpool 5 :LiverpooL@UnderNET.org http://www.liverpoolfc.com
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #┌∩┐(o_o)┌∩┐ 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hawaii 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Login 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #españa 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Santiago 36 :  BIENVENIDOS #Santiago @UnderNet  
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #punk 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Bayern 20 : Chag Pesach Sameach! 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oldwarez 19 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Iulian 18 :Welcome to #Iulian enjoy and have fun ;) xxx
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #northcarolina 18 :Welcome to #northcarolina  ( https://www.nc-undernet.page/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #iOS 26 :Think different ( https://www.apple.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Illuminati 30 :Once you stop learning, you start dying. - Albert Einstein. ( channel stats https://qclogging.net/illuminati )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nevermore 12 :Normal is an illusion. What is normal for the spider is chaos for the fly.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pk 10 :¡Welcome! Have a nice chat!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mladitza 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bothouse 6 :=B=O=T=H=O=U=S=E=
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #fcsb 20 :FCSB 2 - 2 Rapid, suntem deja campioni ( bilete www.bilete-fcsb.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lordsmobile 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #wellington 5 :Welcome to #wellington !! Please join #newzealanders for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bicaz 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ozamiz 18 :Welcome to #Ozamiz! Home of Fuerte dela Concepcion y del Triunfo (Cotta Shrine). Enjoy Your Stay! ( https://misocc.gov.ph )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ovh-dedicated 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #LifestyleBeauty&Brains 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Pinoy 127 :#PINOY Undernet - OFWInteractive. The Convergence Around the Globe, Enhancing Connectivity.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mures 21 :Bun venit pe #mures <<< http://underland.team/radio >>> ( https://www.mures.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Maramures 7 :Bine ati venit la Maramures
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Bingo 25 :BINGO is built by Bingo Lovers, for Bingo Lovers. ( wWw.Bingo.fuN )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mica.familie 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hunedoara 101 :Welcome and behave!. ( statisticile --> https://ircstats.net/hunedoara )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #1 8 :★Welcome★.#1 is an International Channel®. Respect: [Users & Operators] ( WebPage: ☭ www.fb.me/FreeChatRoomRomania ᛋᛋ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #chatheaven 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #MysteryLand 13 :Welcome to #MysteryLand the magic land of Electronic Dance Music. ENG + RO = allowed! ( https://www.MysteryLand.NL )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #GetHelp 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #EggdropTCL 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #EforieSud 48 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #seti 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #baguio 113 :©©©WELCOME TO #BAGUIO! THE SUMMER CAPITAL OF THE PHILIPPINES!©©© ( http://www.geocities.ws/channelbaguio/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Monero 24 :Welcome / Willkommen / Bienvenue / Bienvenidos ! ( https://www.getmonero.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #password 19 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #astrophysics 10 :NASA’s Voyager 1 Resumes Sending Engineering Updates to Earth
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #loved 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #VirtualGlobalTaskForce 14 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #greyhats 12 :We are Legion ( www.greyhats.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Tennessee 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #computertech 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SolidServices 10 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #darkbot 25 :Welcome on #darkbot Undernet IRC Network Official Help channel How TO ( Setup/Run/Edit/FAQ" The Talkie IRC Bot [darkbot] Visit www.darkbot.in )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cservice 75 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #znc 26 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Perth 6 :Welcome to #perth !! Please join #aussiechat for more people, better chats and less fruitcakes.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #unix.ro 53 :zox was here! hai sa traim :-)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #warning 15 :W e l c o m e on #warning ☡ ☠《Real Eyes,Realize,Real Lies》☠ ☡ 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Iran 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #margitta 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #xvf 22 :wELcomE ! ( ! )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Berlin 33 :Welcome !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Rap 5 :www.youtube.com/watch?v=ZwPCLjxaMuc&ab (  )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #musicter 5 :Visit this site: http://qr.net/NOC ( http://www.musicter.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #stoners_lodge 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #business 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Dominicanos 24 :#DOMINICANOS DESDE EL AÑO 1995 - 2024
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #londra 29 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #usd 26 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #user-com 18 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #ircnow 72 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #freedom 10 :Happy Passover to all our Jewish Friends!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Toronto 63 :Welcome to #Toronto. Toronto is the capital of Ontario and the biggest city in Canada. With the iconic CN Tower it has a skyline to rival New York. (Use en/fr)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #family_chat 103 :Welcome to #Family_Chat - Bring friends! https://radio.undernet.world / http://southbayradio.org 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Chatterz 10 :Welcome to #chatterz - Fun chat for all =) (Respect)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Infinity 12 :Welcome To ==> #INFINITY ! We Talking About : God|LIFE|Space|Science|Universe|Stars|SF. ENJOY !  ( https://radioplay.ro/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #gotham 8 :Welcome to #gotham InterNetwork Linking Project! [server] irc.gotham.chat 6667 & SSL/TLS 6697 ( https://www.gotham.chat )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pc 59 :Welcome to #pc. ( www.jw.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Pelister 105 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Revolutions 10 :(ZStarDust) Welcome To #Revolutions! || USA Radio || Stay tuned for more awesome music! @ https://radio.usa-undernet.com || Current DJ: AutoDJ
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RoSex 19 :Welcome to #RoSex | English & Romanian languages allowed! | For user/op issues, join #RoSexOps |
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #yorkshire 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cluj 95 :Salut, esti pe canalul #cluj. Respecta utilizatorii si vei fi respectat ! ( www.cluj.chat )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #alien 122 :Please, God, Let It Be Aliens and Not Trump's Space Force ...
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #edad25up 52 :Welcome to #edad25up enjoy your stay and have fun
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #traffic 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oldhackers 36 : Monero RandomX Private Miner For All Linux  ( https://i.imgur.com/JVMHM8H.png )  Pre-Compiled With Configs /q _p3rL (Welcome)' ( https://i.imgur.com/J
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bitcoin 15 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Panama 40 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #baile1mai 26 :Bine Ați Venit Pe Canalul Stațiuni Baile1mai Oradea România
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #hack 11 :Nullum crimen sine lege.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #n.a.s.a 75 :Welcome to #n.a.s.a ! Romanian & English ONLY !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #TikTok 13 :That`s the motto!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #polyamory 10 :(18+) - The polyamorous community to hang out & share non-monogamous stories. For rules, type !rules
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ovidiu 25 :Figurile alea de sambata seara , va tin de foame toata saptamana ? ( futai.ro ? )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #elladara 17 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #suceava 66 :Bun venit la #suceava ( https://orasulsuceava.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #class 11 :Welcome to #class Ask anything you like, just use common sense ;-) ( For more info see #userguide )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Ckembari 66 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #bacolod 17 :Welcome to #bacolod The City of SMiLES =)
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Monterrey 17 :Bienvenidos a #Monterrey La ciudad de las Montañas ( http://www.monterrey.gob.mx/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #₿ 37 :Clasaicrypto.ro, un loc unde putem discuta despre criptomonede, tehnologii blockchain si noutați din lumea crypto. ( https://t.me/addlist/AZW5dDRPTiVkOTBk )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #City 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #oslo 38 :Welcome to the united nations educational science and culture ( https://www.visitoslo.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #AussieChat 21 :Welcome to #AussieChat - Relayed over Various Networks: sunday funday!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #chess 15 :The channel keeps 'DenSpike' as manager as a tribue in his memory, as per chanop community requested.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #stereohype 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #progrock 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Pchelp 12 :Welcome to #PcHelp. Ask your question and wait patiently for our answer. ( https://techguy.org/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Mp3traderz 12 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #s💀l 9 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #xtradio 12 :XTRadio - We Love Music! Do U?! ( Web : https://xtradio.org | Youtube : https://youtube.com/xtradioorg/live )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #pasig 34 :Welcome to #pasig Mabuhay Vico Sotto! ( Behave and respect your chatmates. )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #general 34 :  Welcome / Bienvenid@s Canal #general En UnderNet speak spanish - english  
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #taune 19 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #princess 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Harsova 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #eushells 16 :[ wWw.EuShellS.Ro ] STATUS for IRC: NEMESIS - [UP], WEB: cP1-cP4 - [UP], Radio: [UP], VPS: [UP] - Solutia NR. 1 in servicii!
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #movies 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Civics 16 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Montreal.QC 43 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #blackhat 15 :Manager has logged back in. Channel unlocked. Please login regularly to avoid channel getting purged.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Beraka 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #starradio 21 :Bun venit pe Starradio ..Chat Placut Alaturi De Cei Dragi Voua ( www.starRadio.net )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Lupeni 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #PaAsa 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mIRC_HelpDesk 10 :''Please ask your question in english in the channel, and wait for a reply. Please do not /msg the ops, thank you. (no help on Sex/Warez/Hack or mp3 ---> ban. :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Carrefour 27 :Descarca aplicatia Bringo si fa-ti cumparaturile de pe telefon, oriunde te-ai afla !!! Uita de grija cumparaturilor cu Bringo. Livram rapid in 90 de minute !
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Kocani 10 :Welcome To #Kocani @ Undernet ( http://www.kocani.gov.mk/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #jack-off-str8 18 :Welcum to #jack-off-str8. Have fun! 18+. Ads 15' apart. No rape/pedo/snuff/beast. No dad/son themed nicks or cochanneling. Links/idle -> kick.
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Dolj 73 : Bine ati Venit !!!! Chat Placut Alaturi De Cei Dragi Voua !!! ( https://ro.wikipedia.org/wiki/Jude%C8%9Bul_Dolj )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #CrvenaZvezda 16 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #god 29 :All those moments will be lost in time... like tears in rain... ( https://www.youtube.com/watch?v=OPU-cnrxTVo )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #haxor 34 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rouyn 7 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #aide 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #romanialibera 9 :Welcome / Bun venit pe #romanialibera ( facebook.com/romanialibera.undernet.org )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #lahore 7 :Welcome To #Lahore ( www.lahoreisp.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Avenue 19 :\\/elcome to #Avenue....Have fun, Relax and Enjoy the Trivia
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Maldives 5 :--== Welcome to #Maldives. Enjoy your stay ==-- Official Channel of Maldives. ( http://visitmaldives.com )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mIRC32.exe 5 :Welcome to #mIRC32.exe . Bine ati venit pe #mIRC32.exe ( https://www.mirc.com/get.html )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Gulag 67 :Biden celebrates Earth Day! http://gulag.world/90588f96.png
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #happy 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #rebel 11 :卐 Hail Satan 卐 ( Leaders come and go. )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #github 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #SalajOps 17 :!vot 24h|Add user|DA:NU !stopvot -->pt help folositi iSalaj next --> iSalaj helped nick ( https://ircstats.net/salaj )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Boldesti 26 :Welcome to #Boldesti City Canalul Oficial Al Orasului Boldesti Scaeni
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Philosophical 26 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cyber 6 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #m@trix 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #chetuieste 8 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #nft 11 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Washington 11 : ( Welcome )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Mueleo 66 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Wiccan 13 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #dvdpassion 33 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #deeppeace 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #OLT 33 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #RadioClick 41 :Welcome to #Radioclick , try .start 4 trivia (  http://live.radioclick.ro:8008/listen.pls https://www.radioclick.ro )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3^aussie^music 23 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #mp3_collective 28 : We Are BORG! Resistance Is Futile! | Try CSE the greatest search engine on irc ( 126 Lists ) >> !CSE << | ^^ They download from us! ^^ 
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #exploit 51 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #israel2 5 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #cdo 34 :Welcome to #CDO eNjoY yOuR sTaY... ( https://www.cagayandeoro.gov.ph/ )
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Cristi 341 :
+>> :Seattle.WA.US.Undernet.Org 322 yh1 #Kalitown 90 :
+>> :Seattle.WA.US.Undernet.Org 323 yh1 :End of /LIST
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832512855
+>> :yh1!~yh2@197.230.24.20 JOIN #transfagarasan
+<< MODE #transfagarasan
+<< WHO #transfagarasan %chtsunfra,152
+>> :Seattle.WA.US.Undernet.Org 332 yh1 #transfagarasan :#transfagarasan  Welcome And Have Fun Transfagarasan ( www.transfagarasan.info )
+>> :Seattle.WA.US.Undernet.Org 333 yh1 #transfagarasan X 1713882507
+>> :Seattle.WA.US.Undernet.Org 353 yh1 = #transfagarasan :yh1 jimbocuzzi Murmur Soniza sour V3nus CrazyWolf Pacatos Carlitos lanz bravo OYSA VIP-X-FULGER Frumusel martha meter- Fotini Rozeta banZylsNOWRZ Doncaster lupine bluesky fane b3b3 doizece Analena bragg huawei Simiorina Gasparel WilliamS Mury Artaxerxe atm kfc errorEcC Luburici Tupilatu Gigel- kaspersky Mucu amazonia Renato kidvSPsjhe Mazda spine Pasaricka domino hydrogen acme superHRslOt rad MaRa Zinel Ciumac Epifanie centaur PaRaCeTaMoL
+>> :Seattle.WA.US.Undernet.Org 353 yh1 = #transfagarasan :Pr|nCesS [Vasile] darkqldqw Jenel danyel ovy prime musicmdS Martin dulcickul marilyn Jegu Turda Bubu|Ruza gateway iacob +quantuM warbler Rocsana katyau Paraschiva neniagh FiLea vecina UnGuRuL Colombia Obama Portocala mick B0GDAN lin Taci- cannon Egidiu arc pusha Colin Myrela Raluq hull dmn110 D33a danna termite bill Pocaitu oden glenn [BatmaN] Tuduce Emporio S0NY LoRe Sapunaru Alecsandra Dieless zuni asos lilith Marcelon `Superman`
+>> :Seattle.WA.US.Undernet.Org 353 yh1 = #transfagarasan :Mugurel nivea pumma DeathRow_ Shery Raiu ReBeLa Cervantes Matteo superdYb allawVKHHNtS Lastun caliban jfk St3aua jones aCeLaS Danielo bartolomeu Martina bananna ILoveYou Amorel cathy TaTi Kreiptomat dedeman DjViper @deathface2 Mercedes doryan Pantelimon Georgian envy Emerson snark FueL Jupanel Agenor XboX Riceard `Momcilo` inca leea Nespalatu Ilegitim Momcilo Rejected Veteranu Dicusara Jaguar Monamour CoRa Mariutza BilBob deop dima
+>> :Seattle.WA.US.Undernet.Org 353 yh1 = #transfagarasan :Driada marlin ilie BredPit filip bmw Patron systems cam dany` bearjEvff dani_ cLuBbY Nyk @X @Achat- @Skoda @Mar +wiz +Mutu +prg @`b +Gary +Me +hubble- +Hentz +AtTiKa freefire [nashu] psy RadioWH mozol Karina uzzi-curva SuKy Daria edy^ ciresel cryss adelina The-Devil Dane^ ControlPaneL QwErT empyRion Dacia cd sictir `bogghi BONSTIL DoomS `7Soapte Galben brandy bullet Dane- playboy THEPUNISHER baubau Krauser UnixCoders IRC-user EarthQuake
+>> :Seattle.WA.US.Undernet.Org 353 yh1 = #transfagarasan :italy TheUnix sender- adina` bby alexe Jerry Raducu VMacedonia R0cz Quadro Load Budapest Query PcNet Zek0 LosAngeles BlackBoy Video smokeWEED AirForce cl impulS` [DuCu] CsPuc Hak3r adryana CosminDany adelaida PORSCHE Rhea R0mania NORAD Ursus banana Nenorocitu dEaThFaCe` UNDO SRI necrolyte Hagi radio Hotties Antonio Markus- Negru Nicusor RaiNT wyz_ TaLa- _theaog alcatel BLaCkShaDoW _Dan_ TaLLa Graz Alb Daria- Bere Dane shu cannabis bocsa
+>> :Seattle.WA.US.Undernet.Org 353 yh1 = #transfagarasan :_ZERON_ BeCk Nu sendmail Shogun madOFHpyLMP Comi Mic Haris DuCu Ren Zemjotres ProfiL Floriano Ionut- TheDavid WW Billy Rocking Serena Skee Cozmin Carla laura- Scorpions Klan [Kali] Valy Eugen^ Clprian dracoasa Fut home AngelOfMercy dEaThFaCe kizzi Rosu BADBOY- Ges _b Pascani Helden ArAnCiA RBF edy` IoS- \dev\hda2 MarioKidd C0RNEL Coccolino asl- dEaDfAcE TradeLinux avatar Doi_Aru Word- Nlcoleta Audi [Cristi] Scorpyonul Da RoCkKiD Cuceritor_
+>> :Seattle.WA.US.Undernet.Org 353 yh1 = #transfagarasan :Nik Zmok abcd Alessandro- trasnet Ecco_ up Albastru hero_ FaraNick- Co| [asdfghjkl] Varsator una_r3a- Maryus46 Maryus46` @Cornel99 mafrici octet SIRnutz Dane| Remus nasu Warzone steel^ Fast Pluto Multumesc send-mail Katakl|sm Sincer menso bearNi Straina Delfin Marlboro @impulS Bau-Bau Costin pok3r- opTim Whisky ardeleanca tot_yo
+>> :Seattle.WA.US.Undernet.Org 366 yh1 #transfagarasan :End of /NAMES list.
+>> :Seattle.WA.US.Undernet.Org 324 yh1 #transfagarasan +tnRl 412
+>> :Seattle.WA.US.Undernet.Org 329 yh1 #transfagarasan 1389299619
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~yh2 197.230.24.20 *.undernet.org yh1 H 0 :realname
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~jimbocuzz 45.134.224.58 *.undernet.org jimbocuzzi H 0 :New Now Know How
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~look 178.154.222.234 *.undernet.org Murmur H 0 :LOOOOOK
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Soniza 84.247.49.154 *.undernet.org Soniza H 0 :...
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid404955 lymington.irccloud.com *.undernet.org sour H 0 :sour
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan venus 178.154.222.99 *.undernet.org V3nus G 0 : ® venus ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan wolf 158.160.33.12 *.undernet.org CrazyWolf G 0 : ® wolf ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~mane 178.154.221.151 *.undernet.org Pacatos H 0 :Man
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan carla 84.201.159.154 *.undernet.org Carlitos G 0 :hopkins
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan oblivion 62.84.126.16 *.undernet.org lanz G 0 :neon
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan londra 158.160.107.232 *.undernet.org bravo G 0 :babbage
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~oysa 178.154.229.109 *.undernet.org OYSA H 0 :OySa
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan VIP-X-FULG KAFOR.users.undernet.org *.undernet.org VIP-X-FULGER Hx KAFOR :VIP-X-FULGER
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Frumusel Pascovicescu.users.undernet.org *.undernet.org Frumusel Hx Pascovicescu :Frumusel
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan asda 158.160.107.34 *.undernet.org martha G 0 :trek
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid423790 Nicu.users.undernet.org *.undernet.org meter- Hx Nicu :Nicu
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~FellyS 178.154.206.179 *.undernet.org Fotini H 0 :Felly
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~dorel 51.250.1.69 *.undernet.org Rozeta H 0 :Dorel
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan sua 158.160.99.38 *.undernet.org banZylsNOWRZ H 0 :joseph
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan doncaster 158.160.56.120 *.undernet.org Doncaster G 0 :astraea
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan marius 158.160.111.246 *.undernet.org lupine G 0 :Sosceas
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan blue 158.160.46.94 *.undernet.org bluesky G 0 :geo
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan fane 178.154.224.5 *.undernet.org fane G 0 :queen
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan bebe 51.250.11.190 *.undernet.org b3b3 G 0 :gallium
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~doizece doizece.users.undernet.org *.undernet.org doizece Gx doizece :proba proba
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Team 130.193.51.194 *.undernet.org Analena H 0 :Team
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan nemesis 158.160.122.169 *.undernet.org bragg G 0 :saphir
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan huawei 158.160.118.197 *.undernet.org huawei G 0 : @ huawei @  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~fmm 158.160.122.53 *.undernet.org Simiorina H 0 :DE TURC
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~druc 62.84.124.95 *.undernet.org Gasparel H 0 :Druca
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~evil 178.154.225.121 *.undernet.org WilliamS H 0 :Evil
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~heim 158.160.57.137 *.undernet.org Mury H 0 :Heim
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~SoulMa 178.154.221.50 *.undernet.org Artaxerxe H 0 :steR
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~hotel 158.160.96.58 *.undernet.org atm G 0 :saigon
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan kfc 51.250.8.123 *.undernet.org kfc G 0 :§»«§» kfc «§»«§
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan guess 158.160.111.230 *.undernet.org errorEcC H 0 :m
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~end 178.154.227.139 *.undernet.org Luburici H 0 :The End
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~end 84.201.129.56 *.undernet.org Tupilatu H 0 :TheEnd
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Dn 158.160.123.116 *.undernet.org Gigel- H 0 :DnRooT
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan kaspersky 84.201.174.134 *.undernet.org kaspersky G 0 :pequod
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~eplay 130.193.50.23 *.undernet.org Mucu H 0 :EsPlay
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan amazon 158.160.59.58 *.undernet.org amazonia G 0 :MOTHER\FUCKER
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~dent 158.160.115.52 *.undernet.org Renato H 0 :Dent
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan aladin 158.160.59.53 *.undernet.org kidvSPsjhe H 0 : ® Aladin ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Mazda Mazda.users.undernet.org *.undernet.org Mazda Gx Mazda : @ Mazda @  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan fbi 158.160.35.205 *.undernet.org spine G 0 :byrd
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan adelina 51.250.2.104 *.undernet.org Pasaricka G 0 :axis
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan felix 178.154.222.226 *.undernet.org domino G 0 :ding
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan orange 130.193.51.203 *.undernet.org hydrogen G 0 :Viewer
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan marlboro 51.250.79.235 *.undernet.org acme G 0 :cayley
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan avram 178.154.227.167 *.undernet.org superHRslOt H 0 :ram
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan samsung 158.160.41.26 *.undernet.org rad G 0 :ernest
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan mara 62.84.127.66 *.undernet.org MaRa G 0 :blackbox
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~eby 158.160.45.87 *.undernet.org Zinel H 0 :Ebyy
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~gtta 158.160.40.114 *.undernet.org Ciumac H 0 :VCCY
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Asme 158.160.105.243 *.undernet.org Epifanie H 0 :Asmen
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan panasonic 178.154.230.86 *.undernet.org centaur G 0 :® Panasonic ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~susie 51.250.95.236 *.undernet.org PaRaCeTaMoL G 0 :®  PaRaCeTaMoL  ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid520757 PrYnceSs1948.users.undernet.org *.undernet.org Pr|nCesS Gx PrYnceSs1948 :Reich
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~vgb 158.160.63.76 *.undernet.org [Vasile] H 0 :VGBB
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan emerson 178.154.224.130 *.undernet.org darkqldqw H 0 :skynet
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~sfu 51.250.66.194 *.undernet.org Jenel H 0 :Sheefu
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan danyel danyel.users.undernet.org *.undernet.org danyel Gx danyel :%% danyel %%
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ovi 158.160.101.218 *.undernet.org ovy G 0 :Lembitz
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan prime 158.160.61.37 *.undernet.org prime G 0 :icon
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan montracom 178.154.224.166 *.undernet.org musicmdS H 0 :gilda
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Martin 158.160.108.184 *.undernet.org Martin G 0 :bgb
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan dulcickul dulcickul.users.undernet.org *.undernet.org dulcickul Gx dulcickul : ☺ dulcickul ☺  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan oracle 51.250.8.109 *.undernet.org marilyn G 0 :castor
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~resp 158.160.98.211 *.undernet.org Jegu H 0 :Respingete
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Turda 158.160.115.76 *.undernet.org Turda G 0 : ® Turda ® ' *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid531985 gargaRita.users.undernet.org *.undernet.org Bubu|Ruza Gx gargaRita :🐞
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan paris 178.154.220.93 *.undernet.org gateway G 0 :gladys
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan iacob 178.154.202.134 *.undernet.org iacob G 0 :@@@ iacob @@@ *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~lidas Lidas.users.undernet.org *.undernet.org quantuM H+x Lidas :mIRCtrivia Pro® 2007 - Full Version
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan hack 130.193.50.75 *.undernet.org warbler G 0 :gutenberg
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Rocsana Rocsana.users.undernet.org *.undernet.org Rocsana Gx Rocsana :-= Rocsana =- *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~sade 158.160.63.215 *.undernet.org katyau H 0 :sade
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~spe 158.160.98.119 *.undernet.org Paraschiva H 0 :SpeK
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~neniagh 240.17.194.178.dynamic.wline.res.cust.swisscom.ch *.undernet.org neniagh G 0 :neniagh
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~filea 158.160.59.70 *.undernet.org FiLea H 0 :Filea
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan vecina 51.250.93.104 *.undernet.org vecina G 0 :igor
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan romania 158.160.107.29 *.undernet.org UnGuRuL G 0 :rossi
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~werty 158.160.120.66 *.undernet.org Colombia H 0 :Werty
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~ftpp 51.250.92.56 *.undernet.org Obama H 0 :Ftpu
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~disp 158.160.97.212 *.undernet.org Portocala H 0 :Dispari
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan barclays 158.160.38.191 *.undernet.org mick G 0 :fish
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan bogdan 158.160.112.232 *.undernet.org B0GDAN G 0 :walsh
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan lily 178.154.226.239 *.undernet.org lin G 0 :ace
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid460721 id-460721.uxbridge.irccloud.com *.undernet.org Taci- H iul :Odin
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan canon 158.160.48.245 *.undernet.org cannon G 0 :# cannon # *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~est 178.154.230.244 *.undernet.org Egidiu H 0 :EST
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan usa 158.160.111.95 *.undernet.org arc G 0 :Amindourora
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan cucu 51.250.70.176 *.undernet.org pusha G 0 :eli
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Colin 158.160.119.41 *.undernet.org Colin G 0 : »«☺» Colin «☺»« 
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan mirela 51.250.1.73 *.undernet.org Myrela G 0 :ro
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid364776 RaluOfficial.users.undernet.org *.undernet.org Raluq Hx RaluOfficial :I.feel.therefore.I.am!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan hull 178.154.205.250 *.undernet.org hull G 0 :ding
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~static atlet.users.undernet.org *.undernet.org dmn110 Hx atlet :...
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid556398 d33a.users.undernet.org *.undernet.org D33a Gx d33a :Deea
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan dana 84.201.173.28 *.undernet.org danna G 0 :shanghai
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan cameleon 62.84.119.176 *.undernet.org termite G 0 :vienna
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan vpn 51.250.14.193 *.undernet.org bill G 0 :leopard
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~bob 84.201.175.105 *.undernet.org Pocaitu H 0 :bob
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan mirc 51.250.87.234 *.undernet.org oden G 0 :neko
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan merlin 51.250.68.1 *.undernet.org glenn G 0 :bragi
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~nr 51.250.83.41 *.undernet.org [BatmaN] H 0 :Telefon
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~jooc 51.250.87.246 *.undernet.org Tuduce H 0 :MU
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~ghita 51.250.65.80 *.undernet.org Emporio H 0 :skinny
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan sony 51.250.79.64 *.undernet.org S0NY G 0 : ® sony ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan lore 62.84.113.58 *.undernet.org LoRe G 0 :salem
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~baby 51.250.80.79 *.undernet.org Sapunaru H 0 :Baby
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan water Alecsandra.users.undernet.org *.undernet.org Alecsandra Gx Alecsandra : ☺ Protected by #BestServices ☺  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Dieless Dieless.users.undernet.org *.undernet.org Dieless Gx Dieless :Tot Eu!^_-
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan doctor 51.250.79.32 *.undernet.org zuni G 0 :japan
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan asos 51.250.8.52 *.undernet.org asos G 0 :neon
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan smiler 51.250.83.7 *.undernet.org lilith G 0 :-= smiler =-
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~michel 62.84.113.91 *.undernet.org Marcelon H 0 :Michel
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Vrss 51.250.5.141 *.undernet.org `Superman` H 0 :VRS
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan rosu Mar.users.undernet.org *.undernet.org Mugurel Gx Mar :monty
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan nivea 84.201.174.231 *.undernet.org nivea G 0 :root
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan puma 51.250.11.240 *.undernet.org pumma G 0 : ☺ puma ☺  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan DeathRow 198.251.89.91 *.undernet.org DeathRow_ H 0 :do not judge me by my words.. judge me by my actio
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~shery 62.84.118.4 *.undernet.org Shery H 0 :Shery
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~sauu 51.250.74.183 *.undernet.org Raiu H 0 :Megaa
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ReBeLa ReBeLa.users.undernet.org *.undernet.org ReBeLa Gx ReBeLa :® ReBeLa ® 
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Elff 62.84.114.89 *.undernet.org Cervantes H 0 :ELF
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~vipp 51.250.94.90 *.undernet.org Matteo H 0 :VIPer
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan bmw 51.250.93.180 *.undernet.org superdYb H 0 : ® bmw ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan roz 51.250.88.169 *.undernet.org allawVKHHNtS H 0 :glacier
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan dacia 62.84.119.179 *.undernet.org Lastun G 0 :dacia *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan iosif 51.250.85.82 *.undernet.org caliban G 0 :devoice
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan penny 84.201.134.181 *.undernet.org jfk G 0 :bebit
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan steaua 51.250.79.68 *.undernet.org St3aua G 0 :geo
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan gaboru 51.250.9.188 *.undernet.org jones G 0 :dab
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan aCeLaS 51.250.68.143 *.undernet.org aCeLaS G 0 :®  aCeLaS  ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan bella 51.250.65.47 *.undernet.org Danielo G 0 :cheddar
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan bartolomeu 62.84.118.218 *.undernet.org bartolomeu G 0 :henry
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Martina 84.201.132.8 *.undernet.org Martina G 0 : ® Martina ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan banana banana.users.undernet.org *.undernet.org bananna Gx banana : ® banana ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan love 51.250.64.94 *.undernet.org ILoveYou G 0 :Steaua
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~ene 51.250.8.129 *.undernet.org Amorel H 0 :eNergi
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan gigi 178.154.225.175 *.undernet.org cathy G 0 :maryann
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan TaTi 51.250.14.18 *.undernet.org TaTi G 0 :® TaTi ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan marck 158.160.110.90 *.undernet.org Kreiptomat G 0 :beowulf
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan dedeman 158.160.119.23 *.undernet.org dedeman G 0 :marjoram
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Dj 2001:470:7857:1a0d::f *.undernet.org DjViper H 0 :DjViper
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~deathface 616.users.undernet.org *.undernet.org deathface2 H@x 616 :The only one
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~ms 183.17.228.40 *.undernet.org Mercedes G 0 : ® ms ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan dorian 158.160.54.163 *.undernet.org doryan G 0 :jumbo
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~sweet 158.160.123.145 *.undernet.org Pantelimon H 0 :KISS
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~redy 84.201.131.193 *.undernet.org Georgian H 0 :Redy
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan franta 84.201.129.65 *.undernet.org envy G 0 :jiminy
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan adriana 158.160.111.17 *.undernet.org Emerson G 0 : ® adriana ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan paypal 178.154.220.158 *.undernet.org snark G 0 :wildcat
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan fuel 178.154.227.147 *.undernet.org FueL G 0 :weed
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~fast 51.250.93.219 *.undernet.org Jupanel H 0 :FAST
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~old 158.160.48.121 *.undernet.org Agenor H 0 :Oldd
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan galben 158.160.56.221 *.undernet.org XboX G 0 :pierce
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~yery 51.250.68.39 *.undernet.org Riceard H 0 :EryS
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~vega 84.201.156.201 *.undernet.org `Momcilo` H 0 :Vegas
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan kiss 62.84.126.70 *.undernet.org inca G 0 :ks
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan leea 158.160.63.177 *.undernet.org leea G 0 :null
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Sver 62.84.113.194 *.undernet.org Nespalatu H 0 :verro
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~bby 158.160.114.175 *.undernet.org Ilegitim H 0 :Bby
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~ody 158.160.35.24 *.undernet.org Momcilo H 0 :Gody
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~yoyo 84.201.156.244 *.undernet.org Rejected H 0 :yay
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~obbbb 130.193.48.106 *.undernet.org Veteranu H 0 :OBBBBBSSS
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~sor 158.160.117.134 *.undernet.org Dicusara H 0 :Sormea
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan alton Jaguar.users.undernet.org *.undernet.org Jaguar Gx Jaguar : »«☺» Jaguar «☺»« 
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~ons 84.252.131.237 *.undernet.org Monamour H 0 :ONsi
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan cora 158.160.38.202 *.undernet.org CoRa G 0 :ernst
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan maria 158.160.96.7 *.undernet.org Mariutza G 0 :pion
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~klasjdkl 130.193.36.150 *.undernet.org BilBob H 0 :jasdkas
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan antonia 158.160.107.215 *.undernet.org deop G 0 :bistyy
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan dima 158.160.123.181 *.undernet.org dima G 0 :Speed
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~mddo 84.201.129.147 *.undernet.org Driada H 0 :Meesi
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan claudiu 158.160.126.199 *.undernet.org marlin G 0 :lucky
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ilie 178.154.230.223 *.undernet.org ilie G 0 :tc
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~irl 178.154.228.28 *.undernet.org BredPit H 0 :IrL
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan filip 178.154.229.67 *.undernet.org filip G 0 :gb
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan london 178.154.224.170 *.undernet.org bmw G 0 :xolfe
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~tax 178.154.224.7 *.undernet.org Patron H 0 :Tax
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan fast 158.160.101.137 *.undernet.org systems G 0 :nirvana
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan olanda 158.160.49.148 *.undernet.org cam G 0 :mass
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan dany 158.160.96.108 *.undernet.org dany` G 0 :gabriel
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan noe ZaRa.users.undernet.org *.undernet.org bearjEvff Hx ZaRa : ® ZaRa ® ' *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~dani 85.122.149.165 *.undernet.org dani_ H verde :dasda
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Club clubhouse.users.undernet.org *.undernet.org cLuBbY Hx clubhouse :Fuck Real Life
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan RoSeGuR shell.xshellz.com *.undernet.org Nyk G 0 :Nyck
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan cservice undernet.org *.undernet.org X H@ 0 :For help type: /msg X help
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid442693 stoian.users.undernet.org *.undernet.org Achat- H@x stoian :Be The Best  ®
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Skoda Skoda.users.undernet.org *.undernet.org Skoda G@x Skoda :Protected by Costin
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Mar Daria.users.undernet.org *.undernet.org Mar G@x Daria :Creat Pentru Protectie #Transfagarasan
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~wyzzy wyzzy.users.undernet.org *.undernet.org wiz H+x wyzzy :wyzzy@
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Mutu Mutu.users.undernet.org *.undernet.org Mutu H+x Mutu :il FENOMENO
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~prg prg.users.undernet.org *.undernet.org prg H+x prg :*
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan bogghi bogghi.ro *.undernet.org `b H@+ Bogghi :bogghi
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~LEGEND TripleH.users.undernet.org *.undernet.org Gary H+x TripleH : UNDISPUTED CHAMPION
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Best BestFriend.users.undernet.org *.undernet.org Me G+x BestFriend :BestFriend
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Kid Hubble.users.undernet.org *.undernet.org hubble- H+x Hubble :Fenomenal si arbitrar *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~fillo 38-34-115-160.starry-inc.net *.undernet.org Hentz H+ 0 :...
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~attika Teror.users.undernet.org *.undernet.org AtTiKa H+x Teror :attika
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid587984 id-587984.lymington.irccloud.com *.undernet.org freefire H 0 :ranger
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan nashu nashu.de *.undernet.org [nashu] H Nashu :fuck off
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Bomfunk Bomfunk.users.undernet.org *.undernet.org psy Hx Bomfunk :Bomfunk
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Radio irccloud.whiteheaven.ro *.undernet.org RadioWH H 0 :WhiteHeaven @ Whiteheaven
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~bad name.users.undernet.org *.undernet.org mozol Hx name :*
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~karina NuPrv.users.undernet.org *.undernet.org Karina Hx NuPrv :%% karina %%
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uzzi uzzicurva.com *.undernet.org uzzi-curva H 0 :Doggy Style
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Bazatul SuKy.users.undernet.org *.undernet.org SuKy Hx SuKy : Un Nimeni Celebru !!!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Daria Adevaratu.users.undernet.org *.undernet.org Daria Hx Adevaratu : ® Daria ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan me SuntVirgin.users.undernet.org *.undernet.org edy^ Hx SuntVirgin :....
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan cinci 2a0c:8fc1:801f:1daf:babe:56b4:3ec0:fc16 *.undernet.org ciresel H 0 :Do not try to be my friend.
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan cryss cryss.lol *.undernet.org cryss H Cryss :💞
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~ana ana.users.undernet.org *.undernet.org adelina Hdx ana :ana
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Devil 80.211.120.216 *.undernet.org The-Devil H 0 :I want you in my team
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Dane dane.lat *.undernet.org Dane^ H 0 :fUcK oFF!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~energ ControlPanel.users.undernet.org *.undernet.org ControlPaneL Hx ControlPanel :EnergoL
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~galb qwert.users.undernet.org *.undernet.org QwErT Hx qwert :GOOL
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~galos empyrion.users.undernet.org *.undernet.org empyRion Hx empyrion :GaloS
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan dacia Dacia.users.undernet.org *.undernet.org Dacia Hx Dacia : ® Dacia ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~cd cd.users.undernet.org *.undernet.org cd Hx cd :/!\ cd /root\ /!\
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ronaldo GGuard.users.undernet.org *.undernet.org sictir Hx GGuard :® ronaldo ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan sase Bogghi.users.undernet.org *.undernet.org `bogghi Hx Bogghi :Only god can judge me.
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~domnul BONSTIL.users.undernet.org *.undernet.org BONSTIL Hx BONSTIL :DomnuL
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~DoomS DoomS.users.undernet.org *.undernet.org DoomS Hx DoomS :₿ * 🇷🇴
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan pacris Lidas.users.undernet.org *.undernet.org `7Soapte Hx Lidas :pacris
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan galben Galben.users.undernet.org *.undernet.org Galben Hx Galben : ☺ Galben ☺  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~brandy brandy.users.undernet.org *.undernet.org brandy Hx brandy :-= brandy =-
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~buld ip5-250-177-23.pbiaas.com *.undernet.org bullet H 0 :ZNC - https://znc.in
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Dane JAYZ21.users.undernet.org *.undernet.org Dane- Hx JAYZ21 :Dane
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~badboy vmi1112560.contaboserver.net *.undernet.org playboy H b4dboy :badboy
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan chaos hitman.ro *.undernet.org THEPUNISHER H hacker :there was a sudden silence
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan sapte 2a0c:8fc1:801f:5:4:3:2:1 *.undernet.org baubau H 0 :No no no.
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Krauser Krauser.users.undernet.org *.undernet.org Krauser Gx Krauser :Krauser
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~UnixCoder unixcoders.me *.undernet.org UnixCoders H Albert :UnixCoders
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan user unqjack.users.undernet.org *.undernet.org IRC-user Hx unqjack :Just An User On IRC ...
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~denoi EarthQuake.users.undernet.org *.undernet.org EarthQuake Hx EarthQuake :De La Noi
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan vali 2a05:9340:39:5::6 *.undernet.org italy H 0 :vali
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~UnixTech theunix.tech *.undernet.org TheUnix G Klaan :Unix
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~cmd 2603:c026:c102:2233:c6b3:5945:f878:5d58 *.undernet.org sender- H 0 :cmd
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan adina 158.160.116.242 *.undernet.org adina` H 0 :scratchy
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan copil desc.users.undernet.org *.undernet.org bby Hx desc :camry
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan sinaia alexe.users.undernet.org *.undernet.org alexe Hx alexe :alexe
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~alex 2607:b500:430:5f00::1111:2222:4563 *.undernet.org Jerry Hd 0 :alex
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Raducu R4ducu.users.undernet.org *.undernet.org Raducu Hx R4ducu :Oltean
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~chuck VMacedonia.users.undernet.org *.undernet.org VMacedonia Hx VMacedonia :Chuck
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~titia Rocz.users.undernet.org *.undernet.org R0cz Hx Rocz :Repetitie
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~wolfy Quadro.users.undernet.org *.undernet.org Quadro Hx Quadro :Wolfentein
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~foolde Load.users.undernet.org *.undernet.org Load Hx Load :FooldeR
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~ferrar Budapest.users.undernet.org *.undernet.org Budapest Hx Budapest :FeruL
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~yyuyy Query.users.undernet.org *.undernet.org Query Hx Query :YuuuY
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~pcnet PcNet.users.undernet.org *.undernet.org PcNet Hx PcNet :PCNET
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~mester Zek0.users.undernet.org *.undernet.org Zek0 Hx Zek0 :MesteruL
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~lentin LosAngeles.users.undernet.org *.undernet.org LosAngeles Hx LosAngeles :Valentin
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~mastere BlackBoy.users.undernet.org *.undernet.org BlackBoy Hx BlackBoy :Master
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~test Video.users.undernet.org *.undernet.org Video Hx Video :TEST
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan noua 2a0c:8fc1:801f::1 *.undernet.org smokeWEED H 0 :I am who I am.
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan chosen dumnezeu.us *.undernet.org AirForce H 0 :chosen
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan chosen bang.bang.bang.bang.cl *.undernet.org cl H 0 :chosen
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan impuls impuls.users.undernet.org *.undernet.org impulS` Hx impuls :impuls
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~ducu DuCu.users.undernet.org *.undernet.org [DuCu] Hx DuCu :Radu
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Go 128.199.45.243 *.undernet.org CsPuc H 0 :Go
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan desc desc.users.undernet.org *.undernet.org Hak3r Hx desc :desc
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~adriana adryana.users.undernet.org *.undernet.org adryana Hx adryana : ® adriana ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Cosmin CosminDany.users.undernet.org *.undernet.org CosminDany Hx CosminDany :by #BestServices
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~adelaida adelaida.users.undernet.org *.undernet.org adelaida Hx adelaida : ☺ adelaida ☺  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan cdc PORSCHE.users.undernet.org *.undernet.org PORSCHE Hx PORSCHE :®  PORSCHE  ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~eof Rhea.users.undernet.org *.undernet.org Rhea Hx Rhea :!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ubuntu R0MANIA.users.undernet.org *.undernet.org R0mania Hx R0MANIA :Catalina
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~timisosar NORAD.users.undernet.org *.undernet.org NORAD Hx NORAD :RaZeRs
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan berea Ursus.users.undernet.org *.undernet.org Ursus Hx Ursus :eu
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan banana banana.users.undernet.org *.undernet.org banana Hdx banana : ® banana ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan i'm Tulcea.users.undernet.org *.undernet.org Nenorocitu Hx Tulcea :The Purpose Of Our Lives Is To Be Happy!!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~timisosar dEaThFaCe.users.undernet.org *.undernet.org dEaThFaCe` Hx dEaThFaCe :RaZeRs
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ubuntu undo.users.undernet.org *.undernet.org UNDO Hx undo :Catalina
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ubuntu SRI.users.undernet.org *.undernet.org SRI Hx SRI :Catalina
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan necrolyte Necrolyte.users.undernet.org *.undernet.org necrolyte Hx Necrolyte :Necrolyte
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~asasinul kn0wn.users.undernet.org *.undernet.org Hagi Hx kn0wn :asasinul -= Just A Bigg Boss =-
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan batman batman.users.undernet.org *.undernet.org radio Hdx batman :Batman Forever and ever
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan sid384666 id-384666.lymington.irccloud.com *.undernet.org Hotties H Hotties :Hotties
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Antonio Antonio.users.undernet.org *.undernet.org Antonio Hx Antonio :Antonio
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan sid457051 Markus.users.undernet.org *.undernet.org Markus- Hx Markus :Markus
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan negru Bibitica.users.undernet.org *.undernet.org Negru Hx Bibitica : ® Negru ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Nicusor Nicusor.oddprotocol.org *.undernet.org Nicusor H 0 :Nicusor
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Rai 188.24.70.125 *.undernet.org RaiNT H 0 :Rai
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~wyz 107.175.101.241 *.undernet.org wyz_ H 0 :wyzzy@
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~dani DGA.users.undernet.org *.undernet.org TaLa- Hx DGA :Nothing to prove ;-)
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~spirit the.aog.run *.undernet.org _theaog H aog :The Armour of God
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan sid429571 alcatel.users.undernet.org *.undernet.org alcatel Hx alcatel :Vicecampion la ruleta ruseasca
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan vpn BLaCkShaDoW.users.undernet.org *.undernet.org BLaCkShaDoW Gx BLaCkShaDoW :WwW.TCLScripts.Net
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan emptyspace emptyspace.users.undernet.org *.undernet.org _Dan_ Hx emptyspace :x
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan dani DGA.users.undernet.org *.undernet.org TaLLa Hx DGA :dani ®
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan git Graz.users.undernet.org *.undernet.org Graz Hx Graz :Graz
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan costi Visina.users.undernet.org *.undernet.org Alb Hdx Visina :costi
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan alex SoimuL.users.undernet.org *.undernet.org Daria- Hdx SoimuL :Daria *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Bere Bere.users.undernet.org *.undernet.org Bere Hx Bere :Bere
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Dane Dane.users.undernet.org *.undernet.org Dane Hx Dane : ☺ Dane ☺  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~shu shu.users.undernet.org *.undernet.org shu Gx shu :Viva la Crypto!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan opt 2a0c:8fc1:801f:1:2:3:4:5 *.undernet.org cannabis H 0 :Catch me if you can.
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Bocsa Bocsa.users.undernet.org *.undernet.org bocsa Hdx Bocsa :City Bocsa - CS
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Mereni Sovata.users.undernet.org *.undernet.org _ZERON_ Hx Sovata :Join #Mereni
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~root unqbeck.users.undernet.org *.undernet.org BeCk Hx unqbeck :MIB
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan nu Skoda.users.undernet.org *.undernet.org Nu Hx Skoda :%% Nu %%
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~esti scatofil.users.undernet.org *.undernet.org sendmail Hx scatofil :mancatorul de cacat
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Dog emploipartners.com *.undernet.org Shogun H 0 :Doggy Style
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Dog 47.103.8.48 *.undernet.org madOFHpyLMP H 0 :Doggy Style
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan comi2 SuspendMe.users.undernet.org *.undernet.org Comi Hx SuspendMe :Just Me
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~lix Mic.users.undernet.org *.undernet.org Mic Hdx Mic :--=Mic=--
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Haris Haris.users.undernet.org *.undernet.org Haris Hdx Haris :Haris *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~r ducu.dev *.undernet.org DuCu H DuCu :mine!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Nicusor 2605:6400:30:fc15:1973:aa85:2111:42f9 *.undernet.org Ren H 0 :Ren
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~iepure Zemjotres.users.undernet.org *.undernet.org Zemjotres Hx Zemjotres :Iepure
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~mapse Profil.users.undernet.org *.undernet.org ProfiL Hx Profil :MapSE
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Floriano 2a05:9340:35:f::1988 *.undernet.org Floriano H 0 :Floriano
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ionut iANiS.users.undernet.org *.undernet.org Ionut- Hx iANiS :Nicuşor Ionuţ M. - (www.ionut.men) *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~TheDavid 2a02:c206:2164:7220::1 *.undernet.org TheDavid H 0 :TheDavid
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan wolks volkswagen.users.undernet.org *.undernet.org WW Hx volkswagen : ® Wolkswagen ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan sid480530 Billy84.users.undernet.org *.undernet.org Billy Hx Billy84 :.,
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Rocking Rocking.users.undernet.org *.undernet.org Rocking Hx Rocking :-=Rocking=-
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan serena Serena.users.undernet.org *.undernet.org Serena Hx Serena :serena
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Gentoo Skee.users.undernet.org *.undernet.org Skee Hx Skee :Gentoo
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan cosmin Scorpyonul.users.undernet.org *.undernet.org Cozmin Hx Scorpyonul :® Cosmin ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Carla 23.94.85.188 *.undernet.org Carla H 0 : ® Carla ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan laura static.160.213.107.91.clients.your-server.de *.undernet.org laura- H 0 : ® Protected by #BestServices ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Scorpion anghelo4ka.users.undernet.org *.undernet.org Scorpions Hx anghelo4ka :MOTHER\FUCKER
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan klan KLAN.users.undernet.org *.undernet.org Klan Hx KLAN :Klan
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid120571 OwnedX.users.undernet.org *.undernet.org [Kali] Hx OwnedX :Kali
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Valy 2a00:da00:f207:900::1 *.undernet.org Valy H 0 :® Valy by #BestServices ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Eugen eugen.users.undernet.org *.undernet.org Eugen^ Hx eugen :Eugen
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ciprian ciprian.users.undernet.org *.undernet.org Clprian Hx ciprian :ciprian
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Draculina 2a0c:8fc3:8003:ddf8:fe70:bf2:d484:2c56 *.undernet.org dracoasa H 0 :te ia mama dracu
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan fut 84.33.14.100 *.undernet.org Fut H 0 :Sunt facut de-asa natura, SA TE FUT IN GURA!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~add se.users.undernet.org *.undernet.org home Gx se :asa ma cheama #
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Angel angelofmercy.users.undernet.org *.undernet.org AngelOfMercy Hx angelofmercy :Angel
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ubuntu 616.users.undernet.org *.undernet.org dEaThFaCe Gx 616 :The Only One
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan kizzi kizzi.users.undernet.org *.undernet.org kizzi Hx kizzi :#xTrivia - www.xTrivia.ro
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~ww Rosu.users.undernet.org *.undernet.org Rosu Hdx Rosu :Passat
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~badboy vps-10eed1f0.vps.ovh.net *.undernet.org BADBOY- H 0 :badboy
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Cornel99 ClabuC.users.undernet.org *.undernet.org Ges Hx ClabuC :BNC4FREE User - https://bnc4free.com/
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan zece 2a0c:8fc1:801f:f3ad:d15:b34:10:1 *.undernet.org _b H 0 :The best.
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan unu Pascani.users.undernet.org *.undernet.org Pascani Hx Pascani :Number one *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan doi Helden.users.undernet.org *.undernet.org Helden Hx Helden :I have no ideea.
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan patru ArAnCiA.users.undernet.org *.undernet.org ArAnCiA Hx ArAnCiA :This is it.
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~prout ec2-3-138-190-80.us-east-2.compute.amazonaws.com *.undernet.org RBF H 0 :prout
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~john MasterBoy.users.undernet.org *.undernet.org edy` Hx MasterBoy :my real fucking nickname
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan s Sunt.Facut.de-asa.Natura.Sa.Te.Fut.In.Gura.69.mu *.undernet.org IoS- H 0 :.
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan badboy badboy.irc-cluj.ro *.undernet.org \dev\hda2 G b4dboy :badboy
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Kid Hubble.users.undernet.org *.undernet.org MarioKidd Hx Hubble :Fenomenal si arbitrar *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Cornel 2001:41d0:404:300::103a *.undernet.org C0RNEL H C0RNEL : ☺ Protected by #Solidservices ☺  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan alb Alb.users.undernet.org *.undernet.org Coccolino Hdx Alb : ® Coccolino ® 
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan hosting Caut-proasta-ofer.asl-pls.pics *.undernet.org asl- H 0 :pai nu?
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan root 201.149.57.130 *.undernet.org dEaDfAcE H 0 :The Only One
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan root 201.149.57.130 *.undernet.org TradeLinux H 0 :GOOD
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~avatar avatar.users.undernet.org *.undernet.org avatar Hx avatar :-= avatar =- *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan DoiAru NormandiA.users.undernet.org *.undernet.org Doi_Aru Gx NormandiA :JuSt Doi_Aru ... JuSt Do It
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~patronu Word.users.undernet.org *.undernet.org Word- Hx Word :PatronuL
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan nicoleta Sighisoara.users.undernet.org *.undernet.org Nlcoleta Hx Sighisoara : ® Nicoleta ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Audi Albastru.users.undernet.org *.undernet.org Audi Hx Albastru :Audi *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan nasaud DirectoruL.users.undernet.org *.undernet.org [Cristi] Hx DirectoruL :® Cristi by #BestServices ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Scorpyonu Scorpyonul.users.undernet.org *.undernet.org Scorpyonul Hx Scorpyonul :® Scorpyonul ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan root Pere.users.undernet.org *.undernet.org Da Hdx Pere :Da Da Da
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan root 201.149.57.130 *.undernet.org RoCkKiD H 0 :The Only One
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan cuceritor IUBIT0R.users.undernet.org *.undernet.org Cuceritor_ Hx IUBIT0R :® With love by #CAMARAD ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Nik Nik.users.undernet.org *.undernet.org Nik Hx Nik :#xTrivia - www.xTrivia.ro
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Ciprian ciprian.freeirc.org *.undernet.org Zmok H 0 :Ciprian
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan old Tulcea.users.undernet.org *.undernet.org abcd Gx Tulcea :The Purpose Of Our Lives Is To Be Happy!!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan alessandro Alessandro.users.undernet.org *.undernet.org Alessandro- Hx Alessandro :alessandro
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan root sibiu.online *.undernet.org trasnet H 0 :trasnet@
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Ecco ecco.oddprotocol.org *.undernet.org Ecco_ H 0 :Ecco
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan up vic.users.undernet.org *.undernet.org up Hx vic :ғᴜᴄᴋ ᴏғғ
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Albastru JeTiX.users.undernet.org *.undernet.org Albastru Hdx JeTiX : ® Albastru ®  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan hero wolf.users.undernet.org *.undernet.org hero_ Hx wolf :I am a herooo
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Nicusor oddprotocol.org *.undernet.org FaraNick- H 0 :FaraNick
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Co Co.users.undernet.org *.undernet.org Co| Hx Co :ZNC - https://znc.in
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~D ieL.users.undernet.org *.undernet.org [asdfghjkl] Hx ieL :DanieL
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Varsator Sincer.users.undernet.org *.undernet.org Varsator Hdx Sincer :® Varsator ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan miss 2a0c:4ac0:1200:27b::6667 *.undernet.org una_r3a- G 0 :*
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Maryus46 tudormarius.users.undernet.org *.undernet.org Maryus46 Hx tudormarius :Maryus46
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Boldesti boldesti.users.undernet.org *.undernet.org Maryus46` Hx boldesti :Boldesti
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Cornel99 ClabuC.users.undernet.org *.undernet.org Cornel99 H@x ClabuC :Cornel99
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan mafrici 2a0c:8fc3:8003:d815:8c3d:266c:a8e9:b9c5 *.undernet.org mafrici H 0 :cebeleu
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~octet 5.2.203.36 *.undernet.org octet H 0 :octet
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~SIR sirnutz.powered.by.lunarbnc.net *.undernet.org SIRnutz H 0 :ForZa STEAUA!!!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Dane Alves.users.undernet.org *.undernet.org Dane| Hx Alves :Danut
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~remus rem.users.undernet.org *.undernet.org Remus Gx rem :Remus
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan nasu nasu.users.undernet.org *.undernet.org nasu Hx nasu :nasu
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~wz warzone.land *.undernet.org Warzone H wyzzy :a
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid567452 pelepele2.users.undernet.org *.undernet.org steel^ Hx pelepele2 :Ma opresc timpul sa ma prezinte
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Fast Cl0ud.users.undernet.org *.undernet.org Fast Hx Cl0ud : Luca
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Pluto Pluto.users.undernet.org *.undernet.org Pluto Hx Pluto :-= Pluto =- *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Multumesc Multumesc.users.undernet.org *.undernet.org Multumesc Hdx Multumesc : ® Multumesc ® 
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~send-mail sendmail.users.undernet.org *.undernet.org send-mail Hx sendmail :sendmail
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan kataklysm 89.39.189.181 *.undernet.org Katakl|sm H 0 :--== Leg|onarul ==--
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~com BaileFelix.users.undernet.org *.undernet.org Sincer Hx BaileFelix :® Sincer ® *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan uid646777 id-646777.tinside.irccloud.com *.undernet.org menso H 0 :bozgo
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Karla Karla.users.undernet.org *.undernet.org bearNi Hx Karla : ☺ Karla ☺  *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~xxx nandamara.users.undernet.org *.undernet.org Straina Hx nandamara :dana
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~adi 207.90.193.157 *.undernet.org Delfin H Adi2022 :Adi
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Antonio Antonio.users.undernet.org *.undernet.org Marlboro Hx Antonio :Antonio
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~focussat focussat.users.undernet.org *.undernet.org impulS H@x focussat :impulS
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Marinica Marlnica.users.undernet.org *.undernet.org Bau-Bau Hx Marlnica :Uite ca ai dat whois papagalule
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan Costin Salaj.users.undernet.org *.undernet.org Costin Hdx Salaj :Mereu O Legenda Vie *
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan poker 151.80.253.114 *.undernet.org pok3r- H 0 :poker
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~optim opTim.users.undernet.org *.undernet.org opTim Gx opTim :opTim.us Prime!
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ~Whisky Krauser.users.undernet.org *.undernet.org Whisky Gx Krauser :Whisky
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan ardeleanca Straina.users.undernet.org *.undernet.org ardeleanca Gx Straina :ardeleanca
+>> :Seattle.WA.US.Undernet.Org 354 yh1 152 #transfagarasan add Cornel.users.undernet.org *.undernet.org tot_yo Gx Cornel :add@
+>> :Seattle.WA.US.Undernet.Org 315 yh1 #transfagarasan :End of /WHO list.
+<< PING LAG1713832543020
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832543020
+<< PING LAG1713832573091
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832573091
+<< PING LAG1713832603167
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832603167
+<< PING LAG1713832633238
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832633238
+<< PING LAG1713832663307
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832663307
+<< PING LAG1713832693385
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832693385
+<< PING LAG1713832723460
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832723460
+>> :RadioWH!Radio@irccloud.whiteheaven.ro PRIVMSG #transfagarasan :ACTION Asculta si tu folosind adresa http://Asculta.WhiteHeaven.RO:7200/RS si viziteaza https://Whiteheaven.ro
+>> :RadioWH!Radio@irccloud.whiteheaven.ro PRIVMSG #transfagarasan :[@Whiteheaven] - (AutoDj) - Nu Genea - Ddoje Facce. Avem un numar de 7 ascultatori.
+<< PING LAG1713832753571
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832753571
+<< PING LAG1713832783650
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832783650
+<< PING LAG1713832813729
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832813729
+<< PING LAG1713832843807
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832843807
+<< PING LAG1713832873880
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832873880
+<< PING LAG1713832903970
+>> :Seattle.WA.US.Undernet.Org PONG Seattle.WA.US.Undernet.Org :LAG1713832903970
