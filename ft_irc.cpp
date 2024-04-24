@@ -1,105 +1,61 @@
 
 #include "ft_irc.hpp"
 
-std::string getword(std::string str, int start)
-{
-	std::size_t i;
-	std::string word;
 
-	i = str.find(" ", start);
-	if (i != std::string::npos)
+int	private_msg_channel(int sender_index, std::string channel, std::string msg, s_poll *pool)
+{
+	int send_fd = pool->fds[sender_index].fd;
+	// check if anyone is in the channel
+	for (int j = 1; j < pool->count; ++j)
 	{
-		word = str.substr(start, i - start);
-		std::cout << start << " - " << i << " word :" << word << std::endl;
+		s_client client = pool->clients[j];
+		int dest_fd = pool->fds[j].fd;
+
+		std::cout << " idx = "<< sender_index << " --> " << j << std::endl;
+		std::cout << " fds = "<< send_fd << " --> " << dest_fd << std::endl;
+		// std::cout << " chans nb :" << pool->channels.size() << std::endl;
+
+		for (int i = 0; i < (int) client.chan.size(); i++)
+		{
+			std::cout << " ch : " << client.chan[i] << " <=?=> " << channel  << std::endl;
+			if (client.chan[i] == channel && dest_fd != send_fd) 
+			{
+				std::cout << " word :" << msg << std::endl;
+				send_msg(dest_fd, send_fd, msg);
+			}
+		}
 	}
-	return (word);
+	return 0;
 }
 
-std::string parse(int client_index, char *buffer, s_poll *pool)
+int	private_msg_user(int sender_index, std::string dest_nickname, std::string msg, s_poll *pool)
 {
-	std::string str(buffer);
-	std::size_t i;
-
-	i = str.find("CAP ");
-	if (i != std::string::npos)
+	int send_fd = pool->fds[sender_index].fd;
+	// check if anyone is in the channel
+	for (int j = 1; j < pool->count; ++j)
 	{
-		std::string cap = str.substr(i + 4, str.length() - i - 1);
+		std::string name = pool->clients[j].nickname;
+		int dest_fd = pool->fds[j].fd;
 
-		pool->clients[client_index].cap(cap);
+		std::cout << " idx = "<< sender_index << " --> " << j << std::endl;
+		std::cout << " fds = "<< send_fd << " --> " << dest_fd << std::endl;
+		std::cout << " usr : " << name << " <=?=> " << dest_nickname << std::endl;
+
+		if (name == dest_nickname) 
+		{
+			std::cout << " word :" << msg << std::endl;
+			send_msg(dest_fd, send_fd, msg);
+		}
 	}
-
-	i = str.find("NICK ");
-	if (i != std::string::npos)
-	{
-		std::string nick = str.substr(i + 5, str.length() - i - 1);
-
-		pool->clients[client_index].nick(nick);
-	}
-
-	i = str.find("USER ");
-	if (i != std::string::npos)
-	{
-		std::string str2 = str.substr(i + 5, str.length() - i - 1);
-		std::cout << "parse usr :" << str2 << std::endl;
-
-		std::size_t i;
-		std::string user;
-		std::string addr;
-
-		user = getword(str, 0);
-
-		i = str.find(" ", 0);
-		user = getword(str, i + 1);
-
-		i = str.find(" ", i + 1);
-		addr = getword(str, i + 1);
-
-		pool->clients[client_index].user(user, addr);
-	}
-	
-	i = str.find("JOIN ");
-	if (i != std::string::npos)
-	{
-		std::string str3 = str.substr(i + 5, str.length() - i - 1);
-		std::cout << "parse join :" << str3 << std::endl;
-
-		std::size_t i;
-		std::string ch;
-
-		i = str.find("#");
-		ch = getword(str, i + 1);
-
-		channels.push_back(str);
-		pool->clients[client_index].join(ch);
-	}
-
-	pool->clients[i].print();
-
-	std::string msg;
-
-	i = str.find(":");
-	// std::cout << "pos1 " << i<< std::endl;
-	// std::cout << "pos2 "<< str.length() - i<< std::endl;
-	if (i != std::string::npos)
-	{
-		msg = str.substr(i+ 1, str.length() - i - 1);
-		return (msg);
-	}
-	else
-	{
-		msg = str;
-		return (msg);
-	}
+	return 0;
 }
 
 int	send_msg(int dest_fd, int send_fd, std::string msg_to_send)
 {
 	std::ostringstream s;
-	int status;
 
 	s << "[" << send_fd << "] client: " << msg_to_send ;
-	status = send(dest_fd, s.str().c_str(), s.str().size(), 0);
-	if (status == -1)
+	if (send(dest_fd, s.str().c_str(), s.str().size(), 0) == -1)
 	{
 		std::cout << "Send error to client [" << dest_fd << "]";
 		return 1;
@@ -179,18 +135,18 @@ void	read_data(int i, int sockfd, s_poll *pool)
 	}
 	else
 	{
-		std::cout << "[" << send_fd << "] got message = " << buffer << std::endl;
+		std::cout << "[" << send_fd << "] got message = \n\"" << buffer << "\"" << std::endl;
 
 		msg = parse(i, buffer, pool);
 
 		// send message to evrybody
-		for (int i = 0; i < pool->count; ++i)
+		for (int j = 0; j < pool->count; ++j)
 		{
-			dest_fd = pool->fds[i].fd;
+			dest_fd = pool->fds[j].fd;
 			// dont send message to server and sender
 			if (dest_fd != sockfd && dest_fd != send_fd) 
 			{
-				send_msg(dest_fd, send_fd, msg);
+				// send_msg(dest_fd, send_fd, msg);
 			}
 		}
 	}
@@ -216,6 +172,7 @@ int main(int ac, char **av)
 		std::cout << "server socket Error" << std::endl;
 		return 1;
 	}
+	std::cout << "server socket = " << sockfd << std::endl;
 
 	//start listening for 5 clients
 	if (listen(sockfd, INIT_CLIENTS))

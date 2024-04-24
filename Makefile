@@ -2,7 +2,7 @@ NAME = ircserv
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = ft_irc.cpp poll.cpp client.cpp
+SRC = ft_irc.cpp poll.cpp client.cpp parse.cpp
 
 HEADER = ft_irc.hpp poll.hpp client.hpp
 
