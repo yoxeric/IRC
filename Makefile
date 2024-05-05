@@ -2,9 +2,9 @@ NAME = ircserv
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = ft_irc.cpp poll.cpp client.cpp parse.cpp
+SRC = ft_irc.cpp poll.cpp Client.cpp Channel.cpp Server.cpp parse.cpp
 
-HEADER = ft_irc.hpp poll.hpp client.hpp
+HEADER = inc/ft_irc.hpp inc/poll.hpp inc/Client.hpp inc/Channel.hpp inc/Server.hpp
 
 OBJ = ${SRC:.cpp=.o}
 
@@ -20,3 +20,4 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+	

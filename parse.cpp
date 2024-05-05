@@ -1,5 +1,5 @@
 
-#include "ft_irc.hpp"
+#include "inc/ft_irc.hpp"
 
 std::string getword(std::string str, int start)
 {
@@ -19,132 +19,107 @@ std::string getword(std::string str, int start)
 	return (word);
 }
 
-std::string parse(int sender_index, char *buffer, s_poll *pool)
+// To get what command to call, do a map with a string as a key (command name) and a pointer to function (it’s cool)
+
+std::string parse(Server& server, int sender_socket, std::string buffer)
 {
-	std::cout << "----- sender index = " << sender_index << std::endl;
-
-	std::string str(buffer);
 	std::size_t i;
+	Client sender = server.find_client(sender_socket);
 
-	i = str.find("CAP ");
+	i = buffer.find("CAP ");
 	if (i != std::string::npos)
 	{
-		std::string cap = str.substr(i + 4, str.length() - i - 1);
+		std::string cap = buffer.substr(i + 4, buffer.length() - i - 1);
 
-		pool->clients[sender_index].cap(cap);
+		server.cap(sender, cap);
 	}
 
-	i = str.find("NICK ");
+	i = buffer.find("NICK ");
 	if (i != std::string::npos)
 	{
-		std::string nick = getword(str, i + 5);
+		std::string nick = getword(buffer, i + 5);
 
-		pool->clients[sender_index].nick(nick);
+		server.nick(sender, nick);
 	}
 
-	i = str.find("USER ");
+	i = buffer.find("USER ");
 	if (i != std::string::npos)
 	{
-		i = i + 5;
-
 		std::string user;
 		std::string addr;
 
-		user = getword(str, i);
+		user = getword(buffer, i + 5);
 
-		i = str.find(" ", i);
-		user = getword(str, i + 1);
+		i = buffer.find(" ", i + 5);
+		user = getword(buffer, i + 1);
 
-		i = str.find(" ", i + 1);
-		addr = getword(str, i + 1);
+		i = buffer.find(" ", i + 1);
+		addr = getword(buffer, i + 1);
 
-		pool->clients[sender_index].user(user, addr);
+		server.user(sender, user, addr);
 	}
 	
-	i = str.find("JOIN ");
+	i = buffer.find("JOIN ");
 	if (i != std::string::npos)
 	{
 		std::string ch;
 
-		i = str.find("#");
+		i = buffer.find("#");
 		if (i != std::string::npos)
 		{
-			ch = getword(str, i + 1);
+			ch = getword(buffer, i + 1);
 
-			pool->channels.push_back(ch);
-			pool->clients[sender_index].join(ch, pool->fds[sender_index].fd);
+			server.join(sender, ch);
 
-			pool->clients[sender_index].chan.push_back(ch);
 		}
 	}
 
-	i = str.find("WHO ");
+	i = buffer.find("WHO ");
 	if (i != std::string::npos)
 	{
 	}
 
-	i = str.find("MODE ");
+	i = buffer.find("MODE ");
 	if (i != std::string::npos)
 	{
 	}
 
-	i = str.find("PRIVMSG ");
+	i = buffer.find("PRIVMSG ");
 	if (i != std::string::npos)
 	{
+		std::string target = getword(buffer, i + 8);
 
-		i = str.find("#", i + 8);
-		if (i != std::string::npos)
-		{
-			std::string ch = getword(str, i + 1);
+		i = buffer.find(":", i + 8);
 
-			std::cout << "priv ch = " << ch << std::endl;
-
-			std::string msg;
-
-			i = str.find(":");
-			if (i != std::string::npos)
-				msg = str.substr(i+ 1, str.length() - i - 1);
-
-			private_msg_channel(sender_index, ch, msg, pool);
-		}
-		else
-		{
-			i = str.find("PRIVMSG ");
-			std::string usr = getword(str, i + 8);
-
-			std::cout << "priv usr = " << usr << std::endl;
+		std::string msg = buffer.substr(i, buffer.length() - i - 1);
 
 
-			std::string msg;
-
-			i = str.find(":");
-			if (i != std::string::npos)
-				msg = str.substr(i+ 1, str.length() - i - 1);
-
-			private_msg_user(sender_index, usr, msg, pool);
-		}
+		server.prvmsg(sender, target, msg);
+		
 	}
 
-	i = str.find("QUIT ");
+	i = buffer.find("QUIT ");
 	if (i != std::string::npos)
 	{
 	}
 
-	pool->clients[sender_index].print();
+	std::cout << "----- sender = " << sender.get_nickname() << std::endl;
+	sender.print();
 
+	// msg to send to everybody
 	std::string msg;
 
-	i = str.find(":");
+	i = buffer.find(":");
 	// std::cout << "pos1 " << i<< std::endl;
-	// std::cout << "pos2 "<< str.length() - i<< std::endl;
+	// std::cout << "pos2 "<< buffer.length() - i<< std::endl;
 	if (i != std::string::npos)
 	{
-		msg = str.substr(i+ 1, str.length() - i - 1);
+		msg = buffer.substr(i+ 1, buffer.length() - i - 1);
 		return (msg);
 	}
 	else
 	{
-		msg = str;
+		msg = buffer;
 		return (msg);
 	}
 }

@@ -1,5 +1,5 @@
 
-#include "ft_irc.hpp"
+#include "inc/ft_irc.hpp"
 
 int main(int ac, char **av)
 {
