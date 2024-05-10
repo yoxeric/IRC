@@ -1,4 +1,18 @@
 
+<--          # #                      .-                                  -->
+<--          .-.    /      /         /  /          /           /          -->
+<--         (  )   /      /.-.  #   /  /      .   /    .-.    /           -->
+<--   .       /   /     /    ) /   /  /      /   /    (   )  /       .-.  -->
+<--  (-------'   ' ----'`---- '---'  /      `._ /  ---'`--' / ___ __(___  -->
+<--                                                                       -->
+-
+-  Welcome to the ScaleFactor.ma server of the Scale Factor IRC network
 
-start from this
-https://www.youtube.com/playlist?list=PLPyaR5G9aNDvs6TtdpLcVO43_jvxp4emI
+-  The server is designed for quiet communication.
+-  other use not according to the intended purpose will not be tolerated
+-  You cannot change the network rules with any command !
+-  
+
+<p align="center">
+	<img  src="./res/7yy7yc2" />
+</p>

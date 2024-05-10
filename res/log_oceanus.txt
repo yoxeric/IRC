@@ -1,0 +1,176 @@
+<< QUIT :Leaving
+<< CAP LS
+<< NICK you
+<< USER yh2 yh2 irc.oceanius.com :realname
+>> :tiki.oceanius.com NOTICE * :*** Looking up your hostname...
+>> :tiki.oceanius.com CAP * LS :inspircd.org/poison inspircd.org/standard-replies multi-prefix userhost-in-names 
+<< CAP REQ :multi-prefix userhost-in-names
+<< CAP END
+>> :tiki.oceanius.com NOTICE * :*** Could not resolve your hostname: Domain not found; using your IP address (197.230.24.20) instead.
+>> :tiki.oceanius.com CAP you ACK :multi-prefix userhost-in-names
+>> :tiki.oceanius.com 001 you :Welcome to the Oceanius IRC Network you!yh2@197.230.24.20
+>> :tiki.oceanius.com 002 you :Your host is tiki.oceanius.com, running version InspIRCd-3
+>> :tiki.oceanius.com 003 you :This server was created 16:37:50 Feb 23 2024
+>> :tiki.oceanius.com 004 you tiki.oceanius.com InspIRCd-3 LRSWdgikorsw IKLMOPRSbceijklmnoprstvz :ILbejklov
+>> :tiki.oceanius.com 005 you ACCEPT=16 AWAYLEN=200 CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:30 CHANMODES=Ibe,k,Ljl,KMOPRScimnprstz CHANNELLEN=64 CHANTYPES=# ELIST=CMNTU EXCEPTS=e EXTBAN=,ORSUacjmrswz HOSTLEN=64 :are supported by this server
+>> :tiki.oceanius.com 005 you INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:100,b:100,e:100 MAXTARGETS=20 MODES=20 NAMELEN=128 NAMESX NETWORK=Oceanius NICKLEN=31 PREFIX=(ov)@+ SAFELIST :are supported by this server
+<< PROTOCTL NAMESX
+>> :tiki.oceanius.com 005 you SECURELIST=60 STATUSMSG=@+ TOPICLEN=307 UHNAMES USERLEN=11 USERMODES=,,s,LRSWdgikorw WATCH=30 WHOX :are supported by this server
+>> :tiki.oceanius.com 251 you :There are 1 users and 1 invisible on 1 servers
+>> :tiki.oceanius.com 252 you 1 :operator(s) online
+>> :tiki.oceanius.com 253 you 1 :unknown connections
+>> :tiki.oceanius.com 254 you 3 :channels formed
+>> :tiki.oceanius.com 255 you :I have 2 clients and 0 servers
+>> :tiki.oceanius.com 265 you :Current local users: 2  Max: 7
+>> :tiki.oceanius.com 266 you :Current global users: 2  Max: 7
+>> :tiki.oceanius.com 375 you :tiki.oceanius.com message of the day
+>> :tiki.oceanius.com 372 you : .-----.----.-----.---.-.-----.|__|.--.--.-----.
+>> :tiki.oceanius.com 372 you : |  _  |  __|  -__|  _  |     ||  ||  |  |__ --|
+>> :tiki.oceanius.com 372 you : |_____|____|_____|___._|__|__||__||_____|_____|
+>> :tiki.oceanius.com 372 you :                                                
+>> :tiki.oceanius.com 372 you : Welcome to TIKI, an Oceanius server physically located in Ashburn, Virginia.
+>> :tiki.oceanius.com 372 you : This server is sponsored by Sliqua Enterprise Hosting on AS32740 (www.sliqua.com)
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : [ABOUT]
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : TIKI: Protective Idols.
+>> :tiki.oceanius.com 372 you : 
+>> :tiki.oceanius.com 372 you : I have one on my mantelpiece and very effective he is too. 
+>> :tiki.oceanius.com 372 you : No one has attacked or robbed my mantelpiece since he has been there. 
+>> :tiki.oceanius.com 372 you : What's more, he is quite happy to share the limited space with 
+>> :tiki.oceanius.com 372 you : several other small deities from different cultures.
+>> :tiki.oceanius.com 372 you : 
+>> :tiki.oceanius.com 372 you : [CLIENT POLICY]
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : More than (5) clones will be k:lined from the network without notice.
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : If you have plans to flood / spam or otherwise act in an inappropriate manner,
+>> :tiki.oceanius.com 372 you : save the operator staff some time and /quit now.
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : Your IRC client MUST respond to CTCP queries.
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : [LEGAL DISCLAIMER]
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : THE USE OF THIS SERVER AND NETWORK IS A PRIVILEGE, NOT A RIGHT.
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : IRC is a free media, therefore no person or entity involved with Oceanius takes
+>> :tiki.oceanius.com 372 you : any responsibility whatsoever for the opinions expressed or the actions taken
+>> :tiki.oceanius.com 372 you : by users. Absolutely no warranty is either expressed or implied.
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : No monitoring of private communications will ever occur on this server.
+>> :tiki.oceanius.com 372 you : The administration of this server believes strongly in your
+>> :tiki.oceanius.com 372 you : inalienable human right to privacy. Visit http://www.eff.org for more info.
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : Pursuant to United States Code (USC), Title 18, Part 1, Section 2701
+>> :tiki.oceanius.com 372 you : Para (c), Oceanius may do a passive scan on your system to ensure it does
+>> :tiki.oceanius.com 372 you : not provide a security risk to our server or its users.
+>> :tiki.oceanius.com 372 you : If you do not consent to be scanned, please disconnect at once!
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : Upon receiving a "k-line", users are on notice that they are no longer
+>> :tiki.oceanius.com 372 you : authorized to access Oceanius' systems. Any attempt to circumvent the restriction
+>> :tiki.oceanius.com 372 you : will be considered trespassing and subject to civil prosecution.
+>> :tiki.oceanius.com 372 you : The user is instructed to contact admin-team@oceanius.com via e-mail
+>> :tiki.oceanius.com 372 you : to facilitate the removal of the restriction and to once again be authorized to
+>> :tiki.oceanius.com 372 you : use the system.
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : [CONTACT INFORMATION]
+>> :tiki.oceanius.com 372 you :  
+>> :tiki.oceanius.com 372 you : If you need assistance from a member of our team, e-mail admin-team@oceanius.com
+>> :tiki.oceanius.com 372 you : or visit http://www.oceanius.com/support. While #Lobby is an official network
+>> :tiki.oceanius.com 372 you : channel, it is not meant to sort out abuse issues. Thanks for your cooperation.
+>> :tiki.oceanius.com 372 you : 
+>> :tiki.oceanius.com 376 you :End of message of the day.
+>> :tiki.oceanius.com 501 you x :is not a recognised user mode.
+<< LIST >0,<10000
+>> :tiki.oceanius.com NOTICE you :*** You cannot view the channel list right now. Please try again in 47s.
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 323 you :End of channel list.
+<< PING LAG1715199058584
+>> :tiki.oceanius.com PONG tiki.oceanius.com :LAG1715199058584
+<< LIST >0,<10000
+>> :tiki.oceanius.com NOTICE you :*** You cannot view the channel list right now. Please try again in 25s.
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 323 you :End of channel list.
+<< LIST >0,<10000
+>> :tiki.oceanius.com NOTICE you :*** You cannot view the channel list right now. Please try again in 24s.
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 323 you :End of channel list.
+<< LIST >0,<10000
+>> :tiki.oceanius.com NOTICE you :*** You cannot view the channel list right now. Please try again in 24s.
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 323 you :End of channel list.
+<< LIST >0,<10000
+>> :tiki.oceanius.com NOTICE you :*** You cannot view the channel list right now. Please try again in 20s.
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 323 you :End of channel list.
+<< LIST >0,<10000
+>> :tiki.oceanius.com NOTICE you :*** You cannot view the channel list right now. Please try again in 11s.
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 323 you :End of channel list.
+<< PING LAG1715199088682
+<< LIST >0,<10000
+>> :tiki.oceanius.com PONG tiki.oceanius.com :LAG1715199088682
+<< LIST >0,<10000
+<< LIST >0,<10000
+>> :tiki.oceanius.com NOTICE you :*** You cannot view the channel list right now. Please try again in 9s.
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 323 you :End of channel list.
+<< LIST >0,<10000
+>> :tiki.oceanius.com NOTICE you :*** You cannot view the channel list right now. Please try again in 4s.
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 323 you :End of channel list.
+<< LIST >0,<10000
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 322 you #twilightzone 1 :[+nt] 
+>> :tiki.oceanius.com 322 you #lobby 2 :[+nt] 
+>> :tiki.oceanius.com 322 you #dev 1 :[+nt] 
+>> :tiki.oceanius.com 323 you :End of channel list.
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 322 you #twilightzone 1 :[+nt] 
+>> :tiki.oceanius.com 322 you #lobby 2 :[+nt] 
+>> :tiki.oceanius.com 322 you #dev 1 :[+nt] 
+>> :tiki.oceanius.com 323 you :End of channel list.
+>> :tiki.oceanius.com 321 you Channel :Users Name
+>> :tiki.oceanius.com 322 you #twilightzone 1 :[+nt] 
+>> :tiki.oceanius.com 322 you #lobby 2 :[+nt] 
+>> :tiki.oceanius.com 322 you #dev 1 :[+nt] 
+>> :tiki.oceanius.com 323 you :End of channel list.
+<< PING LAG1715199118799
+>> :tiki.oceanius.com PONG tiki.oceanius.com :LAG1715199118799
+<< PING LAG1715199148877
+>> :tiki.oceanius.com PONG tiki.oceanius.com :LAG1715199148877
+<< JOIN #lobby
+>> :you!yh2@197.230.24.20 JOIN :#lobby
+<< MODE #lobby
+<< WHO #lobby %chtsunfra,152
+>> :tiki.oceanius.com 353 you = #lobby :debdrup!debdrup@nerdheaven.ws you!yh2@197.230.24.20 alex!alex@lymington.irccloud.com
+>> :tiki.oceanius.com 366 you #lobby :End of /NAMES list.
+>> :tiki.oceanius.com 324 you #lobby :+nt
+>> :tiki.oceanius.com 329 you #lobby :1708706277
+>> :tiki.oceanius.com 354 you 152 #lobby debdrup nerdheaven.ws tiki.oceanius.com debdrup H* 0 :Daniel Ebdrup
+>> :tiki.oceanius.com 354 you 152 #lobby yh2 197.230.24.20 tiki.oceanius.com you H 0 :realname
+>> :tiki.oceanius.com 354 you 152 #lobby alex lymington.irccloud.com tiki.oceanius.com alex Hs 0 :alex
+>> :tiki.oceanius.com 315 you #lobby :End of /WHO list.
+<< JOIN #twilightzone
+>> :you!yh2@197.230.24.20 JOIN :#twilightzone
+<< MODE #twilightzone
+<< WHO #twilightzone %chtsunfra,152
+>> :tiki.oceanius.com 353 you = #twilightzone :you!yh2@197.230.24.20 alex!alex@lymington.irccloud.com
+>> :tiki.oceanius.com 366 you #twilightzone :End of /NAMES list.
+>> :tiki.oceanius.com 324 you #twilightzone :+nt
+>> :tiki.oceanius.com 329 you #twilightzone :1710939001
+>> :tiki.oceanius.com 354 you 152 #twilightzone yh2 197.230.24.20 tiki.oceanius.com you H 0 :realname
+>> :tiki.oceanius.com 354 you 152 #twilightzone alex lymington.irccloud.com tiki.oceanius.com alex Hs 0 :alex
+>> :tiki.oceanius.com 315 you #twilightzone :End of /WHO list.
+<< WHO #twilightzone %chtsunfra,152
+<< WHO #lobby %chtsunfra,152
+>> :tiki.oceanius.com 354 you 152 #twilightzone yh2 197.230.24.20 tiki.oceanius.com you H 0 :realname
+>> :tiki.oceanius.com 354 you 152 #twilightzone alex lymington.irccloud.com tiki.oceanius.com alex Hs 0 :alex
+>> :tiki.oceanius.com 315 you #twilightzone :End of /WHO list.
+>> :tiki.oceanius.com 354 you 152 #lobby debdrup nerdheaven.ws tiki.oceanius.com debdrup H* 0 :Daniel Ebdrup
+>> :tiki.oceanius.com 354 you 152 #lobby yh2 197.230.24.20 tiki.oceanius.com you H 0 :realname
+>> :tiki.oceanius.com 354 you 152 #lobby alex lymington.irccloud.com tiki.oceanius.com alex Hs 0 :alex
+>> :tiki.oceanius.com 315 you #lobby :End of /WHO list.
+<< PRIVMSG #twilightzone :hey
+<< PING LAG1715199178943
+>> :tiki.oceanius.com PONG tiki.oceanius.com :LAG1715199178943

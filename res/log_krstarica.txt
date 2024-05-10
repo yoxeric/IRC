@@ -1,0 +1,56 @@
+>> :irc.krstarica.com CAP * LS :unrealircd.org/link-security unrealircd.org/plaintext-policy unrealircd.org/history-storage away-notify invite-notify extended-join userhost-in-names multi-prefix cap-notify sasl setname tls chghost account-notify message-tags batch server-time account-tag echo-message labeled-response draft/chathistory extended-monitor standard-replies unrealircd.org/json-log
+<< CAP REQ :away-notify extended-join userhost-in-names multi-prefix account-notify server-time
+<< CAP END
+>> PING :650DA80A
+<< PONG :650DA80A
+>> :irc.krstarica.com CAP you ACK :away-notify extended-join userhost-in-names multi-prefix account-notify server-time 
+>> :irc.krstarica.com 001 you :Welcome to the PIK IRC Network you!~yh2@197.230.24.20
+>> :irc.krstarica.com 002 you :Your host is irc.krstarica.com, running version UnrealIRCd-6.1.4
+>> :irc.krstarica.com 003 you :This server was created Sun Mar 3 2024 at 19:03:47 UTC
+>> :irc.krstarica.com 004 you irc.krstarica.com UnrealIRCd-6.1.4 diopqrstwxzBDGHIRSTWZ beIacdfhiklmnopqrstvzCDFGHKLMNOPQRSTVZ
+>> :irc.krstarica.com 005 you ACCOUNTEXTBAN=account,a AWAYLEN=307 BOT=B CASEMAPPING=ascii CHANLIMIT=#:30 CHANMODES=beI,fkL,lFH,cdimnprstzCDGKMNOPQRSTVZ CHANNELLEN=32 CHANTYPES=# CHATHISTORY=50 CLIENTTAGDENY=*,-draft/typing,-typing,-draft/channel-context,-draft/reply DEAF=d ELIST=MNUCT :are supported by this server
+>> :irc.krstarica.com 005 you EXCEPTS EXTBAN=~,acfjmnpqrtCFGOST INVEX KICKLEN=307 KNOCK MAP MAXLIST=b:300,e:300,I:300 MAXNICKLEN=30 MINNICKLEN=3 MODES=12 MONITOR=128 MSGREFTYPES=msgid,timestamp :are supported by this server
+>> :irc.krstarica.com 005 you NAMELEN=50 NAMESX NETWORK=PIK NICKLEN=30 PREFIX=(qaohv)~&@%+ QUITLEN=307 SAFELIST SILENCE=15 STATUSMSG=~&@%+ TARGMAX=DCCALLOW:,ISON:,JOIN:,KICK:4,KILL:,LIST:,NAMES:1,NOTICE:1,PART:,PRIVMSG:4,SAJOIN:,SAPART:,TAGMSG:1,USERHOST:,USERIP:,WATCH:,WHOIS:1,WHOWAS:1 TOPICLEN=360 UHNAMES :are supported by this server
+<< PROTOCTL NAMESX
+>> :irc.krstarica.com 005 you USERIP WALLCHOPS WATCH=128 WATCHOPTS=A WHOX :are supported by this server
+>> :irc.krstarica.com 396 you 50687FDE.B24CE26E.1E4691A9.IP :is now your displayed host
+>> :irc.krstarica.com 251 you :There are 1 users and 169 invisible on 2 servers
+>> :irc.krstarica.com 252 you 46 :operator(s) online
+>> :irc.krstarica.com 254 you 60 :channels formed
+>> :irc.krstarica.com 255 you :I have 128 clients and 1 servers
+>> :irc.krstarica.com 265 you 128 329 :Current local users 128, max 329
+>> :irc.krstarica.com 266 you 170 378 :Current global users 170, max 378
+>> :irc.krstarica.com 375 you :- irc.krstarica.com Message of the Day - 
+>> :irc.krstarica.com 372 you :- 3/3/2024 20:08
+>> :irc.krstarica.com 372 you :- 
+>> :irc.krstarica.com 372 you :- DOBRO DOSLI U PRICAONICU KRSTARICE!
+>> :irc.krstarica.com 372 you :- 
+>> :irc.krstarica.com 372 you :- Koriscenjem Pricaonice saglasni ste sa uslovima koriscenja: https://pricaonica.krstarica.com/uslovi-koriscenja/ i obavezujete se da cete postovati Pravilnik Pricaonice: https://pricaonica.krstarica.com/pravilnik/
+>> :irc.krstarica.com 372 you :- 
+>> :irc.krstarica.com 372 you :- Pristup Pricaonici je dozvoljen samo osobama sa 14 ili vise godina.
+>> :irc.krstarica.com 372 you :- 
+>> :irc.krstarica.com 372 you :- Deljenje pornografskih sadrzaja je strogo zabranjeno i bice sankcionisano.
+>> :irc.krstarica.com 372 you :- 
+>> :irc.krstarica.com 372 you :- Obelodanjivanje licnih podataka o bilo kom ucesniku je strogo kaznjivo.
+>> :irc.krstarica.com 372 you :- 
+>> :irc.krstarica.com 372 you :- Ukoliko vas neko uznemirava ili salje neprikladne sadrzaje: https://pricaonica.krstarica.com/zalba/
+>> :irc.krstarica.com 372 you :- 
+>> :irc.krstarica.com 372 you :- Registracija nadimka: https://pricaonica.krstarica.com/nadimak/
+>> :irc.krstarica.com 372 you :- 
+>> :irc.krstarica.com 372 you :- Najcesca pitanja i odgovori: https://pricaonica.krstarica.com/pomoc/
+>> :irc.krstarica.com 372 you :- 
+>> :irc.krstarica.com 372 you :- Prijatan boravak!
+>> :irc.krstarica.com 376 you :End of /MOTD command.
+>> :you MODE you :+iwxRT
+>> :irc.krstarica.com NOTICE you :********************************************************************************
+>> :irc.krstarica.com NOTICE you :Neophodno je da se autorizujete. Ukoliko imate registrovan nadimak, koristite /NS IDENTIFY sifra. U protivnom, posetite http://irc.krstarica.com/auth/code.php?id=4242247717 da biste nastavili (dva puta brzo kliknite na ovu adresu). Ukoliko vam browser blokira otvaranje novog prozora - omogucite pop-up prozore na Krstarici.
+>> :irc.krstarica.com NOTICE you :********************************************************************************
+>> @time=2024-05-09T09:37:45.153Z :NickServ!services@services.krstarica.com NOTICE you :Vas nadimak nije registrovan. Da biste se registrovali posetite: https://pricaonica.krstarica.com/nadimak/
+>> @time=2024-05-09T09:37:45.153Z :StatServ!StatServ@services.krstarica.com PRIVMSG you :VERSION
+<< NOTICE StatServ :VERSION HexChat 2.10.2 / Darwin 19.6.0 [x86_64/3.10GHz/SMP]
+<< LIST >4,<10000
+<< LIST >4,<10000
+<< PING LAG1715197479176
+<< PING LAG1715197509266
+<< PING LAG1715197539335
+<< PING LAG1715197573671

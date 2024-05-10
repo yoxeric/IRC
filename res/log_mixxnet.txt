@@ -1,0 +1,462 @@
+>> :nexus.nl.eu.mixxnet.net NOTICE Auth :*** Ident request timed out.
+>> :nexus.nl.eu.mixxnet.net NOTICE Auth :*** Could not find your ident, using ~yh2 instead.
+>> :nexus.nl.eu.mixxnet.net NOTICE Auth :Welcome to MIXXnet!
+>> :nexus.nl.eu.mixxnet.net 001 you :Welcome to the MIXXnet IRC Network you!~yh2@197.230.24.20
+>> :nexus.nl.eu.mixxnet.net 002 you :Your host is nexus.nl.eu.mixxnet.net, running version InspIRCd-2.0
+>> :nexus.nl.eu.mixxnet.net 003 you :This server was created 03:05:53 Mar 14 2024
+>> :nexus.nl.eu.mixxnet.net 004 you nexus.nl.eu.mixxnet.net InspIRCd-2.0 BGIRSWciorsw ABCFGHIJKLMNOQRSTXYabcdefghijklmnopqrstuvxz FHIJLXYabdefghjkloqvx
+>> :nexus.nl.eu.mixxnet.net 005 you AWAYLEN=200 CASEMAPPING=rfc1459 CHANMODES=IXYabegqx,k,FHJLdfjl,ABCGKMNOQRSTcimnprstuz CHANNELLEN=64 CHANTYPES=# CHARSET=ascii ELIST=MU ESILENCE EXCEPTS=e EXTBAN=,ABCNOQRSTUcjmprz FNC INVEX=I KICKLEN=255 :are supported by this server
+>> :nexus.nl.eu.mixxnet.net 005 you MAP MAXBANS=60 MAXCHANNELS=30 MAXPARA=32 MAXTARGETS=30 MODES=20 NETWORK=MIXXnet NICKLEN=31 OVERRIDE PREFIX=(ohv)@%+ SECURELIST SILENCE=32 SSL=136.144.206.193:6697 :are supported by this server
+>> :nexus.nl.eu.mixxnet.net 005 you STARTTLS STATUSMSG=@%+ TOPICLEN=512 VBANLIST WALLCHOPS WALLVOICES :are supported by this server
+>> :nexus.nl.eu.mixxnet.net 042 you 900AAHH00 :your unique ID
+>> :nexus.nl.eu.mixxnet.net 375 you :nexus.nl.eu.mixxnet.net message of the day
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- /**************************************************/
+>> :nexus.nl.eu.mixxnet.net 372 you :-         __  __ _____  ____  __           _
+>> :nexus.nl.eu.mixxnet.net 372 you :-        |  \/  |_ _\ \/ /\ \/ /_ __   ___| |_
+>> :nexus.nl.eu.mixxnet.net 372 you :-        | |\/| || | \  /  \  /| '_ \ / _ \ __|
+>> :nexus.nl.eu.mixxnet.net 372 you :-        | |  | || | /  \  /  \| | | |  __/ |_
+>> :nexus.nl.eu.mixxnet.net 372 you :-        |_|  |_|___/_/\_\/_/\_\_| |_|\___|\__|
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- /**************************************************/
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- Welcome to MIXXnet Netherlands [nexus.nl.eu.mixxnet.net]!
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- This server is located in:  Amsterdam, The Netherlands
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- Visit our website at http://www.mixxnet.net
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- /**************************************************/
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- MIXXnet Chicago Staff:
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- ADMIN:          Revox (revox@mixxnet.net)
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- /**************************************************/
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :-                THIS SERVER LISTENS ON:
+>> :nexus.nl.eu.mixxnet.net 372 you :-                        
+>> :nexus.nl.eu.mixxnet.net 372 you :-                        * 6667
+>> :nexus.nl.eu.mixxnet.net 372 you :-                        * 6669
+>> :nexus.nl.eu.mixxnet.net 372 you :-                        * 6697 (SSL)
+>> :nexus.nl.eu.mixxnet.net 372 you :-                        * 7000
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- /**************************************************/
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- GETTING HELP:
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- For MIXXnet General Help:  /join #help
+>> :nexus.nl.eu.mixxnet.net 372 you :- To locate an IRCop:        /ircops
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- MIXXnet Wiki:         http://mixxnet.net/wiki/
+>> :nexus.nl.eu.mixxnet.net 372 you :- SSL Information:      http://mixxnet.net/wiki/index.php?title=SSL
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- Channel Start Guide:
+>> :nexus.nl.eu.mixxnet.net 372 you :- http://mixxnet.net/wiki/index.php?title=Channel_Start_Guide
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- Glined, Akilled, or Klined?
+>> :nexus.nl.eu.mixxnet.net 372 you :- http://www.mixxnet.net/bansupport
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- /**************************************************/
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- SERVER RULES:
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- * NO SPAMMING / FLOODING
+>> :nexus.nl.eu.mixxnet.net 372 you :- * NO ILLEGAL ACTIVITY
+>> :nexus.nl.eu.mixxnet.net 372 you :- * NO IMPERSONATION
+>> :nexus.nl.eu.mixxnet.net 372 you :- * NO MORE THAN 4 CONNECTIONS FROM YOUR HOSTNAME
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- For a complete list of network rules, type /rules
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 372 you :- /**************************************************/
+>> :nexus.nl.eu.mixxnet.net 372 you :- 
+>> :nexus.nl.eu.mixxnet.net 376 you :End of message of the day.
+>> :nexus.nl.eu.mixxnet.net 251 you :There are 48 users and 55 invisible on 6 servers
+>> :nexus.nl.eu.mixxnet.net 252 you 6 :operator(s) online
+>> :nexus.nl.eu.mixxnet.net 254 you 64 :channels formed
+>> :nexus.nl.eu.mixxnet.net 255 you :I have 20 clients and 1 servers
+>> :nexus.nl.eu.mixxnet.net 265 you :Current Local Users: 20  Max: 35
+>> :nexus.nl.eu.mixxnet.net 266 you :Current Global Users: 103  Max: 131
+>> :you!~yh2@197.230.24.20 MODE you +i
+<< LIST >0,<10000
+>> :nexus.nl.eu.mixxnet.net NOTICE you :*** You cannot list within the first 60 seconds of connecting. Please try again later.
+>> :nexus.nl.eu.mixxnet.net 321 you Channel :Users Name
+>> :nexus.nl.eu.mixxnet.net 323 you :End of channel list.
+<< LIST >0,<10000
+>> :nexus.nl.eu.mixxnet.net NOTICE you :*** You cannot list within the first 60 seconds of connecting. Please try again later.
+>> :nexus.nl.eu.mixxnet.net 321 you Channel :Users Name
+>> :nexus.nl.eu.mixxnet.net 323 you :End of channel list.
+<< PING LAG1715197726819
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715197726819
+<< PING LAG1715197756892
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715197756892
+<< LIST >0,<10000
+>> :nexus.nl.eu.mixxnet.net NOTICE you :*** You cannot list within the first 60 seconds of connecting. Please try again later.
+>> :nexus.nl.eu.mixxnet.net 321 you Channel :Users Name
+>> :nexus.nl.eu.mixxnet.net 323 you :End of channel list.
+<< LIST >0,<10000
+>> :nexus.nl.eu.mixxnet.net 321 you Channel :Users Name
+>> :nexus.nl.eu.mixxnet.net 322 you #dumanetwork 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #trance 1 :[+nrt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #mixes.dj 3 :[+nrt] Registrations at www.mixes.dj/reg :: If you need help or want to chat, stick around and speak ;) :: R.I.P. John Avenida ::
+>> :nexus.nl.eu.mixxnet.net 322 you #DumaNet 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #pakchatroom 1 :[+nrt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #linux 1 :[+nrt] Linux Help Channel - Please ask your question and we will do our best to help
+>> :nexus.nl.eu.mixxnet.net 322 you #thc 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #creampie 1 :[+nrt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #tiesto 3 :[+nrt] ..:: Club Life with Tiësto ::.. | ..:: | ::.. | ..:: 192kbps relay from SAT radio: http://kowys.radio.0n-line.info:8888/listen.pls ::..
+>> :nexus.nl.eu.mixxnet.net 322 you #UF 2 :[+nrt] #UF It's FRiDAY! UF 408 XXL !! :: http://www.unlimitedfriday.com/ :: UF-REPLAY RADiO on REQUEST - Login. :: http://unlimitedfriday.com/index.php?option=com_content&task=view&id=24&Itemid=1 & http://www.party107.com/forum/showthread.php?t=17725 :: iN NEED 4 GUESTMIXES / Guestmix-slots free! - THNX for donation: AMPZ, TRANSiD, RiCH LAKE...LEX4i, REDDMAN.
+>> :nexus.nl.eu.mixxnet.net 322 you #bitcoin 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #trancesound 4 :[+nrt] TranceSounders around the world, I am inviting you for TranceSound Session 197 with Cressida from Germany and Sivro from United States of America on Saturday, the 17th of December @ 11:00 GMT UTC London time on Party107.com
+>> :nexus.nl.eu.mixxnet.net 322 you #Boci 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #magicisland 1 :[+nrt] ♪♪♪ Magic Island - Music for Balearic People. Fridays 4pm EST, 9pm GMT, 10pm CET on DI.FM - http://www.di.fm/trance/ \o/ ♪♪♪ TUNE IN! ♪♪♪
+>> :nexus.nl.eu.mixxnet.net 322 you #desichat 1 :[+nrt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #mixx941 2 :[+nrt] This station/channel is no longer in operation. Please check out #party107 / http://party107.com for trance and electronic music 24/7!
+>> :nexus.nl.eu.mixxnet.net 322 you #audioplayerz 3 :[+knrt <key>] :: Broadcast: ON Air | Website up | https://audioplayerz.com/radio.m3u :: 
+>> :nexus.nl.eu.mixxnet.net 322 you #ferrycorsten 2 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #proxyhelp 2 :[+nrt] MIXXnet Proxy Help || If you cannot join a channel due to being detected as a proxy, please see the private message from "ProxyGuard" explaining how to remove your IP address from the blacklist || Full information about MIXXnet's proxy policy can be found at: http://mixxnet.net/wiki/index.php?title=Proxy || Please ask your question and we will help you as soon as possible.
+>> :nexus.nl.eu.mixxnet.net 322 you #Trusteetering 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #chreddy 3 :[+nrt] Chreddy's playground
+>> :nexus.nl.eu.mixxnet.net 322 you #rtrance 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #party107 6 :[+Snrt] [Party107 Chat]::  We are making a come back !!!!:: We have a new look !!!:: party107.com
+>> :nexus.nl.eu.mixxnet.net 322 you #jstar 7 :[+jnrt 3:8] RIP Holly
+>> :nexus.nl.eu.mixxnet.net 322 you #ml3zone 2 :[+nrt] Welcome to the Manuel Le Saux Channel / New site up: www.manuellesaux.com /
+>> :nexus.nl.eu.mixxnet.net 322 you #LRN 8 :[+Snrt] #LRN Welcome to LRN.FM – The Liberty Radio Network!
+>> :nexus.nl.eu.mixxnet.net 322 you #ops 3 :[+nrt] Topic
+>> :nexus.nl.eu.mixxnet.net 322 you #trancefamily 7 :[+nrt] Trance 4 Life!
+>> :nexus.nl.eu.mixxnet.net 322 you #freebsd 2 :[+nrt] FreeBSD Chat - http://www.freebsd.org
+>> :nexus.nl.eu.mixxnet.net 322 you #Vadvagyak 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #dvdkon_bottest 3 :[+cnrt] Go Down the Rabbit Hole - Kickin’ bots since 2018: MORE THAN 40,000 SERVED (2019-05-06) current: 44867+ | through 2024-01-08==44867
+>> :nexus.nl.eu.mixxnet.net 322 you #kavezo 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #etn 3 :[+CRcnrt]  Welcome to the ETN.fm channel | Tracklists: we don't have them. Ask the DJ/Artist through Facebook, MySpace, or E-Mail. | Please donate to help keep ETN.fm alive! http://www.etn.fm/Content/donate
+>> :nexus.nl.eu.mixxnet.net 322 you #crazy_wisdom 1 :[+nrt] <_Delirium> "Perl is awk with skin cancer. And it's ugly too." -my cs professor
+>> :nexus.nl.eu.mixxnet.net 322 you #the_h00d 11 :[+djnrt 5 4:8] Welcome to the World Famous #the_h00d | Some, I assume, Are Good People | You need a psychologist. | Don't pull an NTS. Remember to pull out in time! | Fire's Betas Count: 29 | Holly's Death Count: 63
+>> :nexus.nl.eu.mixxnet.net 322 you #afterhours 3 :[+Slnt 52] ~ =[AFTERHOURS.FM]= - ONLINE COMMUNITY FOR TRANCE & PROGRESSIVE ~ tune in @ www.ah.fm ~ !news command: keeps you updated on upcoming SPECIAL broadcasts NEW: !today command: today's schedule for AH.FM ~ Thanks for your continuous support! ~ new record: 2530 Listeners | check back for more LIVE BROADCASTS and special sets! ~
+>> :nexus.nl.eu.mixxnet.net 322 you #gdjb 8 :[+nrt] Every Thursdays 12pm EST Markus Schulz | Streams: http://di.fm/trance https://www.twitch.tv/markusschulz https://www.youtube.com/user/markusschulz | http://markusschulz.com https://twitter.com/markusschulz https://instagram.com/markusschulz 
+>> :nexus.nl.eu.mixxnet.net 322 you #uno 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #asot 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #RePlayScape 3 :[+nrt] TOPIC THIS MONTH: Religion as Poetry vs Dogma - https://www.meetup.com/mindpod/events/297807919/
+>> :nexus.nl.eu.mixxnet.net 322 you #at500 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #fsoe 3 :[+lnrt 25] R.I.P. holly/hollyGurl
+>> :nexus.nl.eu.mixxnet.net 322 you #chat 2 :[+nrt] MIXXnet General Chat - http://www.mixxnet.net
+>> :nexus.nl.eu.mixxnet.net 322 you #flort 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #anjunabeats 6 :[+nt] "Welcome to #anjunabeats -=- Home of Trance Around the World with Above & Beyond -=- Tune in @ DI.fm here: http://www.di.fm/mp3/trance.pls || http://www.twitter.com/anjunabeats - http://www.twitter.com/aboveandbeyond - To chat with anjuna fans on twitter use the hashtags #TATW and #Anjunafamily
+>> :nexus.nl.eu.mixxnet.net 322 you #livegrooves 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #Party-room 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #reddit-asot 8 :[+AFHjnrt 2:3 10:600 10:600] Welcome to #Reddit-ASOT, the /r/AStateofTrance IRC channel | http://reddit.com/r/astateoftrance
+>> :nexus.nl.eu.mixxnet.net 322 you #help 3 :[+Snrt] MIXXnet Help - Please ask your question and we will answer as soon as possible! || Documentation Wiki: https://www.mixxnet.net/wiki/ || Need a vhost? Type "/msg hostserv generic assign" without quotes || https://www.mixxnet.net/
+>> :nexus.nl.eu.mixxnet.net 322 you #rekt 2 :[+nrt] Welcome to reKt. Mixxnet #1 murder bed channel | The quartz is under full control | Say little, do little, admit noting, demand proof. Always always deny everything! | Long live the 5th Colum!!
+>> :nexus.nl.eu.mixxnet.net 322 you #crypto 1 :[+nt] 
+>> :nexus.nl.eu.mixxnet.net 322 you #!sXe 1 :[+nt] _\|/_ Welcome to #!sXe _\|/_ http://hasthelargehadroncolliderdestroyedtheworldyet.com _\|/_
+>> :nexus.nl.eu.mixxnet.net 323 you :End of channel list.
+<< PING LAG1715197786957
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715197786957
+<< JOIN #the_h00d
+>> :you!~yh2@197.230.24.20 JOIN :#the_h00d
+<< MODE #the_h00d
+<< WHO #the_h00d
+>> :nexus.nl.eu.mixxnet.net 332 you #the_h00d :Welcome to the World Famous #the_h00d | Some, I assume, Are Good People | You need a psychologist. | Don't pull an NTS. Remember to pull out in time! | Fire's Betas Count: 29 | Holly's Death Count: 63
+>> :nexus.nl.eu.mixxnet.net 333 you #the_h00d holly!~holly@hollygurl.users.mixxnet.net 1614801021
+>> :nexus.nl.eu.mixxnet.net 353 you = #the_h00d :@Bjorn @NTS @iekue_erander @Chreddy @Revox @h00db0t daxson @zero1 @Magnum @D2T you @jstar 
+>> :nexus.nl.eu.mixxnet.net 366 you #the_h00d :End of /NAMES list.
+>> :nexus.nl.eu.mixxnet.net 324 you #the_h00d +djnrt 5 4:8
+>> :nexus.nl.eu.mixxnet.net 329 you #the_h00d 1386242542
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d bjorn bjorn.users.mixxnet.net tnt.il.us.mixxnet.net Bjorn G@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d iekue_eran 83-82-205-7.cable.dynamic.v4.ziggo.nl nexus.nl.eu.mixxnet.net iekue_erander H@ :0 ...
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~chreddy chreddy.users.mixxnet.net nexus.nl.eu.mixxnet.net Chreddy H@ :0 Chreddy
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~revox staff.mixxnet.net nexus.nl.eu.mixxnet.net Revox H*@ :0 Revox
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d cservice services.mixxnet.net services.mixxnet.net h00db0t H@ :0 BotServ
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d limnoria zero1.users.mixxnet.net vega.nj.us.mixxnet.net zero1 H@ :0 zero1
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~zero-one magnum.users.mixxnet.net vega.nj.us.mixxnet.net Magnum H@ :0 zero-one
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H@ :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G@ :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #the_h00d :End of /WHO list.
+<< PING LAG1715197817042
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715197817042
+<< WHO #the_h00d
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d bjorn bjorn.users.mixxnet.net tnt.il.us.mixxnet.net Bjorn G@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d iekue_eran 83-82-205-7.cable.dynamic.v4.ziggo.nl nexus.nl.eu.mixxnet.net iekue_erander H@ :0 ...
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~chreddy chreddy.users.mixxnet.net nexus.nl.eu.mixxnet.net Chreddy H@ :0 Chreddy
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~revox staff.mixxnet.net nexus.nl.eu.mixxnet.net Revox H*@ :0 Revox
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d cservice services.mixxnet.net services.mixxnet.net h00db0t H@ :0 BotServ
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d limnoria zero1.users.mixxnet.net vega.nj.us.mixxnet.net zero1 H@ :0 zero1
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~zero-one magnum.users.mixxnet.net vega.nj.us.mixxnet.net Magnum H@ :0 zero-one
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H@ :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G@ :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #the_h00d :End of /WHO list.
+<< PING LAG1715197847117
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715197847117
+<< PING LAG1715197877180
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715197877180
+<< WHO #the_h00d
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d bjorn bjorn.users.mixxnet.net tnt.il.us.mixxnet.net Bjorn G@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d iekue_eran 83-82-205-7.cable.dynamic.v4.ziggo.nl nexus.nl.eu.mixxnet.net iekue_erander H@ :0 ...
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~chreddy chreddy.users.mixxnet.net nexus.nl.eu.mixxnet.net Chreddy H@ :0 Chreddy
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~revox staff.mixxnet.net nexus.nl.eu.mixxnet.net Revox H*@ :0 Revox
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d cservice services.mixxnet.net services.mixxnet.net h00db0t H@ :0 BotServ
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d limnoria zero1.users.mixxnet.net vega.nj.us.mixxnet.net zero1 H@ :0 zero1
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~zero-one magnum.users.mixxnet.net vega.nj.us.mixxnet.net Magnum H@ :0 zero-one
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H@ :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G@ :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #the_h00d :End of /WHO list.
+<< PING LAG1715197907262
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715197907262
+<< PING LAG1715197937338
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715197937338
+<< WHO #the_h00d
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d bjorn bjorn.users.mixxnet.net tnt.il.us.mixxnet.net Bjorn G@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d iekue_eran 83-82-205-7.cable.dynamic.v4.ziggo.nl nexus.nl.eu.mixxnet.net iekue_erander H@ :0 ...
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~chreddy chreddy.users.mixxnet.net nexus.nl.eu.mixxnet.net Chreddy H@ :0 Chreddy
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~revox staff.mixxnet.net nexus.nl.eu.mixxnet.net Revox H*@ :0 Revox
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d cservice services.mixxnet.net services.mixxnet.net h00db0t H@ :0 BotServ
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d limnoria zero1.users.mixxnet.net vega.nj.us.mixxnet.net zero1 H@ :0 zero1
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~zero-one magnum.users.mixxnet.net vega.nj.us.mixxnet.net Magnum H@ :0 zero-one
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H@ :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G@ :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #the_h00d :End of /WHO list.
+<< JOIN #gdjb
+>> :you!~yh2@197.230.24.20 JOIN :#gdjb
+<< MODE #gdjb
+<< WHO #gdjb
+>> :nexus.nl.eu.mixxnet.net 332 you #gdjb :Every Thursdays 12pm EST Markus Schulz | Streams: http://di.fm/trance https://www.twitch.tv/markusschulz https://www.youtube.com/user/markusschulz | http://markusschulz.com https://twitter.com/markusschulz https://instagram.com/markusschulz 
+>> :nexus.nl.eu.mixxnet.net 333 you #gdjb TigerClaw!~mcintado@staff.party107.com 1640891735
+>> :nexus.nl.eu.mixxnet.net 353 you = #gdjb :@MarkK NTS Eagle_Erwin @ChanServ daxson Dhagor ninex you jstar 
+>> :nexus.nl.eu.mixxnet.net 366 you #gdjb :End of /NAMES list.
+>> :nexus.nl.eu.mixxnet.net 324 you #gdjb +nrt
+>> :nexus.nl.eu.mixxnet.net 329 you #gdjb 1300166433
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H*@ :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb Erwin 2a02-a451-b3f1-1-6a05-caff-fe02-a79.fixed6.kpn.net nexus.nl.eu.mixxnet.net Eagle_Erwin G :0 Erwin Bronkhorst
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb services mixxnet.net services.mixxnet.net ChanServ H@ :0 ChanServ
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~lick 208-47-50-84.dyn.estpak.ee nexus.nl.eu.mixxnet.net Dhagor H :0 N/A
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ninex 69.42.218.111 vega.nj.us.mixxnet.net ninex H :0 ninex
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #gdjb :End of /WHO list.
+<< PING LAG1715197967423
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715197967423
+<< PING LAG1715197997507
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715197997507
+<< WHO #gdjb
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H*@ :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb Erwin 2a02-a451-b3f1-1-6a05-caff-fe02-a79.fixed6.kpn.net nexus.nl.eu.mixxnet.net Eagle_Erwin G :0 Erwin Bronkhorst
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb services mixxnet.net services.mixxnet.net ChanServ H@ :0 ChanServ
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~lick 208-47-50-84.dyn.estpak.ee nexus.nl.eu.mixxnet.net Dhagor H :0 N/A
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ninex 69.42.218.111 vega.nj.us.mixxnet.net ninex H :0 ninex
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #gdjb :End of /WHO list.
+<< PING LAG1715198027605
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198027605
+<< JOIN #LRN
+>> :you!~yh2@197.230.24.20 JOIN :#LRN
+<< MODE #LRN
+<< WHO #LRN
+>> :nexus.nl.eu.mixxnet.net 332 you #LRN :#LRN Welcome to LRN.FM – The Liberty Radio Network!
+>> :nexus.nl.eu.mixxnet.net 333 you #LRN ffej!uid19718@ffej.users.mixxnet.net 1387678038
+>> :nexus.nl.eu.mixxnet.net 353 you = #LRN :MarkK livestradamus daxson phigan osi D2T lugosi you jstar 
+>> :nexus.nl.eu.mixxnet.net 366 you #LRN :End of /NAMES list.
+>> :nexus.nl.eu.mixxnet.net 324 you #LRN +Snrt
+>> :nexus.nl.eu.mixxnet.net 329 you #LRN 1300166434
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H* :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~livestradam 94.49.2.141 vega.nj.us.mixxnet.net livestradamus H :0 Livestradamus Bin Satoshi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN phigan 142.11.222.112 vega.nj.us.mixxnet.net phigan H :0 Joe S. Phigan
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~osi osi.users.mixxnet.net vega.nj.us.mixxnet.net osi H :0 أوسي
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~lugosi lugosi.users.mixxnet.net tnt.il.us.mixxnet.net lugosi H :0 lugosi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #LRN :End of /WHO list.
+<< PING LAG1715198057688
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198057688
+<< WHO #LRN
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H* :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~livestradam 94.49.2.141 vega.nj.us.mixxnet.net livestradamus H :0 Livestradamus Bin Satoshi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN phigan 142.11.222.112 vega.nj.us.mixxnet.net phigan H :0 Joe S. Phigan
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~osi osi.users.mixxnet.net vega.nj.us.mixxnet.net osi H :0 أوسي
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~lugosi lugosi.users.mixxnet.net tnt.il.us.mixxnet.net lugosi H :0 lugosi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #LRN :End of /WHO list.
+<< PING LAG1715198087765
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198087765
+<< PING LAG1715198117836
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198117836
+<< WHO #LRN
+<< WHO #gdjb
+<< WHO #the_h00d
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H* :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~livestradam 94.49.2.141 vega.nj.us.mixxnet.net livestradamus H :0 Livestradamus Bin Satoshi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN phigan 142.11.222.112 vega.nj.us.mixxnet.net phigan H :0 Joe S. Phigan
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~osi osi.users.mixxnet.net vega.nj.us.mixxnet.net osi H :0 أوسي
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~lugosi lugosi.users.mixxnet.net tnt.il.us.mixxnet.net lugosi H :0 lugosi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #LRN :End of /WHO list.
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H*@ :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb Erwin 2a02-a451-b3f1-1-6a05-caff-fe02-a79.fixed6.kpn.net nexus.nl.eu.mixxnet.net Eagle_Erwin G :0 Erwin Bronkhorst
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb services mixxnet.net services.mixxnet.net ChanServ H@ :0 ChanServ
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~lick 208-47-50-84.dyn.estpak.ee nexus.nl.eu.mixxnet.net Dhagor H :0 N/A
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ninex 69.42.218.111 vega.nj.us.mixxnet.net ninex H :0 ninex
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #gdjb :End of /WHO list.
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d bjorn bjorn.users.mixxnet.net tnt.il.us.mixxnet.net Bjorn G@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d iekue_eran 83-82-205-7.cable.dynamic.v4.ziggo.nl nexus.nl.eu.mixxnet.net iekue_erander H@ :0 ...
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~chreddy chreddy.users.mixxnet.net nexus.nl.eu.mixxnet.net Chreddy H@ :0 Chreddy
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~revox staff.mixxnet.net nexus.nl.eu.mixxnet.net Revox H*@ :0 Revox
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d cservice services.mixxnet.net services.mixxnet.net h00db0t H@ :0 BotServ
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d limnoria zero1.users.mixxnet.net vega.nj.us.mixxnet.net zero1 H@ :0 zero1
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~zero-one magnum.users.mixxnet.net vega.nj.us.mixxnet.net Magnum H@ :0 zero-one
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H@ :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G@ :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #the_h00d :End of /WHO list.
+<< PING LAG1715198147917
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198147917
+<< PING LAG1715198177997
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198177997
+<< WHO #LRN
+<< WHO #gdjb
+<< WHO #the_h00d
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H* :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~livestradam 94.49.2.141 vega.nj.us.mixxnet.net livestradamus H :0 Livestradamus Bin Satoshi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN phigan 142.11.222.112 vega.nj.us.mixxnet.net phigan H :0 Joe S. Phigan
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~osi osi.users.mixxnet.net vega.nj.us.mixxnet.net osi H :0 أوسي
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~lugosi lugosi.users.mixxnet.net tnt.il.us.mixxnet.net lugosi H :0 lugosi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #LRN :End of /WHO list.
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H*@ :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb Erwin 2a02-a451-b3f1-1-6a05-caff-fe02-a79.fixed6.kpn.net nexus.nl.eu.mixxnet.net Eagle_Erwin G :0 Erwin Bronkhorst
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb services mixxnet.net services.mixxnet.net ChanServ H@ :0 ChanServ
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~lick 208-47-50-84.dyn.estpak.ee nexus.nl.eu.mixxnet.net Dhagor H :0 N/A
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ninex 69.42.218.111 vega.nj.us.mixxnet.net ninex H :0 ninex
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #gdjb :End of /WHO list.
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d bjorn bjorn.users.mixxnet.net tnt.il.us.mixxnet.net Bjorn G@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d iekue_eran 83-82-205-7.cable.dynamic.v4.ziggo.nl nexus.nl.eu.mixxnet.net iekue_erander H@ :0 ...
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~chreddy chreddy.users.mixxnet.net nexus.nl.eu.mixxnet.net Chreddy H@ :0 Chreddy
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~revox staff.mixxnet.net nexus.nl.eu.mixxnet.net Revox H*@ :0 Revox
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d cservice services.mixxnet.net services.mixxnet.net h00db0t H@ :0 BotServ
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d limnoria zero1.users.mixxnet.net vega.nj.us.mixxnet.net zero1 H@ :0 zero1
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~zero-one magnum.users.mixxnet.net vega.nj.us.mixxnet.net Magnum H@ :0 zero-one
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H@ :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G@ :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #the_h00d :End of /WHO list.
+<< PING LAG1715198208089
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198208089
+<< PING LAG1715198238170
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198238170
+<< WHO #LRN
+<< WHO #gdjb
+<< WHO #the_h00d
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H* :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~livestradam 94.49.2.141 vega.nj.us.mixxnet.net livestradamus H :0 Livestradamus Bin Satoshi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN phigan 142.11.222.112 vega.nj.us.mixxnet.net phigan H :0 Joe S. Phigan
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~osi osi.users.mixxnet.net vega.nj.us.mixxnet.net osi H :0 أوسي
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~lugosi lugosi.users.mixxnet.net tnt.il.us.mixxnet.net lugosi H :0 lugosi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #LRN :End of /WHO list.
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H*@ :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb Erwin 2a02-a451-b3f1-1-6a05-caff-fe02-a79.fixed6.kpn.net nexus.nl.eu.mixxnet.net Eagle_Erwin G :0 Erwin Bronkhorst
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb services mixxnet.net services.mixxnet.net ChanServ H@ :0 ChanServ
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~lick 208-47-50-84.dyn.estpak.ee nexus.nl.eu.mixxnet.net Dhagor H :0 N/A
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ninex 69.42.218.111 vega.nj.us.mixxnet.net ninex H :0 ninex
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #gdjb :End of /WHO list.
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d bjorn bjorn.users.mixxnet.net tnt.il.us.mixxnet.net Bjorn G@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d iekue_eran 83-82-205-7.cable.dynamic.v4.ziggo.nl nexus.nl.eu.mixxnet.net iekue_erander H@ :0 ...
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~chreddy chreddy.users.mixxnet.net nexus.nl.eu.mixxnet.net Chreddy H@ :0 Chreddy
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~revox staff.mixxnet.net nexus.nl.eu.mixxnet.net Revox H*@ :0 Revox
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d cservice services.mixxnet.net services.mixxnet.net h00db0t H@ :0 BotServ
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d limnoria zero1.users.mixxnet.net vega.nj.us.mixxnet.net zero1 H@ :0 zero1
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~zero-one magnum.users.mixxnet.net vega.nj.us.mixxnet.net Magnum H@ :0 zero-one
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H@ :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G@ :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #the_h00d :End of /WHO list.
+<< PING LAG1715198268245
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198268245
+<< PING LAG1715198298325
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198298325
+<< WHO #LRN
+<< WHO #gdjb
+<< WHO #the_h00d
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H* :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~livestradam 94.49.2.141 vega.nj.us.mixxnet.net livestradamus H :0 Livestradamus Bin Satoshi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN phigan 142.11.222.112 vega.nj.us.mixxnet.net phigan H :0 Joe S. Phigan
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~osi osi.users.mixxnet.net vega.nj.us.mixxnet.net osi H :0 أوسي
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~lugosi lugosi.users.mixxnet.net tnt.il.us.mixxnet.net lugosi H :0 lugosi
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #LRN sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #LRN :End of /WHO list.
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~mark staff.mixxnet.net tnt.il.us.mixxnet.net MarkK H*@ :0 Mark Kane
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb Erwin 2a02-a451-b3f1-1-6a05-caff-fe02-a79.fixed6.kpn.net nexus.nl.eu.mixxnet.net Eagle_Erwin G :0 Erwin Bronkhorst
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb services mixxnet.net services.mixxnet.net ChanServ H@ :0 ChanServ
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~lick 208-47-50-84.dyn.estpak.ee nexus.nl.eu.mixxnet.net Dhagor H :0 N/A
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ninex 69.42.218.111 vega.nj.us.mixxnet.net ninex H :0 ninex
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #gdjb sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #gdjb :End of /WHO list.
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d bjorn bjorn.users.mixxnet.net tnt.il.us.mixxnet.net Bjorn G@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~nts nts.users.mixxnet.net vega.nj.us.mixxnet.net NTS H@ :0 ZNC - https://znc.in
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d iekue_eran 83-82-205-7.cable.dynamic.v4.ziggo.nl nexus.nl.eu.mixxnet.net iekue_erander H@ :0 ...
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~chreddy chreddy.users.mixxnet.net nexus.nl.eu.mixxnet.net Chreddy H@ :0 Chreddy
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~revox staff.mixxnet.net nexus.nl.eu.mixxnet.net Revox H*@ :0 Revox
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d cservice services.mixxnet.net services.mixxnet.net h00db0t H@ :0 BotServ
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~DaxSon 176.254.244.83 tnt.il.us.mixxnet.net daxson H :0 iNvERSeD
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d limnoria zero1.users.mixxnet.net vega.nj.us.mixxnet.net zero1 H@ :0 zero1
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~zero-one magnum.users.mixxnet.net vega.nj.us.mixxnet.net Magnum H@ :0 zero-one
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~D2T d2t.users.mixxnet.net tnt.il.us.mixxnet.net D2T H@ :0 D2T
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
+>> :nexus.nl.eu.mixxnet.net 352 you #the_h00d sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G@ :0 Juliet Star
+>> :nexus.nl.eu.mixxnet.net 315 you #the_h00d :End of /WHO list.
+<< PING LAG1715198328446
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198328446
+<< PING LAG1715198358516
+>> :nexus.nl.eu.mixxnet.net PONG nexus.nl.eu.mixxnet.net :LAG1715198358516

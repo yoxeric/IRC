@@ -1,0 +1,316 @@
+>> PING :CC87E336
+<< PONG :CC87E336
+>> :AbbY.MindForge.org CAP you ACK :account-notify away-notify multi-prefix userhost-in-names 
+>> :AbbY.MindForge.org 001 you :Welcome to the MindForge IRC Network you!yh2@197.230.24.20
+>> :AbbY.MindForge.org 002 you :Your host is AbbY.MindForge.org, running version Unreal3.2.10.6
+>> :AbbY.MindForge.org 003 you :This server was created Wed Jul 5 2023 at 23:13:30 UTC
+>> :AbbY.MindForge.org 004 you AbbY.MindForge.org Unreal3.2.10.6 iowghraAsORTVSxNCWqBzvdHtGpID lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
+>> :AbbY.MindForge.org 005 you UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 :are supported by this server
+<< PROTOCTL NAMESX
+>> :AbbY.MindForge.org 005 you WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=MindForge CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT STATUSMSG=~&@%+ :are supported by this server
+>> :AbbY.MindForge.org 005 you EXCEPTS INVEX CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS :are supported by this server
+>> :AbbY.MindForge.org 251 you :There are 2 users and 422 invisible on 7 servers
+>> :AbbY.MindForge.org 252 you 129 :operator(s) online
+>> :AbbY.MindForge.org 254 you 377 :channels formed
+>> :AbbY.MindForge.org 255 you :I have 82 clients and 0 servers
+>> :AbbY.MindForge.org 265 you 82 245 :Current local users 82, max 245
+>> :AbbY.MindForge.org 266 you 424 9210 :Current global users 424, max 9210
+>> :AbbY.MindForge.org 375 you :- AbbY.MindForge.org Message of the Day - 
+>> :AbbY.MindForge.org 372 you :- 29/7/2014 20:06
+>> :AbbY.MindForge.org 372 you :-  _______ _____ __    _ _____   _______  _____  _______ _______ _______
+>> :AbbY.MindForge.org 372 you :-  /  /  /   /   / \   / /    \  /_____  /     / /_____/ /  ____ /_____
+>> :AbbY.MindForge.org 372 you :- /  /  / __/__ /   \_/ /_____/ /       /_____/ /    \_ /_____/ /______
+>> :AbbY.MindForge.org 372 you :- -
+>> :AbbY.MindForge.org 372 you :- Mindforge is a new IRC network.
+>> :AbbY.MindForge.org 372 you :- It exists to provide facilities to open-source and free-software project communit
+>> :AbbY.MindForge.org 372 you :- and to provide an environment where these community members can share,
+>> :AbbY.MindForge.org 372 you :- communicate and exchange ideas. It also provides a place for chatters to meet.
+>> :AbbY.MindForge.org 372 you :- -
+>> :AbbY.MindForge.org 372 you :- Illegal activities, xdcc, ftp, hax0r activity,
+>> :AbbY.MindForge.org 372 you :- and various types of antisocial behavior are all prohibited on this network.
+>> :AbbY.MindForge.org 372 you :- -
+>> :AbbY.MindForge.org 372 you :- This server accepts connections on ports 6667 and 6669.
+>> :AbbY.MindForge.org 372 you :- -
+>> :AbbY.MindForge.org 372 you :- By connecting to this network you give us permission to probe your machine 
+>> :AbbY.MindForge.org 372 you :- for open proxies/wingates. You also agree to adhere 
+>> :AbbY.MindForge.org 372 you :- by the following rules:
+>> :AbbY.MindForge.org 372 you :- -
+>> :AbbY.MindForge.org 372 you :- • No more than 3 connections from the same IP.
+>> :AbbY.MindForge.org 372 you :- • No flooding (including flood/clonebots).
+>> :AbbY.MindForge.org 372 you :- • No Harassing other users.
+>> :AbbY.MindForge.org 372 you :- • No racism and/or Nazism.
+>> :AbbY.MindForge.org 372 you :- • No spamming and/or advertising.
+>> :AbbY.MindForge.org 372 you :- • No hacking (including Virus/Trojan distribution).
+>> :AbbY.MindForge.org 372 you :- • No Botnets.
+>> :AbbY.MindForge.org 372 you :- • No actions we, the operators, regard as abuse.
+>> :AbbY.MindForge.org 372 you :- -
+>> :AbbY.MindForge.org 372 you :- Violation of the network's rules will result in kills and
+>> :AbbY.MindForge.org 372 you :- possible network-wide access bans.
+>> :AbbY.MindForge.org 372 you :- -
+>> :AbbY.MindForge.org 372 you :- Network Main Chans:
+>> :AbbY.MindForge.org 372 you :- #MindForge - For server linking or password help, or to report spam and abuse.
+>> :AbbY.MindForge.org 372 you :- #MindForge-Vhosts - For all virtual host requests.
+>> :AbbY.MindForge.org 372 you :- #MindForge-Chat - For all other help and chat.
+>> :AbbY.MindForge.org 372 you :- -
+>> :AbbY.MindForge.org 376 you :End of /MOTD command.
+>> :you MODE you :+ix
+>> :NickServ!Services@MindForge.org NOTICE you :Your nickname is not registered. To register it, use: /msg NickServ REGISTER password email
+>> :Global!Services@MindForge.org NOTICE you :[Logon News - May 19 22:05:11 2017 CEST] Welcome to MindForge IRC Network. We hope you enjoy chatting on MindForge. Have a nice stay!
+>> :StatServ!Stats@MindForge.org PRIVMSG you :VERSION
+<< NOTICE StatServ :VERSION HexChat 2.10.2 / Darwin 19.6.0 [x86_64/3.10GHz/SMP]
+>> :you!yh2@BCF3BF7C.5B8307BF.31484AE3.IP JOIN :#idle
+<< MODE #idle
+<< WHO #idle
+>> :AbbY.MindForge.org 332 you #idle :| MindForge Network Idle Channel | You were joined here because you weren't in any channel. Please join #MindForge-Chat or type /list and choose a channel |
+>> :AbbY.MindForge.org 333 you #idle Moot 1464105554
+>> :AbbY.MindForge.org 353 you @ #idle :you!yh2@BCF3BF7C.5B8307BF.31484AE3.IP 
+>> :AbbY.MindForge.org 366 you #idle :End of /NAMES list.
+>> :AbbY.MindForge.org 324 you #idle +smntru 
+>> :AbbY.MindForge.org 329 you #idle 1347742828
+>> :AbbY.MindForge.org 352 you #idle yh2 BCF3BF7C.5B8307BF.31484AE3.IP AbbY.MindForge.org you H :0 realname
+>> :AbbY.MindForge.org 315 you #idle :End of /WHO list.
+<< LIST >4,<10000
+>> :AbbY.MindForge.org 321 you Channel :Users  Name
+>> :AbbY.MindForge.org 322 you #veronicaromanapoli 11 :[+mntr] ©º°¨¨°º©©º°¨¨°º© SE IL NULLA E' NIENTE ...NON MERITA RISPOSTE ©º°¨¨°º©©º°¨¨°º©
+>> :AbbY.MindForge.org 322 you #Mootita 19 :[+ntrCTlj] Canal de Moot and blyatiful people con barco. Meow town! | Dramas, disasters and skandals start here. We give free hugs, but we accept PayPal | Your friend needs a Nutella intervention: http://www.huffingtonpost.com/2014/01/08/nutella-addict-intervention_n_4555955.html
+>> :AbbY.MindForge.org 322 you #AMOR 6 :[+ntrl]  AMORE , LIEBE, LOVE ,AMOUR ,  NO ES UN CANAL DE SEXO  NO PONER ENLACES DE RADIO, NI CANALES EN EL CANAL
+>> :AbbY.MindForge.org 322 you #eMule-Russian 7 :[+ntrSCTl] Kanal pomoschi OFversii eMule * poslednyaya versiya 0.50a * Links, warez, p0rn = ban * Forum - http://forum.emule-rus.net/ * Please, Russian language ONLY (cp1251) * Pravila - pishite !rules * Problemy s serverami - !serverlist * O programme - !beginner
+>> :AbbY.MindForge.org 322 you #chez-christian 27 :[+ntrCTGlfj] salon avec quizz et bonne �coute � tous avec https://www.francebleu.fr/pays-d-auvergne https://www.nrj.fr/webradios  mon serveur ==> /server 37.187.113.75:+6697 ou http://irc-chardon.fr.cr
+>> :AbbY.MindForge.org 322 you #idle 21 :[+smntru] | MindForge Network Idle Channel | You were joined here because you weren't in any channel. Please join #MindForge-Chat or type /list and choose a channel |
+>> :AbbY.MindForge.org 322 you #Test_Eggdrop 21 :[+ntr] /!\[Eggdrop tests]/!\
+>> :AbbY.MindForge.org 322 you #IlVeNtO_DeLLa_ToScAnA 6 :[+ntr] IlVeNtO_DeLLa_ToScAnA E UN CANALE DA NON ENTRARE SE NON VUOI QUALCOSA DA ME
+>> :AbbY.MindForge.org 322 you #emule-romanian-offtopic 5 :[+ntr] Canal fara topic pentru romani despre romani . Celelalte reguli de bun-simt se aplica fara discriminare . Pentru trivia in romana scrie !start
+>> :AbbY.MindForge.org 322 you #emule-italian-offtopic 10 :[+ntrSVCTf] ------EMULE-ITALIAN-OFFTOPIC Discussioni Non Inerenti Ad eMule|Assistenza #eMule-Italian |Solo Italiano|NO Nick Politici-Partiti-Estremisti/Religione/Razzismo/Sex/Proxy/Copyright/Warez/Seriali/Cloni/Spam/Mail/Invite/Scambi/NickOffensivi/Flames/Flood/Sl@p/Caps/Polemiche/Rompi @@
+>> :AbbY.MindForge.org 322 you #emule-german-offtopic 6 :[+ntrCTf]  emule-german-offtopic    Der Offtopic-Chat zum eMule-German ||| Hier kannst du dich mal über Themen unterhalten, die nichts mit dem Emule zu tun haben ;-) ||| Viel Spass wünscht Euch das EGT :-) |||
+>> :AbbY.MindForge.org 322 you #Fatina_Magica92 73 :[+ntrCTfj] -----------------------    W   E   L   C   O   M   E  (B)(E)(N)(V)(E)(N)(U)(T)(I) /!\ Nel CHAN Di davide29 /!\
+>> :AbbY.MindForge.org 322 you #olga 40 :[+ntrCj] benvenuti su #olga se cerchi amicizie sei nel canale giusto, qui poche regole ma rispetto per tutti!!!!!!"
+>> :AbbY.MindForge.org 322 you #pralinka 10 :[+ntrCTl] | Prywatna baza prali :) | WebChat: https://webchat.mindforge.org |
+>> :AbbY.MindForge.org 322 you #MindForge-Vhosts 6 :[+ntr] | MindForge VHosts Channel | Would you like to get a vHost for your nickname? Read the vHosts rules to know about it: https://MindForge.org/VHosts |
+>> :AbbY.MindForge.org 322 you #PuGaTRe 30 :[+ntr]  €@@€ BeNVeNuTi! ChAn Di GioCo & oTTiMa CoMPaGNiA! LaSCiATeVi CoNQuiSTaRe DaL    M    U    L    T    I    T    R    I    V    I    A 
+>> :AbbY.MindForge.org 322 you #!besos_gitanos 6 :[+ntrl] {§{§{§{§{§{§{§ GITANO : SUSURRO SIN TI NO PODRIA VIVIR §}§}§}§}§}§}§}  
+>> :AbbY.MindForge.org 322 you #Rotd 9 :[+ntrl] i#ROTD for open chat and fun with friends from everywhere!..Play !nguess with iRanter for huge cash prizes!.. The !bar is OPEN!.. Enjoy your stay!... (you are fondly remembered and missed Brian, db, qadqo & frix)
+>> :AbbY.MindForge.org 322 you #SWAT 6 :[+ntrk] 
+>> :AbbY.MindForge.org 322 you #Divertimento-tra-ragazzi 8 :[+mntrCG] ×÷·.·´¯`·)» Nøn Esiste Grande Geniø Senza Una Døse Di Føllia, Per©hè La Føllia è La Massima Førma Di Originalità... Benvenutø/a Nel ©han Døve Døminanø Il ©aøs E Il Deliriø! Divertiti Insieme A Nøi! «(·´¯`·.·÷×
+>> :AbbY.MindForge.org 322 you #BoMBoNLaNd 5 :[+ntrCTG] º•ø_(¯‘°’¯)_ø•º BieNVeNiD@ a #BoMBoNLaND, DoNDe PoDRáS EsTaR CoMo eN Tu CaSa, EsTéS DoNDe EsTéS. CoN ReSPeTo, eNConTRaRáS La FeLiCiDaD º•ø_(¯‘°’¯)_ø•º°
+>> :AbbY.MindForge.org 322 you #trivial-pursuit 9 :[+ntr] #TRIVIAL-PURSUIT    T    R    I    V    I    A    L  ______  JUEGA, ESCUCHA MUSICA PON EN GOOGLE gatitolindoyamigos radio  
+>> :AbbY.MindForge.org 322 you #Contactos_Con_Tacto 13 :[+ntrV]  === * Puede que no sea perfecta pero Te Amo* === === * Doc-Holliday* ===
+>> :AbbY.MindForge.org 322 you #amigos_eternos 92 :[+ntrCTG]  ••• ãMî§TãÐ ê§ ãQµê££ø Qµê ¢ãÐã Ðíã Tê Hã¢ê £êVãñTã®Tê ¥ Qµê®ê® £µ¢Hã® þø® ã£Gµîêñ, Qµê ¢ãÐã Ðîã Tê Hã¢ê Ðê¢î® "§ø¥ Fê£îz ¢øñTîGø!" •••.
+>> :AbbY.MindForge.org 322 you #emule-brasil 6 :[+ntr] Sejam todos bem vindos! Este é um canal para diversao e jogar conversa fora! Sintam-se em casa! Para ajuda com eMule, digite /join #eMule-Portuguese p trivia digita !trivia
+>> :AbbY.MindForge.org 322 you #eMule-German 8 :[+ntrCTlf]  emule-german   Der deutsche eMule-Hilfe-Chat ||| eMule 0.50a @ www.emule-project.net ||| Willst Du dir beim Download nett die Zeit vertreiben? Dann komm doch mal in den Offtopic: /join #emule-german-offtopic |||
+>> :AbbY.MindForge.org 322 you #chez_anko 10 :[+ntr] .+·..°:·.·.+·. .°:·.·.+·. Parce Qu'on Connait Tous Quelqu'un Ki Nous Connait Bien .+·..°:·.·.+·..°:·.·.+·.
+>> :AbbY.MindForge.org 322 you #Poesia_Poesia_eres_tu_Mujer 5 :[+ntr] ______ ®{º«..»º}® DEDICADO A TODAS LAS MUJERES QUE LES GUSTA LA POESIA, TODAS BELLAS PRINCESAS ®{º«..»º}® ______    http://chanelsofgatitolindo-amigasyamigos.blogspot.com
+>> :AbbY.MindForge.org 322 you #DrAgOn.&.DrAgOnEt 19 :[+ntr]  Radio: 0N  |  emittente:  Wj_Pazza`Penelope  |  ID :  Radio Fantasy  |  https://fantasyradio.listen2myshow.com/  |  Party Non-Stop ! 
+>> :AbbY.MindForge.org 322 you #linux 12 :[+ntrc] LINUX - a life without virus. Main Support channel. visit our Site: www.winsucks.org
+>> :AbbY.MindForge.org 322 you #eMule-Catalan 5 :[+ntrCTlf] Canal oficial eMule en Català  »»»»»»» Última versió 0.50a ««««««« No Warez - No eLinks - No Spam - No Política/Religió «Escriu !ajuda» «Parla català o castellà» http://www.emule-project.net/home/perl/general.cgi?l=35. Pregunta i sigues pacient.
+>> :AbbY.MindForge.org 322 you #TaNia 55 :[+ntrCTG]  ®ê§þî®ã Fµê®Tê HøñÐø ¥ ãîñ§§§ þ®øß£êMã§ Fµê®ã :)
+>> :AbbY.MindForge.org 322 you #Rider 6 :[+ntr] ¡|[Welcome to #Rider unlimited friendship for everyone, tranks you visit]|! -  https://www.rider.com/ - Gracias por vuestra visita.
+>> :AbbY.MindForge.org 322 you #Chez`AnGele&Ayla 12 :[+ntr] æææææ _\|/_  .»º}®{º«..º}®{º«.....::: Chez`AnGele & Ayla :::.... .»º}®{º«..»º}®{º«.  _\|/_ ææææ
+>> :AbbY.MindForge.org 322 you #blanca 29 :[+ntrCTl]  .nn.nn. Yo  Nunca  Supe  Que  Tenia  Un  Sueño  Hasta  Que  Ese  Sueño  Fuiste  Tu  Blanca .nn.nn.
+>> :AbbY.MindForge.org 322 you #emule-french 10 :[+ntrSCTGlf] Salon officiel francophone d'eMule | Warez, Pubs, Floods, Vulgarité | Régles du salon: http://www.emule-french.net/regles_ef.htm  Documentation: http://www.emule-french.net/ | Forum: http://www.emule-french.net/forum
+>> :AbbY.MindForge.org 322 you #Pura-Follia 23 :[+mntrCT] ©º°¨¨°º©©º°¨¨°º© CIAO A TUTTI VI AUGURO UNA BUONA GIORNATA ©º°¨¨°º©©º°¨¨°º©
+>> :AbbY.MindForge.org 322 you #il=grande=fulletto 46 :[+ntr]  non scrivo le solite frasi !entra c'è posto anche per te - Visita il mio sito---->> http://full49.altervista.org/index.html <----
+>> :AbbY.MindForge.org 322 you #AzuquecA-Trivial 5 :[+ntrGl] €€€€€€€€€€€€ < SUPER TRIVIA  AZUQUECA DE HENARES > €€€€€€€€€€€€
+>> :AbbY.MindForge.org 322 you #CUOREBATTICUORE 12 :[+ntr] (¯`·¸·´¯) \\\\\\ Il respiro della musica è come un battito del mio cuore. Ho passato la mia vita a imparare e so che imparerò fino al mio ultimo respiro, in questa dolce melodia che mi capovolge il cuore //////(¯`·¸·´¯)
+>> :AbbY.MindForge.org 322 you #AMOR_DEL_CENTRO_DE_TU_CORAZON 6 :[+ntrl]  « BIENVENID@S AL CANAL »  HAZ AMIGOS Y QUIEN SABE QUIZA UN AMOR,  SIEMPRE CON RESPETO  NO ES UN CANAL DE SEXO  NO PONER ENLACES DE RADIO, NI CANALES EN EL CANAL  « PROHIBIDO LOS NICKS DE ORIENTACIÓN SEXUAL, DE SEXO, O QUE CONTENGAN SEX » 
+>> :AbbY.MindForge.org 322 you #italia-chat 36 :[+ntr] -|--------------- |- ® .¸.{@ GiOkI @}.¸¸ @(o.O)@ .¸.{@ cHaT @}.¸¸ §(O_o)§ .¸.{@ cAxXeGgIo @}.¸¸ ® ¶:))
+>> :AbbY.MindForge.org 322 you #eMule-Chinese 5 :[+ntrCTl] Welcome to eMule support channel for Chinese. Current version: 0.50a http://www.emule-project.net/home/perl/general.cgi?l=42 . Please speak Chinese or English. ²»ÄÜÌÖÂÛµçÂâÎÞ¹Ø»°Ìâ,Ò²²»ÄÜÌÖÂÛMOD,Ð»Ð»ºÏ×÷£¡ÐèÒª·þÎñÆ÷ÁÐ±í»òÕßÎÞ·¨Á¬½ÓÇëÊäÈë!serverlist
+>> :AbbY.MindForge.org 322 you #Brasil 20 :[+ntrQl] ""|<@>| Bem-vindo(a) ao #Brasil <> Rede MindForge <> "|<@>" 
+>> :AbbY.MindForge.org 322 you #Disaster 5 :[+ntr] Drama, I tell you. De werdade.
+>> :AbbY.MindForge.org 322 you #glimer_y_la_troupe 16 :[+ntrC]  "Por los HECHOS y NO por las PALABRAS, se ha de valorar a los AMIG@S" (^^:)
+>> :AbbY.MindForge.org 322 you #eMule+ 7 :[+ntrCTlf] | Official eMule Plus channel | Latest version: eMulePlus v1.2e | Download @ https://sourceforge.net/projects/emuleplus/ | Write !help for automatic help and !rules for channel rules | NO CAPS, bold & underlines! |
+>> :AbbY.MindForge.org 322 you #Humanitas_60 57 :[+ntr] RaDiO-R[M]S Lady Gaga https://www.dimensionemusica.altervista.org/ - Dal Cell. https://tunein.com/radio/MUSICSOUND-s228953/
+>> :AbbY.MindForge.org 322 you #France 5 :[+mntr] ______ Allez viens boire un p'tit coup à la maison, Y a du blanc, y a du rouge du saucisson ______
+>> :AbbY.MindForge.org 322 you #Madrid 6 :[+ntr] ______ ææææ .»º}®{º«..»º}®{º«.  BIENVENID@ A ESTA CIUDAD UNIVERSAL ABIERTA AL MUNDO ABIERTA A TI .»º}®{º«..»º}®{º«.ææææ______ http://chanelsofgatitolindo-amigasyamigos.blogspot.com/
+>> :AbbY.MindForge.org 322 you #Real_Madrid 6 :[+ntr] ______ PRIMER EQUIPO EN CONSEGUIR 2 MANITAS DE COPAS DE EUROPA *  14 Copas de Europa*  35 Ligas*  8 Campeon Mundial*  12 Supercopas* 20 Copas del Rey*______+ etc
+>> :AbbY.MindForge.org 322 you #carlottina 41 :[+ntr] BENVENUTO/A IN #carlottina CHAN GIOCHI E DIVERTIMENTO E TANTA BUONA MUSICA, AUTOJONA #carlottina MI RACCOMANDO NON MANCARE TI DIVERTIRAI INSIEME A NOI.
+>> :AbbY.MindForge.org 322 you #_Isola_Tropicale_ 7 :[+ntr]   (B)(e)(n)(v)(e)(n)(u)(t)(i)()(d)(a)()(J)(u)(d)(o)
+>> :AbbY.MindForge.org 322 you #`Chandra_Area51 6 :[+ntrk] Benvenuto su #`Chandra_Area51✫✫✫ WebSite ✫✫✫ https://chandra.altervista.org/✫✫✫  Forum ✫✫✫  https://chandra.altervista.org/forum/✫✫✫ WebRadiO ✫✫✫ https://chandra.altervista.org/webradio.php
+>> :AbbY.MindForge.org 322 you #italia-giocando 8 :[+ntrVCTf]  _W_E_L_C_O_M_E_°° @ §ITALIA§ @ °°  Ora sei nel fantastico Chan...--> #italia-giocando <-- Gioca e divertiti con noi !!!!!LoLoLoL »Te SaLuTaN VaKa VaKa LaShAlAbAlA !!!!!
+>> :AbbY.MindForge.org 322 you #Radio_Amicale 5 :[+ntr] |||||||||||||| Bienvenue sur #Radio_Amicale passez un agréable moment avec nous ||||||||||||||
+>> :AbbY.MindForge.org 322 you #Jingle 5 :[+ntr] non ce prova'
+>> :AbbY.MindForge.org 322 you #emule-polish 7 :[+ntrCTlf]  POLSKI  Oficjalny kanal pomocy eMule  [ Lista serwerow wpisz: !serwery ]=[ Komendy pomocy wpisz: !help ]=[ Regulamin kanalu wpisz: !reg ]=[Najnowsza wersja to: eMule v0.50a]
+>> :AbbY.MindForge.org 322 you #MindForge-Chat 41 :[+ntrCTf] | Welcome to the MindForge IRC Network | General IRC help and main chat channel. Feel free to talk in your own language and have fun! | Remember to join #MindForge for network help | Site: https://MindForge.org |
+>> :AbbY.MindForge.org 322 you #eMule-Norwegian 5 :[+ntrCl] eMule-Hjelp & Chat | Siste versjon: eMule v0.50a | Kun Norsk/English only! Ingen Warez/Serialz eller bottler boter tillatt! | Vær vennlig å les FAQ på http://www.emule-project.org/home/perl/help.cgi | eMule forum http://forum.emule-project.net | for regler på Norsk, skriv: !regler (English, type: !rules)
+>> :AbbY.MindForge.org 322 you #Murcielagos_y_Vampiros 5 :[+ntr]  ______ ®{º«..»º}®  QUIERES PROBAR NUESTRA SANGRE ES MUY DULCE , PORQUE SOMOS MUY BUEN@S  ®{º«..»º}® ______ http://chanelsofgatitolindo-amigasyamigos.blogspot.com.es
+>> :AbbY.MindForge.org 322 you #emule-english 17 :[+ntrSCl] eMule technical help ONLY ! || NEWS: eMule v0.50a Final Released - Type !update for instructions || info: type !rules and !triggers | NO FILE REQUESTS | ENGLISH ONLY | THIS IS NOT A GENERAL CHAT
+>> :AbbY.MindForge.org 322 you #ItaliaIRC 6 :[+ntrC] e/\/\/\ Se Non Avete Nulla Da Fare ...  Siete Pregati Di Andarlo A Fare Da Un' Altra Parte ! /\/\/\ https://www.youtube.com/watch?v=pxFZT-xBPJU .... BUONA SOFIA A TUTTI :P
+>> :AbbY.MindForge.org 322 you #Ave_Fenix 18 :[+ntr] (¯`·._(¯`·._(¯`·._( Alzati sempre quando cade )_.·´¯)_.·´¯)_.·´¯)
+>> :AbbY.MindForge.org 322 you #argentina 12 :[+ntrl] #ARGENTINA -Canal Oficial-Las amistades s construyen d a pedacitos.Pedacitos d tiempo q vivimos con cada persona.No importa la cantidad d tiempo q pasamos con cada amigo,sino la calidad del tiempo q vivimos con cada persona. Cinco minutos pueden ser más importante q 1 día entero
+>> :AbbY.MindForge.org 322 you #Europe-World 11 :[+ntrQ] •••••Welcome to the global European - World. All Languages and all gentle People, from all over the world, are welcome here. Be nice and friendly, or you will be sent to HELL :) •••••{Topic By Asterix & Evo-Man}
+>> :AbbY.MindForge.org 322 you #españa 6 :[+ntr]  VIVA ESPAÑA SUS  COMUNIDADES,  CIUDADES Y PUEBLOS     NO PONER ENLACES DE RADIO, NI CANALES EN EL CANAL  
+>> :AbbY.MindForge.org 322 you #french-rencontre 27 :[+mntrCT] ______ (B) (I) (E) (N) (V) (E) (N) (U) (E) _Salon Francophone de Rencontres __(W) (E) (L) (C) (O) (M) (E) ______
+>> :AbbY.MindForge.org 322 you #Chez`anastasia 24 :[+ntr] ______ ~~~~~~ ^ô_ô^ FranCe ^ô_ô^ ~~~~~~ ______  *€@@€*  Electric Shock Radio`DjAnna ! =   *€@@€*   Pour un moment de Fun & Détente ^^   *€@@€*
+>> :AbbY.MindForge.org 322 you #brujilla 7 :[+mntrQC]  Para Los (¯`v´¯) Que AMAN Y Los AMIGOS que PERMANECEN en Nuestros (¯`v´¯) 
+>> :AbbY.MindForge.org 322 you #eMule-Lithuanian 7 :[+ntrCl] Oficialus eMule Kanalas & Nauja Versija: eMule 0.50a -> www.eMule-Project.net & Pagalba: !help Taisykles: !rules & Kad pasikeistum nika, rasyk: /nick NaujasNikas
+>> :AbbY.MindForge.org 322 you #Manchegas_y_Manchegos 6 :[+ntr] 
+>> :AbbY.MindForge.org 322 you #Alessandra 56 :[+mntrCTl] ✫✫✫  LA VITA E' COME UN ROTOLO DI CARTA IGIENICA:  SPERI CHE SIA LUNGA E GODIBILE  MA FINISCE SEMPRE NEL MOMENTO SBAGLIATO !  ✫✫✫ Forum https://chandra.altervista.org/forum/
+>> :AbbY.MindForge.org 322 you #pazzi_on_the_road 7 :[+ntrCTGfj] (¯`·._(¯`·._(¯`·._( BeNvEnUtO/A In #PaZZi_On_ThE_RoAd  QuI Si SCHeRZa, Ci Si DiVeRte E Si FaNNo NuoVe AMiCiZiE...)_.·´¯)_.·´¯)_.·´¯) Entrando accetti il REGOLAMENTO: https://pastebin.com/pn7JfBAj
+>> :AbbY.MindForge.org 322 you #America 11 :[+ntr] ¡|¡||Welcome to #America canal de chat Internacional para todo el universo y el mundo - https://es.m.wikipedia.org/wiki/Portal:Am%C3%A9rica - gracias por vuestra visita ||!|!
+>> :AbbY.MindForge.org 322 you #bar_susurro's 5 :[+ntr]  SUSURRAME CON UN BESITO Y UNA COPITA DE LICOR DE TUS LABIOS 
+>> :AbbY.MindForge.org 322 you #eggdrop 5 :[+ntrl] Welcome to MindForge's Eggdrop resource
+>> :AbbY.MindForge.org 322 you #MindForge 9 :[+ntrCTf] | MindForge Help Channel | Official network support channel. Ask your question and be patient | Join #MindForge-Chat for chat and general IRC help | Site: https://MindForge.org | Network rules: https://MindForge.org/Rules |
+>> :AbbY.MindForge.org 322 you #eMule-Spanish-offtopic 9 :[+ntrCTGf]  Canal de SOPORTE y AYUDA (Hardware, Software, Internet, chat, IRC,...) de todo aquello que no entra en la temática de los canales eMule • No WAREZ, PUBLICIDAD, RACISMO, POLITICA, DESCARGAS y/o MATERIAL PROTEGIDO con COPYRIGHT • No conductas antisociales u ofensivas • Haz tu pregunta y sé paciente. 
+>> :AbbY.MindForge.org 322 you #emule-english-offtopic 7 :[+ntrl] No eMule help, just chat | ENGLISH ONLY | For eMule help & support /join #emule-english | No jukebox scripts allowed | NO FILE REQUESTS | Ask nicely before you PM anyone | Non-english will result in kick without warning. Type !triggers for available triggers. | Rest In Peace, Brian. :(
+>> :AbbY.MindForge.org 322 you #eMule-Italian 36 :[+ntrSCTlf] ------ -= EMULE-ITALIAN =- Canale ufficiale di aiuto per eMule - NIENTE Warez,Seriali,Programmi,Politica,Religione,Razzismo,Flames,Script,Slap,Flood,Spam,PVT,Sport, Bot, Link, Cloni, Grassetto, Sottolineato, nick allusivi. CHAT /join #emule-italian-offtopic Ultima Versione 0.50a
+>> :AbbY.MindForge.org 322 you #eMule-Portuguese 15 :[+ntrSCTlf] "[_Pt_  #eMule-Portuguese _Br__ Canal oficial do eMule em Português Website: http://www.emule-project.net Forum: http://sites.google.com/site/canalemuleportuguese !regras ajuda e configuração do eMule: !lista !Ajuda Última versão:50a
+>> :AbbY.MindForge.org 322 you #Disfruta_Diviertete_Ama_A_Todos 6 :[+ntr]  ______ Es Tu CaSa BieNVeNiD@ - ChAt de amig@s. Para el TRIVIAL CAMBIAMOS DE CANAL CON LOS MISMOS PUNTOS Y EL MISMO ACCESS  VeN A  #TRIVIAL-PURSUIT (  VeN a JuGaR )
+>> :AbbY.MindForge.org 322 you #TriViA 8 :[+ntrl] "|||||||||||| »»»»»»» #TriViA- O canaL da Diversão - ««««««« |||||||
+>> :AbbY.MindForge.org 322 you #TRIVISABIOS 6 :[+ntr] (*?^)   Canal de trivial contesta y gan@ y aprende cosas que no sabes y compartir un rato con gente o sol@, pero con alegria, juega y ponte el primer@   (^?*)  
+>> :AbbY.MindForge.org 322 you #Radio-mf 5 :[+ntr] Bun venit pe #RadioMF , topic la alegere in limita bunului-simt .
+>> :AbbY.MindForge.org 322 you #eMule-Dutch 8 :[+ntrCTl] ..........:: Nederlands / Vlaams eMule chat-kanaal - alle technische eMule support die je nodig hebt, en vooral: gezelligheid ::.......... 
+>> :AbbY.MindForge.org 322 you #Gateway 5 :[+mntrl] #Welcome to #gateWAY!! | Check windows for meltdown/spectre https://www.grc.com/inspectre.htm | Hack your old junk https://www.exploitee.rs/
+>> :AbbY.MindForge.org 322 you #Alta_Marea 60 :[+ntrCl] • Tu SeI DenTrO  Di Me CoMe  Un' AlTa_MaReA  <----- DoVe InFraTTaRsI E' UN VeRo PiAcErE •
+>> :AbbY.MindForge.org 322 you #FrAnCe-IRC 12 :[+ntr] == >> La Taverne Du Dj ~~  radio" DjAnna " ~~ d(*_*)b ______ ~~~~~~ ^ô_ô^ FranCe ^ô_ô^ ~~~~~~ ______ *€@@€* Quizz France   *€@@€*  
+>> :AbbY.MindForge.org 322 you #solitudine 15 :[+ntr] 7æææææ _\|/_  .»º}®{º«..º}®{º«.....::: #Solitudine  :::.... .»º}®{º«..»º}®{º«.  _\|/_ ææææ 
+>> :AbbY.MindForge.org 322 you #Formula1 6 :[+ntr]  ______ ®{º«..»º}® TE GUSTA EL MOTOR FERNANDO ALONSO OTROS DEPORTES VEN AQUI HABLANOS ES TU CANAL Y EL DE TODOS ®{º«..»º}® ______ http://chanelsofgatitolindo-amigasyamigos.blogs.com
+>> :AbbY.MindForge.org 322 you #Vento-Del-NordCentroSud 33 :[+ntrQj] VENTO DEL  NORDCENTROSUD`°€ø.ø€°``°€ø.ø€°``°€ø.ø€°`Benvenuto/a qui si scherza, ci si diverte e si fanno nuove amicizie....buon divertimento!!!! e BUONA PERMANENZA!!!!!...`°€ 
+>> :AbbY.MindForge.org 322 you #IdleRPG 6 :[+ntrCTfj] Welcome to #IdleRPG || Instructions: Register using `/msg IdleRPG REGISTER [Name] [Password] [A Line (e.g Fire Warrior)]`. Once registered, simply idle to level up! || Commands and further information: http://irpg.rbradford.me/
+>> :AbbY.MindForge.org 322 you #bnc4free 7 :[+ntrcCTfj] Welcome to BNC4FREE :: Site: https://bnc4free.com/ :: Terms of Service: https://bnc4free.com/terms :: Wiki: https://wiki.bnc4free.com/ :: Server Status: https://status.bnc4free.com/ :: Use !request to request
+>> :AbbY.MindForge.org 322 you #Inforweb 13 :[+ntrCG] ¸.·`¯`·.¸¸.·`¯`· <Ayuda informática de software hardware y configuraciones de emule..pasa, pregunta, quedate con nosotros.> ·`¯`·.¸¸.·`¯`·.¸(000)informat(000) y ( connann )
+>> :AbbY.MindForge.org 322 you #chez-filou 11 :[+ntr]  Tu aimes notre [[ Radio ]] .Connecte toi !!! Sur http://casper54.chez.com/ et découvre notre Radio !
+>> :AbbY.MindForge.org 322 you #TUTTO_IL_MONDO 12 :[+ntr]  ** C'era una volta ......... ** 
+>> :AbbY.MindForge.org 322 you #User.has.been.banned.from 15 :[+ntrCTGl] €~€ O amigo é ouro e ouro que eu encontrei em você. €~€ O
+>> :AbbY.MindForge.org 322 you #gli_amici_di_sonoio 27 :[+ntr] »»»»»»»»»»Benvenuto/a!!! Giochiamo e Divertiamoci Insieme. Poke Regole no SPAM no RAZZISMO per il resto fate voi!!! lol
+>> :AbbY.MindForge.org 322 you #Amici-Di-Delfino 71 :[+mntrCG] Alcune cose saranno sempre più forti del tempo e della distanza, più profonde del linguaggio e delle abitudini: seguire i propri sogni e imparare a essere se stessi, condividendo con gli altri la magia di quella scoperta ..
+>> :AbbY.MindForge.org 322 you #Gatitas_y_Gatitos 6 :[+ntr]  ______ææææ _\|/_  .»º}®{º«..»º}®{º«. MIAUUUUU PASA A NUESTRA GATERA Y PASATELO BIEN .»º}®{º«..»º}®{º«.  _\|/_ ææææ______ http://chanelsofgatitolindo-amigasyamigos.blogs.com
+>> :AbbY.MindForge.org 322 you #Azuqueca 17 :[+ntrCTGl] Canal de Ayuda eMule Azuqueca • Última Versión 0.50a • No se permiten Ayudas por Privado • Para Actualizar tu lista de Servidores escribe !serverlist y NO olvides Cargar el !filtro Sigue la Ayuda que te llegará• Haz tu pregunta sobre eMule y se paciente • Para más Información escribe !ayuda 
+>> :AbbY.MindForge.org 322 you #pandemonium 9 :[+ntrl] ..:: Latest: mIRC 7.76 ::: What's The Frequency, Kenneth? ::: demoniac NxT https://demoniac.altervista.org/?p=demoniacnxt
+>> :AbbY.MindForge.org 322 you #Internet 9 :[+ntr] |¦®¦|Bienvenido  a #Internet una manera diferente de comunicarse con toda las personas sin limites - https://www.internetsociety.org/es/internet/history-internet/brief-history-internet/ - Unidos por un cambio y mejorar la tecnología|¦®¦|
+>> :AbbY.MindForge.org 322 you #crd#SWAT 5 :[+nt] 
+>> :AbbY.MindForge.org 322 you #NaVeDaD 31 :[+ntr] E ogni volta che mi domanderai se ti amo, io ti rispondero'...si, per tutta la vita.
+>> :AbbY.MindForge.org 322 you #eMule-Portuguese-Offtopic 9 :[+ntrCTlf]  "!! '-<<--<@  emule-portuguese-offtopic Desejamos uma excelente estada a todos, queremos o melhor clima entre nos: D Nao é permitido fazer Spam e nem insultar os users. .. O Team agradece sua presença  @>-->>-' !i"
+>> :AbbY.MindForge.org 322 you #Nuevo_crepusculo 11 :[+ntr] oææææææ _\|/_  .»º}®{º«..º}®{º«. Pasa y acomodate, escucha musquilla y relajate............Bienvenid@!!!! .»º}®{º«..»º}®{º«.  _\|/_ ææææ
+>> :AbbY.MindForge.org 322 you #el_melonar 26 :[+ntrCT] '"::::: eNTRa y DiSFRuTa CoN LoS aMiGoS MáS MeLoNeS :::::'''
+>> :AbbY.MindForge.org 322 you #S-o-l-i-t-u-d-i-n-e 12 :[+ntr] 7æææææ _\|/_  .»º}®{º«..º}®{º«.....::: #S-o-l-i-t-u-d-i-n-e -  GioChi :::.... .»º}®{º«..»º}®{º«.  _\|/_ ææææ 
+>> :AbbY.MindForge.org 322 you #emule-spanish 22 :[+ntrSCTGlf]  Canal Oficial de AYUDA eMule en Castellano • Última Versión 0.50a • NO chat de temática general • NO privados molestos • NO ayudas por privado • Escribe !normas para más información • Haz tu pregunta sobre eMule y se paciente • http://www.emule-project.net
+>> :AbbY.MindForge.org 322 you #TRIVIAL-FUTBOL 6 :[+ntr] (*?^)  Preguntas varias de futbol entra y disfruta y demuestra que sabes de futbol y compartir un rato con gente o sol@, pero con alegria, juega y ponte el primer@  (^?*)  
+>> :AbbY.MindForge.org 322 you #DOLCE-AMORE 62 :[+ntrCTG] )@(PaRa-SiEmPrE-JuNtOs)@(]IvAn[ TeAmO [[TaNia]])@(§ø¥ Fê£îz ¢øñTîGø!!)@( ] 2014 [
+>> :AbbY.MindForge.org 322 you * 11 : 
+>> :AbbY.MindForge.org 322 you #entre_nubes_ 29 :[+ntrCTG] ææææææ _\|/_  .»º}®{º«..º}®{º«. por muy larga ke sea la tormenta siempre brilla el sol entre las nubes .»º}®{º«..»º}®{º«.  _\|/_ ææææ
+>> :AbbY.MindForge.org 322 you #realidad_o_fantasia 6 :[+nt] »»-(¯`v´¯)--»  Bienvenido  a  #Realidad_o_Fantasia  Hace De Este Canal tu mejor Fantasia  ðŸ€ª 
+>> :AbbY.MindForge.org 322 you #scrabble 6 :[+ntr]  (*•^)  Canal donde formar palabras y compartir un rato con gente o sol@, pero con alegria, juega y ponte el primer@  (^•*) 
+>> :AbbY.MindForge.org 322 you #PeNhaMuSiC_FM 5 :[+ntrl] "¨~-.,_,.-=:>Bem Vind* A MaqUina do Som bom DiVeRtImEnto!! visite e escute: http://penhamusic.webnode.pt/radio ] <:=-.,_,.-~¨ - canais parceiros/ #BraSiL -  #TriVia -"
+>> :AbbY.MindForge.org 322 you #eMule-Swedish 5 :[+ntrCl] eMule-Hjälp & Chat | Senaste version: eMule v0.50c |Svenska/Engelska bara! Ingen Warez/Serialz eller bottler boter tillåten! |läs FAQ på: http://www.emule-project.org/home/perl/help.cgi |eMule forum: http://forum.emule-project.net | För regler, skriv: !rules
+>> :AbbY.MindForge.org 322 you #Belgique 6 :[+mntr] .»º®º«..»º®º«. _\|/_ bienvenue dans un océan de sable sous une mer d'étoile _\|/_ .»º®º«..»º®º«.
+>> :AbbY.MindForge.org 322 you #computertech 10 :[+ntr] Welcome To #ComputerTech | Tech Chat And Help |
+>> :AbbY.MindForge.org 322 you #el_mejor_trivial 6 :[+ntr] 
+>> :AbbY.MindForge.org 323 you :End of /LIST
+<< PING LAG1715197267057
+>> :AbbY.MindForge.org PONG AbbY.MindForge.org :LAG1715197267057
+<< JOIN #MindForge-Chat
+>> :you!yh2@BCF3BF7C.5B8307BF.31484AE3.IP JOIN :#MindForge-Chat
+<< MODE #MindForge-Chat
+<< WHO #MindForge-Chat
+>> :AbbY.MindForge.org 332 you #MindForge-Chat :| Welcome to the MindForge IRC Network | General IRC help and main chat channel. Feel free to talk in your own language and have fun! | Remember to join #MindForge for network help | Site: https://MindForge.org |
+>> :AbbY.MindForge.org 333 you #MindForge-Chat Moot 1487514071
+>> :AbbY.MindForge.org 353 you = #MindForge-Chat :you!yh2@BCF3BF7C.5B8307BF.31484AE3.IP Pepebyt67!Android@mf-ADC69216.pool.telefonica.de anko!anko@French-Rencontre.MindForge.org keikoz!keikoz@mf-1B2110A8.subs.proxad.net Alessandro!Alex@mf-737C5965.retail.telecomitalia.it Tanoc!Tanoc@mf-ACCE4AAA.dhcp.inet.fi 
+>> :AbbY.MindForge.org 353 you = #MindForge-Chat :%PerfumeOfJasmine!Count3ss@MF-Helpers.MindForge.org st4ndby!Camelot@eMule-Portuguese.MindForge.org @KidCat!Mt@ServicesAdmin.MindForge.org palazzolo!palazzolo@mf-B08D85B8.net.vodafone.it Drakonas!kvirc@eMule-Lithuanian.MindForge.org +Zygo!Minei@vguess.best.player.on.MindForge.org 
+>> :AbbY.MindForge.org 353 you = #MindForge-Chat :connann!ircap@93BFA18B.9D11A1B5.3D777FDE.IP @albator!albator@FR.IrcOp.MindForge.org +stop!yo@mf-4197BBAC.dyn.user.ono.com llh!UPP@mf-9C26B8F0.cpe.teksavvy.com Dragonite!Dragonite@E0B62223.299AD3D9.88AC2480.IP Hackerpcs!user@mf-337212DF.vm.okeanos.grnet.gr 
+>> :AbbY.MindForge.org 353 you = #MindForge-Chat :smil!smil@mf-6E3C8073.colo.transip.net zer0bitz!zer0bitz@mf-26FF0C9A.dhcp.inet.fi %Beefhart!beefhart@MF-Helpers.MindForge.org Vajb!Vajb@mf-2A85DF4F.elisa-mobile.fi Elven_Wizard!Suntop@eMule-Norwegian.MindForge.org MySkO^!~MySkO@9D87A35.1DB5D0D4.4A6519FD.IP 
+>> :AbbY.MindForge.org 353 you = #MindForge-Chat :RedStone!redstone@mf-C09C94C5.rbradford.me +_!Sonic@mf-72009322.aso.wtf @Troopy!Trooper@BR.IrcOp.MindForge.org jkhsjdhjs!jkhsjdhjs@mf-7829E6A7.ink Harambe!Roma@EC032123.3D29DEA.EB32CD3F.IP KexyBiscuit!sid555485@mf-3ED72889.irccloud.com ComputerTech!ComputerTe@70AFA039.BC38E2C2.55B7158E.IP 
+>> :AbbY.MindForge.org 353 you = #MindForge-Chat :Wolf!Matt@mf-9C3134EA.to.you.by.bnc4free.com +Russell!russell@mf-EFB8DCB.rbradford.me get!facil@Linux.MindForge.org Camile^away!Camile@El-Melonar.MindForge.org Goyo!ILoveIRC@mf-56476DD5.iloveirc.com @Moot!Mt@ServicesAdmin.MindForge.org @pralinka!pralinka@ServicesAdmin.MindForge.org 
+>> :AbbY.MindForge.org 353 you = #MindForge-Chat :EvilCat!EvilCat@EvilCat.MindForge.org &@+[MindForge]!Bot@Services.MindForge.org LogX!LogX@Bot.MindForge.org @SynX!sx@Bot.MindForge.org 
+>> :AbbY.MindForge.org 366 you #MindForge-Chat :End of /NAMES list.
+>> :[MindForge]!Bot@Services.MindForge.org NOTICE you :[#mindforge-chat] | FAQs: https://MindForge.org/FAQs | WebChat: https://WebChat.MindForge.org | Follow us on https://Facebook.com/MindForgeIRC and https://Twitter.com/MindForgeIRC |
+>> :AbbY.MindForge.org 324 you #MindForge-Chat +ntrCTf [3j#i2,3k#K3,5m#m1]:1
+>> :AbbY.MindForge.org 329 you #MindForge-Chat 1347726470
+>> :AbbY.MindForge.org 352 you #MindForge-Chat yh2 BCF3BF7C.5B8307BF.31484AE3.IP AbbY.MindForge.org you H :0 realname
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Android mf-ADC69216.pool.telefonica.de Unixverse.MindForge.org Pepebyt67 H :0 Android IRC User
+>> :AbbY.MindForge.org 352 you #MindForge-Chat anko French-Rencontre.MindForge.org AbbY.MindForge.org anko Hr :0 anko
+>> :AbbY.MindForge.org 352 you #MindForge-Chat keikoz mf-1B2110A8.subs.proxad.net Unixverse.MindForge.org keikoz Hr :0 Grmph
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Alex mf-737C5965.retail.telecomitalia.it AbbY.MindForge.org Alessandro H :0 Alessandro
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Tanoc mf-ACCE4AAA.dhcp.inet.fi Unixverse.MindForge.org Tanoc H :0 tanoc@nyoron.moe
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Count3ss MF-Helpers.MindForge.org Lynx.MindForge.org PerfumeOfJasmine Hr% :0 Countess
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Camelot eMule-Portuguese.MindForge.org AbbY.MindForge.org st4ndby H :0 |Camelot Helper
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Mt ServicesAdmin.MindForge.org Nutella.MindForge.org KidCat Hr*@ :0 Moot
+>> :AbbY.MindForge.org 352 you #MindForge-Chat palazzolo mf-B08D85B8.net.vodafone.it Lynx.MindForge.org palazzolo Hr :0 palazzolo
+>> :AbbY.MindForge.org 352 you #MindForge-Chat kvirc eMule-Lithuanian.MindForge.org Unixverse.MindForge.org Drakonas Hr :0 Drakonas
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Minei vguess.best.player.on.MindForge.org Unixverse.MindForge.org Zygo H+ :0 10102
+>> :AbbY.MindForge.org 352 you #MindForge-Chat ircap 93BFA18B.9D11A1B5.3D777FDE.IP AbbY.MindForge.org connann Hr :0 AddoN-PanelVertical-V1
+>> :AbbY.MindForge.org 352 you #MindForge-Chat albator FR.IrcOp.MindForge.org Nutella.MindForge.org albator Hr*@ :0 albator
+>> :AbbY.MindForge.org 352 you #MindForge-Chat yo mf-4197BBAC.dyn.user.ono.com AbbY.MindForge.org stop Hr+ :0 yo
+>> :AbbY.MindForge.org 352 you #MindForge-Chat UPP mf-9C26B8F0.cpe.teksavvy.com Lynx.MindForge.org llh H :0 llh
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Dragonite E0B62223.299AD3D9.88AC2480.IP Unixverse.MindForge.org Dragonite Gr :0 Dragonite
+>> :AbbY.MindForge.org 352 you #MindForge-Chat user mf-337212DF.vm.okeanos.grnet.gr Lynx.MindForge.org Hackerpcs Hr :0 user
+>> :AbbY.MindForge.org 352 you #MindForge-Chat smil mf-6E3C8073.colo.transip.net Lynx.MindForge.org smil G :0 smil
+>> :AbbY.MindForge.org 352 you #MindForge-Chat zer0bitz mf-26FF0C9A.dhcp.inet.fi Lynx.MindForge.org zer0bitz Hr :0 zer0bitz
+>> :AbbY.MindForge.org 352 you #MindForge-Chat beefhart MF-Helpers.MindForge.org Lynx.MindForge.org Beefhart Hr% :0 Otto Parts
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Vajb mf-2A85DF4F.elisa-mobile.fi Unixverse.MindForge.org Vajb H :0 Vajb
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Suntop eMule-Norwegian.MindForge.org Unixverse.MindForge.org Elven_Wizard Hr :0 ZNC - https://znc.in
+>> :AbbY.MindForge.org 352 you #MindForge-Chat ~MySkO 9D87A35.1DB5D0D4.4A6519FD.IP AbbY.MindForge.org MySkO^ Hr :0 MySkO^
+>> :AbbY.MindForge.org 352 you #MindForge-Chat redstone mf-C09C94C5.rbradford.me AbbY.MindForge.org RedStone HrB :0 RedStone Ore
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Sonic mf-72009322.aso.wtf Unixverse.MindForge.org _ Gr+ :0 Sonic
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Trooper BR.IrcOp.MindForge.org Nutella.MindForge.org Troopy Gr@ :0 Passing by..
+>> :AbbY.MindForge.org 352 you #MindForge-Chat jkhsjdhjs mf-7829E6A7.ink AbbY.MindForge.org jkhsjdhjs Hr :0 jkhsjdhjs
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Roma EC032123.3D29DEA.EB32CD3F.IP Lynx.MindForge.org Harambe H :0 ❶❸❸❼
+>> :AbbY.MindForge.org 352 you #MindForge-Chat sid555485 mf-3ED72889.irccloud.com Unixverse.MindForge.org KexyBiscuit Hr :0 Kexy Biscuit
+>> :AbbY.MindForge.org 352 you #MindForge-Chat ComputerTe 70AFA039.BC38E2C2.55B7158E.IP Lynx.MindForge.org ComputerTech Hr :0 ComputerTech
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Matt mf-9C3134EA.to.you.by.bnc4free.com AbbY.MindForge.org Wolf Gr :0 Orange
+>> :AbbY.MindForge.org 352 you #MindForge-Chat russell mf-EFB8DCB.rbradford.me Unixverse.MindForge.org Russell Gr+ :0 Russell B.
+>> :AbbY.MindForge.org 352 you #MindForge-Chat facil Linux.MindForge.org Lynx.MindForge.org get Hr :0 Fear the power of an undead Penguin - undeadlinux.
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Camile El-Melonar.MindForge.org AbbY.MindForge.org Camile^away Hr :0 BNC4FREE User - https://bnc4free.com/
+>> :AbbY.MindForge.org 352 you #MindForge-Chat ILoveIRC mf-56476DD5.iloveirc.com AbbY.MindForge.org Goyo G :0 Official Bouncer ILoveIRC
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Mt ServicesAdmin.MindForge.org Nutella.MindForge.org Moot Hr*@ :0 Moot
+>> :AbbY.MindForge.org 352 you #MindForge-Chat pralinka ServicesAdmin.MindForge.org Nutella.MindForge.org pralinka Hr*@ :0 pralinka
+>> :AbbY.MindForge.org 352 you #MindForge-Chat EvilCat EvilCat.MindForge.org Nutella.MindForge.org EvilCat Hr :0 EvilCat
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Bot Services.MindForge.org hidden [MindForge] H*& :0 [MindForge]
+>> :AbbY.MindForge.org 352 you #MindForge-Chat LogX Bot.MindForge.org Nutella.MindForge.org LogX HrB :0 LogX
+>> :AbbY.MindForge.org 352 you #MindForge-Chat sx Bot.MindForge.org Nutella.MindForge.org SynX HrB@ :0 SynEarth
+>> :AbbY.MindForge.org 315 you #MindForge-Chat :End of /WHO list.
+<< WHO #MindForge-Chat
+>> :AbbY.MindForge.org 352 you #MindForge-Chat yh2 BCF3BF7C.5B8307BF.31484AE3.IP AbbY.MindForge.org you H :0 realname
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Android mf-ADC69216.pool.telefonica.de Unixverse.MindForge.org Pepebyt67 H :0 Android IRC User
+>> :AbbY.MindForge.org 352 you #MindForge-Chat anko French-Rencontre.MindForge.org AbbY.MindForge.org anko Hr :0 anko
+>> :AbbY.MindForge.org 352 you #MindForge-Chat keikoz mf-1B2110A8.subs.proxad.net Unixverse.MindForge.org keikoz Hr :0 Grmph
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Alex mf-737C5965.retail.telecomitalia.it AbbY.MindForge.org Alessandro H :0 Alessandro
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Tanoc mf-ACCE4AAA.dhcp.inet.fi Unixverse.MindForge.org Tanoc H :0 tanoc@nyoron.moe
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Count3ss MF-Helpers.MindForge.org Lynx.MindForge.org PerfumeOfJasmine Hr% :0 Countess
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Camelot eMule-Portuguese.MindForge.org AbbY.MindForge.org st4ndby H :0 |Camelot Helper
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Mt ServicesAdmin.MindForge.org Nutella.MindForge.org KidCat Hr*@ :0 Moot
+>> :AbbY.MindForge.org 352 you #MindForge-Chat palazzolo mf-B08D85B8.net.vodafone.it Lynx.MindForge.org palazzolo Hr :0 palazzolo
+>> :AbbY.MindForge.org 352 you #MindForge-Chat kvirc eMule-Lithuanian.MindForge.org Unixverse.MindForge.org Drakonas Hr :0 Drakonas
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Minei vguess.best.player.on.MindForge.org Unixverse.MindForge.org Zygo H+ :0 10102
+>> :AbbY.MindForge.org 352 you #MindForge-Chat ircap 93BFA18B.9D11A1B5.3D777FDE.IP AbbY.MindForge.org connann Hr :0 AddoN-PanelVertical-V1
+>> :AbbY.MindForge.org 352 you #MindForge-Chat albator FR.IrcOp.MindForge.org Nutella.MindForge.org albator Hr*@ :0 albator
+>> :AbbY.MindForge.org 352 you #MindForge-Chat yo mf-4197BBAC.dyn.user.ono.com AbbY.MindForge.org stop Hr+ :0 yo
+>> :AbbY.MindForge.org 352 you #MindForge-Chat UPP mf-9C26B8F0.cpe.teksavvy.com Lynx.MindForge.org llh H :0 llh
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Dragonite E0B62223.299AD3D9.88AC2480.IP Unixverse.MindForge.org Dragonite Gr :0 Dragonite
+>> :AbbY.MindForge.org 352 you #MindForge-Chat user mf-337212DF.vm.okeanos.grnet.gr Lynx.MindForge.org Hackerpcs Hr :0 user
+>> :AbbY.MindForge.org 352 you #MindForge-Chat smil mf-6E3C8073.colo.transip.net Lynx.MindForge.org smil G :0 smil
+>> :AbbY.MindForge.org 352 you #MindForge-Chat zer0bitz mf-26FF0C9A.dhcp.inet.fi Lynx.MindForge.org zer0bitz Hr :0 zer0bitz
+>> :AbbY.MindForge.org 352 you #MindForge-Chat beefhart MF-Helpers.MindForge.org Lynx.MindForge.org Beefhart Hr% :0 Otto Parts
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Vajb mf-2A85DF4F.elisa-mobile.fi Unixverse.MindForge.org Vajb H :0 Vajb
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Suntop eMule-Norwegian.MindForge.org Unixverse.MindForge.org Elven_Wizard Hr :0 ZNC - https://znc.in
+>> :AbbY.MindForge.org 352 you #MindForge-Chat ~MySkO 9D87A35.1DB5D0D4.4A6519FD.IP AbbY.MindForge.org MySkO^ Hr :0 MySkO^
+>> :AbbY.MindForge.org 352 you #MindForge-Chat redstone mf-C09C94C5.rbradford.me AbbY.MindForge.org RedStone HrB :0 RedStone Ore
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Sonic mf-72009322.aso.wtf Unixverse.MindForge.org _ Gr+ :0 Sonic
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Trooper BR.IrcOp.MindForge.org Nutella.MindForge.org Troopy Gr@ :0 Passing by..
+>> :AbbY.MindForge.org 352 you #MindForge-Chat jkhsjdhjs mf-7829E6A7.ink AbbY.MindForge.org jkhsjdhjs Hr :0 jkhsjdhjs
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Roma EC032123.3D29DEA.EB32CD3F.IP Lynx.MindForge.org Harambe H :0 ❶❸❸❼
+>> :AbbY.MindForge.org 352 you #MindForge-Chat sid555485 mf-3ED72889.irccloud.com Unixverse.MindForge.org KexyBiscuit Hr :0 Kexy Biscuit
+>> :AbbY.MindForge.org 352 you #MindForge-Chat ComputerTe 70AFA039.BC38E2C2.55B7158E.IP Lynx.MindForge.org ComputerTech Hr :0 ComputerTech
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Matt mf-9C3134EA.to.you.by.bnc4free.com AbbY.MindForge.org Wolf Gr :0 Orange
+>> :AbbY.MindForge.org 352 you #MindForge-Chat russell mf-EFB8DCB.rbradford.me Unixverse.MindForge.org Russell Gr+ :0 Russell B.
+>> :AbbY.MindForge.org 352 you #MindForge-Chat facil Linux.MindForge.org Lynx.MindForge.org get Hr :0 Fear the power of an undead Penguin - undeadlinux.
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Camile El-Melonar.MindForge.org AbbY.MindForge.org Camile^away Hr :0 BNC4FREE User - https://bnc4free.com/
+>> :AbbY.MindForge.org 352 you #MindForge-Chat ILoveIRC mf-56476DD5.iloveirc.com AbbY.MindForge.org Goyo G :0 Official Bouncer ILoveIRC
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Mt ServicesAdmin.MindForge.org Nutella.MindForge.org Moot Hr*@ :0 Moot
+>> :AbbY.MindForge.org 352 you #MindForge-Chat pralinka ServicesAdmin.MindForge.org Nutella.MindForge.org pralinka Hr*@ :0 pralinka
+>> :AbbY.MindForge.org 352 you #MindForge-Chat EvilCat EvilCat.MindForge.org Nutella.MindForge.org EvilCat Hr :0 EvilCat
+>> :AbbY.MindForge.org 352 you #MindForge-Chat Bot Services.MindForge.org hidden [MindForge] H*& :0 [MindForge]
+>> :AbbY.MindForge.org 352 you #MindForge-Chat LogX Bot.MindForge.org Nutella.MindForge.org LogX HrB :0 LogX
+>> :AbbY.MindForge.org 352 you #MindForge-Chat sx Bot.MindForge.org Nutella.MindForge.org SynX HrB@ :0 SynEarth
+>> :AbbY.MindForge.org 315 you #MindForge-Chat :End of /WHO list.
+<< PING LAG1715197297162
+>> :AbbY.MindForge.org PONG AbbY.MindForge.org :LAG1715197297162
+<< PING LAG1715197327246
+>> :AbbY.MindForge.org PONG AbbY.MindForge.org :LAG1715197327246
+<< WHO #idle
+>> :AbbY.MindForge.org 352 you #idle yh2 BCF3BF7C.5B8307BF.31484AE3.IP AbbY.MindForge.org you H :0 realname
+>> :AbbY.MindForge.org 315 you #idle :End of /WHO list.
+<< PING LAG1715197357369
+>> :AbbY.MindForge.org PONG AbbY.MindForge.org :LAG1715197357369
+<< PING LAG1715197387546
+>> :AbbY.MindForge.org PONG AbbY.MindForge.org :LAG1715197387546
+<< PING LAG1715197417879
+>> :AbbY.MindForge.org PONG AbbY.MindForge.org :LAG1715197417879

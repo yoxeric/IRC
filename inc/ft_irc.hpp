@@ -20,7 +20,6 @@
 #include "Server.hpp"
 
 
-
 std::string parse(Server& server, int client_index, std::string buffer);
 
 

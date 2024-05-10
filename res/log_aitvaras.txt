@@ -1,22 +1,29 @@
 << CAP LS
 << NICK yh1
 << USER yh2 yh2 irc.data.lt :realname
+
 >> :irc.data.lt NOTICE AUTH :*** Looking up your hostname...
 >> :irc.data.lt NOTICE AUTH :*** Checking ident...
 >> :irc.data.lt NOTICE AUTH :*** Couldn't resolve your hostname; using your IP address instead
 >> :irc.data.lt NOTICE AUTH :*** No ident response; username prefixed with ~
 >> :irc.data.lt CAP * LS :account-notify away-notify multi-prefix tls userhost-in-names
+
 << CAP REQ :account-notify away-notify multi-prefix userhost-in-names
 << CAP END
+
 >> PING :1DFE4A2F
+
 << PONG :1DFE4A2F
+
 >> :irc.data.lt CAP yh1 ACK :account-notify away-notify multi-prefix userhost-in-names 
 >> :irc.data.lt 001 yh1 :Welcome to the Aitvaras IRC Network yh1!~yh2@197.230.24.20
 >> :irc.data.lt 002 yh1 :Your host is irc.data.lt, running version Unreal3.2.10.6
 >> :irc.data.lt 003 yh1 :This server was created Tue Jan 19 2016 at 13:55:31 EET
 >> :irc.data.lt 004 yh1 irc.data.lt Unreal3.2.10.6 iowghraAsORTVSxNCWqBzvdHtGpI lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjZ
 >> :irc.data.lt 005 yh1 CMDS=KNOCK,MAP,DCCALLOW,USERIP,STARTTLS UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:100,e:100,I:100 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+
 << PROTOCTL NAMESX
+
 >> :irc.data.lt 005 yh1 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGZ NETWORK=Aitvaras CASEMAPPING=ascii EXTBAN=~,qjncrRa ELIST=MNUCT :are supported by this server
 >> :irc.data.lt 005 yh1 STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
 >> :irc.data.lt NOTICE yh1 :*** You are connected to irc.data.lt with TLSv1-AES256-SHA-256bits
@@ -70,7 +77,9 @@
 >> :irc.data.lt 376 yh1 :End of /MOTD command.
 >> :yh1 MODE yh1 :+isxz
 >> :Aitvaras!ubaldas@aitvarasnet.org NOTICE yh1 :[Prisijungimo pranešimas - Spa 06 2009] Aitvaro taisyklės: http://www.aitvaras.eu/taisykles
+
 << LIST >4,<10000
+
 >> :irc.data.lt 321 yh1 Channel :Users  Name
 >> :irc.data.lt 322 yh1 #special 9 :[+ntrM] ©2003 #Special .All rights reserved
 >> :irc.data.lt 322 yh1 #baras 30 :[+ntrSCTGfj] Слава  Україні
@@ -111,10 +120,14 @@
 >> :irc.data.lt 322 yh1 #mokslas 7 :[+r] XxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXx
 >> :irc.data.lt 322 yh1 #kosmosas 43 :[+ntr] Stream'as pakeliui - http://a2.lt:8000/a2 - A2 Sostines Radijas *** http://80s.lt:8000/live - Testuojasi *** http://jaunimolinija.lt - esant slegenciai nuotaikai / 0037080028888 - if sad mood.
 >> :irc.data.lt 323 yh1 :End of /LIST
+
 << JOIN #kosmosas
+
 >> :yh1!~yh2@60CCA6D2.A5193C4D.9C9BAFEA.IP JOIN :#kosmosas
+
 << MODE #kosmosas
 << WHO #kosmosas
+
 >> :irc.data.lt 332 yh1 #kosmosas :Stream'as pakeliui - http://a2.lt:8000/a2 - A2 Sostines Radijas *** http://80s.lt:8000/live - Testuojasi *** http://jaunimolinija.lt - esant slegenciai nuotaikai / 0037080028888 - if sad mood.
 >> :irc.data.lt 333 yh1 #kosmosas Kaimas 1711097534
 >> :irc.data.lt 353 yh1 = #kosmosas :yh1!~yh2@60CCA6D2.A5193C4D.9C9BAFEA.IP rayfer!~ahqiwa@FC7596F1.D4AA9034.C4B1DBC5.IP tynese!~lgvwgk@FC7596F1.D4AA9034.C4B1DBC5.IP devon!~fjyphb@FC7596F1.D4AA9034.C4B1DBC5.IP amalia!~xvuaji@FC7596F1.D4AA9034.C4B1DBC5.IP elespenciu!~umahdj@FC7596F1.D4AA9034.C4B1DBC5.IP 
@@ -173,7 +186,9 @@
 >> :irc.data.lt 352 yh1 #kosmosas cccl aitvaras-7E5EA15B.lt irc.data.lt __C_A__________ H :0 Coca-Cola
 >> :irc.data.lt 352 yh1 #kosmosas ubaldas aitvaras.eu hidden savas H& :0 bicas
 >> :irc.data.lt 315 yh1 #kosmosas :End of /WHO list.
+
 << WHO #kosmosas
+
 >> :irc.data.lt 352 yh1 #kosmosas ~yh2 60CCA6D2.A5193C4D.9C9BAFEA.IP irc.data.lt yh1 H :0 realname
 >> :irc.data.lt 352 yh1 #kosmosas ~ahqiwa FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt rayfer H :0 Script ElFa2002 http://www.dykai.lt/elfa-world
 >> :irc.data.lt 352 yh1 #kosmosas ~lgvwgk FC7596F1.D4AA9034.C4B1DBC5.IP irc.data.lt tynese H :0 Script ElFa2002 http://www.dykai.lt/elfa-world

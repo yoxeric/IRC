@@ -3,6 +3,7 @@
 #include <iostream>
 #include <sstream> 
 #include <vector>
+#include <iomanip>
 
 #include "poll.hpp"
 #include "Client.hpp"
@@ -12,11 +13,9 @@ class Server
 {
 private:
 	std::string			networkname;
-	std::string			servername;
+	std::string			servername; // address
 	std::string			datetime;
 	std::string			version;
-	std::string			tokens;
-
 
 public:
 	s_poll					pool;
@@ -24,40 +23,50 @@ public:
 	std::vector<Channel>	channels;
 
 
-	// Server();
-	// ~Server();
-	
+	void		init_server();
+	void		welcome_server(Client& client);
+	void		modt_server(Client& client);
+	void 		list_users(Client &client);
+	void 		list(Client &client);
+
 	// std::string parse (int sender_socket, std::string buffer);
 
-	Channel&	add_channel(std::string name);
-	Channel&	find_channel(std::string name);
+	Channel*	add_channel(std::string name);
+	Channel*	find_channel(std::string name);
 	// void		remove_channel(std::string name);
 
-	Client&		add_client(int socket);
-	Client&		find_client(int socket);
-	Client&		find_client(std::string name);
+	Client*		add_client(int socket);
+	Client*		find_client(int socket);
+	Client*		find_client(std::string name);
 	// void		remove_client(int socket);
+
+	int			client_count();
+	int			operator_count();
+	int			channel_count();
+
+	int			do_channel_exist(std::string chan_name);
+	// int 		is_channel_membre(Client client);
 
 
 	void 		cap(Client &client, std::string str);
-	void 		nick(Client &client, std::string str);
-	void 		user(Client &client, std::string str, std::string adrr);
-	void 		join(Client &client, std::string str);
-	void 		mode(Client &client, std::string str);
-	void 		who(Client &client, std::string str);
-	void 		prvmsg(Client &client, std::string target, std::string msg);
+	void 		nick(Client &client, std::string nick);
+	void 		user(Client &client, std::string user, std::string adrr);
+	void 		join(Client &client, std::string chan_name);
+	void 		mode(Client& client, std::string target, std::string mode);
+	void 		who(Client& client, std::string target);
+	void		prvmsg(Client& client, std::vector<std::string> target, std::vector<int> type, std::string msg);
 	void 		quit(Client &client, std::string str);
 
-	// int			do_channel_exist(std::string chan);
-	// int 		is_channel_membre(Client client);
 
-	int			send_msg_client(Client &client, std::string msg);
+	// int			send_msg_client(Client &client, std::string msg);
 	int			send_msg_channel(Channel &chan, std::string msg);
-
 	int			send_msg(int dest_fd, std::string msg);
-	// int			send_msg_index(int dest_index, std::string msg);
 
-	std::string	creat_reply(int code, std::string nick, std::string arg, std::string msg);
+	std::string	create_tag(Client& client);
+	// std::string	create_reply(int code, std::string nick, std::string arg, std::string msg);
+	void		send_reply(int code, Client &client, std::string arg, std::string msg);
 
-	void 		list_clients();
+
+	void		print_clients();
+	void		print();
 };

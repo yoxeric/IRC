@@ -1,0 +1,761 @@
+>> :chatjunkies.org NOTICE you :*** Ident lookup timed out, using ~yh2 instead.
+>> :chatjunkies.org 001 you :Welcome to the ChatJunkies IRC Network you!~yh2@197.230.24.20
+>> :chatjunkies.org 002 you :Your host is chatjunkies.org, running version InspIRCd-3
+>> :chatjunkies.org 003 you :This server was created 19:20:48 Jun 16 2023
+>> :chatjunkies.org 004 you chatjunkies.org InspIRCd-3 BHILRScdgiorswx ABCDFHIJKLMNOQRSTYbcdefijklmnoprstvwyz :BFHIJLYbdefjklovwy
+>> :chatjunkies.org 005 you ACCEPT=16 AWAYLEN=200 BOT=B CALLERID=g CASEMAPPING=rfc1459 CHANLIMIT=#:20 CHANMODES=IYbew,k,BFHJLdfjl,ACDKMNOQRSTcimnprstz CHANNELLEN=64 CHANTYPES=# ELIST=CMNTU ESILENCE=CcdiNnPpTtx EXCEPTS=e :are supported by this server
+>> :chatjunkies.org 005 you EXTBAN=,ACNOQRSTUacjmprz HOSTLEN=64 INVEX=I KEYLEN=32 KICKLEN=255 LINELEN=512 MAXLIST=I:100,b:100,e:100,w:100 MAXTARGETS=20 MODES=20 NAMELEN=128 NAMESX NETWORK=ChatJunkies NICKLEN=30 :are supported by this server
+<< PROTOCTL NAMESX
+>> :chatjunkies.org 005 you OVERRIDE PREFIX=(yov)!@+ REMOVE SAFELIST SECURELIST=60 SILENCE=32 STATUSMSG=!@+ TOPICLEN=307 UHNAMES USERLEN=10 USERMODES=,,s,BHILRScdgiorwx WATCH=30 WHOX :are supported by this server
+>> :chatjunkies.org 251 you :There are 30 users and 16 invisible on 2 servers
+>> :chatjunkies.org 252 you 1 :operator(s) online
+>> :chatjunkies.org 253 you 1 :unknown connections
+>> :chatjunkies.org 254 you 36 :channels formed
+>> :chatjunkies.org 255 you :I have 46 clients and 1 servers
+>> :chatjunkies.org 265 you :Current local users: 46  Max: 64
+>> :chatjunkies.org 266 you :Current global users: 46  Max: 64
+>> :chatjunkies.org 375 you :chatjunkies.org message of the day
+>> :chatjunkies.org 372 you : ==================================================================
+>> :chatjunkies.org 372 you :  ______ __           __   __               __     __              
+>> :chatjunkies.org 372 you : |      |  |--.---.-.|  |_|__|.--.--.-----.|  |--.|__|.-----.-----.
+>> :chatjunkies.org 372 you : |   ---|     |  _  ||   _|  ||  |  |     ||    < |  ||  -__|__ --|
+>> :chatjunkies.org 372 you : |______|__|__|___._||____|  ||_____|__|__||__|__||__||_____|_____|
+>> :chatjunkies.org 372 you :                         |___|                                     
+>> :chatjunkies.org 372 you : ==================================================================
+>> :chatjunkies.org 372 you :                 Welcome to chatjunkies.org
+>> :chatjunkies.org 372 you :                   opers: andabata & bonq
+>> :chatjunkies.org 372 you : ==================================================================
+>> :chatjunkies.org 376 you :End of message of the day.
+>> :chatjunkies.org 396 you CJ-f5v.aen.9lcm1o.IP :is now your displayed host
+>> :you!~yh2@CJ-f5v.aen.9lcm1o.IP MODE you :+x
+>> :NickServ!NickServ@services.chatjunkies.org NOTICE you :Welcome to chatjunkies.org, you! Here on chatjunkies.org, we provide services to enable the registration of nicknames and channels! For details, type /msg NickServ help and /msg ChanServ help.
+<< PING LAG1715199355899
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715199355899
+<< LIST >0,<10000
+>> :chatjunkies.org NOTICE you :*** You cannot view the channel list right now. Please try again in 44s.
+>> :chatjunkies.org 321 you Channel :Users Name
+>> :chatjunkies.org 323 you :End of channel list.
+<< PING LAG1715199385998
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715199385998
+<< LIST >0,<10000
+>> :chatjunkies.org NOTICE you :*** You cannot view the channel list right now. Please try again in 16s.
+>> :chatjunkies.org 321 you Channel :Users Name
+>> :chatjunkies.org 323 you :End of channel list.
+<< LIST >0,<10000
+>> :chatjunkies.org NOTICE you :*** You cannot view the channel list right now. Please try again in 9s.
+>> :chatjunkies.org 321 you Channel :Users Name
+>> :chatjunkies.org 323 you :End of channel list.
+<< LIST >0,<10000
+>> :chatjunkies.org NOTICE you :*** You cannot view the channel list right now. Please try again in 3s.
+>> :chatjunkies.org 321 you Channel :Users Name
+>> :chatjunkies.org 323 you :End of channel list.
+<< LIST >0,<10000
+>> :chatjunkies.org NOTICE you :*** You cannot view the channel list right now. Please try again in 2s.
+>> :chatjunkies.org 321 you Channel :Users Name
+>> :chatjunkies.org 323 you :End of channel list.
+<< LIST >0,<10000
+>> :chatjunkies.org 321 you Channel :Users Name
+>> :chatjunkies.org 322 you #Citclipsfarmersmarket 1 :[+nt] 
+>> :chatjunkies.org 322 you #toronto 1 :[+nt] 
+>> :chatjunkies.org 322 you #services 10 :[+nt] 
+>> :chatjunkies.org 322 you #linuxhelp 15 :[+nt] I WANT EASTEREGGS!
+>> :chatjunkies.org 322 you #weakmayors 1 :[+nt] 
+>> :chatjunkies.org 322 you #casadelsol 1 :[+nt] 
+>> :chatjunkies.org 322 you #gigachads 1 :[+nt] 
+>> :chatjunkies.org 322 you #stroke 1 :[+nt] 
+>> :chatjunkies.org 322 you #middayswimmers 1 :[+nt] 
+>> :chatjunkies.org 322 you #xchat 6 :[+nt] - Featuring the lowest collective IQ of the entire ChatJunkies network | U R are no real words
+>> :chatjunkies.org 322 you # 1 :[+nt] 
+>> :chatjunkies.org 322 you #hacdc 1 :[+nt] 
+>> :chatjunkies.org 322 you #linux 8 :[+nt] Yes, we are here. But we are slow to respond. Be patient. | Don't ask permission to ask. Just ask | Asking me stuff while i'm asleep doesn't result in awnsers
+>> :chatjunkies.org 322 you #weakmayor 1 :[+nt] 
+>> :chatjunkies.org 322 you #linuxdojo 6 :[+nt]  Welcome to #linuxdojo | Sssshhhh.... guru training in progress | Linux tutorial - https://rlworkman.net/howtos/rute/ | *IF* ChatJunkies goes down, we move to Libera.chat #linuxdojo | Bot-like behavior will result in bans
+>> :chatjunkies.org 322 you #fortress 2 :[+nt] 
+>> :chatjunkies.org 322 you #geriatrics 1 :[+nt] 
+>> :chatjunkies.org 322 you #biblioxo 1 :[+nt] 
+>> :chatjunkies.org 322 you #exoskeletons 1 :[+nt] 
+>> :chatjunkies.org 322 you #robotics 1 :[+nt] 
+>> :chatjunkies.org 322 you #trax 8 :[+nt] w/EFnet|#trax museum: bring back the only demo art| www.poundtrax.com http://kwakattack.polpo.org www.facebook.com/groups/2557126204
+>> :chatjunkies.org 322 you #xylem-4k 5 :[+nt] 
+>> :chatjunkies.org 322 you #subline 1 :[+nt] 
+>> :chatjunkies.org 322 you #plan9 1 :[+nt] 
+>> :chatjunkies.org 322 you #fragme 2 :[+nt] 
+>> :chatjunkies.org 322 you #cordblood 1 :[+nt] 
+>> :chatjunkies.org 322 you #redbook 1 :[+nt] 
+>> :chatjunkies.org 322 you #ontario 1 :[+nt] 
+>> :chatjunkies.org 322 you #markham 1 :[+nt] 
+>> :chatjunkies.org 322 you #biology 1 :[+nt] 
+>> :chatjunkies.org 322 you #freaks_united 8 :[+nt] We Are FrEaKs and We Are United \o/
+>> :chatjunkies.org 322 you #9front 1 :[+nt] 
+>> :chatjunkies.org 322 you #torontomayors 1 :[+nt] 
+>> :chatjunkies.org 322 you #iwp9 1 :[+nt] 
+>> :chatjunkies.org 322 you #xylem 7 :[+nt] 
+>> :chatjunkies.org 322 you #ShareTheTimeInOfficeOA 1 :[+nt] 
+>> :chatjunkies.org 323 you :End of channel list.
+<< PING LAG1715199416077
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715199416077
+<< JOIN #linuxhelp
+>> :you!~yh2@CJ-f5v.aen.9lcm1o.IP JOIN :#linuxhelp
+<< MODE #linuxhelp
+<< WHO #linuxhelp %chtsunfra,152
+>> :chatjunkies.org 332 you #linuxhelp :I WANT EASTEREGGS!
+>> :chatjunkies.org 333 you #linuxhelp andabata!~andabata@CJ-sdp.8ri.51qit7.IP :1703966147
+>> :chatjunkies.org 353 you = #linuxhelp :zach!~zach@CJ-uf0.gvs.9nb74t.IP jimmiejaz!~jimmie@CJ-9q2.6lp.1oprje.IP banshee_!~ban@CJ-pvu.keu.at8rm0.IP Emmanuel_Chanel!~emmanuel@CJ-pt1.cog.e2qa39.IP @ChanServ!ChanServ@services.chatjunkies.org grape!~grape@CJ-tmh.k08.6bipub.IP lord_helmet!~lordhelme@CJ-7qi.jmj.2tcjaa.IP Craby!~Craby@CJ-70u.s7m.7j2s4f.IP Bonq!~bonkers@CJ-in2.ma2.1q4eo1.IP u^A|mobile!sid512217@CJ-qjt.d0d.cm3au9.IP chalcedony!~llhull@CJ-cac.08p.d7ichg.IP ZeroHour!~zerohour@CJ-7ev.ml8.fh4m42.IP
+>> :chatjunkies.org 353 you = #linuxhelp :!andabata!~andabata@CJ-sdp.8ri.51qit7.IP you!~yh2@CJ-f5v.aen.9lcm1o.IP Jack!sid558019@CJ-7qe.d0d.cm3au9.IP AcidJell0!~andrei@CJ-2oq.ng2.agq3gh.IP
+>> :chatjunkies.org 366 you #linuxhelp :End of /NAMES list.
+>> :ChanServ!ChanServ@services.chatjunkies.org NOTICE you :[#Linuxhelp] Welcome to #linuxhelp
+>> :chatjunkies.org 324 you #linuxhelp :+nt
+>> :chatjunkies.org 329 you #linuxhelp :1686936062
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linuxhelp ~jimmie CJ-9q2.6lp.1oprje.IP chatjunkies.org jimmiejaz H jimmiejaz :jimmie james
+>> :chatjunkies.org 354 you 152 #linuxhelp ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxhelp ~grape CJ-tmh.k08.6bipub.IP chatjunkies.org grape Gs 0 :grape
+>> :chatjunkies.org 354 you 152 #linuxhelp ~lordhelme CJ-7qi.jmj.2tcjaa.IP chatjunkies.org lord_helmet Hs 0 :herpaderp
+>> :chatjunkies.org 354 you 152 #linuxhelp ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #linuxhelp ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linuxhelp sid512217 CJ-qjt.d0d.cm3au9.IP chatjunkies.org u^A|mobile Hs 0 :allbertomarcellini
+>> :chatjunkies.org 354 you 152 #linuxhelp ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zerohour CJ-7ev.ml8.fh4m42.IP chatjunkies.org ZeroHour H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andabata CJ-sdp.8ri.51qit7.IP chatjunkies.org andabata H*!s 0 :Kees Guequierre
+>> :chatjunkies.org 354 you 152 #linuxhelp ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andrei CJ-2oq.ng2.agq3gh.IP chatjunkies.org AcidJell0 H 0 :andrei
+>> :chatjunkies.org 315 you #linuxhelp :End of /WHO list.
+<< JOIN #services
+>> :you!~yh2@CJ-f5v.aen.9lcm1o.IP JOIN :#services
+<< MODE #services
+<< WHO #services %chtsunfra,152
+>> :chatjunkies.org 353 you = #services :@MemoServ!MemoServ@services.chatjunkies.org @NickServ!NickServ@services.chatjunkies.org @InfoServ!InfoServ@services.chatjunkies.org @GroupServ!GroupServ@services.chatjunkies.org @Global!Global@services.chatjunkies.org @ChanServ!ChanServ@services.chatjunkies.org Craby!~Craby@CJ-70u.s7m.7j2s4f.IP you!~yh2@CJ-f5v.aen.9lcm1o.IP @OperServ!OperServ@services.chatjunkies.org @SaslServ!SaslServ@services.chatjunkies.org @StatServ!StatServ@services.chatjunkies.org
+>> :chatjunkies.org 366 you #services :End of /NAMES list.
+>> :chatjunkies.org 324 you #services :+nt
+>> :chatjunkies.org 329 you #services :1688221022
+>> :chatjunkies.org 354 you 152 #services MemoServ services.chatjunkies.org services.chatjunkies.org MemoServ H@ 0 :Memo Services
+>> :chatjunkies.org 354 you 152 #services NickServ services.chatjunkies.org services.chatjunkies.org NickServ H@ 0 :Nickname Services
+>> :chatjunkies.org 354 you 152 #services InfoServ services.chatjunkies.org services.chatjunkies.org InfoServ H@ 0 :Information Service
+>> :chatjunkies.org 354 you 152 #services GroupServ services.chatjunkies.org services.chatjunkies.org GroupServ H@ 0 :Group Managment Services
+>> :chatjunkies.org 354 you 152 #services Global services.chatjunkies.org services.chatjunkies.org Global H@ 0 :Network Announcements
+>> :chatjunkies.org 354 you 152 #services ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #services ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #services ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #services OperServ services.chatjunkies.org services.chatjunkies.org OperServ H@ 0 :Operator Services
+>> :chatjunkies.org 354 you 152 #services SaslServ services.chatjunkies.org services.chatjunkies.org SaslServ H@ 0 :SASL Authentication Agent
+>> :chatjunkies.org 354 you 152 #services StatServ services.chatjunkies.org services.chatjunkies.org StatServ H@ 0 :Statistics Services
+>> :chatjunkies.org 315 you #services :End of /WHO list.
+<< JOIN #freaks_united
+>> :you!~yh2@CJ-f5v.aen.9lcm1o.IP JOIN :#freaks_united
+>> :chatjunkies.org 332 you #freaks_united :We Are FrEaKs and We Are United \o/
+>> :chatjunkies.org 333 you #freaks_united Lusi^!~bun@CJ-48a.ob0.pfd9dr.IP :1711206011
+>> :chatjunkies.org 353 you = #freaks_united :@zach!~zach@CJ-uf0.gvs.9nb74t.IP @Emmanuel_Chanel!~emmanuel@CJ-pt1.cog.e2qa39.IP AOD!~AOD@CJ-g76.shr.3bl022.IP slvr2314!~slvr2314@CJ-km7.aq8.4jfg5a.IP @ChanServ!ChanServ@services.chatjunkies.org @MakeGho!makegho@CJ-h9r.vap.0kcm93.IP @Lusi^!bun@CJ-asi.0c2.6u6qg5.IP you!~yh2@CJ-f5v.aen.9lcm1o.IP @EmmaBot!~emmanuel@CJ-pt1.cog.e2qa39.IP
+>> :chatjunkies.org 366 you #freaks_united :End of /NAMES list.
+>> :ChanServ!ChanServ@services.chatjunkies.org NOTICE you :[#freaks_united] Welcome to #freaks_united! Let's get freaky!
+<< MODE #freaks_united
+>> :chatjunkies.org 324 you #freaks_united :+nt
+>> :chatjunkies.org 329 you #freaks_united :1705741509
+<< WHO #freaks_united %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #freaks_united ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach H@s 0 :zach
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~AOD CJ-g76.shr.3bl022.IP chatjunkies.org AOD H 0 :...
+>> :chatjunkies.org 354 you 152 #freaks_united ~slvr2314 CJ-km7.aq8.4jfg5a.IP chatjunkies.org slvr2314 Gs 0 :mjk
+>> :chatjunkies.org 354 you 152 #freaks_united ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #freaks_united makegho CJ-h9r.vap.0kcm93.IP chatjunkies.org MakeGho H@ 0 :Markus Kettunen
+>> :chatjunkies.org 354 you 152 #freaks_united bun CJ-asi.0c2.6u6qg5.IP chatjunkies.org Lusi^ H@ 0 :bun
+>> :chatjunkies.org 354 you 152 #freaks_united ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 315 you #freaks_united :End of /WHO list.
+<< JOIN #linux
+>> :you!~yh2@CJ-f5v.aen.9lcm1o.IP JOIN :#linux
+<< MODE #linux
+>> :chatjunkies.org 332 you #linux :Yes, we are here. But we are slow to respond. Be patient. | Don't ask permission to ask. Just ask | Asking me stuff while i'm asleep doesn't result in awnsers
+>> :chatjunkies.org 333 you #linux andabata :1399019820
+>> :chatjunkies.org 353 you = #linux :Lombrads!~Lombrads@CJ-ga8.vcb.2k0hi1.IP zach!~zach@CJ-uf0.gvs.9nb74t.IP Emmanuel_Chanel!~emmanuel@CJ-pt1.cog.e2qa39.IP @ChanServ!ChanServ@services.chatjunkies.org Bonq!~bonkers@CJ-in2.ma2.1q4eo1.IP chalcedony!~llhull@CJ-cac.08p.d7ichg.IP you!~yh2@CJ-f5v.aen.9lcm1o.IP Jack!sid558019@CJ-7qe.d0d.cm3au9.IP sig!~joe@CJ-tf5.ddo.ad4fen.IP
+>> :chatjunkies.org 366 you #linux :End of /NAMES list.
+>> :chatjunkies.org 324 you #linux :+nt
+>> :chatjunkies.org 329 you #linux :1705741703
+<< WHO #linux %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #linux ~Lombrads CJ-ga8.vcb.2k0hi1.IP chatjunkies.org Lombrads H 0 :Lombrads
+>> :chatjunkies.org 354 you 152 #linux ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linux ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linux ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linux ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linux ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linux ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linux sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linux ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linux :End of /WHO list.
+<< JOIN #trax
+>> :you!~yh2@CJ-f5v.aen.9lcm1o.IP JOIN :#trax
+<< MODE #trax
+<< WHO #trax %chtsunfra,152
+>> :chatjunkies.org 332 you #trax :w/EFnet|#trax museum: bring back the only demo art| www.poundtrax.com http://kwakattack.polpo.org www.facebook.com/groups/2557126204
+>> :chatjunkies.org 333 you #trax darwin :1682205054
+>> :chatjunkies.org 353 you = #trax :TraxLink!~TraxLink@CJ-mob.nge.1ejk2n.IP @ChanServ!ChanServ@services.chatjunkies.org @zoner!~nic@CJ-ork.u02.lo0njh.IP lizard!lizard@CJ-vfo.7f8.rhmdis.IP @darwin!d@CJ-b96.624.jn0sjn.IP flyback!~flyback@CJ-4ud.uhc.vbsd1l.IP foamhat!sid35507@CJ-r46.d0d.cm3au9.IP you!~yh2@CJ-f5v.aen.9lcm1o.IP Danalog!~Jeff@CJ-fin.pj1.hojr6a.IP
+>> :chatjunkies.org 366 you #trax :End of /NAMES list.
+>> :chatjunkies.org 324 you #trax :+nt
+>> :chatjunkies.org 329 you #trax :1705741509
+>> :chatjunkies.org 354 you 152 #trax ~TraxLink CJ-mob.nge.1ejk2n.IP chatjunkies.org TraxLink H 0 :TraxLink
+>> :chatjunkies.org 354 you 152 #trax ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #trax ~nic CJ-ork.u02.lo0njh.IP chatjunkies.org zoner H@ zoner :nic
+>> :chatjunkies.org 354 you 152 #trax lizard CJ-vfo.7f8.rhmdis.IP chatjunkies.org lizard H 0 :lizard
+>> :chatjunkies.org 354 you 152 #trax d CJ-b96.624.jn0sjn.IP chatjunkies.org darwin G@s darwin :ftp.modland.com/pub/modules/Fasttracker%202/Darwin
+>> :chatjunkies.org 354 you 152 #trax ~flyback CJ-4ud.uhc.vbsd1l.IP chatjunkies.org flyback H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax sid35507 CJ-r46.d0d.cm3au9.IP chatjunkies.org foamhat Hs 0 :Koonat
+>> :chatjunkies.org 354 you 152 #trax ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax ~Jeff CJ-fin.pj1.hojr6a.IP chatjunkies.org Danalog H 0 :Jeff
+>> :chatjunkies.org 315 you #trax :End of /WHO list.
+<< JOIN #xchat
+>> :you!~yh2@CJ-f5v.aen.9lcm1o.IP JOIN :#xchat
+>> :chatjunkies.org 332 you #xchat :- Featuring the lowest collective IQ of the entire ChatJunkies network | U R are no real words
+>> :chatjunkies.org 333 you #xchat ramaDan :1325391708
+>> :chatjunkies.org 353 you = #xchat :Emmanuel_Chanel!~emmanuel@CJ-pt1.cog.e2qa39.IP @ChanServ!ChanServ@services.chatjunkies.org Craby!~Craby@CJ-70u.s7m.7j2s4f.IP Bonq!~bonkers@CJ-in2.ma2.1q4eo1.IP chalcedony!~llhull@CJ-cac.08p.d7ichg.IP you!~yh2@CJ-f5v.aen.9lcm1o.IP Jack!sid558019@CJ-7qe.d0d.cm3au9.IP
+>> :chatjunkies.org 366 you #xchat :End of /NAMES list.
+>> :ChanServ!ChanServ@services.chatjunkies.org NOTICE you :[#xchat] ***Welcome To The World Of IRC*** | If You Wish To Speak With A User In Private Please Ask Permission First | Have Fun***
+<< PING LAG1715199446174
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715199446174
+<< JOIN #linuxdojo
+>> :you!~yh2@CJ-f5v.aen.9lcm1o.IP JOIN :#linuxdojo
+>> :chatjunkies.org 332 you #linuxdojo : Welcome to #linuxdojo | Sssshhhh.... guru training in progress | Linux tutorial - https://rlworkman.net/howtos/rute/ | *IF* ChatJunkies goes down, we move to Libera.chat #linuxdojo | Bot-like behavior will result in bans
+>> :chatjunkies.org 333 you #linuxdojo maz!~maz@CJ-vkf.p2i.q2sh2p.IP :1707534822
+>> :chatjunkies.org 353 you = #linuxdojo :@banshee_!~ban@CJ-pvu.keu.at8rm0.IP @Emmanuel_Chanel!~emmanuel@CJ-pt1.cog.e2qa39.IP @ChanServ!ChanServ@services.chatjunkies.org @eagle!~quassel@CJ-nso.1ac.ek83qm.IP you!~yh2@CJ-f5v.aen.9lcm1o.IP @EmmaBot!~emmanuel@CJ-pt1.cog.e2qa39.IP sig!~joe@CJ-tf5.ddo.ad4fen.IP
+>> :chatjunkies.org 366 you #linuxdojo :End of /NAMES list.
+<< MODE #xchat
+>> :chatjunkies.org 324 you #xchat :+nt
+>> :chatjunkies.org 329 you #xchat :1705741703
+<< WHO #xchat %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #xchat ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #xchat ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #xchat ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #xchat ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #xchat ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #xchat ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #xchat sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 315 you #xchat :End of /WHO list.
+<< MODE #linuxdojo
+>> :chatjunkies.org 324 you #linuxdojo :+nt
+>> :chatjunkies.org 329 you #linuxdojo :1705741573
+<< WHO #linuxdojo %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #linuxdojo ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H@ 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxdojo ~quassel CJ-nso.1ac.ek83qm.IP chatjunkies.org eagle H@ Eagle :Eagle
+>> :chatjunkies.org 354 you 152 #linuxdojo ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 354 you 152 #linuxdojo ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linuxdojo :End of /WHO list.
+<< WHO #linuxdojo %chtsunfra,152
+<< WHO #xchat %chtsunfra,152
+<< WHO #trax %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #linuxdojo ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H@ 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxdojo ~quassel CJ-nso.1ac.ek83qm.IP chatjunkies.org eagle H@ Eagle :Eagle
+>> :chatjunkies.org 354 you 152 #linuxdojo ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 354 you 152 #linuxdojo ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linuxdojo :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #xchat ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #xchat ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #xchat ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #xchat ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #xchat ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #xchat ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #xchat sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 315 you #xchat :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #trax ~TraxLink CJ-mob.nge.1ejk2n.IP chatjunkies.org TraxLink H 0 :TraxLink
+>> :chatjunkies.org 354 you 152 #trax ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #trax ~nic CJ-ork.u02.lo0njh.IP chatjunkies.org zoner H@ zoner :nic
+>> :chatjunkies.org 354 you 152 #trax lizard CJ-vfo.7f8.rhmdis.IP chatjunkies.org lizard H 0 :lizard
+>> :chatjunkies.org 354 you 152 #trax d CJ-b96.624.jn0sjn.IP chatjunkies.org darwin G@s darwin :ftp.modland.com/pub/modules/Fasttracker%202/Darwin
+>> :chatjunkies.org 354 you 152 #trax ~flyback CJ-4ud.uhc.vbsd1l.IP chatjunkies.org flyback H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax sid35507 CJ-r46.d0d.cm3au9.IP chatjunkies.org foamhat Hs 0 :Koonat
+>> :chatjunkies.org 354 you 152 #trax ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax ~Jeff CJ-fin.pj1.hojr6a.IP chatjunkies.org Danalog H 0 :Jeff
+>> :chatjunkies.org 315 you #trax :End of /WHO list.
+<< WHO #linux %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #linux ~Lombrads CJ-ga8.vcb.2k0hi1.IP chatjunkies.org Lombrads H 0 :Lombrads
+>> :chatjunkies.org 354 you 152 #linux ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linux ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linux ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linux ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linux ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linux ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linux sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linux ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linux :End of /WHO list.
+<< PING LAG1715199476254
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715199476254
+<< PING LAG1715199506333
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715199506333
+<< WHO #freaks_united %chtsunfra,152
+<< WHO #services %chtsunfra,152
+<< WHO #linuxhelp %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #freaks_united ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach H@s 0 :zach
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~AOD CJ-g76.shr.3bl022.IP chatjunkies.org AOD H 0 :...
+>> :chatjunkies.org 354 you 152 #freaks_united ~slvr2314 CJ-km7.aq8.4jfg5a.IP chatjunkies.org slvr2314 Gs 0 :mjk
+>> :chatjunkies.org 354 you 152 #freaks_united ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #freaks_united makegho CJ-h9r.vap.0kcm93.IP chatjunkies.org MakeGho H@ 0 :Markus Kettunen
+>> :chatjunkies.org 354 you 152 #freaks_united bun CJ-asi.0c2.6u6qg5.IP chatjunkies.org Lusi^ H@ 0 :bun
+>> :chatjunkies.org 354 you 152 #freaks_united ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 315 you #freaks_united :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #services MemoServ services.chatjunkies.org services.chatjunkies.org MemoServ H@ 0 :Memo Services
+>> :chatjunkies.org 354 you 152 #services NickServ services.chatjunkies.org services.chatjunkies.org NickServ H@ 0 :Nickname Services
+>> :chatjunkies.org 354 you 152 #services InfoServ services.chatjunkies.org services.chatjunkies.org InfoServ H@ 0 :Information Service
+>> :chatjunkies.org 354 you 152 #services GroupServ services.chatjunkies.org services.chatjunkies.org GroupServ H@ 0 :Group Managment Services
+>> :chatjunkies.org 354 you 152 #services Global services.chatjunkies.org services.chatjunkies.org Global H@ 0 :Network Announcements
+>> :chatjunkies.org 354 you 152 #services ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #services ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #services ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #services OperServ services.chatjunkies.org services.chatjunkies.org OperServ H@ 0 :Operator Services
+>> :chatjunkies.org 354 you 152 #services SaslServ services.chatjunkies.org services.chatjunkies.org SaslServ H@ 0 :SASL Authentication Agent
+>> :chatjunkies.org 354 you 152 #services StatServ services.chatjunkies.org services.chatjunkies.org StatServ H@ 0 :Statistics Services
+>> :chatjunkies.org 315 you #services :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linuxhelp ~jimmie CJ-9q2.6lp.1oprje.IP chatjunkies.org jimmiejaz H jimmiejaz :jimmie james
+>> :chatjunkies.org 354 you 152 #linuxhelp ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxhelp ~grape CJ-tmh.k08.6bipub.IP chatjunkies.org grape Gs 0 :grape
+>> :chatjunkies.org 354 you 152 #linuxhelp ~lordhelme CJ-7qi.jmj.2tcjaa.IP chatjunkies.org lord_helmet Hs 0 :herpaderp
+>> :chatjunkies.org 354 you 152 #linuxhelp ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #linuxhelp ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linuxhelp sid512217 CJ-qjt.d0d.cm3au9.IP chatjunkies.org u^A|mobile Hs 0 :allbertomarcellini
+>> :chatjunkies.org 354 you 152 #linuxhelp ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zerohour CJ-7ev.ml8.fh4m42.IP chatjunkies.org ZeroHour H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andabata CJ-sdp.8ri.51qit7.IP chatjunkies.org andabata H*!s 0 :Kees Guequierre
+>> :chatjunkies.org 354 you 152 #linuxhelp ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andrei CJ-2oq.ng2.agq3gh.IP chatjunkies.org AcidJell0 H 0 :andrei
+>> :chatjunkies.org 315 you #linuxhelp :End of /WHO list.
+<< PING LAG1715199536418
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715199536418
+<< WHO #linuxdojo %chtsunfra,152
+<< WHO #xchat %chtsunfra,152
+<< WHO #trax %chtsunfra,152
+<< WHO #linux %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #linuxdojo ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H@ 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxdojo ~quassel CJ-nso.1ac.ek83qm.IP chatjunkies.org eagle H@ Eagle :Eagle
+>> :chatjunkies.org 354 you 152 #linuxdojo ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 354 you 152 #linuxdojo ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linuxdojo :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #xchat ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #xchat ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #xchat ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #xchat ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #xchat ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #xchat ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #xchat sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 315 you #xchat :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #trax ~TraxLink CJ-mob.nge.1ejk2n.IP chatjunkies.org TraxLink H 0 :TraxLink
+>> :chatjunkies.org 354 you 152 #trax ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #trax ~nic CJ-ork.u02.lo0njh.IP chatjunkies.org zoner H@ zoner :nic
+>> :chatjunkies.org 354 you 152 #trax lizard CJ-vfo.7f8.rhmdis.IP chatjunkies.org lizard H 0 :lizard
+>> :chatjunkies.org 354 you 152 #trax d CJ-b96.624.jn0sjn.IP chatjunkies.org darwin G@s darwin :ftp.modland.com/pub/modules/Fasttracker%202/Darwin
+>> :chatjunkies.org 354 you 152 #trax ~flyback CJ-4ud.uhc.vbsd1l.IP chatjunkies.org flyback H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax sid35507 CJ-r46.d0d.cm3au9.IP chatjunkies.org foamhat Hs 0 :Koonat
+>> :chatjunkies.org 354 you 152 #trax ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax ~Jeff CJ-fin.pj1.hojr6a.IP chatjunkies.org Danalog H 0 :Jeff
+>> :chatjunkies.org 315 you #trax :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linux ~Lombrads CJ-ga8.vcb.2k0hi1.IP chatjunkies.org Lombrads H 0 :Lombrads
+>> :chatjunkies.org 354 you 152 #linux ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linux ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linux ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linux ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linux ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linux ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linux sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linux ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linux :End of /WHO list.
+<< WHO #freaks_united %chtsunfra,152
+<< WHO #services %chtsunfra,152
+<< WHO #linuxhelp %chtsunfra,152
+<< PING LAG1715199677099
+>> :chatjunkies.org 354 you 152 #freaks_united ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach H@s 0 :zach
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~AOD CJ-g76.shr.3bl022.IP chatjunkies.org AOD H 0 :...
+>> :chatjunkies.org 354 you 152 #freaks_united ~slvr2314 CJ-km7.aq8.4jfg5a.IP chatjunkies.org slvr2314 Gs 0 :mjk
+>> :chatjunkies.org 354 you 152 #freaks_united ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #freaks_united makegho CJ-h9r.vap.0kcm93.IP chatjunkies.org MakeGho H@ 0 :Markus Kettunen
+>> :chatjunkies.org 354 you 152 #freaks_united bun CJ-asi.0c2.6u6qg5.IP chatjunkies.org Lusi^ H@ 0 :bun
+>> :chatjunkies.org 354 you 152 #freaks_united ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 315 you #freaks_united :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #services MemoServ services.chatjunkies.org services.chatjunkies.org MemoServ H@ 0 :Memo Services
+>> :chatjunkies.org 354 you 152 #services NickServ services.chatjunkies.org services.chatjunkies.org NickServ H@ 0 :Nickname Services
+>> :chatjunkies.org 354 you 152 #services InfoServ services.chatjunkies.org services.chatjunkies.org InfoServ H@ 0 :Information Service
+>> :chatjunkies.org 354 you 152 #services GroupServ services.chatjunkies.org services.chatjunkies.org GroupServ H@ 0 :Group Managment Services
+>> :chatjunkies.org 354 you 152 #services Global services.chatjunkies.org services.chatjunkies.org Global H@ 0 :Network Announcements
+>> :chatjunkies.org 354 you 152 #services ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #services ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #services ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #services OperServ services.chatjunkies.org services.chatjunkies.org OperServ H@ 0 :Operator Services
+>> :chatjunkies.org 354 you 152 #services SaslServ services.chatjunkies.org services.chatjunkies.org SaslServ H@ 0 :SASL Authentication Agent
+>> :chatjunkies.org 354 you 152 #services StatServ services.chatjunkies.org services.chatjunkies.org StatServ H@ 0 :Statistics Services
+>> :chatjunkies.org 315 you #services :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linuxhelp ~jimmie CJ-9q2.6lp.1oprje.IP chatjunkies.org jimmiejaz H jimmiejaz :jimmie james
+>> :chatjunkies.org 354 you 152 #linuxhelp ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxhelp ~grape CJ-tmh.k08.6bipub.IP chatjunkies.org grape Gs 0 :grape
+>> :chatjunkies.org 354 you 152 #linuxhelp ~lordhelme CJ-7qi.jmj.2tcjaa.IP chatjunkies.org lord_helmet Hs 0 :herpaderp
+>> :chatjunkies.org 354 you 152 #linuxhelp ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #linuxhelp ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linuxhelp sid512217 CJ-qjt.d0d.cm3au9.IP chatjunkies.org u^A|mobile Hs 0 :allbertomarcellini
+>> :chatjunkies.org 354 you 152 #linuxhelp ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zerohour CJ-7ev.ml8.fh4m42.IP chatjunkies.org ZeroHour H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andabata CJ-sdp.8ri.51qit7.IP chatjunkies.org andabata H*!s 0 :Kees Guequierre
+>> :chatjunkies.org 354 you 152 #linuxhelp ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andrei CJ-2oq.ng2.agq3gh.IP chatjunkies.org AcidJell0 H 0 :andrei
+>> :chatjunkies.org 315 you #linuxhelp :End of /WHO list.
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715199677099
+>> PING :chatjunkies.org
+<< PONG :chatjunkies.org
+<< WHO #linuxdojo %chtsunfra,152
+<< WHO #xchat %chtsunfra,152
+<< WHO #trax %chtsunfra,152
+<< WHO #linux %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #linuxdojo ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H@ 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxdojo ~quassel CJ-nso.1ac.ek83qm.IP chatjunkies.org eagle H@ Eagle :Eagle
+>> :chatjunkies.org 354 you 152 #linuxdojo ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 354 you 152 #linuxdojo ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linuxdojo :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #xchat ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #xchat ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #xchat ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #xchat ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #xchat ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #xchat ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #xchat sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 315 you #xchat :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #trax ~TraxLink CJ-mob.nge.1ejk2n.IP chatjunkies.org TraxLink H 0 :TraxLink
+>> :chatjunkies.org 354 you 152 #trax ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #trax ~nic CJ-ork.u02.lo0njh.IP chatjunkies.org zoner H@ zoner :nic
+>> :chatjunkies.org 354 you 152 #trax lizard CJ-vfo.7f8.rhmdis.IP chatjunkies.org lizard H 0 :lizard
+>> :chatjunkies.org 354 you 152 #trax d CJ-b96.624.jn0sjn.IP chatjunkies.org darwin G@s darwin :ftp.modland.com/pub/modules/Fasttracker%202/Darwin
+>> :chatjunkies.org 354 you 152 #trax ~flyback CJ-4ud.uhc.vbsd1l.IP chatjunkies.org flyback H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax sid35507 CJ-r46.d0d.cm3au9.IP chatjunkies.org foamhat Hs 0 :Koonat
+>> :chatjunkies.org 354 you 152 #trax ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax ~Jeff CJ-fin.pj1.hojr6a.IP chatjunkies.org Danalog H 0 :Jeff
+>> :chatjunkies.org 315 you #trax :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linux ~Lombrads CJ-ga8.vcb.2k0hi1.IP chatjunkies.org Lombrads H 0 :Lombrads
+>> :chatjunkies.org 354 you 152 #linux ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linux ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linux ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linux ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linux ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linux ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linux sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linux ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linux :End of /WHO list.
+<< WHO #freaks_united %chtsunfra,152
+<< WHO #services %chtsunfra,152
+<< WHO #linuxhelp %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #freaks_united ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach H@s 0 :zach
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~AOD CJ-g76.shr.3bl022.IP chatjunkies.org AOD H 0 :...
+>> :chatjunkies.org 354 you 152 #freaks_united ~slvr2314 CJ-km7.aq8.4jfg5a.IP chatjunkies.org slvr2314 Gs 0 :mjk
+>> :chatjunkies.org 354 you 152 #freaks_united ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #freaks_united makegho CJ-h9r.vap.0kcm93.IP chatjunkies.org MakeGho H@ 0 :Markus Kettunen
+>> :chatjunkies.org 354 you 152 #freaks_united bun CJ-asi.0c2.6u6qg5.IP chatjunkies.org Lusi^ H@ 0 :bun
+>> :chatjunkies.org 354 you 152 #freaks_united ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 315 you #freaks_united :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #services MemoServ services.chatjunkies.org services.chatjunkies.org MemoServ H@ 0 :Memo Services
+>> :chatjunkies.org 354 you 152 #services NickServ services.chatjunkies.org services.chatjunkies.org NickServ H@ 0 :Nickname Services
+>> :chatjunkies.org 354 you 152 #services InfoServ services.chatjunkies.org services.chatjunkies.org InfoServ H@ 0 :Information Service
+>> :chatjunkies.org 354 you 152 #services GroupServ services.chatjunkies.org services.chatjunkies.org GroupServ H@ 0 :Group Managment Services
+>> :chatjunkies.org 354 you 152 #services Global services.chatjunkies.org services.chatjunkies.org Global H@ 0 :Network Announcements
+>> :chatjunkies.org 354 you 152 #services ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #services ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #services ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #services OperServ services.chatjunkies.org services.chatjunkies.org OperServ H@ 0 :Operator Services
+>> :chatjunkies.org 354 you 152 #services SaslServ services.chatjunkies.org services.chatjunkies.org SaslServ H@ 0 :SASL Authentication Agent
+>> :chatjunkies.org 354 you 152 #services StatServ services.chatjunkies.org services.chatjunkies.org StatServ H@ 0 :Statistics Services
+>> :chatjunkies.org 315 you #services :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linuxhelp ~jimmie CJ-9q2.6lp.1oprje.IP chatjunkies.org jimmiejaz H jimmiejaz :jimmie james
+>> :chatjunkies.org 354 you 152 #linuxhelp ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxhelp ~grape CJ-tmh.k08.6bipub.IP chatjunkies.org grape Gs 0 :grape
+>> :chatjunkies.org 354 you 152 #linuxhelp ~lordhelme CJ-7qi.jmj.2tcjaa.IP chatjunkies.org lord_helmet Hs 0 :herpaderp
+>> :chatjunkies.org 354 you 152 #linuxhelp ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #linuxhelp ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linuxhelp sid512217 CJ-qjt.d0d.cm3au9.IP chatjunkies.org u^A|mobile Hs 0 :allbertomarcellini
+>> :chatjunkies.org 354 you 152 #linuxhelp ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zerohour CJ-7ev.ml8.fh4m42.IP chatjunkies.org ZeroHour H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andabata CJ-sdp.8ri.51qit7.IP chatjunkies.org andabata H*!s 0 :Kees Guequierre
+>> :chatjunkies.org 354 you 152 #linuxhelp ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andrei CJ-2oq.ng2.agq3gh.IP chatjunkies.org AcidJell0 H 0 :andrei
+>> :chatjunkies.org 315 you #linuxhelp :End of /WHO list.
+>> PING :chatjunkies.org
+<< PONG :chatjunkies.org
+<< WHO #linuxdojo %chtsunfra,152
+<< WHO #xchat %chtsunfra,152
+<< WHO #trax %chtsunfra,152
+<< WHO #linux %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #linuxdojo ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H@ 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxdojo ~quassel CJ-nso.1ac.ek83qm.IP chatjunkies.org eagle H@ Eagle :Eagle
+>> :chatjunkies.org 354 you 152 #linuxdojo ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 354 you 152 #linuxdojo ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linuxdojo :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #xchat ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #xchat ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #xchat ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #xchat ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #xchat ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #xchat ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #xchat sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 315 you #xchat :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #trax ~TraxLink CJ-mob.nge.1ejk2n.IP chatjunkies.org TraxLink H 0 :TraxLink
+>> :chatjunkies.org 354 you 152 #trax ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #trax ~nic CJ-ork.u02.lo0njh.IP chatjunkies.org zoner H@ zoner :nic
+>> :chatjunkies.org 354 you 152 #trax lizard CJ-vfo.7f8.rhmdis.IP chatjunkies.org lizard H 0 :lizard
+>> :chatjunkies.org 354 you 152 #trax d CJ-b96.624.jn0sjn.IP chatjunkies.org darwin G@s darwin :ftp.modland.com/pub/modules/Fasttracker%202/Darwin
+>> :chatjunkies.org 354 you 152 #trax ~flyback CJ-4ud.uhc.vbsd1l.IP chatjunkies.org flyback H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax sid35507 CJ-r46.d0d.cm3au9.IP chatjunkies.org foamhat Hs 0 :Koonat
+>> :chatjunkies.org 354 you 152 #trax ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax ~Jeff CJ-fin.pj1.hojr6a.IP chatjunkies.org Danalog H 0 :Jeff
+>> :chatjunkies.org 315 you #trax :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linux ~Lombrads CJ-ga8.vcb.2k0hi1.IP chatjunkies.org Lombrads H 0 :Lombrads
+>> :chatjunkies.org 354 you 152 #linux ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linux ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linux ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linux ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linux ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linux ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linux sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linux ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linux :End of /WHO list.
+<< WHO #freaks_united %chtsunfra,152
+<< WHO #services %chtsunfra,152
+<< WHO #linuxhelp %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #freaks_united ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach H@s 0 :zach
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~AOD CJ-g76.shr.3bl022.IP chatjunkies.org AOD H 0 :...
+>> :chatjunkies.org 354 you 152 #freaks_united ~slvr2314 CJ-km7.aq8.4jfg5a.IP chatjunkies.org slvr2314 Gs 0 :mjk
+>> :chatjunkies.org 354 you 152 #freaks_united ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #freaks_united makegho CJ-h9r.vap.0kcm93.IP chatjunkies.org MakeGho H@ 0 :Markus Kettunen
+>> :chatjunkies.org 354 you 152 #freaks_united bun CJ-asi.0c2.6u6qg5.IP chatjunkies.org Lusi^ H@ 0 :bun
+>> :chatjunkies.org 354 you 152 #freaks_united ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 315 you #freaks_united :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #services MemoServ services.chatjunkies.org services.chatjunkies.org MemoServ H@ 0 :Memo Services
+>> :chatjunkies.org 354 you 152 #services NickServ services.chatjunkies.org services.chatjunkies.org NickServ H@ 0 :Nickname Services
+>> :chatjunkies.org 354 you 152 #services InfoServ services.chatjunkies.org services.chatjunkies.org InfoServ H@ 0 :Information Service
+>> :chatjunkies.org 354 you 152 #services GroupServ services.chatjunkies.org services.chatjunkies.org GroupServ H@ 0 :Group Managment Services
+>> :chatjunkies.org 354 you 152 #services Global services.chatjunkies.org services.chatjunkies.org Global H@ 0 :Network Announcements
+>> :chatjunkies.org 354 you 152 #services ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #services ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #services ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #services OperServ services.chatjunkies.org services.chatjunkies.org OperServ H@ 0 :Operator Services
+>> :chatjunkies.org 354 you 152 #services SaslServ services.chatjunkies.org services.chatjunkies.org SaslServ H@ 0 :SASL Authentication Agent
+>> :chatjunkies.org 354 you 152 #services StatServ services.chatjunkies.org services.chatjunkies.org StatServ H@ 0 :Statistics Services
+>> :chatjunkies.org 315 you #services :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linuxhelp ~jimmie CJ-9q2.6lp.1oprje.IP chatjunkies.org jimmiejaz H jimmiejaz :jimmie james
+>> :chatjunkies.org 354 you 152 #linuxhelp ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxhelp ~grape CJ-tmh.k08.6bipub.IP chatjunkies.org grape Gs 0 :grape
+>> :chatjunkies.org 354 you 152 #linuxhelp ~lordhelme CJ-7qi.jmj.2tcjaa.IP chatjunkies.org lord_helmet Hs 0 :herpaderp
+>> :chatjunkies.org 354 you 152 #linuxhelp ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #linuxhelp ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linuxhelp sid512217 CJ-qjt.d0d.cm3au9.IP chatjunkies.org u^A|mobile Hs 0 :allbertomarcellini
+>> :chatjunkies.org 354 you 152 #linuxhelp ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zerohour CJ-7ev.ml8.fh4m42.IP chatjunkies.org ZeroHour H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andabata CJ-sdp.8ri.51qit7.IP chatjunkies.org andabata H*!s 0 :Kees Guequierre
+>> :chatjunkies.org 354 you 152 #linuxhelp ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andrei CJ-2oq.ng2.agq3gh.IP chatjunkies.org AcidJell0 H 0 :andrei
+>> :chatjunkies.org 315 you #linuxhelp :End of /WHO list.
+>> PING :chatjunkies.org
+<< PONG :chatjunkies.org
+<< WHO #linuxdojo %chtsunfra,152
+<< WHO #xchat %chtsunfra,152
+<< WHO #trax %chtsunfra,152
+<< WHO #linux %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #linuxdojo ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H@ 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxdojo ~quassel CJ-nso.1ac.ek83qm.IP chatjunkies.org eagle H@ Eagle :Eagle
+>> :chatjunkies.org 354 you 152 #linuxdojo ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 354 you 152 #linuxdojo ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linuxdojo :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #xchat ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #xchat ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #xchat ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #xchat ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #xchat ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #xchat ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #xchat sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 315 you #xchat :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #trax ~TraxLink CJ-mob.nge.1ejk2n.IP chatjunkies.org TraxLink H 0 :TraxLink
+>> :chatjunkies.org 354 you 152 #trax ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #trax ~nic CJ-ork.u02.lo0njh.IP chatjunkies.org zoner H@ zoner :nic
+>> :chatjunkies.org 354 you 152 #trax lizard CJ-vfo.7f8.rhmdis.IP chatjunkies.org lizard H 0 :lizard
+>> :chatjunkies.org 354 you 152 #trax d CJ-b96.624.jn0sjn.IP chatjunkies.org darwin G@s darwin :ftp.modland.com/pub/modules/Fasttracker%202/Darwin
+>> :chatjunkies.org 354 you 152 #trax ~flyback CJ-4ud.uhc.vbsd1l.IP chatjunkies.org flyback H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax sid35507 CJ-r46.d0d.cm3au9.IP chatjunkies.org foamhat Hs 0 :Koonat
+>> :chatjunkies.org 354 you 152 #trax ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax ~Jeff CJ-fin.pj1.hojr6a.IP chatjunkies.org Danalog H 0 :Jeff
+>> :chatjunkies.org 315 you #trax :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linux ~Lombrads CJ-ga8.vcb.2k0hi1.IP chatjunkies.org Lombrads H 0 :Lombrads
+>> :chatjunkies.org 354 you 152 #linux ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linux ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linux ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linux ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linux ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linux ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linux sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linux ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linux :End of /WHO list.
+<< WHO #freaks_united %chtsunfra,152
+<< WHO #services %chtsunfra,152
+<< WHO #linuxhelp %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #freaks_united ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach H@s 0 :zach
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~AOD CJ-g76.shr.3bl022.IP chatjunkies.org AOD H 0 :...
+>> :chatjunkies.org 354 you 152 #freaks_united ~slvr2314 CJ-km7.aq8.4jfg5a.IP chatjunkies.org slvr2314 Gs 0 :mjk
+>> :chatjunkies.org 354 you 152 #freaks_united ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #freaks_united makegho CJ-h9r.vap.0kcm93.IP chatjunkies.org MakeGho H@ 0 :Markus Kettunen
+>> :chatjunkies.org 354 you 152 #freaks_united bun CJ-asi.0c2.6u6qg5.IP chatjunkies.org Lusi^ H@ 0 :bun
+>> :chatjunkies.org 354 you 152 #freaks_united ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 315 you #freaks_united :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #services MemoServ services.chatjunkies.org services.chatjunkies.org MemoServ H@ 0 :Memo Services
+>> :chatjunkies.org 354 you 152 #services NickServ services.chatjunkies.org services.chatjunkies.org NickServ H@ 0 :Nickname Services
+>> :chatjunkies.org 354 you 152 #services InfoServ services.chatjunkies.org services.chatjunkies.org InfoServ H@ 0 :Information Service
+>> :chatjunkies.org 354 you 152 #services GroupServ services.chatjunkies.org services.chatjunkies.org GroupServ H@ 0 :Group Managment Services
+>> :chatjunkies.org 354 you 152 #services Global services.chatjunkies.org services.chatjunkies.org Global H@ 0 :Network Announcements
+>> :chatjunkies.org 354 you 152 #services ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #services ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #services ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #services OperServ services.chatjunkies.org services.chatjunkies.org OperServ H@ 0 :Operator Services
+>> :chatjunkies.org 354 you 152 #services SaslServ services.chatjunkies.org services.chatjunkies.org SaslServ H@ 0 :SASL Authentication Agent
+>> :chatjunkies.org 354 you 152 #services StatServ services.chatjunkies.org services.chatjunkies.org StatServ H@ 0 :Statistics Services
+>> :chatjunkies.org 315 you #services :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linuxhelp ~jimmie CJ-9q2.6lp.1oprje.IP chatjunkies.org jimmiejaz H jimmiejaz :jimmie james
+>> :chatjunkies.org 354 you 152 #linuxhelp ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxhelp ~grape CJ-tmh.k08.6bipub.IP chatjunkies.org grape Gs 0 :grape
+>> :chatjunkies.org 354 you 152 #linuxhelp ~lordhelme CJ-7qi.jmj.2tcjaa.IP chatjunkies.org lord_helmet Hs 0 :herpaderp
+>> :chatjunkies.org 354 you 152 #linuxhelp ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #linuxhelp ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linuxhelp sid512217 CJ-qjt.d0d.cm3au9.IP chatjunkies.org u^A|mobile Hs 0 :allbertomarcellini
+>> :chatjunkies.org 354 you 152 #linuxhelp ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zerohour CJ-7ev.ml8.fh4m42.IP chatjunkies.org ZeroHour H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andabata CJ-sdp.8ri.51qit7.IP chatjunkies.org andabata H*!s 0 :Kees Guequierre
+>> :chatjunkies.org 354 you 152 #linuxhelp ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andrei CJ-2oq.ng2.agq3gh.IP chatjunkies.org AcidJell0 H 0 :andrei
+>> :chatjunkies.org 315 you #linuxhelp :End of /WHO list.
+>> PING :chatjunkies.org
+<< PONG :chatjunkies.org
+<< WHO #linuxdojo %chtsunfra,152
+<< WHO #xchat %chtsunfra,152
+<< WHO #trax %chtsunfra,152
+<< WHO #linux %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #linuxdojo ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H@ 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxdojo ~quassel CJ-nso.1ac.ek83qm.IP chatjunkies.org eagle H@ Eagle :Eagle
+>> :chatjunkies.org 354 you 152 #linuxdojo ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxdojo ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 354 you 152 #linuxdojo ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linuxdojo :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #xchat ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #xchat ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #xchat ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #xchat ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #xchat ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #xchat ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #xchat sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 315 you #xchat :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #trax ~TraxLink CJ-mob.nge.1ejk2n.IP chatjunkies.org TraxLink H 0 :TraxLink
+>> :chatjunkies.org 354 you 152 #trax ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #trax ~nic CJ-ork.u02.lo0njh.IP chatjunkies.org zoner H@ zoner :nic
+>> :chatjunkies.org 354 you 152 #trax lizard CJ-vfo.7f8.rhmdis.IP chatjunkies.org lizard H 0 :lizard
+>> :chatjunkies.org 354 you 152 #trax d CJ-b96.624.jn0sjn.IP chatjunkies.org darwin G@s darwin :ftp.modland.com/pub/modules/Fasttracker%202/Darwin
+>> :chatjunkies.org 354 you 152 #trax ~flyback CJ-4ud.uhc.vbsd1l.IP chatjunkies.org flyback H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax sid35507 CJ-r46.d0d.cm3au9.IP chatjunkies.org foamhat Hs 0 :Koonat
+>> :chatjunkies.org 354 you 152 #trax ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #trax ~Jeff CJ-fin.pj1.hojr6a.IP chatjunkies.org Danalog H 0 :Jeff
+>> :chatjunkies.org 315 you #trax :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linux ~Lombrads CJ-ga8.vcb.2k0hi1.IP chatjunkies.org Lombrads H 0 :Lombrads
+>> :chatjunkies.org 354 you 152 #linux ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linux ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linux ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linux ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linux ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linux ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linux sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linux ~joe CJ-tf5.ddo.ad4fen.IP chatjunkies.org sig Hs 0 :sig
+>> :chatjunkies.org 315 you #linux :End of /WHO list.
+<< PING LAG1715200378291
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715200378291
+<< PING LAG1715200408378
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715200408378
+<< WHO #freaks_united %chtsunfra,152
+<< WHO #services %chtsunfra,152
+<< WHO #linuxhelp %chtsunfra,152
+>> :chatjunkies.org 354 you 152 #freaks_united ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach H@s 0 :zach
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H@ Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~AOD CJ-g76.shr.3bl022.IP chatjunkies.org AOD H 0 :...
+>> :chatjunkies.org 354 you 152 #freaks_united ~slvr2314 CJ-km7.aq8.4jfg5a.IP chatjunkies.org slvr2314 Gs 0 :mjk
+>> :chatjunkies.org 354 you 152 #freaks_united ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #freaks_united makegho CJ-h9r.vap.0kcm93.IP chatjunkies.org MakeGho H@ 0 :Markus Kettunen
+>> :chatjunkies.org 354 you 152 #freaks_united bun CJ-asi.0c2.6u6qg5.IP chatjunkies.org Lusi^ H@ 0 :bun
+>> :chatjunkies.org 354 you 152 #freaks_united ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #freaks_united ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org EmmaBot H@B 0 :Emmanuel Chanel's Omikuji Bot
+>> :chatjunkies.org 315 you #freaks_united :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #services MemoServ services.chatjunkies.org services.chatjunkies.org MemoServ H@ 0 :Memo Services
+>> :chatjunkies.org 354 you 152 #services NickServ services.chatjunkies.org services.chatjunkies.org NickServ H@ 0 :Nickname Services
+>> :chatjunkies.org 354 you 152 #services InfoServ services.chatjunkies.org services.chatjunkies.org InfoServ H@ 0 :Information Service
+>> :chatjunkies.org 354 you 152 #services GroupServ services.chatjunkies.org services.chatjunkies.org GroupServ H@ 0 :Group Managment Services
+>> :chatjunkies.org 354 you 152 #services Global services.chatjunkies.org services.chatjunkies.org Global H@ 0 :Network Announcements
+>> :chatjunkies.org 354 you 152 #services ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #services ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #services ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #services OperServ services.chatjunkies.org services.chatjunkies.org OperServ H@ 0 :Operator Services
+>> :chatjunkies.org 354 you 152 #services SaslServ services.chatjunkies.org services.chatjunkies.org SaslServ H@ 0 :SASL Authentication Agent
+>> :chatjunkies.org 354 you 152 #services StatServ services.chatjunkies.org services.chatjunkies.org StatServ H@ 0 :Statistics Services
+>> :chatjunkies.org 315 you #services :End of /WHO list.
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zach CJ-uf0.gvs.9nb74t.IP chatjunkies.org zach Hs 0 :zach
+>> :chatjunkies.org 354 you 152 #linuxhelp ~jimmie CJ-9q2.6lp.1oprje.IP chatjunkies.org jimmiejaz H jimmiejaz :jimmie james
+>> :chatjunkies.org 354 you 152 #linuxhelp ~ban CJ-pvu.keu.at8rm0.IP chatjunkies.org banshee_ H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~emmanuel CJ-pt1.cog.e2qa39.IP chatjunkies.org Emmanuel_Chanel H Emmanuel_Chanel :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ChanServ services.chatjunkies.org services.chatjunkies.org ChanServ H@ 0 :Channel Services
+>> :chatjunkies.org 354 you 152 #linuxhelp ~grape CJ-tmh.k08.6bipub.IP chatjunkies.org grape Gs 0 :grape
+>> :chatjunkies.org 354 you 152 #linuxhelp ~lordhelme CJ-7qi.jmj.2tcjaa.IP chatjunkies.org lord_helmet Hs 0 :herpaderp
+>> :chatjunkies.org 354 you 152 #linuxhelp ~Craby CJ-70u.s7m.7j2s4f.IP chatjunkies.org Craby Hs 0 :Craby
+>> :chatjunkies.org 354 you 152 #linuxhelp ~bonkers CJ-in2.ma2.1q4eo1.IP chatjunkies.org Bonq H Bonkers :Bonkers
+>> :chatjunkies.org 354 you 152 #linuxhelp sid512217 CJ-qjt.d0d.cm3au9.IP chatjunkies.org u^A|mobile Hs 0 :allbertomarcellini
+>> :chatjunkies.org 354 you 152 #linuxhelp ~llhull CJ-cac.08p.d7ichg.IP chatjunkies.org chalcedony H 0 :Thesaurus
+>> :chatjunkies.org 354 you 152 #linuxhelp ~zerohour CJ-7ev.ml8.fh4m42.IP chatjunkies.org ZeroHour H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andabata CJ-sdp.8ri.51qit7.IP chatjunkies.org andabata H*!s 0 :Kees Guequierre
+>> :chatjunkies.org 354 you 152 #linuxhelp ~yh2 CJ-f5v.aen.9lcm1o.IP chatjunkies.org you H 0 :realname
+>> :chatjunkies.org 354 you 152 #linuxhelp sid558019 CJ-7qe.d0d.cm3au9.IP chatjunkies.org Jack H Jack :Jack
+>> :chatjunkies.org 354 you 152 #linuxhelp ~andrei CJ-2oq.ng2.agq3gh.IP chatjunkies.org AcidJell0 H 0 :andrei
+>> :chatjunkies.org 315 you #linuxhelp :End of /WHO list.
+<< PING LAG1715200438463
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715200438463
+<< PING LAG1715200468537
+>> :chatjunkies.org PONG chatjunkies.org :LAG1715200468537

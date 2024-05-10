@@ -26,7 +26,6 @@ private:
 
 public:
 
-
 	void				init_poll(int sockfd);
 
 	void 				add_to_poll(int new_fd);

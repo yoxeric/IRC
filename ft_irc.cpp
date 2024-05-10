@@ -26,6 +26,8 @@ int main(int ac, char **av)
 
     server.pool.init_poll(server_socket);
 
+    server.init_server();
+
 	//start listening
 	if (listen(server_socket, INIT_CLIENTS))
 	{
@@ -65,20 +67,22 @@ int main(int ac, char **av)
 
 				server.add_client(client_socket);
 
-				server.send_msg(client_socket, std::string("connected\n"));
+				server.send_msg(client_socket, "connected\n");
 				std::cout << "[" << i << "]<" << client_socket << "> client connected" << std::endl;
+
 			}
 			else
 			{
 				// std::cout << "[" << i << "]<" << socket << "> read_data..." << std::endl;
 
-				// server.list_clients();
 
-				std::string msg = server.pool.read_data(i);
+				std::string msg = server.pool.read_data(i); // todo : handle when user unexpectdly exit
 
 				std::cout << "[" << i << "]<" << socket << "> got message = \n\"" << msg << "\"" << std::endl;
 
 				msg = parse(server, socket, msg);
+
+				// server.list_clients();
 
 				// // send message to evrybody
 				// for (int j = 1; j < pool->count; j++)
@@ -86,7 +90,7 @@ int main(int ac, char **av)
 				// 	if (i != j) // dont send message to sender
 				// 	{
 				// 		int dest_fd = pool->fds[j].fd;
-				// 		send_msg(dest_fd, msg);
+				// 		server.send_msg(dest_fd, msg);
 				// 	}
 				// }
 			}
