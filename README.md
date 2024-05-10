@@ -1,11 +1,13 @@
 
-<--          # #                      .-                                  -->
-<--          .-.    /      /         /  /          /           /          -->
-<--         (  )   /      /.-.  #   /  /      .   /    .-.    /           -->
-<--   .       /   /     /    ) /   /  /      /   /    (   )  /       .-.  -->
-<--  (-------'   ' ----'`---- '---'  /      `._ /  ---'`--' / ___ __(___  -->
-<--                                                                       -->
--
+#IRC 
+
+--          # #                      .-                                  --
+--          .-.    /      /         /  /          /           /          --
+--         (  )   /      /.-.  #   /  /      .   /    .-.    /           --
+--   .       /   /     /    ) /   /  /      /   /    (   )  /       .-.  --
+--  (-------'   ' ----'`---- '---'  /      `._ /  ---'`--' / ___ __(___  --
+--                                                                       --
+
 -  Welcome to the ScaleFactor.ma server of the Scale Factor IRC network
 
 -  The server is designed for quiet communication.
@@ -14,5 +16,5 @@
 -  
 
 <p align="center">
-	<img  src="./res/7yy7yc2" />
+	<img  src="./res/7yy7yc2"  width="785" height="430" />
 </p>

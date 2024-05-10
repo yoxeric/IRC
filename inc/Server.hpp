@@ -59,7 +59,7 @@ public:
 
 
 	// int			send_msg_client(Client &client, std::string msg);
-	int			send_msg_channel(Channel &chan, std::string msg);
+	int			send_msg_channel(Client& sender, Channel &chan, std::string msg);
 	int			send_msg(int dest_fd, std::string msg);
 
 	std::string	create_tag(Client& client);

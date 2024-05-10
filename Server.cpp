@@ -62,12 +62,12 @@ void	Server::modt_server(Client& client)
 	// send_reply(372, client, "", "<!-- (_.--'                                                                           -->");
 
 	send_reply(372, client, "", "<!--          # #                      .-                                  -->");
-	send_reply(372, client, "", "<!--          .-.    /      /         /  /          /           /          -->");
+	send_reply(372, client, "", "<!--          .-.    /      /         /  .-         /           /          -->");
 	send_reply(372, client, "", "<!--         (  )   /      /.-.  #   /  /      .   /    .-.    /           -->");
 	send_reply(372, client, "", "<!--   .       /   /     /    ) /   /  /      /   /    (   )  /       .-.  -->");
 	send_reply(372, client, "", "<!--  (-------'   ' ----'`---- '---'  /      `._ /  ---'`--' / ___ __(___  -->");
-	send_reply(372, client, "", "<!--                                                                       -->");
-	send_reply(372, client, "", "-                                      ");
+	send_reply(372, client, "", "<!--                                 /                                     -->");
+	send_reply(372, client, "", "- ");
 	send_reply(372, client, "", "-  Welcome to the ScaleFactor.ma server of the Scale Factor IRC network ");
 	send_reply(372, client, "", "-  ");
 	send_reply(372, client, "", "-  The server is designed for quiet communication.");
@@ -77,7 +77,7 @@ void	Server::modt_server(Client& client)
 
 	send_reply(376, client, "", "End of /MOTD command.");
 
-	list(client);
+	// list(client);
 
 }
 
@@ -105,13 +105,15 @@ void	Server::list_users(Client& client)
 void	Server::list(Client& client)
 {
 
-	send_reply(321, client, "Channel", "Users  Name");
+	std::cout << "---LISTING-----" << std::endl;
+
+	send_reply(321, client, "Channel", "Users Name");
 
 
 	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
 	{
 		std::stringstream ss2;
-		ss2 << it->get_name() << it->count_membres();
+		ss2 << "#"  << it->get_name() << " " << it->count_membres();
 		send_reply(322, client, ss2.str(), it->get_topic());
 	}
 	
@@ -167,7 +169,7 @@ void Server::prvmsg(Client& client, std::vector<std::string> target, std::vector
 
 				s << ":" << create_tag(client) << " PRIVMSG #" << target[i] << " :" << msg << std::endl;
 
-				send_msg_channel(*chan, s.str());
+				send_msg_channel(client, *chan, s.str());
 
 			}
 			else
@@ -217,21 +219,20 @@ void Server::join(Client& client, std::string chan_name)
 
 	std::cout << "---JOIN-----" << std::endl;
 
+	if (chan_name.at(0) == '#')
+		chan_name.erase(chan_name.begin());
+
 	Channel* chan = find_channel(chan_name);
 
 	if (chan != nullptr)
 	{
-		
 		chan->add_membre(client);
-
 	}
 	else
 	{
-
 		chan = add_channel(chan_name);
 
 		chan->add_membre(client);
-
 	}
 
 	std::ostringstream s;
@@ -266,7 +267,7 @@ void Server::who(Client& client, std::string target)
 			{
 				std::stringstream ss1;
 				ss1 << "~" << it->get_username() << " " << it->get_address() << " " << servername
-				<< " " << it->get_nickname() << " " <<  it->get_mode() << std::endl;
+				<< " " << it->get_nickname() << " " <<  it->get_mode();
 				send_reply(352, client, ss1.str(), it->get_realname());
 			}
 			
@@ -288,7 +289,7 @@ void Server::who(Client& client, std::string target)
 			std::ostringstream ss2;
 
 			ss2 << "~" << target_client->get_username() << " " << target_client->get_address() << " " << servername
-			<< " " << target_client->get_nickname() << " " <<  target_client->get_mode() << std::endl;
+			<< " " << target_client->get_nickname() << " " <<  target_client->get_mode();
 			send_reply(352, client, s.str(), target_client->get_realname());
 
 			send_reply(323, client, "", "End of /WHO list");
@@ -305,35 +306,6 @@ void Server::mode(Client& client, std::string target, std::string mode)
 {
 	(void)(client);
 	if (target.at(0) == '#')
-	{
-		Client* cli = find_client(target);
-		if (cli != nullptr)
-		{
-			if (mode.at(0) == '+')
-			{
-				for (int i = 0; i < (int) target.size(); ++i)
-				{
-					cli->add_mode(mode[i]);
-				}
-			}
-			else if (mode.at(0) == '-')
-			{
-				for (int i = 0; i < (int) target.size(); ++i)
-				{
-					cli->remove_mode(mode[i]);
-				}
-			}
-			else
-			{
-				cli->set_mode(mode);
-			}
-		}
-		else
-		{
-			std::cout << "Error : " << target << "  client not found" << std::endl;
-		}
-	}
-	else
 	{
 		Channel* chan = find_channel(target); 
 		if (chan != nullptr)
@@ -360,6 +332,35 @@ void Server::mode(Client& client, std::string target, std::string mode)
 		else
 		{
 			std::cout << "Error : " << target << " channel not found" << std::endl;
+		}
+	}
+	else
+	{
+		Client* cli = find_client(target);
+		if (cli != nullptr)
+		{
+			if (mode.at(0) == '+')
+			{
+				for (int i = 0; i < (int) target.size(); ++i)
+				{
+					cli->add_mode(mode[i]);
+				}
+			}
+			else if (mode.at(0) == '-')
+			{
+				for (int i = 0; i < (int) target.size(); ++i)
+				{
+					cli->remove_mode(mode[i]);
+				}
+			}
+			else
+			{
+				cli->set_mode(mode);
+			}
+		}
+		else
+		{
+			std::cout << "Error : " << target << "  client not found" << std::endl;
 		}
 	}
 }
@@ -396,7 +397,7 @@ void Server::mode(Client& client, std::string target, std::string mode)
 
 
 
-int	Server::send_msg_channel(Channel &chan, std::string msg)
+int	Server::send_msg_channel(Client& sender, Channel &chan, std::string msg)
 {
 	// send msg to all user in the channel
 	std::cout << "sending to membres ..."<< std::endl;
@@ -404,7 +405,8 @@ int	Server::send_msg_channel(Channel &chan, std::string msg)
 	{
 		std::cout << " mbr = "<< it->get_nickname() << std::endl;
 		// std::cout << " chans test :" << pool->clients[j].is_membre(channel) << std::endl;
-		send_msg(it->get_socket(), msg);
+		if (sender.get_socket() != it->get_socket())
+			send_msg(it->get_socket(), msg);
 	}
 	return 0;
 }
@@ -471,8 +473,8 @@ Client*	Server::add_client(int socket)
 {
 	Client client;
 	client.set_socket(socket);
-	client.set_realname("real");
-	client.set_mode("Mode");
+	client.set_realname("realname");
+	client.set_mode("M");
 
 	clients.push_back(client);
 	return (&clients.back());
@@ -507,8 +509,8 @@ Channel*	Server::add_channel(std::string name)
 {
 	Channel chan;
 	chan.set_name(name);
-	chan.set_topic("topic");
-	chan.set_mode("mode");
+	chan.set_topic("hot topic");
+	chan.set_mode("M");
 	
 	channels.push_back(chan);
 	return (&channels.back());

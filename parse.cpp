@@ -92,18 +92,14 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 	i = buffer.find("JOIN ");
 	if (i != std::string::npos)
 	{
-		std::string ch;
+		std::string ch = getword(buffer, i + 5);
 
-		i = buffer.find("#");
-		if (i != std::string::npos)
-		{
+		server.join(sender, ch);
 
-			ch = getword(buffer, i + 1);
-
-			server.join(sender, ch);
-
-		}
 	}
+
+	if (buffer.find("LIST") == 0)
+		server.list(sender);
 
 	i = buffer.find("WHO ");
 	if (i != std::string::npos)
