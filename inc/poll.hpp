@@ -31,6 +31,10 @@ public:
 	void 				add_to_poll(int new_fd);
 	void 				remove_from_poll(int fd);
 
+
+	// ----------------------  Networking -----------------------
+
+
 	int					make_server_socket(int portnb);
 	std::string			read_data(int client_index);
 	int					accept_new_connection(int server_socket);
@@ -38,7 +42,18 @@ public:
 	int					check_pollin(int index);
 	int					check_pollout(int index);
 
+
+	// ----------------------  Getter -----------------------
+
+
 	struct pollfd*		get_poll();
 	int					get_socket(int index);
 	int					get_count();
+
+
+	// ----------------------  Debug -----------------------
+
+
+	void				print();
+
 };

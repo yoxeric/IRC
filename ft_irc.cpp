@@ -51,14 +51,16 @@ int main(int ac, char **av)
 			return 1;
 		}
 
+		// server.pool.print();
+
 		// loop over polls
-		for (int i = 0; i < server.pool.get_count(); ++i)
+		for (int i = 0; i < server.pool.get_count(); i++)
 		{
 			if (server.pool.check_pollin(i) != 1)
 				continue ;
 
-			int socket = server.pool.get_socket(i);
 			// std::cout << "[" << i << "]<" << socket << "> ready for I/O operation" << std::endl;
+			int socket = server.pool.get_socket(i);
 
 			if (socket == server_socket)
 			{
@@ -75,26 +77,29 @@ int main(int ac, char **av)
 			{
 				// std::cout << "[" << i << "]<" << socket << "> read_data..." << std::endl;
 
+				std::string msg = server.pool.read_data(i);
+				if (!msg.empty())
+				{
+					std::cout << "[" << i << "]<" << socket << "> got message = \n\"" << msg << "\"" << std::endl;
 
-				std::string msg = server.pool.read_data(i); // todo : handle when user unexpectdly exit
+					msg = parse(server, socket, msg);
 
-				std::cout << "[" << i << "]<" << socket << "> got message = \n\"" << msg << "\"" << std::endl;
+					// server.list_clients();
 
-				msg = parse(server, socket, msg);
+					// // send message to evrybody
+					// for (int j = 1; j < pool->count; j++)
+					// {
+					// 	if (i != j) // dont send message to sender
+					// 	{
+					// 		int dest_fd = pool->fds[j].fd;
+					// 		server.send_msg(dest_fd, msg);
+					// 	}
+					// }
+				}
 
-				// server.list_clients();
-
-				// // send message to evrybody
-				// for (int j = 1; j < pool->count; j++)
-				// {
-				// 	if (i != j) // dont send message to sender
-				// 	{
-				// 		int dest_fd = pool->fds[j].fd;
-				// 		server.send_msg(dest_fd, msg);
-				// 	}
-				// }
 			}
 		}
+		std::cout << "poll ended " << std::endl;
     }
 	close(server_socket);
 	return 0;

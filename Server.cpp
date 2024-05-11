@@ -12,6 +12,8 @@ std::string get_time()
   	return (std::string(buffer));
 }
 
+// -----------------------------------  Server --------------------------------------
+
 void	Server::init_server()
 {
 	networkname = std::string("Scale Factor Communication");
@@ -22,20 +24,21 @@ void	Server::init_server()
 
 void	Server::welcome_server(Client& client)
 {
+	std::stringstream ss;
 
-	std::stringstream ss1;
-	ss1 << "Welcome to the " << networkname << " IRC Network " <<  create_tag(client);
-	send_reply(001, client, "", ss1.str());
+	ss << "Welcome to the " << networkname << " IRC Network " <<  create_tag(client);
+	send_reply(001, client, "", ss.str());
+
+	ss.str("");
+
+	ss << "Your host is " << servername << " running version " << version;
+	send_reply(002, client, "", ss.str());
 
 
-	std::stringstream ss2;
-	ss2 << "Your host is " << servername << " running version " << version;
-	send_reply(002, client, "", ss2.str());
+	ss.str("");
 
-
-	std::stringstream ss3;
-	ss3 << "This server was created " << datetime;
-	send_reply(003, client, "", ss3.str());
+	ss << "This server was created " << datetime;
+	send_reply(003, client, "", ss.str());
 
 	list_users(client);
 	modt_server(client);
@@ -55,18 +58,18 @@ void	Server::modt_server(Client& client)
 	// send_reply(372, client, "", "<!-- (_.--'                                                            -->");
 
 	// send_reply(372, client, "", "<!--              # #                      .-                                    .-   -->");
-	// send_reply(372, client, "", "<!--    .--.      .-.    /      /         /  /        /           /             /  /  -->");
-	// send_reply(372, client, "", "<!--   (    '    (  )   /      /.-.  #   /  /    .   /    .-.    /    .--.     /  /   -->");
-	// send_reply(372, client, "", "<!--    `-.  (     /   /     /    ) /   /  /    /   /    (   )  /    \\  /    /  /    -->");
-	// send_reply(372, client, "", "<!--       )  `---'   ' ----'`---- '---'  /    `._ /  ---'`--' / ___ _\\/ _ -'  /     -->");
-	// send_reply(372, client, "", "<!-- (_.--'                                                                           -->");
+	// send_reply(372, client, "", "<!--    .---.     .-.    /      /         /  .        /           /             /  .  -->");
+	// send_reply(372, client, "", "<!--   (     '   (  )   /      /.-.  #   /  /   .    /    .-.    /    .- -.    /  /   -->");
+	// send_reply(372, client, "", "<!--    `-.  (     /   /     /    ) /   /  /   (    /    (   )  /     |  /    /  /    -->");
+	// send_reply(372, client, "", "<!-- (     )  `---'   ' ----'`---- '---'  /    '._ /  ---'`--' / ___ _| / __ '  /     -->");
+	// send_reply(372, client, "", "<!--  '---'                              /                                     /      -->");
 
-	send_reply(372, client, "", "<!--          # #                      .-                                  -->");
-	send_reply(372, client, "", "<!--          .-.    /      /         /  .-         /           /          -->");
-	send_reply(372, client, "", "<!--         (  )   /      /.-.  #   /  /      .   /    .-.    /           -->");
-	send_reply(372, client, "", "<!--   .       /   /     /    ) /   /  /      /   /    (   )  /       .-.  -->");
-	send_reply(372, client, "", "<!--  (-------'   ' ----'`---- '---'  /      `._ /  ---'`--' / ___ __(___  -->");
-	send_reply(372, client, "", "<!--                                 /                                     -->");
+	send_reply(372, client, "", "<!--          # #                       .-                                  -->");
+	send_reply(372, client, "", "<!--         .-.     /      /          /  .-         /           /          -->");
+	send_reply(372, client, "", "<!--  .     (   )   /      /.-.   #   /  /     .    /    .-.    /           -->");
+	send_reply(372, client, "", "<!-- (         /   /     /    )  /   /  /     (    /    (   )  /       .-.  -->");
+	send_reply(372, client, "", "<!--  '-------'   ' ----'`---- -'---'  /      '._ /  ---'`--' / ___ __(___  -->");
+	send_reply(372, client, "", "<!--                                  /                                     -->");
 	send_reply(372, client, "", "- ");
 	send_reply(372, client, "", "-  Welcome to the ScaleFactor.ma server of the Scale Factor IRC network ");
 	send_reply(372, client, "", "-  ");
@@ -83,22 +86,25 @@ void	Server::modt_server(Client& client)
 
 void	Server::list_users(Client& client)
 {
+	std::stringstream ss;
 
-	std::stringstream ss1;
-	ss1 << "There are " << client_count() << " users on " << 1 << " servers " << datetime;
-	send_reply(251, client, "", ss1.str());
+	ss << "There are " << client_count() << " users on " << 1 << " servers " << datetime;
+	send_reply(251, client, "", ss.str());
 
-	std::stringstream ss2;
-	ss2 << operator_count();
-	send_reply(252, client, ss2.str(), "operator(s) online");
+	ss.str("");
 
-	std::stringstream ss3;
-	ss3 << channel_count();
-	send_reply(254, client, ss3.str(), "channels formed");
+	ss << operator_count();
+	send_reply(252, client, ss.str(), "operator(s) online");
 
-	std::stringstream ss4;
-	ss4 << "I have " << client_count() << " clients and " << 1 << " servers " << datetime;
-	send_reply(255, client, "", ss4.str());
+	ss.str("");
+
+	ss << channel_count();
+	send_reply(254, client, ss.str(), "channels formed");
+
+	ss.str("");
+
+	ss << "I have " << client_count() << " clients and " << 1 << " servers " << datetime;
+	send_reply(255, client, "", ss.str());
 
 }
 
@@ -112,15 +118,139 @@ void	Server::list(Client& client)
 
 	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
 	{
-		std::stringstream ss2;
-		ss2 << "#"  << it->get_name() << " " << it->count_membres();
-		send_reply(322, client, ss2.str(), it->get_topic());
+		std::stringstream ss;
+		ss << "#"  << it->get_name() << " " << it->count_membres();
+		send_reply(322, client, ss.str(), it->get_topic());
 	}
 	
 	send_reply(323, client, "", "End of /LIST");
 
 }
 
+
+// ----------------------------------- Channel -------------------------------------------
+
+
+Channel*	Server::add_channel(std::string name)
+{
+	Channel chan;
+	chan.set_name(name);
+	chan.set_topic("hot topic");
+	chan.set_mode("M");
+	
+	channels.push_back(chan);
+	return (&channels.back());
+}
+
+Channel*	Server::find_channel(std::string name)
+{
+	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
+	{
+		if (it->get_name() == name)
+		{
+			return (&(*it));
+		}
+	}
+	return (nullptr);
+}
+
+void	Server::remove_channel(Channel &chan)
+{
+	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
+	{
+		if (it->get_name() == chan.get_name())
+		{
+			channels.erase(it);
+			break ;
+		}
+	}
+}
+
+int			Server::client_count()
+{
+	int count = 0;
+	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
+	{
+		count++;
+	}
+	return (count);
+}
+
+int			Server::operator_count()
+{
+	int count = 0;
+	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
+	{
+		if (it->get_operator())
+			count++;
+	}
+	return (count);
+}
+
+int			Server::channel_count()
+{
+	int count = 0;
+	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
+	{
+		count++;
+	}
+	return (count);
+}
+
+
+// ----------------------------------- Client -------------------------------------------
+
+
+
+Client*	Server::add_client(int socket)
+{
+	Client client;
+	client.set_socket(socket);
+	client.set_realname("realname");
+	client.set_mode("M");
+
+	clients.push_back(client);
+	return (&clients.back());
+}
+
+Client*	Server::find_client(int socket)
+{
+	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
+	{
+		if (it->get_socket() == socket)
+		{
+			return (&(*it));
+		}
+	}
+	return (nullptr);
+}
+
+Client*	Server::find_client(std::string name)
+{
+	// check if anyone has the same username
+	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
+	{
+		if (it->get_nickname() == name)
+		{
+			return (&(*it));
+		}
+	}
+	return (nullptr);
+}
+
+
+void	Server::remove_client(Client &client)
+{
+	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
+	{
+		if (it->get_socket() == client.get_socket())
+		{
+			clients.erase(it);
+			break ;
+		}
+	}
+	pool.remove_from_poll(client.get_socket());
+}
 
 void Server::cap(Client& client, std::string str)
 {
@@ -152,20 +282,15 @@ void Server::prvmsg(Client& client, std::vector<std::string> target, std::vector
 
 	for (int i = 0; i < (int) target.size(); ++i)
 	{
-		/* code */
 		std::cout << "target = "  << target[i] << "." << std::endl;
 		std::cout << "type = "  << type[i] << "." << std::endl;
 		if (type[i] == 2)
 		{
-
-			// target[i].erase(target[i].begin()); // delete first charcater  ( # )
 			Channel* chan = find_channel(target[i]); 
-			std::cout << "chan = " << chan << std::endl;
-
 			if (chan != nullptr)
 			{
 
-				std::cout << "found = " << chan->get_name() << std::endl;
+				// std::cout << "found = " << chan->get_name() << std::endl;
 
 				s << ":" << create_tag(client) << " PRIVMSG #" << target[i] << " :" << msg << std::endl;
 
@@ -182,13 +307,9 @@ void Server::prvmsg(Client& client, std::vector<std::string> target, std::vector
 		{
 
 			Client* dest_client = find_client(target[i]);
-			std::cout << "cl = " << dest_client << std::endl;
-
 			if (dest_client != nullptr)
 			{
-				std::cout << "found = " << dest_client->get_nickname() << std::endl;
-
-				// std::cout << "privmsg usr = " << target << std::endl;
+				// std::cout << "found = " << dest_client->get_nickname() << std::endl;
 
 				s << ":" << create_tag(client) << " PRIVMSG " << dest_client->get_nickname() << " :" << msg << std::endl ;
 
@@ -201,17 +322,15 @@ void Server::prvmsg(Client& client, std::vector<std::string> target, std::vector
 		}
 	}
 
-	// std::cout << "Message >> " << s.str() << std::endl ;
-	// send_msg(client.get_socket(), s.str());
-
-	// std::cout << "done" << std::endl;
-
 	// :Angel PRIVMSG Wiz :Hello are you receiving this message ?
 
   	// :dan!~h@localhost PRIVMSG #coolpeople :Hi everyone!
 
 	// nickname!username@address.IP PRIVMSG #coolpeople :Hi everyone!
 }
+
+
+// ----------------------------------- Commands -------------------------------------------
 
 
 void Server::join(Client& client, std::string chan_name)
@@ -249,7 +368,7 @@ void Server::join(Client& client, std::string chan_name)
 
 void Server::who(Client& client, std::string target)
 {
-	std::ostringstream s;
+	std::stringstream ss;
 
 	if (target.at(0) == '#')
 	{
@@ -259,16 +378,15 @@ void Server::who(Client& client, std::string target)
 		if (chan != nullptr)
 		{
 
-			std::stringstream ss1;
-			ss1 << "#" << chan->get_name();
-			send_reply(322, client, ss1.str(), chan->get_topic());
+			ss << "#" << chan->get_name();
+			send_reply(322, client, ss.str(), chan->get_topic());
 
 			for (std::vector<Client>::iterator it = chan->members.begin(); it != chan->members.end(); it++)
 			{
-				std::stringstream ss1;
-				ss1 << "~" << it->get_username() << " " << it->get_address() << " " << servername
+				ss.str("");
+				ss << "~" << it->get_username() << " " << it->get_address() << " " << servername
 				<< " " << it->get_nickname() << " " <<  it->get_mode();
-				send_reply(352, client, ss1.str(), it->get_realname());
+				send_reply(352, client, ss.str(), it->get_realname());
 			}
 			
 			send_reply(323, client, "", "End of /WHO list");
@@ -286,11 +404,10 @@ void Server::who(Client& client, std::string target)
 		if (target_client != nullptr)
 		{
 
-			std::ostringstream ss2;
-
-			ss2 << "~" << target_client->get_username() << " " << target_client->get_address() << " " << servername
+			ss.str("");
+			ss << "~" << target_client->get_username() << " " << target_client->get_address() << " " << servername
 			<< " " << target_client->get_nickname() << " " <<  target_client->get_mode();
-			send_reply(352, client, s.str(), target_client->get_realname());
+			send_reply(352, client, ss.str(), target_client->get_realname());
 
 			send_reply(323, client, "", "End of /WHO list");
 
@@ -393,7 +510,7 @@ void Server::mode(Client& client, std::string target, std::string mode)
 // 	}
 // }
 
-// ------------------------------------------------------------------------------
+// ----------------------------------------- Messages -------------------------------------
 
 
 
@@ -410,12 +527,6 @@ int	Server::send_msg_channel(Client& sender, Channel &chan, std::string msg)
 	}
 	return 0;
 }
-
-// int	Server::send_msg_client(Client &client, std::string msg)
-// {
-// 	send_msg(client.get_socket(), msg);
-// 	return 0;
-// }
 
 int	Server::send_msg(int dest_fd, std::string msg)
 {
@@ -465,102 +576,8 @@ void	Server::send_reply(int code, Client &client, std::string arg, std::string m
 }
 
 
-// ------------------------------------------------------------------------------
 
-
-
-Client*	Server::add_client(int socket)
-{
-	Client client;
-	client.set_socket(socket);
-	client.set_realname("realname");
-	client.set_mode("M");
-
-	clients.push_back(client);
-	return (&clients.back());
-}
-
-Client*	Server::find_client(int socket)
-{
-	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
-	{
-		if (it->get_socket() == socket)
-		{
-			return (&(*it));
-		}
-	}
-	return (nullptr);
-}
-
-Client*	Server::find_client(std::string name)
-{
-	// check if anyone has the same username
-	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
-	{
-		if (it->get_nickname() == name)
-		{
-			return (&(*it));
-		}
-	}
-	return (nullptr);
-}
-
-Channel*	Server::add_channel(std::string name)
-{
-	Channel chan;
-	chan.set_name(name);
-	chan.set_topic("hot topic");
-	chan.set_mode("M");
-	
-	channels.push_back(chan);
-	return (&channels.back());
-}
-
-Channel*	Server::find_channel(std::string name)
-{
-	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
-	{
-		if (it->get_name() == name)
-		{
-			return (&(*it));
-		}
-	}
-	return (nullptr);
-}
-
-int			Server::client_count()
-{
-	int count = 0;
-	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
-	{
-		count++;
-	}
-	return (count);
-}
-
-int			Server::operator_count()
-{
-	int count = 0;
-	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
-	{
-		if (it->get_operator())
-			count++;
-	}
-	return (count);
-}
-
-int			Server::channel_count()
-{
-	int count = 0;
-	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
-	{
-		count++;
-	}
-	return (count);
-}
-
-
-// ------------------------------------------------------------------------------
+// ----------------------------------- Debug -------------------------------------------
 
 
 void Server::print_clients()

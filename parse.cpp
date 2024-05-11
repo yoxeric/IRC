@@ -53,6 +53,8 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 	// Client &sender = server.clients[ index ];
 	Client &sender = *server.find_client(sender_socket);
 
+	std::cout << "----- sender = " << sender.get_nickname() << std::endl;
+	sender.print();
 
 	std::cout << "parsing ... " << std::endl;
 
@@ -141,10 +143,10 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 	i = buffer.find("QUIT ");
 	if (i != std::string::npos)
 	{
-	}
+		server.remove_client(sender);
 
-	std::cout << "----- sender = " << sender.get_nickname() << std::endl;
-	sender.print();
+		return ("");
+	}
 
 	// split msg after :
 

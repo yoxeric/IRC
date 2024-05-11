@@ -22,28 +22,44 @@ public:
 	std::vector<std::string> invited;
 
 
-	void 		print();
-
 	void		add_membre(Client& client);
-	void		remove_membre(Client& client);
+	int			remove_membre(Client& client);
 	int			is_membre(Client& client);
 
 	int			count_membres();
 
-	int			is_mode(char m);
-	std::string	get_mode();
 
+	// ----------------------  Mode -----------------------
+
+
+	void		add_mode(char m);
+	void		remove_mode(char m);
+	int			is_mode(char m);
+
+
+	// ----------------------  Setter -----------------------
+
+
+	void		set_mode(std::string str);
+	void		set_name(std::string str);
+	void		set_topic(std::string str);
+	void		set_key(std::string str);
+	void		set_limit(int limit);
+
+
+	// ----------------------  Getter -----------------------
+
+
+	std::string	get_mode();
 	std::string	get_name();
 	std::string	get_topic();
 	std::string	get_key();
 	int			get_limit();
 
-	void		set_mode(std::string str);
-	void		add_mode(char m);
-	void		remove_mode(char m);
 
-	void		set_name(std::string str);
-	void		set_topic(std::string str);
-	void		set_key(std::string str);
-	void		set_limit(int limit);
+	// ----------------------  Debug -----------------------
+
+
+	void 		print();
+
 };

@@ -19,11 +19,28 @@ void s_poll::add_to_poll(int new_fd)
 	count++;
 }
 
-void s_poll::remove_from_poll(int index)
+void s_poll::remove_from_poll(int fd)
 {
-	fds[index] = fds[count - 1];
+
+	for (int i = 0; i < count; ++i)
+	{
+		if (fds[i].fd == fd)
+		{
+			fds[i] = fds[count - 1];
+			// fds.erase(fds.begin() + index);
+			// std::cout << i << "removed from pool" << std::endl;
+			break ;
+		}
+	}
+	
 	count--;
+
+	close(fd);
 }
+
+
+// ----------------------  Networking -----------------------
+
 
 int	s_poll::make_server_socket(int portnb)
 {
@@ -70,31 +87,33 @@ int	s_poll::accept_new_connection(int server_socket)
 	return (client_fd);
 }
 
-
 std::string	s_poll::read_data(int client_index)
 {
 	char buffer[BUFFER_SIZE];
 	int bytes_read;
 	int send_fd;
 
-	send_fd = fds[client_index].fd;
+	send_fd = get_socket(client_index);
 	memset(&buffer, '\0', sizeof(buffer));
 	bytes_read = recv(send_fd, buffer, BUFFER_SIZE, 0);
 	if (bytes_read <= 0)
 	{
 		if (bytes_read <= 0)
+		{
 			std::cout << "[" << client_index << "]<" << send_fd << "> client socket closed" << std::endl;
+
+			return ("QUIT : client died");
+
+		}
 		else
 			std::cout << "receive error" << strerror(errno) << std::endl;
-		close(send_fd);
 
-		remove_from_poll(client_index);
 	}
 	else
 	{
 		return (std::string(buffer));
 	}
-	return (NULL);
+	return ("");
 }
 
 int			s_poll::check_pollin(int index)
@@ -106,6 +125,10 @@ int			s_poll::check_pollout(int index)
 {
 	return (fds[index].revents & POLLOUT);
 }
+
+
+// ----------------------  Getter -----------------------
+
 
 struct pollfd*		s_poll::get_poll()
 {
@@ -122,3 +145,16 @@ int			s_poll::get_count()
 	return (count);
 }
 
+
+// ----------------------  Debug -----------------------
+
+
+
+void		s_poll::print()
+{
+	std::cout << count << std::endl;
+	for (int i = 0; i < count; ++i)
+	{
+		std::cout << "[" << i << "] socket = " << fds[i].fd << std::endl;
+	}
+}
