@@ -18,15 +18,24 @@ private:
 
 public:
 	std::vector<Client> members;
-	std::vector<std::string> operators;
-	std::vector<std::string> invited;
+	std::vector<Client> operators;
+	std::vector<Client> invited;
 
 
 	void		add_membre(Client& client);
 	int			remove_membre(Client& client);
 	int			is_membre(Client& client);
+	int			is_membre(std::string name);
 
 	int			count_membres();
+
+	void		add_operator(Client& client);
+	int			remove_operator(Client& client);
+	int			is_operator(Client& client);
+
+	void		add_invited(Client& client);
+	int			remove_invited(Client& client);
+	int			is_invited(Client& client);
 
 
 	// ----------------------  Mode -----------------------

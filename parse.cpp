@@ -117,9 +117,43 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 	{
 		std::string target = getword(buffer, i + 5);
 
-		std::string mode = "";
+		i = buffer.find(" ", i + 5);
+		std::string mode = getword(buffer, i + 1);
 
 		server.mode(sender, target, mode);
+	}
+
+	i = buffer.find("KICK ");
+	if (i != std::string::npos)
+	{
+		std::string chan = getword(buffer, i + 5);
+
+		i = buffer.find(" ", i + 5);
+		std::string user = getword(buffer, i + 1);
+
+		server.kick(sender, chan, user);
+	}
+
+	i = buffer.find("INVITE ");
+	if (i != std::string::npos)
+	{
+		std::string user = getword(buffer, i + 5);
+
+		i = buffer.find(" ", i + 5);
+		std::string chan = getword(buffer, i + 1);
+
+		server.kick(sender, chan, user);
+	}
+
+	i = buffer.find("TOPIC ");
+	if (i != std::string::npos)
+	{
+		std::string chan = getword(buffer, i + 5);
+
+		i = buffer.find(" ", i + 5);
+		std::string topic = getword(buffer, i + 1);
+
+		server.kick(sender, chan, topic);
 	}
 
 	if (buffer.find("PRIVMSG ") == 0 || buffer.find("NOTICE") == 0)
@@ -140,11 +174,24 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		// server.prvmsg(sender, target, msg);
 	}
 
-	i = buffer.find("QUIT ");
+	i = buffer.find("PART ");
 	if (i != std::string::npos)
 	{
-		server.remove_client(sender);
+		std::string chan = getword(buffer, i + 5);
 
+		i = buffer.find(":", i + 5);
+		std::string msg = getword(buffer, i + 1);
+
+		server.part(sender, chan, msg);
+	}
+
+	i = buffer.find("QUIT");
+	if (i != std::string::npos)
+	{
+		i = buffer.find(":", i + 4);
+		std::string msg = getword(buffer, i + 1);
+
+		server.quit(sender, msg);
 		return ("");
 	}
 

@@ -42,8 +42,6 @@ public:
 	// void		remove_channel(std::string name);
 	void		remove_channel(Channel &chan);
 
-	int			do_channel_exist(std::string chan_name);
-
 
 	// ----------------------  Client -----------------------
 
@@ -67,11 +65,12 @@ public:
 	void		prvmsg(Client& client, std::vector<std::string> target, std::vector<int> type, std::string msg);
 	void 		join(Client &client, std::string chan_name);
 	void 		who(Client& client, std::string target);
-	void 		topic(Client &client, std::string str);
+	void 		topic(Client &client, std::string target, std::string topic);
 
 	void 		mode(Client& client, std::string target, std::string mode);
-	void 		kick(Client &client, std::string str);
-	void 		invite(Client &client, std::string str);
+	void 		kick(Client &client, std::string chan_name, std::string target);
+	void 		invite(Client &client, std::string chan_name, std::string target);
+	void 		part(Client &client, std::string chan_name, std::string msg);
 
 	void 		quit(Client &client, std::string str);
 

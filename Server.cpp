@@ -252,6 +252,9 @@ void	Server::remove_client(Client &client)
 	pool.remove_from_poll(client.get_socket());
 }
 
+// ----------------------------------- Commands -------------------------------------------
+
+
 void Server::cap(Client& client, std::string str)
 {
 	(void)(client);
@@ -289,13 +292,21 @@ void Server::prvmsg(Client& client, std::vector<std::string> target, std::vector
 			Channel* chan = find_channel(target[i]); 
 			if (chan != nullptr)
 			{
+				if (chan->is_membre(client))
+				{
+					// std::cout << "found = " << chan->get_name() << std::endl;
 
-				// std::cout << "found = " << chan->get_name() << std::endl;
+					s << ":" << create_tag(client) << " PRIVMSG #" << target[i] << " :" << msg << std::endl;
 
-				s << ":" << create_tag(client) << " PRIVMSG #" << target[i] << " :" << msg << std::endl;
+					send_msg_channel(client, *chan, s.str());
 
-				send_msg_channel(client, *chan, s.str());
+				}
+				else
+				{
+					std::cout << "Error :" << target[i] << "  Cannot send to channel (no external message)" << std::endl;
+					// :themis.sorcery.net 404 you #alice :Cannot send to channel (no external message)
 
+				}
 			}
 			else
 			{
@@ -329,15 +340,8 @@ void Server::prvmsg(Client& client, std::vector<std::string> target, std::vector
 	// nickname!username@address.IP PRIVMSG #coolpeople :Hi everyone!
 }
 
-
-// ----------------------------------- Commands -------------------------------------------
-
-
 void Server::join(Client& client, std::string chan_name)
 {
-
-	std::cout << "---JOIN-----" << std::endl;
-
 	if (chan_name.at(0) == '#')
 		chan_name.erase(chan_name.begin());
 
@@ -360,8 +364,6 @@ void Server::join(Client& client, std::string chan_name)
 
 	send_msg(client.get_socket(), s.str());
 
-
-	// :yh1!~yh2@60CCA6D2.A5193C4D.9C9BAFEA.IP JOIN :#kosmosas
 	// nickname!username@address.IP JOIN #ch
 }
 
@@ -381,10 +383,13 @@ void Server::who(Client& client, std::string target)
 			ss << "#" << chan->get_name();
 			send_reply(322, client, ss.str(), chan->get_topic());
 
+
+			// send_reply(366, client, "", "End of /NAMES list.");
+
 			for (std::vector<Client>::iterator it = chan->members.begin(); it != chan->members.end(); it++)
 			{
 				ss.str("");
-				ss << "~" << it->get_username() << " " << it->get_address() << " " << servername
+				ss << "#" << chan->get_name() << " ~" << it->get_username() << " " << it->get_address() << ".IP " << servername
 				<< " " << it->get_nickname() << " " <<  it->get_mode();
 				send_reply(352, client, ss.str(), it->get_realname());
 			}
@@ -405,7 +410,7 @@ void Server::who(Client& client, std::string target)
 		{
 
 			ss.str("");
-			ss << "~" << target_client->get_username() << " " << target_client->get_address() << " " << servername
+			ss << "~" << target_client->get_username() << " " << target_client->get_address() << ".IP " << servername
 			<< " " << target_client->get_nickname() << " " <<  target_client->get_mode();
 			send_reply(352, client, ss.str(), target_client->get_realname());
 
@@ -419,11 +424,31 @@ void Server::who(Client& client, std::string target)
 	}
 }
 
+
+void Server::topic(Client& client, std::string target, std::string topic)
+{
+	(void)(client);
+
+	if (target.at(1) == '#')
+	{
+		target.erase(target.begin()); // delete first charcater  ( # )
+
+		Channel* chan = find_channel(target); 
+		if (chan != nullptr)
+		{
+			chan->set_topic(topic);
+		}
+	}
+}
+
+
 void Server::mode(Client& client, std::string target, std::string mode)
 {
 	(void)(client);
 	if (target.at(0) == '#')
 	{
+		target.erase(target.begin()); // delete first charcater  ( # )
+
 		Channel* chan = find_channel(target); 
 		if (chan != nullptr)
 		{
@@ -482,33 +507,115 @@ void Server::mode(Client& client, std::string target, std::string mode)
 	}
 }
 
+void 	Server::kick(Client &client, std::string chan_name, std::string target)
+{
+	std::stringstream s;
 
-// void Server::topic(Client& client, std::string target, s std::string topic)
-// {
+	if (chan_name.at(0) == '#')
+	{
+		chan_name.erase(chan_name.begin()); // delete first charcater  ( # )
 
-// 	if (target.at(1) == '#')
-// 	{
-// 		Channel chan = find_client(target);
-// 		if (client.is_ope)
-// 		{
-// 			for (int i = 0; i < target.size(); ++i)
-// 			{
-// 				chan.add_mode(mode[i]);
-// 			}
-// 		}
-// 		else if (mode.at(0) == '-')
-// 		{
-// 			for (int i = 0; i < target.size(); ++i)
-// 			{
-// 				chan.remove_mode(mode[i]);
-// 			}
-// 		}
-// 		else
-// 		{
-// 			chan.set_mode(mode);
-// 		}
-// 	}
-// }
+		Channel* chan = find_channel(chan_name); 
+		if (chan != nullptr)
+		{
+			Client* baduser = find_client(target);
+			if (baduser != nullptr)
+			{
+				chan->remove_membre(*baduser);
+
+				s << ":" << create_tag(client) << " KICK #" << chan->get_name() << " " << baduser->get_nickname() << std::endl ;// << " " << msg << std::endl ;
+
+				send_msg(baduser->get_socket(), s.str());
+
+			}
+			else
+			{
+				std::cout << "Error : " << target << "  client not found" << std::endl;
+			}
+		}
+		else
+		{
+			std::cout << "Error : " << chan_name << " channel not found" << std::endl;
+		}
+	}
+
+	 // :WiZ!jto@tolsun.oulu.fi KICK #Finnish John
+}
+
+void 	Server::invite(Client &client, std::string chan_name, std::string target)
+{
+	std::stringstream s;
+
+	if (chan_name.at(0) == '#')
+		chan_name.erase(chan_name.begin()); // delete first charcater  ( # )
+
+	Channel* chan = find_channel(chan_name); 
+	if (chan != nullptr)
+	{
+		Client* user = find_client(target);
+		if (user != nullptr)
+		{
+			chan->remove_membre(*user);
+
+			s << ":" << create_tag(client) << " INIVTE " << target << " #" << chan_name << std::endl ;
+
+			send_msg(user->get_socket(), s.str());
+		}
+		else
+		{
+			std::cout << "Error : " << target << "  client not found" << std::endl;
+		}
+	}
+	else
+	{
+		std::cout << "Error : " << chan_name << " channel not found" << std::endl;
+	}
+
+	// :dan-!d@localhost INVITE Wiz #test
+
+	// :Angel!wings@irc.org INVITE Wiz #Dust
+
+}
+
+void 	Server::part(Client &client, std::string chan_name, std::string msg)
+{
+	std::stringstream s;
+
+	if (chan_name.at(0) == '#')
+		chan_name.erase(chan_name.begin()); // delete first charcater  ( # )
+
+
+	Channel* chan = find_channel(chan_name); 
+	if (chan != nullptr)
+	{
+		chan->remove_membre(client);
+		
+		s << ":" << create_tag(client) << " PART #" << chan_name << " :" << msg << std::endl;
+		
+		send_msg(client.get_socket(), s.str());
+	}
+	else
+	{
+		std::cout << "Error : " << chan_name << " channel not found" << std::endl;
+	}
+}
+
+void 	Server::quit(Client &sender, std::string msg)
+{
+	std::stringstream s;
+
+	s << ":" << create_tag(sender) << " QUIT :" << msg << std::endl ;
+
+	// for (int i = 0; i < (int) channels.size(); ++i)
+	// {
+	// 	if (channels[i]->is_membre(client))
+	// 			{
+	// send_msg(sender.get_socket(), s.str());
+
+	remove_client(sender);
+
+	// :dan-!d@localhost QUIT :Quit: Bye for now!
+}
 
 // ----------------------------------------- Messages -------------------------------------
 
