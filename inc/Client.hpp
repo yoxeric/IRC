@@ -15,7 +15,6 @@ private:
 	std::string mode;
 
 	int 		socket;
-	bool		is_operator;
 
 public:
 
@@ -38,7 +37,6 @@ public:
 	void 		set_pass(std::string str);
 
 	void 		set_socket(int socket);
-	void		set_operator(bool val);
 
 	// ----------------------  Getter -----------------------
 
@@ -50,7 +48,6 @@ public:
 	std::string get_pass();
 
 	int 		get_socket();
-	bool		get_operator();
 
 	// ----------------------  Debug -----------------------
 

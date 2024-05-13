@@ -19,7 +19,7 @@ void		Client::remove_mode(char m)
 	{
 		if (mode[i] == m)
 		{
-			mode.erase(i);
+			mode.erase(mode.begin() + i);
 			return ;
 		}
 	}
@@ -41,11 +41,6 @@ int			Client::is_mode(char m)
 void		Client::set_mode(std::string str)
 {
 	mode = str;
-}
-
-void 		Client::set_operator(bool val)
-{
-	is_operator = val;
 }
 
 void 		Client::set_socket(int s)
@@ -87,11 +82,6 @@ std::string Client::get_mode()
 	return (mode);
 }
 
-bool 		Client::get_operator()
-{
-	return (is_operator);
-}
-
 int 		Client::get_socket()
 {
 	return (socket);
@@ -130,10 +120,10 @@ std::string Client::get_pass()
 void Client::print()
 {
 	std::cout << "@socket : " << socket << std::endl;
-	std::cout << "nickname : " << nickname << std::endl;
-	std::cout << "username : " << username << std::endl;
-	std::cout << "address  : " << address << std::endl;
-	std::cout << "pass     : " << pass << std::endl;
-	std::cout << "is op    : " << is_operator << std::endl;
+	std::cout << "nickname : <" << nickname << ">" << std::endl;
+	std::cout << "username : <" << username << ">" << std::endl;
+	std::cout << "address  : <" << address << ">" << std::endl;
+	std::cout << "pass     : <" << pass << ">" << std::endl;
+	std::cout << "mode     : <" << mode << ">" << std::endl;
 }
 

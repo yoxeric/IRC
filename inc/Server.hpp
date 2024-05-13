@@ -28,20 +28,15 @@ public:
 	// ----------------------  Server -----------------------
 
 	void		init_server();
-	void		welcome_server(Client& client);
-	void		modt_server(Client& client);
-	void 		list_users(Client &client);
-	void 		list(Client &client);
-
 
 	// ----------------------  Channel -----------------------
-
 
 	Channel*	add_channel(std::string name);
 	Channel*	find_channel(std::string name);
 	// void		remove_channel(std::string name);
 	void		remove_channel(Channel &chan);
 
+	int			channel_count();
 
 	// ----------------------  Client -----------------------
 
@@ -53,11 +48,36 @@ public:
 
 	int			client_count();
 	int			operator_count();
-	int			channel_count();
+
+	// ----------------------  Messages -----------------------
+
+
+	// int			send_msg_client(Client &client, std::string msg);
+	int			send_msg_channel(Client& sender, Channel &chan, std::string msg);
+	int			send_msg(int dest_fd, std::string msg);
+
+	std::string	create_tag(Client& client);
+	void		send_reply(int code, Client &client, std::string arg, std::string msg);
+
+
+	// ----------------------  Notices -----------------------
+
+	void		welcome_server(Client& client);
+	void		modt_server(Client& client);
+	void 		list_server(Client &client);
+	void		list_channel(Client& client, Channel &chan);
+	void		list_user(Client& client, Client &target_client);
+
+
+	void		send_err(int code, Client &sender, std::string arg1, std::string msg);
+	void		send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string msg);
+	void		send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string arg3, std::string msg);
 
 
 	// ----------------------  Commands -----------------------
 
+
+	void 		list(Client &client);
 
 	void 		cap(Client &client, std::string str);
 	void 		nick(Client &client, std::string nick);
@@ -72,19 +92,9 @@ public:
 	void 		invite(Client &client, std::string chan_name, std::string target);
 	void 		part(Client &client, std::string chan_name, std::string msg);
 
+	void 		ping(Client &client, std::string msg);
+
 	void 		quit(Client &client, std::string str);
-
-
-	// ----------------------  Messages -----------------------
-
-
-	// int			send_msg_client(Client &client, std::string msg);
-	int			send_msg_channel(Client& sender, Channel &chan, std::string msg);
-	int			send_msg(int dest_fd, std::string msg);
-
-	std::string	create_tag(Client& client);
-	// std::string	create_reply(int code, std::string nick, std::string arg, std::string msg);
-	void		send_reply(int code, Client &client, std::string arg, std::string msg);
 
 
 	// ----------------------  Debug -----------------------

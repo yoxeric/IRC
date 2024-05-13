@@ -99,7 +99,7 @@ int main(int ac, char **av)
 
 			}
 		}
-		std::cout << "poll ended " << std::endl;
+		// std::cout << "poll ended " << std::endl;
     }
 	close(server_socket);
 	return 0;

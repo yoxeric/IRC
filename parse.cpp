@@ -117,8 +117,10 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 	{
 		std::string target = getword(buffer, i + 5);
 
+		std::string mode = "+";
 		i = buffer.find(" ", i + 5);
-		std::string mode = getword(buffer, i + 1);
+		if (i != std::string::npos)
+			mode = getword(buffer, i + 1);
 
 		server.mode(sender, target, mode);
 	}
@@ -137,23 +139,23 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 	i = buffer.find("INVITE ");
 	if (i != std::string::npos)
 	{
-		std::string user = getword(buffer, i + 5);
+		std::string user = getword(buffer, i + 7);
 
-		i = buffer.find(" ", i + 5);
+		i = buffer.find(" ", i + 7);
 		std::string chan = getword(buffer, i + 1);
 
-		server.kick(sender, chan, user);
+		server.invite(sender, chan, user);
 	}
 
 	i = buffer.find("TOPIC ");
 	if (i != std::string::npos)
 	{
-		std::string chan = getword(buffer, i + 5);
+		std::string chan = getword(buffer, i + 6);
 
-		i = buffer.find(" ", i + 5);
+		i = buffer.find(" ", i + 6);
 		std::string topic = getword(buffer, i + 1);
 
-		server.kick(sender, chan, topic);
+		server.topic(sender, chan, topic);
 	}
 
 	if (buffer.find("PRIVMSG ") == 0 || buffer.find("NOTICE") == 0)
@@ -183,6 +185,14 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		std::string msg = getword(buffer, i + 1);
 
 		server.part(sender, chan, msg);
+	}
+
+	i = buffer.find("PING ");
+	if (i != std::string::npos)
+	{
+		std::string msg = getword(buffer, i + 5);
+
+		server.ping(sender, msg);
 	}
 
 	i = buffer.find("QUIT");

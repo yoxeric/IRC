@@ -132,6 +132,7 @@ void		Channel::add_mode(char m)
 {
 	for (int i = 0; i < (int) mode.size(); ++i)
 	{
+		// std::cout << "am : " << mode[i] << "==" << m << std::endl;
 		if (mode[i] == m)
 			return;
 	}
@@ -140,12 +141,12 @@ void		Channel::add_mode(char m)
 
 void		Channel::remove_mode(char m)
 {
-	int i = 0;
-	for (; i < (int) mode.size(); ++i)
+	for (int i = 0; i < (int) mode.size(); ++i)
 	{
+		// std::cout << "rm : " << mode[i] << "==" << m << std::endl;
 		if (mode[i] == m)
 		{
-			mode.erase(i);
+			mode.erase(mode.begin() + i);
 			return ;
 		}
 	}
@@ -226,13 +227,25 @@ int Channel::get_limit()
 
 void Channel::print()
 {
-	std::cout << "nickname : " << name  << std::endl;
-	std::cout << "username : " << topic  << std::endl;
-	std::cout << "address  : " << key  << std::endl;
-	std::cout << "pass     : " << limit << std::endl;
+	std::cout << "----- Channel = #" << name  << std::endl;
+	std::cout << "name  : <" << name << ">" << std::endl;
+	std::cout << "topic : <" << topic << ">" << std::endl;
+	std::cout << "key   : <" << key  << ">" << std::endl;
+	std::cout << "mode  : <" << mode << ">" << std::endl;
+	std::cout << "limit : <" << limit << ">" << std::endl;
 
-	std::cout << "---membres     : " << std::endl;
+	std::cout << "---ops : " << std::endl;
+	for (std::vector<Client>::iterator it = operators.begin(); it != operators.end(); it++)
+	{
+		std::cout << " ["<< it->get_socket() << "] --> " << it->get_nickname() << std::endl;
+	}
+	std::cout << "---membres : " << std::endl;
 	for (std::vector<Client>::iterator it = members.begin(); it != members.end(); it++)
+	{
+		std::cout << " ["<< it->get_socket() << "] --> " << it->get_nickname() << std::endl;
+	}
+	std::cout << "---invited : " << std::endl;
+	for (std::vector<Client>::iterator it = invited.begin(); it != invited.end(); it++)
 	{
 		std::cout << " ["<< it->get_socket() << "] --> " << it->get_nickname() << std::endl;
 	}
