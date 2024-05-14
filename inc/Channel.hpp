@@ -14,12 +14,18 @@ private:
 	std::string key;
 	std::string mode;
 	
+	std::string time;
+
+	std::string topic_user;
+	std::string topic_time;
+
+	
 	int limit;
+	
+	std::vector<std::string> invited;
 
 public:
 	std::vector<Client> members;
-	std::vector<Client> operators;
-	std::vector<Client> invited;
 
 
 	void		add_membre(Client& client);
@@ -29,13 +35,13 @@ public:
 
 	int			count_membres();
 
-	void		add_operator(Client& client);
-	int			remove_operator(Client& client);
-	int			is_operator(Client& client);
+	void		add_membre_mode(Client& client, char m);
+	void		remove_membre_mode(Client& client, char m);
+	int			is_membre_mode(Client& client, char m);
 
-	void		add_invited(Client& client);
-	int			remove_invited(Client& client);
-	int			is_invited(Client& client);
+	void		add_invited(std::string s);
+	void		remove_invited(std::string s);
+	int			is_invited(std::string s);
 
 
 	// ----------------------  Mode -----------------------

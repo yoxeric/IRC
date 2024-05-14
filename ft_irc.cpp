@@ -67,7 +67,9 @@ int main(int ac, char **av)
 				// std::cout << "[" << i << "]<" << socket << "> new connection..." << std::endl;
 				int client_socket = server.pool.accept_new_connection(server_socket);
 
-				server.add_client(client_socket);
+				Client* client = server.add_client(client_socket);
+				if (server.operator_count() == 0)
+					client->set_mode("o");
 
 				server.send_msg(client_socket, "connected\n");
 				std::cout << "[" << i << "]<" << client_socket << "> client connected" << std::endl;

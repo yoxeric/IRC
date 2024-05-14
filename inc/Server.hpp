@@ -78,19 +78,20 @@ public:
 
 
 	void 		list(Client &client);
+	void 		who(Client& client, std::string target);
 
 	void 		cap(Client &client, std::string str);
 	void 		nick(Client &client, std::string nick);
 	void 		user(Client &client, std::string user, std::string adrr);
 	void		prvmsg(Client& client, std::vector<std::string> target, std::vector<int> type, std::string msg);
-	void 		join(Client &client, std::string chan_name);
-	void 		who(Client& client, std::string target);
-	void 		topic(Client &client, std::string target, std::string topic);
+	void 		join(Client &client, std::string chan_name, std::string key);
+	void 		part(Client &client, std::string chan_name, std::string msg);
 
-	void 		mode(Client& client, std::string target, std::string mode);
+	void 		mode(Client& client, std::string target, std::string mode, std::string arg);
+	
+	void 		topic(Client &client, std::string target, std::string topic);
 	void 		kick(Client &client, std::string chan_name, std::string target);
 	void 		invite(Client &client, std::string chan_name, std::string target);
-	void 		part(Client &client, std::string chan_name, std::string msg);
 
 	void 		ping(Client &client, std::string msg);
 
@@ -99,7 +100,5 @@ public:
 
 	// ----------------------  Debug -----------------------
 
-
-	void		print_clients();
 	void		print();
 };

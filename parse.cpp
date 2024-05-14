@@ -96,7 +96,12 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 	{
 		std::string ch = getword(buffer, i + 5);
 
-		server.join(sender, ch);
+		std::string key = "";
+		i = buffer.find(" ", i + 5);
+		if (i != std::string::npos)
+			key = getword(buffer, i + 1);
+
+		server.join(sender, ch, key);
 
 	}
 
@@ -117,12 +122,17 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 	{
 		std::string target = getword(buffer, i + 5);
 
-		std::string mode = "+";
+		std::string mode = "";
 		i = buffer.find(" ", i + 5);
 		if (i != std::string::npos)
 			mode = getword(buffer, i + 1);
 
-		server.mode(sender, target, mode);
+		std::string arg = "";
+		i = buffer.find(" ", i + 1);
+		if (i != std::string::npos)
+			arg = getword(buffer, i + 1);
+
+		server.mode(sender, target, mode, arg);
 	}
 
 	i = buffer.find("KICK ");
@@ -152,8 +162,8 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 	{
 		std::string chan = getword(buffer, i + 6);
 
-		i = buffer.find(" ", i + 6);
-		std::string topic = getword(buffer, i + 1);
+		i = buffer.find(":", i + 6);
+		std::string topic = buffer.substr(i + 1, buffer.length() - i - 2);
 
 		server.topic(sender, chan, topic);
 	}

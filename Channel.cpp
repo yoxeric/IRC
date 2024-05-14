@@ -59,33 +59,37 @@ int	Channel::count_membres()
 }
 
 
-void Channel::add_operator(Client& client)
+void Channel::add_membre_mode(Client& client, char m)
 {
-	operators.push_back(client);
-}
-
-int Channel::remove_operator(Client& client)
-{
-	for (std::vector<Client>::iterator it = operators.begin(); it != operators.end(); it++)
+	for (std::vector<Client>::iterator it = members.begin(); it != members.end(); it++)
 	{
 		if (it->get_nickname() == client.get_nickname())
 		{
-			operators.erase(it);
+			it->add_mode(m);
 			break ;
 		}
 	}
-	if (operators.size() == 1)
-		return (2);
-	return 0;
 }
 
-int Channel::is_operator(Client& client)
+void Channel::remove_membre_mode(Client& client, char m)
 {
-	for (std::vector<Client>::iterator it = operators.begin(); it != operators.end(); it++)
+	for (std::vector<Client>::iterator it = members.begin(); it != members.end(); it++)
 	{
 		if (it->get_nickname() == client.get_nickname())
 		{
-			return 1;
+			it->remove_mode(m);
+			break ;
+		}
+	}
+}
+
+int Channel::is_membre_mode(Client& client, char m)
+{
+	for (std::vector<Client>::iterator it = members.begin(); it != members.end(); it++)
+	{
+		if (it->get_nickname() == client.get_nickname())
+		{
+			return (it->is_mode(m));
 		}
 	}
 	return 0;
@@ -93,31 +97,28 @@ int Channel::is_operator(Client& client)
 
 
 
-void Channel::add_invited(Client& client)
+void Channel::add_invited(std::string s)
 {
-	invited.push_back(client);
+	invited.push_back(s);
 }
 
-int Channel::remove_invited(Client& client)
+void Channel::remove_invited(std::string s)
 {
-	for (std::vector<Client>::iterator it = invited.begin(); it != invited.end(); it++)
+	for (std::vector<std::string>::iterator it = invited.begin(); it != invited.end(); it++)
 	{
-		if (it->get_nickname() == client.get_nickname())
+		if ((*it) == s)
 		{
 			invited.erase(it);
-			break ;
+			return ;
 		}
 	}
-	if (invited.size() == 1)
-		return (2);
-	return 0;
 }
 
-int Channel::is_invited(Client& client)
+int Channel::is_invited(std::string s)
 {
-	for (std::vector<Client>::iterator it = invited.begin(); it != invited.end(); it++)
+	for (std::vector<std::string>::iterator it = invited.begin(); it != invited.end(); it++)
 	{
-		if (it->get_nickname() == client.get_nickname())
+		if ((*it) == s)
 		{
 			return 1;
 		}
@@ -234,19 +235,14 @@ void Channel::print()
 	std::cout << "mode  : <" << mode << ">" << std::endl;
 	std::cout << "limit : <" << limit << ">" << std::endl;
 
-	std::cout << "---ops : " << std::endl;
-	for (std::vector<Client>::iterator it = operators.begin(); it != operators.end(); it++)
-	{
-		std::cout << " ["<< it->get_socket() << "] --> " << it->get_nickname() << std::endl;
-	}
 	std::cout << "---membres : " << std::endl;
 	for (std::vector<Client>::iterator it = members.begin(); it != members.end(); it++)
 	{
-		std::cout << " ["<< it->get_socket() << "] --> " << it->get_nickname() << std::endl;
+		std::cout << " ["<< it->get_socket() << "] --> " << it->get_nickname() << "   |   op=" << it->is_mode('o') << std::endl;
 	}
 	std::cout << "---invited : " << std::endl;
-	for (std::vector<Client>::iterator it = invited.begin(); it != invited.end(); it++)
+	for (std::vector<std::string>::iterator it = invited.begin(); it != invited.end(); it++)
 	{
-		std::cout << " ["<< it->get_socket() << "] --> " << it->get_nickname() << std::endl;
+		std::cout << "- " << (*it) << std::endl;
 	}
 }

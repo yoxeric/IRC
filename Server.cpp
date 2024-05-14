@@ -32,7 +32,7 @@ Channel*	Server::add_channel(std::string name)
 	chan.set_topic("hot topic");
 	chan.set_mode("");
 	chan.set_limit(1024);
-	
+
 	channels.push_back(chan);
 	return (&channels.back());
 }
@@ -82,7 +82,7 @@ Client*	Server::add_client(int socket)
 	Client client;
 	client.set_socket(socket);
 	client.set_realname("realname");
-	client.set_mode("o");
+	// client.set_mode("");
 
 	clients.push_back(client);
 	return (&clients.back());
@@ -194,6 +194,9 @@ void	Server::send_reply(int code, Client &client, std::string arg, std::string m
 	if (arg.empty())
 		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
 	<< " " << client.get_nickname() << " :" << msg << std::endl;
+	else if (msg.empty())
+		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
+	<< " " << client.get_nickname() << " " << arg << std::endl;
 	else
 		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
 	<< " " << client.get_nickname() << " " << arg << " :" << msg << std::endl;
@@ -206,8 +209,13 @@ void	Server::send_reply(int code, Client &client, std::string arg, std::string m
 // ----------------------------------- Debug -------------------------------------------
 
 
-void Server::print_clients()
+
+void Server::print()
 {
+	std::cout << "networkname : " << networkname << std::endl;
+	std::cout << "servername : " << servername << std::endl;
+	std::cout << "datetime : " << datetime << std::endl;
+	std::cout << "version : " << version << std::endl;
 	std::cout << "------ all clients" << std::endl;
 	int i = 0;
 
@@ -217,14 +225,6 @@ void Server::print_clients()
 		it->print();
 		i++;
 	}
-}
-
-void Server::print()
-{
-	std::cout << "networkname : " << networkname << std::endl;
-	std::cout << "servername : " << servername << std::endl;
-	std::cout << "datetime : " << datetime << std::endl;
-	std::cout << "version : " << version << std::endl;
 }
 
 
