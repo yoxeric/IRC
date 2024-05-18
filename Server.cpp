@@ -108,7 +108,6 @@ Client*	Server::find_client(std::string name)
 	return (NULL);
 }
 
-
 void	Server::remove_client(Client &client)
 {
 	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
@@ -121,6 +120,34 @@ void	Server::remove_client(Client &client)
 	}
 	pool.remove_from_poll(client.get_socket());
 }
+
+void Server::cap(Client& client, std::string subcommand)
+{
+	(void)(client);
+	if(!subcommand.compare("LIST") || !subcommand.compare("LS"))
+		std::cout << "CAP * " << subcommand << " :"<< std::endl;
+	else if(subcommand.compare("END"))
+		std::cout << "CAP * ACK " << subcommand << std::endl;
+}
+
+void Server::nick(Client& client, std::string str)
+{
+	std::cout << "nickname = " << str << "."<< std::endl;
+	client.set_nickname(str);
+}
+
+void Server::user(Client& client, std::string user, std::string param, std::string addr,  std::string realname)
+{
+	(void)(param);
+	client.set_username(user);
+	client.set_address(addr);
+	client.set_realname(realname);
+
+	welcome_server(client);
+}
+
+
+// ----------------------------------- Commands -------------------------------------------
 
 int			Server::client_count()
 {
@@ -137,7 +164,6 @@ int			Server::operator_count()
 	}
 	return (count);
 }
-
 
 // ----------------------------------------- Messages -------------------------------------
 

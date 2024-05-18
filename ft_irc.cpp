@@ -82,10 +82,11 @@ int main(int ac, char **av)
 				std::string msg = server.pool.read_data(i);
 				if (!msg.empty())
 				{
-					std::cout << "[" << i << "]<" << socket << "> got message = \n\"" << msg << "\"" << std::endl;
-
-					msg = parse(server, socket, msg);
-
+					std::cout << "[" << i << "].<" << socket << "> got message = \n\"" << msg << "\"" << std::endl;
+					std::string error = parse(server, socket, msg);
+					if (error[0])
+						std::cout << error << std::endl;
+					
 					// server.list_clients();
 
 					// // send message to evrybody

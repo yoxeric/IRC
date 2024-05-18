@@ -119,7 +119,8 @@ std::string Client::get_pass()
 
 void Client::print()
 {
-	std::cout << "@socket : " << socket << std::endl;
+	std::cout << "@socket : <" << socket << ">" <<std::endl;
+
 	std::cout << "nickname : <" << nickname << ">" << std::endl;
 	std::cout << "username : <" << username << ">" << std::endl;
 	std::cout << "address  : <" << address << ">" << std::endl;

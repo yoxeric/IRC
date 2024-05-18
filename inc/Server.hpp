@@ -84,8 +84,9 @@ public:
 
 	void 		cap(Client &client, std::string str);
 	void 		nick(Client &client, std::string nick);
-	void 		user(Client &client, std::string user, std::string adrr);
+	void 		user(Client& client, std::string user, std::string param, std::string addr,  std::string realname);
 	void		prvmsg(Client& client, std::vector<std::string> target, std::vector<int> type, std::string msg);
+
 	void 		join(Client &client, std::string chan_name, std::string key);
 	void 		part(Client &client, std::string chan_name, std::string msg);
 
