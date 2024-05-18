@@ -157,7 +157,9 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		if(token[0] == ':')
 			token.erase(0,1);
 		server.ping(sender, token);
+		
 	}
+
 	else if (!comand.compare("PRIVMSG") || !comand.compare("NOTICE")) //done
 	{
 		std::string all_targets;
@@ -180,6 +182,35 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 			return("ERR_NORECIPIENT");
 		server.prvmsg(sender, target, type, msg);
 	}
+	else if (!comand.compare("LIST")) //done
+		server.list(sender);
+	else if (!comand.compare("MODE"))
+	{
+		std::string target = getword(buffer, i + 5);
+
+		std::string mode = "";
+		i = buffer.find(" ", i + 5);
+		if (i != std::string::npos)
+			mode = getword(buffer, i + 1);
+
+		std::string arg = "";
+		i = buffer.find(" ", i + 1);
+		if (i != std::string::npos)
+			arg = getword(buffer, i + 1);
+
+		server.mode(sender, target, mode, arg);
+	}
+	else if (!comand.compare("JOIN"))
+	{
+			std::string ch = getword(buffer, i + 5);
+
+		std::string key = "";
+		i = buffer.find(" ", i + 5);
+		if (i != std::string::npos)
+			key = getword(buffer, i + 1);
+
+		server.join(sender, ch, key);
+  }
 	else if (!comand.compare("QUIT")) //done
 	{
 		std::string reason;
@@ -189,23 +220,60 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 			return("ERR_NONICKNAMEGIVEN");
 		server.quit(sender, buffer.substr(buffer.find(":") + 1, buffer.length() - buffer.find(":")));
 	}
-	else if (!comand.compare("LIST")) //done
-		server.list(sender);
-	else if (!comand.compare("MODE"))
-	{
-		std::string target;
-
-		std::string mode;
-
-		server.mode(sender, target, mode);
-	}
-	else if (!comand.compare("JOIN"))
-	{
-		std::string ch;
-		server.join(sender, ch);
-
-	}
 	else
 		return ("ERR_UNKNOWNCOMMAND");
+  
+	i = buffer.find("KICK ");
+	if (i != std::string::npos)
+	{
+		std::string chan = getword(buffer, i + 5);
+
+		i = buffer.find(" ", i + 5);
+		std::string user = getword(buffer, i + 1);
+
+		server.kick(sender, chan, user);
+	}
+
+	i = buffer.find("INVITE ");
+	if (i != std::string::npos)
+	{
+		std::string user = getword(buffer, i + 7);
+
+		i = buffer.find(" ", i + 7);
+		std::string chan = getword(buffer, i + 1);
+
+		server.invite(sender, chan, user);
+	}
+
+	i = buffer.find("TOPIC ");
+	if (i != std::string::npos)
+	{
+		std::string chan = getword(buffer, i + 6);
+
+		i = buffer.find(":", i + 6);
+		std::string topic = buffer.substr(i + 1, buffer.length() - i - 3);
+
+		server.topic(sender, chan, topic);
+	}
+  
+	i = buffer.find("PART ");
+	if (i != std::string::npos)
+	{
+		std::string chan = getword(buffer, i + 5);
+
+		i = buffer.find(":", i + 5);
+		std::string msg = getword(buffer, i + 1);
+
+		server.part(sender, chan, msg);
+	}
+
+	i = buffer.find("PING ");
+	if (i != std::string::npos)
+	{
+		std::string msg = getword(buffer, i + 5);
+
+		server.ping(sender, msg);
+	}
+  
 	return ("");
 }
