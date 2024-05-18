@@ -252,24 +252,27 @@ void	Server::remove_client(Client &client)
 	pool.remove_from_poll(client.get_socket());
 }
 
-void Server::cap(Client& client, std::string str)
+void Server::cap(Client& client, std::string subcommand)
 {
 	(void)(client);
-	(void)(str);
+	if(!subcommand.compare("LIST") || !subcommand.compare("LS"))
+		std::cout << "CAP * " << subcommand << " :"<< std::endl;
+	else if(subcommand.compare("END"))
+		std::cout << "CAP * ACK " << subcommand << std::endl;
 }
 
 void Server::nick(Client& client, std::string str)
 {
-	// std::cout << "nickname = " << str << std::endl;
+	std::cout << "nickname = " << str << "."<< std::endl;
 	client.set_nickname(str);
 }
 
-void Server::user(Client& client, std::string user, std::string addr)
+void Server::user(Client& client, std::string user, std::string param, std::string addr,  std::string realname)
 {
-
+	(void)(param);
 	client.set_username(user);
 	client.set_address(addr);
-
+	client.set_realname(realname);
 
 	welcome_server(client);
 }
@@ -289,19 +292,22 @@ void Server::prvmsg(Client& client, std::vector<std::string> target, std::vector
 			Channel* chan = find_channel(target[i]); 
 			if (chan != nullptr)
 			{
+				if (chan->is_membre(client))
+				{
+					// std::cout << "found = " << chan->get_name() << std::endl;
 
-				// std::cout << "found = " << chan->get_name() << std::endl;
+					s << ":" << create_tag(client) << " PRIVMSG #" << target[i] << " :" << msg << std::endl;
 
-				s << ":" << create_tag(client) << " PRIVMSG #" << target[i] << " :" << msg << std::endl;
+					send_msg_channel(client, *chan, s.str());
 
-				send_msg_channel(client, *chan, s.str());
+				}
+				else
+				{
+					std::cout << "Error :" << target[i] << "  Cannot send to channel (no external message)" << std::endl;
+					// :themis.sorcery.net 404 you #alice :Cannot send to channel (no external message)
 
+				}
 			}
-			else
-			{
-				std::cout << "Error : " << target[i] << " channel not found" << std::endl;
-			}
-
 		}
 		else if (type[i] == 1)
 		{
@@ -419,6 +425,16 @@ void Server::who(Client& client, std::string target)
 	}
 }
 
+void 	Server::ping(Client &sender, std::string msg)
+{
+	std::stringstream s;
+
+	s << ":" << create_tag(sender) << " PONG :" << msg << std::endl;
+		
+	send_msg(sender.get_socket(), s.str());
+
+}
+
 void Server::mode(Client& client, std::string target, std::string mode)
 {
 	(void)(client);
@@ -480,6 +496,19 @@ void Server::mode(Client& client, std::string target, std::string mode)
 			std::cout << "Error : " << target << "  client not found" << std::endl;
 		}
 	}
+}
+
+void 	Server::quit(Client &sender, std::string msg)
+{
+	std::stringstream s;
+
+	s << ":" << create_tag(sender) << " QUIT :" << msg << std::endl ;
+
+	send_msg(sender.get_socket(), s.str());
+
+	remove_client(sender);
+
+	// :dan-!d@localhost QUIT :Quit: Bye for now!
 }
 
 

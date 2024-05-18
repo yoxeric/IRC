@@ -63,11 +63,12 @@ public:
 
 	void 		cap(Client &client, std::string str);
 	void 		nick(Client &client, std::string nick);
-	void 		user(Client &client, std::string user, std::string adrr);
+	void 		user(Client& client, std::string user, std::string param, std::string addr,  std::string realname);
 	void		prvmsg(Client& client, std::vector<std::string> target, std::vector<int> type, std::string msg);
 	void 		join(Client &client, std::string chan_name);
 	void 		who(Client& client, std::string target);
 	void 		topic(Client &client, std::string str);
+	void		ping(Client& client, std::string token);
 
 	void 		mode(Client& client, std::string target, std::string mode);
 	void 		kick(Client &client, std::string str);

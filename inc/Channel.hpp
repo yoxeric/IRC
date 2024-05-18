@@ -21,7 +21,12 @@ public:
 	std::vector<std::string> operators;
 	std::vector<std::string> invited;
 
-
+	/**
+	 * Sum numbers in a vector.
+	 *
+	 * @param client Container whose values are summed.
+	 * @return sum of `values`, or 0.0 if `values` is empty.
+	 */
 	void		add_membre(Client& client);
 	int			remove_membre(Client& client);
 	int			is_membre(Client& client);
