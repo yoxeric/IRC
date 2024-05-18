@@ -29,8 +29,8 @@ Channel*	Server::add_channel(std::string name)
 {
 	Channel chan;
 	chan.set_name(name);
-	chan.set_topic("hot topic");
-	chan.set_mode("");
+	// chan.set_topic("hot topic");
+	// chan.set_mode("");
 	chan.set_limit(1024);
 
 	channels.push_back(chan);
@@ -64,12 +64,7 @@ void	Server::remove_channel(Channel &chan)
 
 int			Server::channel_count()
 {
-	int count = 0;
-	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
-	{
-		count++;
-	}
-	return (count);
+	return (channels.size());
 }
 
 
@@ -129,12 +124,7 @@ void	Server::remove_client(Client &client)
 
 int			Server::client_count()
 {
-	int count = 0;
-	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
-	{
-		count++;
-	}
-	return (count);
+	return (clients.size());
 }
 
 int			Server::operator_count()
@@ -156,11 +146,10 @@ int			Server::operator_count()
 int	Server::send_msg_channel(Client& sender, Channel &chan, std::string msg)
 {
 	// send msg to all user in the channel
-	std::cout << "sending to membres ..."<< std::endl;
+	std::cout << "sending to membres ..." << std::endl;
 	for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
 	{
 		std::cout << " mbr = "<< it->get_nickname() << std::endl;
-		// std::cout << " chans test :" << pool->clients[j].is_membre(channel) << std::endl;
 		if (sender.get_socket() != it->get_socket())
 			send_msg(it->get_socket(), msg);
 	}

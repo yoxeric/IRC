@@ -24,17 +24,17 @@ int Channel::remove_membre(Client& client)
 	return 0;
 }
 
-int Channel::is_membre(Client& client)
-{
-	for (std::vector<Client>::iterator it = members.begin(); it != members.end(); it++)
-	{
-		if (it->get_nickname() == client.get_nickname())
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
+// int Channel::is_membre(Client& client)
+// {
+// 	for (std::vector<Client>::iterator it = members.begin(); it != members.end(); it++)
+// 	{
+// 		if (it->get_nickname() == client.get_nickname())
+// 		{
+// 			return 1;
+// 		}
+// 	}
+// 	return 0;
+// }
 
 int Channel::is_membre(std::string name)
 {
@@ -50,10 +50,16 @@ int Channel::is_membre(std::string name)
 
 int	Channel::count_membres()
 {
+	return members.size();
+}
+
+int	Channel::count_operators()
+{
 	int count = 0;
 	for (std::vector<Client>::iterator it = members.begin(); it != members.end(); it++)
 	{
-		count++;
+		if (it->is_mode('o'))
+			count++;
 	}
 	return count;
 }

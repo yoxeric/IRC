@@ -163,7 +163,7 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		std::string chan = getword(buffer, i + 6);
 
 		i = buffer.find(":", i + 6);
-		std::string topic = buffer.substr(i + 1, buffer.length() - i - 2);
+		std::string topic = buffer.substr(i + 1, buffer.length() - i - 3);
 
 		server.topic(sender, chan, topic);
 	}

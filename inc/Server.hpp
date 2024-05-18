@@ -66,9 +66,11 @@ public:
 	void		modt_server(Client& client);
 	void 		list_server(Client &client);
 	void		list_channel(Client& client, Channel &chan);
+	void		list_channel_short(Client& client, Channel &chan);
 	void		list_user(Client& client, Client &target_client);
 
 
+	void		send_err(int code, Client &sender, std::string msg);
 	void		send_err(int code, Client &sender, std::string arg1, std::string msg);
 	void		send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string msg);
 	void		send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string arg3, std::string msg);

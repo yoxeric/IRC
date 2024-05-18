@@ -19,7 +19,6 @@ private:
 	std::string topic_user;
 	std::string topic_time;
 
-	
 	int limit;
 	
 	std::vector<std::string> invited;
@@ -30,10 +29,11 @@ public:
 
 	void		add_membre(Client& client);
 	int			remove_membre(Client& client);
-	int			is_membre(Client& client);
+	// int			is_membre(Client& client);
 	int			is_membre(std::string name);
 
 	int			count_membres();
+	int			count_operators();
 
 	void		add_membre_mode(Client& client, char m);
 	void		remove_membre_mode(Client& client, char m);
