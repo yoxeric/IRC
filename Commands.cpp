@@ -52,19 +52,22 @@ void Server::who(Client& sender, std::string target)
 	}
 }
 
-
-void Server::cap(Client& sender, std::string str)
-{
-	(void)(sender);
-	(void)(str);
-}
-
 // todo : PASS cmd
 // todo : OPER cmd
 
+
+void Server::cap(Client& client, std::string subcommand)
+{
+	std::stringstream ss;
+	if(!subcommand.compare("LIST") || !subcommand.compare("LS"))
+		ss << "CAP * " << subcommand << " :"<< std::endl;
+	else if(subcommand.compare("END"))
+		ss << "CAP * ACK " << subcommand << std::endl;
+	send_msg(client.get_socket(), ss.str());
+}
+
 void Server::nick(Client& sender, std::string str)
 {
-	// std::cout << "nickname = " << str << std::endl;
 	if (str.empty())
 	{
 		send_err(431, sender, "No nickname given");
@@ -76,20 +79,20 @@ void Server::nick(Client& sender, std::string str)
 		send_err(431, sender, str, "Nickname is already in use");
 		return ;
 	}
-
+	std::cout << "nickname = " << str << "."<< std::endl;
 	sender.set_nickname(str);
 }
 
-void Server::user(Client& sender, std::string user, std::string addr)
+void Server::user(Client& client, std::string user, std::string param, std::string addr,  std::string realname)
 {
+	(void)(param);
+	client.set_username(user);
+	client.set_address(addr);
+	client.set_realname(realname);
 
-	// todo: "<client> :You may not reregister"   (after first ime)
-
-	sender.set_username(user);
-	sender.set_address(addr);
-
-	welcome_server(sender);
+	welcome_server(client);
 }
+
 
 void Server::prvmsg(Client& sender, std::vector<std::string> target, std::vector<int> type, std::string msg)
 {
