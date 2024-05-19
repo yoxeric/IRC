@@ -67,11 +67,12 @@ std::string getword(std::string str, int start)
 
 // To get what command to call, do a map with a string as a key (command name) and a pointer to function (it’s cool)
 
-std::string parse(Server& server, int sender_socket, std::string buffer)
+std::string Server::parse(int sender_socket, std::string buffer)
 {
-	// int index = server.find_client(sende   r_socket);
+	// int index = find_client(sende   r_socket);
 	// Client &sender = server.clients[ index ];
-	Client &sender = *server.find_client(sender_socket);
+	Client &sender = *find_client(sender_socket);
+	size_t i = 0;
 	std::cout << "----- sender = " << sender.get_nickname() << std::endl;
 	sender.print();
 
@@ -88,32 +89,36 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		std::string subcommand;
 		getline(input, subcommand, ' ');
 		if(!subcommand[0])
-			return("ERR_NEEDMOREPARAMS");
+			send_err(461, sender, "CAP", "Not enough parameters");
+			// return("ERR_NEEDMOREPARAMS");
 		if(!subcommand.compare("END") || !subcommand.compare("LIST") || !subcommand.compare("LS"))
-			server.cap(sender, subcommand);
+			cap(sender, subcommand);
 		else if(!subcommand.compare("REQ"))
 		{
 			std::string option;
 			getline(input, option, ' ');
 			if(option[0] != ':')
-				return("ERR_INVALIDCAPCMD");
-			server.cap(sender, buffer.substr(buffer.find(":"), buffer.length() - buffer.find(":")));
+				send_err(500, sender, "CAP", "invalid command");
+				// return("ERR_INVALIDCAPCMD");
+			cap(sender, buffer.substr(buffer.find(":"), buffer.length() - buffer.find(":")));
 		}
-		else
-			return("ERR_INVALIDCAPCMD");
+		// else
+		// 	return("ERR_INVALIDCAPCMD");
 	}
-	else if (!comand.compare("NICK")) // done
+	if (!comand.compare("NICK")) // done
 	{
-		std::string nick;
-		getline(input, nick, ' ');
-		if(!nick[0])
-			return("ERR_NONICKNAMEGIVEN");
-		if(nick.find_first_not_of("0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM[]{}/|_-^") != std::string::npos)
-			return("ERR_ERRONEUSNICKNAME");
-		server.nick(sender, nick);
+		std::string nickname;
+		getline(input, nickname, ' ');
+		if(!nickname[0])
+			send_err(431, sender, "No nickname given");
+			// return("ERR_NONICKNAMEGIVEN");
+		if(nickname.find_first_not_of("0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM[]{}/|_-^") != std::string::npos)
+			send_err(432, sender, nickname, "Erroneus nickname");
+			// return("ERR_ERRONEUSNICKNAME");
+		nick(sender, nickname);
 
 	}
-	else if (!comand.compare("USER"))  //done
+	if (!comand.compare("USER"))  //done
 	{
 	// << USER username username us.undernet.org :realname
 	/*
@@ -137,17 +142,18 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 			!second_param[0] || second_param.find(':') != std::string::npos ||
 			!username[0] || username.find(':') != std::string::npos ||
 			last_param[0] != ':' || last_param.size() < 2)
-				return("ERR_NEEDMOREPARAMS");
+				send_err(461, sender, "USER", "Not enough parameters");
+				// return("ERR_NEEDMOREPARAMS");
 		std::string realname = buffer.substr(buffer.find(":") + 1, buffer.length() - buffer.find(":"));
-		server.user(sender, username, second_param, third_param, realname);
+		user(sender, username, second_param, third_param, realname);
 	}
-	else if (!comand.compare("WHO")) //done
+	if (!comand.compare("WHO")) //done
 	{
 		std::string token;
 		getline(input, token, ' ');
-		server.who(sender, token);
+		who(sender, token);
 	}
-	else if (!comand.compare("PING")) //done
+	if (!comand.compare("PING")) //done
 	{
 		std::string token;
 		getline(input, token, ' ');
@@ -156,11 +162,11 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 			return("ERR_NOORIGIN");
 		if(token[0] == ':')
 			token.erase(0,1);
-		server.ping(sender, token);
+		ping(sender, token);
 		
 	}
 
-	else if (!comand.compare("PRIVMSG") || !comand.compare("NOTICE")) //done
+	if (!comand.compare("PRIVMSG") || !comand.compare("NOTICE")) //done
 	{
 		std::string all_targets;
 		getline(input, all_targets, ' ');
@@ -173,34 +179,36 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		std::string msg;
 		getline(input, msg, ' ');
 		if(msg[0] != ':')
-			return("ERR_NOTEXTTOSEND");
+			send_err(412, sender, "No text to send");
+			// return("ERR_NOTEXTTOSEND");
 		msg = buffer.substr(buffer.find(":") + 1, buffer.length() - 1 - buffer.find(":"));
 		if(!msg[0])
-			return("ERR_NOTEXTTOSEND");
+			send_err(412, sender, "No text to send");
+			// return("ERR_NOTEXTTOSEND");
 		get_targets(all_targets, target, type);
 		if(target.size() == 0)
 			return("ERR_NORECIPIENT");
-		server.prvmsg(sender, target, type, msg);
+		prvmsg(sender, target, type, msg);
 	}
-	else if (!comand.compare("LIST")) //done
-		server.list(sender);
-	else if (!comand.compare("MODE"))
+	if (!comand.compare("LIST")) //done
+		list(sender);
+	if (!comand.compare("MODE"))
 	{
 		std::string target = getword(buffer, i + 5);
 
-		std::string mode = "";
+		std::string modestr = "";
 		i = buffer.find(" ", i + 5);
 		if (i != std::string::npos)
-			mode = getword(buffer, i + 1);
+			modestr = getword(buffer, i + 1);
 
 		std::string arg = "";
 		i = buffer.find(" ", i + 1);
 		if (i != std::string::npos)
 			arg = getword(buffer, i + 1);
 
-		server.mode(sender, target, mode, arg);
+		mode(sender, target, modestr, arg);
 	}
-	else if (!comand.compare("JOIN"))
+	if (!comand.compare("JOIN"))
 	{
 			std::string ch = getword(buffer, i + 5);
 
@@ -209,19 +217,20 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		if (i != std::string::npos)
 			key = getword(buffer, i + 1);
 
-		server.join(sender, ch, key);
+		join(sender, ch, key);
   }
-	else if (!comand.compare("QUIT")) //done
+	if (!comand.compare("QUIT")) //done
 	{
 		std::string reason;
 		getline(input, reason, ' ');
 		reason.pop_back();
 		if(reason[0] != ':' )
-			return("ERR_NONICKNAMEGIVEN");
-		server.quit(sender, buffer.substr(buffer.find(":") + 1, buffer.length() - buffer.find(":")));
+			send_err(431, sender, "No nickname given");
+			// return("ERR_NONICKNAMEGIVEN");
+		quit(sender, buffer.substr(buffer.find(":") + 1, buffer.length() - buffer.find(":")));
 	}
-	else
-		return ("ERR_UNKNOWNCOMMAND");
+	/*else
+		return ("ERR_UNKNOWNCOMMAND");*/
   
 	i = buffer.find("KICK ");
 	if (i != std::string::npos)
@@ -231,7 +240,7 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		i = buffer.find(" ", i + 5);
 		std::string user = getword(buffer, i + 1);
 
-		server.kick(sender, chan, user);
+		kick(sender, chan, user);
 	}
 
 	i = buffer.find("INVITE ");
@@ -242,7 +251,7 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		i = buffer.find(" ", i + 7);
 		std::string chan = getword(buffer, i + 1);
 
-		server.invite(sender, chan, user);
+		invite(sender, chan, user);
 	}
 
 	i = buffer.find("TOPIC ");
@@ -251,9 +260,9 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		std::string chan = getword(buffer, i + 6);
 
 		i = buffer.find(":", i + 6);
-		std::string topic = buffer.substr(i + 1, buffer.length() - i - 3);
+		std::string topicstr = buffer.substr(i + 1, buffer.length() - i - 3);
 
-		server.topic(sender, chan, topic);
+		topic(sender, chan, topicstr);
 	}
   
 	i = buffer.find("PART ");
@@ -264,7 +273,7 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 		i = buffer.find(":", i + 5);
 		std::string msg = getword(buffer, i + 1);
 
-		server.part(sender, chan, msg);
+		part(sender, chan, msg);
 	}
 
 	i = buffer.find("PING ");
@@ -272,7 +281,7 @@ std::string parse(Server& server, int sender_socket, std::string buffer)
 	{
 		std::string msg = getword(buffer, i + 5);
 
-		server.ping(sender, msg);
+		ping(sender, msg);
 	}
   
 	return ("");

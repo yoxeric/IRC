@@ -28,6 +28,7 @@ public:
 	// ----------------------  Server -----------------------
 
 	void		init_server();
+	std::string parse(int sender_socket, std::string buffer);
 
 	// ----------------------  Channel -----------------------
 

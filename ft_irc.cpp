@@ -83,7 +83,7 @@ int main(int ac, char **av)
 				if (!msg.empty())
 				{
 					std::cout << "[" << i << "].<" << socket << "> got message = \n\"" << msg << "\"" << std::endl;
-					std::string error = parse(server, socket, msg);
+					std::string error = server.parse(socket, msg);
 					if (error[0])
 						std::cout << error << std::endl;
 					

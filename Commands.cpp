@@ -53,18 +53,17 @@ void Server::who(Client& sender, std::string target)
 }
 
 
-void Server::cap(Client& sender, std::string str)
+void Server::cap(Client& sender, std::string subcommand)
 {
 	(void)(sender);
-	(void)(str);
+	if(!subcommand.compare("LIST") || !subcommand.compare("LS"))
+		std::cout << "CAP * " << subcommand << " :"<< std::endl;
+	else if(subcommand.compare("END"))
+		std::cout << "CAP * ACK " << subcommand << std::endl;
 }
-
-// todo : PASS cmd
-// todo : OPER cmd
 
 void Server::nick(Client& sender, std::string str)
 {
-	// std::cout << "nickname = " << str << std::endl;
 	if (str.empty())
 	{
 		send_err(431, sender, "No nickname given");
@@ -77,19 +76,20 @@ void Server::nick(Client& sender, std::string str)
 		return ;
 	}
 
+	// std::cout << "nickname = " << str << "."<< std::endl;
 	sender.set_nickname(str);
 }
 
-void Server::user(Client& sender, std::string user, std::string addr)
+void Server::user(Client& sender, std::string user, std::string param, std::string addr,  std::string realname)
 {
-
-	// todo: "<client> :You may not reregister"   (after first ime)
-
+	(void)(param);
 	sender.set_username(user);
 	sender.set_address(addr);
+	sender.set_realname(realname);
 
 	welcome_server(sender);
 }
+
 
 void Server::prvmsg(Client& sender, std::vector<std::string> target, std::vector<int> type, std::string msg)
 {
