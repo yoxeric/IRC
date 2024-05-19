@@ -7,6 +7,7 @@
 class Client
 {
 private:
+	std::string	message;
 	std::string nickname;
 	std::string username;
 	std::string realname;
@@ -29,14 +30,14 @@ public:
 
 	// ----------------------  Setter -----------------------
 
-	void		set_mode(std::string str);
-	void 		set_nickname(std::string str);
-	void 		set_username(std::string str);
-	void 		set_realname(std::string str);
-	void 		set_address(std::string str);
-	void 		set_pass(std::string str);
-
-	void 		set_socket(int socket);
+	void		set_mode(std::string);
+	void 		set_nickname(std::string);
+	void 		set_username(std::string);
+	void 		set_realname(std::string);
+	void 		set_address(std::string);
+	void 		set_pass(std::string);
+	void		set_message(std::string);
+	void 		set_socket(int);
 
 	// ----------------------  Getter -----------------------
 

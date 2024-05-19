@@ -14,8 +14,9 @@ std::string get_time()
 
 // -----------------------------------  Server --------------------------------------
 
-void	Server::init_server()
+void	IRCServer::init_server(char* pass)
 {
+	password = pass;
 	networkname = std::string("Scale Factor Communication");
 	servername = std::string("ScaleFactor.ma");
 	datetime = get_time();
@@ -25,7 +26,7 @@ void	Server::init_server()
 // ----------------------------------- Channel -------------------------------------------
 
 
-Channel*	Server::add_channel(std::string name)
+Channel*	IRCServer::add_channel(std::string name)
 {
 	Channel chan;
 	chan.set_name(name);
@@ -37,7 +38,7 @@ Channel*	Server::add_channel(std::string name)
 	return (&channels.back());
 }
 
-Channel*	Server::find_channel(std::string name)
+Channel*	IRCServer::find_channel(std::string name)
 {
 	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
 	{
@@ -49,7 +50,7 @@ Channel*	Server::find_channel(std::string name)
 	return (NULL);
 }
 
-void	Server::remove_channel(Channel &chan)
+void	IRCServer::remove_channel(Channel &chan)
 {
 	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
 	{
@@ -62,7 +63,7 @@ void	Server::remove_channel(Channel &chan)
 }
 
 
-int			Server::channel_count()
+int			IRCServer::channel_count()
 {
 	return (channels.size());
 }
@@ -72,7 +73,7 @@ int			Server::channel_count()
 
 
 
-Client*	Server::add_client(int socket)
+Client*	IRCServer::add_client(int socket)
 {
 	Client client;
 	client.set_socket(socket);
@@ -83,7 +84,7 @@ Client*	Server::add_client(int socket)
 	return (&clients.back());
 }
 
-Client*	Server::find_client(int socket)
+Client*	IRCServer::find_client(int socket)
 {
 	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
 	{
@@ -95,7 +96,7 @@ Client*	Server::find_client(int socket)
 	return (NULL);
 }
 
-Client*	Server::find_client(std::string name)
+Client*	IRCServer::find_client(std::string name)
 {
 	// check if anyone has the same username
 	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
@@ -109,7 +110,7 @@ Client*	Server::find_client(std::string name)
 }
 
 
-void	Server::remove_client(Client &client)
+void	IRCServer::remove_client(Client &client)
 {
 	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
 	{
@@ -122,12 +123,12 @@ void	Server::remove_client(Client &client)
 	pool.remove_from_poll(client.get_socket());
 }
 
-int			Server::client_count()
+int			IRCServer::client_count()
 {
 	return (clients.size());
 }
 
-int			Server::operator_count()
+int			IRCServer::operator_count()
 {
 	int count = 0;
 	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
@@ -143,7 +144,7 @@ int			Server::operator_count()
 
 
 
-int	Server::send_msg_channel(Client& sender, Channel &chan, std::string msg)
+int	IRCServer::send_msg_channel(Client& sender, Channel &chan, std::string msg)
 {
 	// send msg to all user in the channel
 	std::cout << "sending to membres ..." << std::endl;
@@ -156,7 +157,7 @@ int	Server::send_msg_channel(Client& sender, Channel &chan, std::string msg)
 	return 0;
 }
 
-int	Server::send_msg(int dest_fd, std::string msg)
+int	IRCServer::send_msg(int dest_fd, std::string msg)
 {
 	std::cout << "msg >> "<< msg;
 	if (send(dest_fd, msg.c_str(), msg.size(), 0) == -1)
@@ -167,7 +168,7 @@ int	Server::send_msg(int dest_fd, std::string msg)
 	return 0;
 }
 
-std::string	Server::create_tag(Client& client)
+std::string	IRCServer::create_tag(Client& client)
 {
 	std::stringstream s;
 
@@ -176,7 +177,7 @@ std::string	Server::create_tag(Client& client)
 	return s.str();
 }
 
-void	Server::send_reply(int code, Client &client, std::string arg, std::string msg)
+void	IRCServer::send_reply(int code, Client &client, std::string arg, std::string msg)
 {
 	std::stringstream s;
 
@@ -199,7 +200,7 @@ void	Server::send_reply(int code, Client &client, std::string arg, std::string m
 
 
 
-void Server::print()
+void IRCServer::print()
 {
 	std::cout << "networkname : " << networkname << std::endl;
 	std::cout << "servername : " << servername << std::endl;

@@ -2,7 +2,7 @@
 #include "inc/Server.hpp"
 
 
-void	Server::welcome_server(Client& client)
+void	IRCServer::welcome_server(Client& client)
 {
 	std::stringstream ss;
 
@@ -25,7 +25,7 @@ void	Server::welcome_server(Client& client)
 
 }
 
-void	Server::list_server(Client& client)
+void	IRCServer::list_server(Client& client)
 {
 	std::stringstream ss;
 
@@ -49,7 +49,7 @@ void	Server::list_server(Client& client)
 
 }
 
-void	Server::modt_server(Client& client)
+void	IRCServer::modt_server(Client& client)
 {
 
 	send_reply(375, client, "", "- ScaleFactor.ma Message of the Day - ");
@@ -88,7 +88,7 @@ void	Server::modt_server(Client& client)
 
 }
 
-void	Server::list_channel(Client& client, Channel &chan)
+void	IRCServer::list_channel(Client& client, Channel &chan)
 {
 	std::stringstream ss;
 	std::stringstream ss2;
@@ -189,7 +189,7 @@ void	Server::list_channel(Client& client, Channel &chan)
 
 //todo : fix channel who show info every time
 
-// void	Server::list_channel_short(Client& client, Channel &chan)
+// void	IRCServer::list_channel_short(Client& client, Channel &chan)
 // {
 // 	std::stringstream ss;
 // 	std::stringstream ss2;
@@ -230,7 +230,7 @@ void	Server::list_channel(Client& client, Channel &chan)
 // }
 
 
-void	Server::list_user(Client& client, Client &target_client)
+void	IRCServer::list_user(Client& client, Client &target_client)
 {
 	std::stringstream ss;
 
@@ -246,7 +246,7 @@ void	Server::list_user(Client& client, Client &target_client)
 // ------------------------------------- Error --------------------------------------------------------------------------
 
 
-void	Server::send_err(int code, Client &sender, std::string msg)
+void	IRCServer::send_err(int code, Client &sender, std::string msg)
 {
 	std::stringstream s;
 
@@ -255,7 +255,7 @@ void	Server::send_err(int code, Client &sender, std::string msg)
 	send_msg(sender.get_socket(), s.str());
 }
 
-void	Server::send_err(int code, Client &sender, std::string arg1, std::string msg)
+void	IRCServer::send_err(int code, Client &sender, std::string arg1, std::string msg)
 {
 	std::stringstream s;
 
@@ -265,7 +265,7 @@ void	Server::send_err(int code, Client &sender, std::string arg1, std::string ms
 }
 
 
-void	Server::send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string msg)
+void	IRCServer::send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string msg)
 {
 	std::stringstream s;
 
@@ -275,7 +275,7 @@ void	Server::send_err(int code, Client &sender, std::string arg1, std::string ar
 }
 
 
-void	Server::send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string arg3, std::string msg)
+void	IRCServer::send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string arg3, std::string msg)
 {
 	std::stringstream s;
 

@@ -1,16 +1,14 @@
 NAME = ircserv
 CC = c++
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+CPPFLAGS = -fsanitize=address -g -Wall -Wextra -Werror -std=c++98
 
 SRC = ft_irc.cpp poll.cpp Client.cpp Channel.cpp Server.cpp parse.cpp Commands.cpp Notices.cpp
-
-HEADER = inc/ft_irc.hpp inc/poll.hpp inc/Client.hpp inc/Channel.hpp inc/Server.hpp
 
 OBJ = ${SRC:.cpp=.o}
 
 all: $(NAME)
 
-$(NAME): $(OBJ) $(HEADER)
+$(NAME): $(OBJ)
 	$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 clean:

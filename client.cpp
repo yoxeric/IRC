@@ -35,6 +35,8 @@ int			Client::is_mode(char m)
 	return (0);
 }
 
+
+
 // ----------------------  Setter -----------------------
 
 

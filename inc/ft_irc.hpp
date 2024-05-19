@@ -20,7 +20,7 @@
 #include "Server.hpp"
 
 
-std::string parse(Server& server, int client_index, std::string buffer);
+std::string parse(IRCServer& server, int client_index, std::string buffer);
 
 
 // void	parse_CAP ();

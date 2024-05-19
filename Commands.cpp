@@ -3,7 +3,7 @@
 
 // ----------------------------------- Commands -------------------------------------------
 
-void	Server::list(Client& sender)
+void	IRCServer::list(Client& sender)
 {
 
 	std::cout << "---LISTING-----" << std::endl;
@@ -22,7 +22,7 @@ void	Server::list(Client& sender)
 
 }
 
-void Server::who(Client& sender, std::string target)
+void IRCServer::who(Client& sender, std::string target)
 {
 	std::stringstream ss;
 
@@ -53,7 +53,7 @@ void Server::who(Client& sender, std::string target)
 }
 
 
-void Server::cap(Client& sender, std::string str)
+void IRCServer::cap(Client& sender, std::string str)
 {
 	(void)(sender);
 	(void)(str);
@@ -62,7 +62,7 @@ void Server::cap(Client& sender, std::string str)
 // todo : PASS cmd
 // todo : OPER cmd
 
-void Server::nick(Client& sender, std::string str)
+void IRCServer::nick(Client& sender, std::string str)
 {
 	// std::cout << "nickname = " << str << std::endl;
 	if (str.empty())
@@ -80,7 +80,7 @@ void Server::nick(Client& sender, std::string str)
 	sender.set_nickname(str);
 }
 
-void Server::user(Client& sender, std::string user, std::string addr)
+void IRCServer::user(Client& sender, std::string user, std::string addr)
 {
 
 	// todo: "<client> :You may not reregister"   (after first ime)
@@ -91,7 +91,7 @@ void Server::user(Client& sender, std::string user, std::string addr)
 	welcome_server(sender);
 }
 
-void Server::prvmsg(Client& sender, std::vector<std::string> target, std::vector<int> type, std::string msg)
+void IRCServer::prvmsg(Client& sender, std::vector<std::string> target, std::vector<int> type, std::string msg)
 {
 	std::ostringstream s;
 
@@ -147,7 +147,7 @@ void Server::prvmsg(Client& sender, std::vector<std::string> target, std::vector
 	// nickname!username@address.IP PRIVMSG #coolpeople :Hi everyone!
 }
 
-void Server::join(Client& sender, std::string chan_name, std::string key)
+void IRCServer::join(Client& sender, std::string chan_name, std::string key)
 {
 	(void)(key);
 	
@@ -204,7 +204,7 @@ void Server::join(Client& sender, std::string chan_name, std::string key)
 	// nickname!username@address.IP JOIN #ch
 }
 
-void 	Server::part(Client &sender, std::string chan_name, std::string msg)
+void 	IRCServer::part(Client &sender, std::string chan_name, std::string msg)
 {
 	std::stringstream s;
 
@@ -233,7 +233,7 @@ void 	Server::part(Client &sender, std::string chan_name, std::string msg)
 	send_msg(sender.get_socket(), s.str());
 }
 
-void Server::mode(Client& sender, std::string target, std::string mode, std::string arg)
+void IRCServer::mode(Client& sender, std::string target, std::string mode, std::string arg)
 {
 // . i: Set/remove Invite-only channel
 // · t: Set/remove the restrictions of the TOPIC command to channel operators
@@ -385,7 +385,7 @@ void Server::mode(Client& sender, std::string target, std::string mode, std::str
 }
 
 
-void Server::topic(Client& sender, std::string target, std::string topic)
+void IRCServer::topic(Client& sender, std::string target, std::string topic)
 {
 	std::cout << "target : " << target << std::endl;
 	std::cout << "topic : " << topic << std::endl;
@@ -421,7 +421,7 @@ void Server::topic(Client& sender, std::string target, std::string topic)
 	}
 }
 
-void 	Server::kick(Client &sender, std::string chan_name, std::string target)
+void 	IRCServer::kick(Client &sender, std::string chan_name, std::string target)
 {
 	std::stringstream s;
 
@@ -482,7 +482,7 @@ void 	Server::kick(Client &sender, std::string chan_name, std::string target)
 	 // :WiZ!jto@tolsun.oulu.fi KICK #Finnish John
 }
 
-void 	Server::invite(Client &sender, std::string chan_name, std::string target)
+void 	IRCServer::invite(Client &sender, std::string chan_name, std::string target)
 {
 	std::stringstream s;
 
@@ -527,7 +527,7 @@ void 	Server::invite(Client &sender, std::string chan_name, std::string target)
 	// :Angel!wings@irc.org INVITE Wiz #Dust
 }
 
-void 	Server::ping(Client &sender, std::string msg)
+void 	IRCServer::ping(Client &sender, std::string msg)
 {
 	std::stringstream s;
 
@@ -538,7 +538,7 @@ void 	Server::ping(Client &sender, std::string msg)
 }
 
 
-void 	Server::quit(Client &sender, std::string msg)
+void 	IRCServer::quit(Client &sender, std::string msg)
 {
 	std::stringstream s;
 

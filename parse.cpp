@@ -46,7 +46,7 @@ std::string getword(std::string str, int start)
 
 // To get what command to call, do a map with a string as a key (command name) and a pointer to function (it’s cool)
 
-std::string parse(Server& server, int sender_socket, std::string buffer)
+std::string parse(IRCServer& server, int sender_socket, std::string buffer)
 {
 	std::size_t i;
 	// int index = server.find_client(sender_socket);

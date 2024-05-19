@@ -9,9 +9,10 @@
 #include "Client.hpp"
 #include "Channel.hpp"
 
-class Server
+class IRCServer
 {
 private:
+	std::string			password;
 	std::string			networkname;
 	std::string			servername; // address
 	std::string			datetime;
@@ -27,8 +28,8 @@ public:
 
 	// ----------------------  Server -----------------------
 
-	void		init_server();
-
+	void				init_server(char *);
+	const	std::string	get_password();
 	// ----------------------  Channel -----------------------
 
 	Channel*	add_channel(std::string name);
@@ -75,9 +76,7 @@ public:
 	void		send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string msg);
 	void		send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string arg3, std::string msg);
 
-
 	// ----------------------  Commands -----------------------
-
 
 	void 		list(Client &client);
 	void 		who(Client& client, std::string target);
