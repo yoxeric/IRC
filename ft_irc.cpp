@@ -51,14 +51,12 @@ int main(int ac, char **av)
 				{
 					if (server.clients[i-1].get_username().empty() == true)
 					{
-						std::cout << "msg 11111" << std::endl;
 						std::string msg = server.pool.read_data(i);
 						server.clients[i-1].set_username("username");
 						std::cout << msg << std::endl;
 					}
 					else
 					{
-						std::cout << "msg 22222" << std::endl;
 						std::string msg = server.pool.read_data(i);
 						std::cout << msg << std::endl;
 					}
