@@ -4,24 +4,20 @@
 // #include <stdlib.h>
 // #include <string.h>
 
-#include <unistd.h>
+// #include <unistd.h>
 
 // #include <sys/types.h>
 // #include <sys/socket.h>
 // #include <netinet/in.h>
 // #include <netdb.h>
 
-#include <iostream>
-#include <sstream> 
-#include <vector>
+// #include <iostream>
+// #include <sstream> 
+// #include <vector>
 
 // #include <poll.h>
 
-#include "Server.hpp"
-
-
-std::string parse(Server& server, int client_index, std::string buffer);
-
+// #include "Server.hpp"
 
 // void	parse_CAP ();
 // void	parse_NICK ();

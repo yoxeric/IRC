@@ -76,7 +76,6 @@ Client*	Server::add_client(int socket)
 {
 	Client client;
 	client.set_socket(socket);
-	client.set_realname("realname");
 	// client.set_mode("");
 
 	clients.push_back(client);
@@ -180,13 +179,13 @@ void	Server::send_reply(int code, Client &client, std::string arg, std::string m
 
 	if (arg.empty())
 		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
-	<< " " << client.get_nickname() << " :" << msg << std::endl;
+	<< " " << client.get_nickname() << " :" << msg << "\r\n";
 	else if (msg.empty())
 		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
-	<< " " << client.get_nickname() << " " << arg << std::endl;
+	<< " " << client.get_nickname() << " " << arg << "\r\n";
 	else
 		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
-	<< " " << client.get_nickname() << " " << arg << " :" << msg << std::endl;
+	<< " " << client.get_nickname() << " " << arg << " :" << msg << "\r\n";
 
 	send_msg(client.get_socket(), s.str());
 }

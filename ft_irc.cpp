@@ -1,5 +1,5 @@
 
-#include "inc/ft_irc.hpp"
+#include "inc/Server.hpp"
 
 int main(int ac, char **av)
 {
@@ -78,28 +78,21 @@ int main(int ac, char **av)
 			else
 			{
 				// std::cout << "[" << i << "]<" << socket << "> read_data..." << std::endl;
-
 				std::string msg = server.pool.read_data(i);
-				if (!msg.empty())
+				std::istringstream input(msg);
+				getline(input, msg, '\n');
+				/*for (int i=0; msg[i]; i++)
+					std::cout << "msg =" << msg[i] << "={" << (int)msg[i] << "}" << std::endl;*/
+				while (!msg.empty())
 				{
 					std::cout << "[" << i << "].<" << socket << "> got message = \n\"" << msg << "\"" << std::endl;
 					std::string error = server.parse(socket, msg);
 					if (error[0])
 						std::cout << error << std::endl;
-					
+					getline(input, msg, '\n');
 					// server.list_clients();
-
-					// // send message to evrybody
-					// for (int j = 1; j < pool->count; j++)
-					// {
-					// 	if (i != j) // dont send message to sender
-					// 	{
-					// 		int dest_fd = pool->fds[j].fd;
-					// 		server.send_msg(dest_fd, msg);
-					// 	}
-					// }
 				}
-
+				
 			}
 		}
 		// std::cout << "poll ended " << std::endl;

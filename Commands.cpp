@@ -37,7 +37,7 @@ void Server::who(Client& sender, std::string target)
 			return ;
 		}
 
-		list_channel(sender, *chan);
+		list_channel_short(sender, *chan);
 	}
 	else
 	{
@@ -52,14 +52,18 @@ void Server::who(Client& sender, std::string target)
 	}
 }
 
+// todo : OPER cmd
+
+
 
 void Server::cap(Client& sender, std::string subcommand)
 {
-	(void)(sender);
+	std::stringstream ss;
 	if(!subcommand.compare("LIST") || !subcommand.compare("LS"))
-		std::cout << "CAP * " << subcommand << " :"<< std::endl;
+		ss << "CAP * " << subcommand << " :"<< std::endl;
 	else if(subcommand.compare("END"))
-		std::cout << "CAP * ACK " << subcommand << std::endl;
+		ss << "CAP * ACK " << subcommand << std::endl;
+	send_msg(sender.get_socket(), ss.str());
 }
 
 void Server::nick(Client& sender, std::string str)
@@ -76,20 +80,24 @@ void Server::nick(Client& sender, std::string str)
 		return ;
 	}
 
-	// std::cout << "nickname = " << str << "."<< std::endl;
+	std::cout << "nickname = " << str << "."<< std::endl;
 	sender.set_nickname(str);
 }
 
 void Server::user(Client& sender, std::string user, std::string param, std::string addr,  std::string realname)
 {
-	(void)(param);
 	sender.set_username(user);
+	(void)(param);
 	sender.set_address(addr);
 	sender.set_realname(realname);
 
 	welcome_server(sender);
 }
 
+void 	Server::pass(Client &sender, std::string password)
+{
+	sender.set_pass(password);
+}
 
 void Server::prvmsg(Client& sender, std::vector<std::string> target, std::vector<int> type, std::string msg)
 {
@@ -117,7 +125,7 @@ void Server::prvmsg(Client& sender, std::vector<std::string> target, std::vector
 			
 			// std::cout << "found = " << chan->get_name() << std::endl;
 
-			s << ":" << create_tag(sender) << " PRIVMSG #" << target[i] << " :" << msg;// << std::endl;
+			s << ":" << create_tag(sender) << " PRIVMSG #" << target[i] << " :" << msg << std::endl;
 
 			send_msg_channel(sender, *chan, s.str());
 
@@ -134,7 +142,7 @@ void Server::prvmsg(Client& sender, std::vector<std::string> target, std::vector
 			
 			// std::cout << "found = " << target_client->get_nickname() << std::endl;
 
-			s << ":" << create_tag(sender) << " PRIVMSG " << target[i] << " :" << msg;// << std::endl;
+			s << ":" << create_tag(sender) << " PRIVMSG " << target[i] << " :" << msg << std::endl;
 
 			send_msg(target_client->get_socket(), s.str());
 		}
@@ -467,7 +475,7 @@ void 	Server::kick(Client &sender, std::string chan_name, std::string target)
 			return ;
 		}
 
-		s << ":" << create_tag(sender) << " KICK : you have been kicked" << std::endl ;;//<< msg << std::endl ;
+		s << ":" << create_tag(sender) << " KICK : you have been kicked" << std::endl;//<< msg << std::endl ;
 		
 		send_msg(baduser->get_socket(), s.str());
 

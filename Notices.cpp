@@ -189,45 +189,40 @@ void	Server::list_channel(Client& client, Channel &chan)
 
 //todo : fix channel who show info every time
 
-// void	Server::list_channel_short(Client& client, Channel &chan)
-// {
-// 	std::stringstream ss;
-// 	std::stringstream ss2;
+void	Server::list_channel_short(Client& client, Channel &chan)
+{
+	std::stringstream ss;
+	std::stringstream ss2;
 
-// 	ss.str("");
-// 	ss << "= #" << chan.get_name();
-// 	ss2.str("");
-// 	for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
-// 	{
-// 		if (chan.is_membre_mode(*it, 'o'))
-// 			ss2 << "@";
-// 		// ss2 << create_tag(*it) << " ";
-// 		ss2 << it->get_nickname() << " ";
-// 	}
-// 	send_reply(353, client, ss.str(), ss2.str());
+	ss.str("");
+	ss << "= #" << chan.get_name();
+	ss2.str("");
+	for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
+	{
+		if (chan.is_membre_mode(*it, 'o'))
+			ss2 << "@";
+		// ss2 << create_tag(*it) << " ";
+		ss2 << it->get_nickname() << " ";
+	}
+	send_reply(353, client, ss.str(), ss2.str());
 
-// 	ss.str("");
-// 	ss << "#" << chan.get_name();
-// 	send_reply(366, client, ss.str(), "End of /NAMES list.");
+	ss.str("");
+	ss << "#" << chan.get_name();
+	send_reply(366, client, ss.str(), "End of /NAMES list.");
 
-// 	ss.str("");
-// 	ss << "#" << chan.get_name() << " +" << chan.get_mode();
-// 	ss2.str("");
-// 	// ss2 << "#"  << target;
-// 	send_reply(324, client, ss.str(), ss2.str());
 
-// 	for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
-// 	{
-// 		ss.str("");
-// 		ss << "#" << chan.get_name() << " ~" << it->get_username() << " " << it->get_address() << ".IP " << servername
-// 		<< " " << it->get_nickname() << " " <<  it->get_mode();
-// 		send_reply(352, client, ss.str(), it->get_realname());
-// 	}
+	// for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
+	// {
+	// 	ss.str("");
+	// 	ss << "#" << chan.get_name() << " ~" << it->get_username() << " " << it->get_address() << ".IP " << servername
+	// 	<< " " << it->get_nickname() << " " <<  it->get_mode();
+	// 	send_reply(352, client, ss.str(), it->get_realname());
+	// }
 
-// 	ss.str("");
-// 	ss << "#" << chan.get_name();
-// 	send_reply(315, client, ss.str(), "End of /WHO list");
-// }
+	// ss.str("");
+	// ss << "#" << chan.get_name();
+	// send_reply(315, client, ss.str(), "End of /WHO list");
+}
 
 
 void	Server::list_user(Client& client, Client &target_client)
