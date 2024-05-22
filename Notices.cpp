@@ -2,6 +2,8 @@
 #include "inc/Server.hpp"
 
 
+//todo : fix time
+
 void	Server::welcome_server(Client& client)
 {
 	std::stringstream ss;

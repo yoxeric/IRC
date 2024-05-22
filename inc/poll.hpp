@@ -6,6 +6,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h>
+#include <fcntl.h>
 
 #include <iostream>
 #include <sstream> 
@@ -16,6 +17,7 @@
 
 #define INIT_CLIENTS 10
 #define BUFFER_SIZE 255
+typedef struct sockaddr_in ipv4_saddr;
 
 class s_poll
 {
@@ -38,9 +40,11 @@ public:
 	int					make_server_socket(int portnb);
 	std::string			read_data(int client_index);
 	int					accept_new_connection(int server_socket);
+	void				set_to_nonblocking(int);
 
 	int					check_pollin(int index);
 	int					check_pollout(int index);
+	int					check_pollhup(int index);
 
 
 	// ----------------------  Getter -----------------------

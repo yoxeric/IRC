@@ -14,8 +14,9 @@ std::string get_time()
 
 // -----------------------------------  Server --------------------------------------
 
-void	Server::init_server()
+void	Server::init_server(char* pass)
 {
+	password = pass;
 	networkname = std::string("Scale Factor Communication");
 	servername = std::string("ScaleFactor.ma");
 	datetime = get_time();

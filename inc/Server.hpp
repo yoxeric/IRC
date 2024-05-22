@@ -15,6 +15,7 @@ private:
 	std::string			networkname;
 	std::string			servername; // address
 	std::string			datetime;
+	std::string			password;
 	std::string			version;
 
 public:
@@ -23,12 +24,11 @@ public:
 	std::vector<Channel>	channels;
 
 
-	// std::string parse (int sender_socket, std::string buffer);
-
 	// ----------------------  Server -----------------------
 
-	void		init_server();
+	void		init_server(char* pass);
 	std::string parse(int sender_socket, std::string buffer);
+	std::string parse_register(int sender_socket, std::string buffer);
 
 	// ----------------------  Channel -----------------------
 
@@ -82,9 +82,10 @@ public:
 
 	void 		list(Client &client);
 	void 		who(Client& client, std::string target);
+	void 		oper(Client& sender, std::string name, std::string pswd);
 
 	void 		cap(Client &client, std::string str);
-	void 		nick(Client &client, std::string nick);
+	void 		nick(Client &client, std::string name);
 	void 		pass(Client &client, std::string password);
 	void 		user(Client& client, std::string user, std::string param, std::string addr,  std::string realname);
 	void		prvmsg(Client& client, std::vector<std::string> target, std::vector<int> type, std::string msg);
@@ -96,11 +97,11 @@ public:
 	
 	void 		topic(Client &client, std::string target, std::string topic);
 	void 		kick(Client &client, std::string chan_name, std::string target);
-	void 		invite(Client &client, std::string chan_name, std::string target);
+	void 		invite(Client &client, std::string target, std::string chan_name);
 
 	void 		ping(Client &client, std::string msg);
 
-	void 		quit(Client &client, std::string str);
+	void 		quit(Client &client, std::string msg);
 
 
 	// ----------------------  Debug -----------------------

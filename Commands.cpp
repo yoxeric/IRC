@@ -52,9 +52,47 @@ void Server::who(Client& sender, std::string target)
 	}
 }
 
-// todo : OPER cmd
+void Server::oper(Client& sender, std::string name, std::string pswd)
+{
+	Client* target_client = find_client(name);
+	if (target_client != NULL)
+	{
+		send_err(431, sender, "Nickname is already in use");
+		return ;
+	}
+	if (pswd != password)
+	{
+		send_err(464, sender, "Password incorrect");
+		return ;
+	}
 
+	// if (sender.is_mode('o'))
+	// {
+	// 	target_client->set_mode("o");
+		// "<client> :You are now an IRC operator"
+	// }
 
+	if (name == "admin")
+	{
+		sender.set_mode("o");
+	}
+}
+
+void 	Server::pass(Client &sender, std::string pswd)
+{
+	if (pswd != password)
+	{
+		send_err(464, sender, "Password incorrect");
+		return ;
+	}
+	if (pswd == password)
+	{
+		sender.set_pass(pswd);
+		std::cout << "password is correct !!! " << std::endl;
+	}
+	else
+		std::cout << "password is not correct !!! " << std::endl;
+}
 
 void Server::cap(Client& sender, std::string subcommand)
 {
@@ -66,22 +104,36 @@ void Server::cap(Client& sender, std::string subcommand)
 	send_msg(sender.get_socket(), ss.str());
 }
 
-void Server::nick(Client& sender, std::string str)
+// todo : genrate random nickname
+void Server::nick(Client& sender, std::string name)
 {
-	if (str.empty())
+	if (name.empty())
 	{
 		send_err(431, sender, "No nickname given");
 		return ;
 	}
-	Client* target_client = find_client(str);
+	Client* target_client = find_client(name);
 	if (target_client != NULL && target_client->get_socket() != sender.get_socket())
 	{
-		send_err(431, sender, str, "Nickname is already in use");
+		send_err(431, sender, name, "Nickname is already in use");
 		return ;
 	}
 
-	std::cout << "nickname = " << str << "."<< std::endl;
-	sender.set_nickname(str);
+	std::cout << "nickname = " << name << "."<< std::endl;
+	// change the client name inside the joined channel
+	for (std::vector<Channel>::iterator ch = channels.begin(); ch != channels.end(); ch++)
+	{
+		for (std::vector<Client>::iterator cl = ch->members.begin(); cl != ch->members.end(); cl++)
+		{
+			if (sender.get_nickname() == cl->get_nickname())
+			{
+				cl->set_nickname(name);
+				break ;
+			}
+		}
+	}
+	sender.set_nickname(name);
+
 }
 
 void Server::user(Client& sender, std::string user, std::string param, std::string addr,  std::string realname)
@@ -94,10 +146,6 @@ void Server::user(Client& sender, std::string user, std::string param, std::stri
 	welcome_server(sender);
 }
 
-void 	Server::pass(Client &sender, std::string password)
-{
-	sender.set_pass(password);
-}
 
 void Server::prvmsg(Client& sender, std::vector<std::string> target, std::vector<int> type, std::string msg)
 {
@@ -122,7 +170,7 @@ void Server::prvmsg(Client& sender, std::vector<std::string> target, std::vector
 				send_err(404, sender, target[i], "Cannot send to channel (no external message)");
 				return ;
 			}
-			
+
 			// std::cout << "found = " << chan->get_name() << std::endl;
 
 			s << ":" << create_tag(sender) << " PRIVMSG #" << target[i] << " :" << msg << std::endl;
@@ -490,7 +538,7 @@ void 	Server::kick(Client &sender, std::string chan_name, std::string target)
 	 // :WiZ!jto@tolsun.oulu.fi KICK #Finnish John
 }
 
-void 	Server::invite(Client &sender, std::string chan_name, std::string target)
+void 	Server::invite(Client &sender, std::string target, std::string chan_name)
 {
 	std::stringstream s;
 
@@ -550,8 +598,19 @@ void 	Server::quit(Client &sender, std::string msg)
 {
 	std::stringstream s;
 
-	s << ":" << create_tag(sender) << " QUIT :" << msg << std::endl ;
+	s << ":" << create_tag(sender) << " QUIT :" << msg << std::endl;
 
+	for (std::vector<Channel>::iterator ch = channels.begin(); ch != channels.end(); ch++)
+	{
+		for (std::vector<Client>::iterator cl = ch->members.begin(); cl != ch->members.end(); cl++)
+		{
+			if (sender.get_nickname() == cl->get_nickname())
+			{
+				send_msg_channel(sender, *ch, s.str());
+				break ;
+			}
+		}
+	}
 	send_msg(sender.get_socket(), s.str());
 
 	remove_client(sender);

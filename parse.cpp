@@ -1,5 +1,5 @@
 
-#include "inc/ft_irc.hpp"
+#include "inc/Server.hpp"
 
 void get_targets(std::string str, std::vector<std::string> &target, std::vector<int> &type)
 {
@@ -72,6 +72,7 @@ std::string Server::parse(int sender_socket, std::string buffer)
 	// int index = find_client(sende   r_socket);
 	// Client &sender = server.clients[ index ];
 	Client &sender = *find_client(sender_socket);
+	std::cout << "--- command line = " << buffer << "\n";
 	std::cout << "----- sender = " << sender.get_nickname() << std::endl;
 	sender.print();
 
@@ -113,6 +114,18 @@ std::string Server::parse(int sender_socket, std::string buffer)
 		// else
 		// 	return("ERR_INVALIDCAPCMD");
 	}
+	else if (!comand.compare("PASS"))
+	{
+		if (!sender.get_pass().empty())
+		{
+			send_err(462, sender, "You may not reregister");
+			return("ERR_ALREADYREGISTERED");
+		}
+		std::string password;
+		getline(input, password, ' ');
+
+		pass(sender, password);
+	}
 	else if (!comand.compare("NICK")) // done
 	{
 
@@ -138,6 +151,11 @@ std::string Server::parse(int sender_socket, std::string buffer)
 		NICK ohachami
 		USER ohachami ohachami 127.0.0.1 :realname
 	*/
+		if (!sender.get_username().empty())
+		{
+			send_err(462, sender, "You may not reregister");
+			return("ERR_ALREADYREGISTERED");
+		}
 		std::string username;
 		getline(input, username, ' ');
 
@@ -296,12 +314,15 @@ std::string Server::parse(int sender_socket, std::string buffer)
 			return("ERR");
 		topic(sender, chan, topic_str);
 	}
-	else if (!comand.compare("PASS"))
+	else if (!comand.compare("OPER"))
 	{
+		std::string name;
+		getline(input, name, ' ');
+
 		std::string password;
 		getline(input, password, ' ');
 
-		pass(sender, password);
+		oper(sender, name, password);
 	}
 	else if (!comand.compare("PART"))
 	{
