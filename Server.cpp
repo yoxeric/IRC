@@ -14,12 +14,14 @@ std::string get_time()
 
 // -----------------------------------  Server --------------------------------------
 
-void	Server::init_server()
+void	Server::init_server(char *pass)
 {
+	password = std::string(pass);
 	networkname = std::string("Scale Factor Communication");
 	servername = std::string("ScaleFactor.ma");
 	datetime = get_time();
 	version = std::string("1.0.1");
+	registred = 0;
 }
 
 // ----------------------------------- Channel -------------------------------------------
@@ -217,7 +219,30 @@ void Server::print()
 	}
 }
 
+void Server::get_targets(std::string str, std::vector<std::string> &target)
+{
+	std::string arg;
+	std::istringstream sub_input(str);
+	getline(sub_input, arg, ',');
+	for (int i = 0; i < (std::count(str.begin(), str.end(), ',') + 1);i++)
+	{
+		if(!arg[0])
+		{
+			getline(sub_input, arg, ',');
+			continue;
+		}
+		target.push_back(arg);
+		//type.push_back(1 * (target.back().at(0) == '#') + 1);
+		//if(type.back() == 2)
+	    //    target.back() = target.back().substr(1, target.back().length() - 1);
+		getline(sub_input, arg, ',');
+	}
+}
 
+int		Server::get_registred( void )
+{
+	return registred;
+}
 
 // yes
 

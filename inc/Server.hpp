@@ -15,7 +15,9 @@ private:
 	std::string			networkname;
 	std::string			servername; // address
 	std::string			datetime;
+	std::string			password;
 	std::string			version;
+	int			registred;
 
 public:
 	s_poll					pool;
@@ -27,7 +29,7 @@ public:
 
 	// ----------------------  Server -----------------------
 
-	void		init_server();
+	void		init_server(char *pass);
 
 	// ----------------------  Channel -----------------------
 
@@ -80,28 +82,35 @@ public:
 
 
 	void 		list(Client &client);
-	void 		who(Client& client, std::string target);
+	void 		who(Client& client, std::string buffer);
+	void		oper(Client& sender, std::string buffer);
+	void 		pass(Client &sender, std::string buffer);
 
-	void 		cap(Client &client, std::string str);
-	void 		nick(Client &client, std::string nick);
-	void 		user(Client& client, std::string user, std::string param, std::string addr,  std::string realname);
-	void		prvmsg(Client& client, std::vector<std::string> target, std::vector<int> type, std::string msg);
+	void 		cap(Client &client, std::string buffer);
+	void 		nick(Client &client, std::string buffer);
+	void 		user(Client& client, std::string buffer);
+	void		prvmsg(Client& client, std::string buffer);
 
-	void 		join(Client &client, std::string chan_name, std::string key);
-	void 		part(Client &client, std::string chan_name, std::string msg);
+	void 		join(Client &sender, std::string buffer);
+	void 		part(Client &sender, std::string buffer);
 
-	void 		mode(Client& client, std::string target, std::string mode, std::string arg);
+	void 		mode(Client& client, std::string buffer);
 	
-	void 		topic(Client &client, std::string target, std::string topic);
-	void 		kick(Client &client, std::string chan_name, std::string target);
-	void 		invite(Client &client, std::string chan_name, std::string target);
+	void 		topic(Client &client, std::string buffer);
+	void 		kick(Client &client, std::string buffer);
+	void 		invite(Client &client, std::string buffer);
 
-	void 		ping(Client &client, std::string msg);
+	void 		ping(Client &client, std::string buffer);
 
-	void 		quit(Client &client, std::string str);
+	void 		quit(Client &client, std::string buffer);
 
 
 	// ----------------------  Debug -----------------------
 
 	void		print();
+
+	// ----------------------  Parsing -----------------------
+
+	void		get_targets(std::string str, std::vector<std::string> &target);
+	int			get_registred( void );
 };

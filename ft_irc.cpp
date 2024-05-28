@@ -26,7 +26,7 @@ int main(int ac, char **av)
 
     server.pool.init_poll(server_socket);
 
-    server.init_server();
+    server.init_server(av[2]);
 
 	//start listening
 	if (listen(server_socket, INIT_CLIENTS))
@@ -47,7 +47,8 @@ int main(int ac, char **av)
     	}
     	else if (n < 0)
     	{
-			std::cout << "Poll Error" << strerror(errno) << std::endl;
+			std::cout << "Poll Error " << strerror(errno) << std::endl;
+			close(server_socket);
 			return 1;
 		}
 
