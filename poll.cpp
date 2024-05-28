@@ -104,21 +104,32 @@ std::string	s_poll::read_data(int client_index)
 	send_fd = get_socket(client_index);
 	bzero(&buffer, BUFFER_SIZE);
 	bytes_read = recv(send_fd, buffer, BUFFER_SIZE, 0);
-	if (bytes_read <= 0)
+	if (bytes_read == 0)
 	{
-		if (bytes_read < 0)
-		{
-			std::cout << "[" << client_index << "]<" << send_fd << "> client socket closed" << std::endl;
-			return ("QUIT : client died");
-		}
-		else
-			std::cout << "receive error" << strerror(errno) << std::endl;
+			std::cout << "receive error :" << strerror(errno) << std::endl;
+	}
+	else if (bytes_read < 0)
+	{
+		std::cout << "[" << client_index << "]<" << send_fd << "> client socket closed" << std::endl;
+		return ("QUIT : client died");
 	}
 	else
 	{
 		return (std::string(buffer));
 	}
 	return ("");
+}
+
+void			s_poll::set_pollin(int index)
+{
+    fds[index].events = POLLIN;
+    fds[index].revents = 0;
+}
+
+void			s_poll::set_pollout(int index)
+{
+    fds[index].events = POLLOUT;
+    fds[index].revents = 0;
 }
 
 // ----------------------  Checker -----------------------

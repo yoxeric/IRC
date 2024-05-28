@@ -77,6 +77,7 @@ Client*	Server::add_client(int socket)
 {
 	Client client;
 	client.set_socket(socket);
+	client.set_registred(0);
 	// client.set_mode("");
 
 	clients.push_back(client);
@@ -137,61 +138,6 @@ int			Server::operator_count()
 	return (count);
 }
 
-// ----------------------------------------- Messages -------------------------------------
-
-
-
-int	Server::send_msg_channel(Client& sender, Channel &chan, std::string msg)
-{
-	// send msg to all user in the channel
-	std::cout << "sending to membres ..." << std::endl;
-	for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
-	{
-		std::cout << " mbr = "<< it->get_nickname() << std::endl;
-		if (sender.get_socket() != it->get_socket())
-			send_msg(it->get_socket(), msg);
-	}
-	return 0;
-}
-
-int	Server::send_msg(int dest_fd, std::string msg)
-{
-	std::cout << "msg >> "<< msg;
-	if (send(dest_fd, msg.c_str(), msg.size(), 0) == -1)
-	{
-		std::cout << "Send error to client [" << dest_fd << "]";
-		return 1;
-	}
-	return 0;
-}
-
-std::string	Server::create_tag(Client& client)
-{
-	std::stringstream s;
-
-	s << client.get_nickname() << "!" << client.get_username() << "@" << client.get_address() << ".IP";
-
-	return s.str();
-}
-
-void	Server::send_reply(int code, Client &client, std::string arg, std::string msg)
-{
-	std::stringstream s;
-
-	if (arg.empty())
-		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
-	<< " " << client.get_nickname() << " :" << msg << "\r\n";
-	else if (msg.empty())
-		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
-	<< " " << client.get_nickname() << " " << arg << "\r\n";
-	else
-		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
-	<< " " << client.get_nickname() << " " << arg << " :" << msg << "\r\n";
-
-	send_msg(client.get_socket(), s.str());
-}
-
-
 
 // ----------------------------------- Debug -------------------------------------------
 
@@ -213,7 +159,6 @@ void Server::print()
 		i++;
 	}
 }
-
 
 
 // yes

@@ -205,7 +205,6 @@ void Server::prvmsg(Client& sender, std::vector<std::string> target, std::vector
 
 void Server::join(Client& sender, std::string chan_name, std::string key)
 {
-	(void)(key);
 	
 
   // todo : (461) "<client> <command> :Not enough parameters"
@@ -468,13 +467,8 @@ void Server::topic(Client& sender, std::string target, std::string topic)
 			send_err(482, sender, target, "You're not channel operator");
 			return ;
 		}
-
-		chan->set_topic(topic);
 	}
-	else
-	{
-		chan->set_topic(topic);
-	}
+	chan->set_topic(topic);
 }
 
 void 	Server::kick(Client &sender, std::string chan_name, std::string target)

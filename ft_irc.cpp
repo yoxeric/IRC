@@ -51,32 +51,26 @@ int main(int ac, char **av)
 				if (server.pool.check_pollin(i))
 				{
 					//todo  read input
-					std::cout << "[" << i << "]<" << server.pool.get_socket(i) << "> read to receive..." << std::endl;
+					std::cout << "[" << i << "]<" << server.pool.get_socket(i) << "> ready to receive msg..." << std::endl;
 					std::string msg = server.pool.read_data(i);
-					std::cout << "[" << i << "].<" << server.pool.get_socket(i) << "> got message = \n\"" << msg << "\"\n";
-					std::istringstream input(msg);
-					getline(input, msg, '\n');
-					while (!msg.empty())
-					{
-						std::string error = server.parse(server.pool.get_socket(i), msg);
-						if (!error.empty())
-							std::cout << error << std::endl;
-						getline(input, msg, '\n');
-						// server.list_clients();
-					}
+					std::cout << "got message = \n\"" << msg << "\"\n";
+					server.split_input(i, msg);
+					// server.list_clients();
 				}
 				//todo send output
 				else if (server.pool.check_pollout(i))
 				{
-					std::cout << "[" << i << "]<" << server.pool.get_socket(i) << "> ready to send..." << std::endl;
+					std::cout << "[" << i << "]<" << server.pool.get_socket(i) << "> ready to send msg..." << std::endl;
 					// send data
 				}
-				// else if (server.pool.check_pollhup(i))
-				// {
-				// 	// client disconnected
-				// 	// send message to all channels this client is not here anymore abb
-				// 	// remove the client from pollfd and delete his classs  && close socket fd 
-				// }
+				else if (server.pool.check_pollhup(i))
+				{
+					// client disconnected
+					// send message to all channels this client is not here anymore abb
+					// remove the client from pollfd and delete his classs  && close socket fd 
+					std::cout << "[" << i << "]<" << server.pool.get_socket(i) << "> Disconnected" << std::endl;
+					server.quit( *server.find_client(server.pool.get_socket(i)) ,"QUIT : client died");
+				}
 			}
 		}
 	}

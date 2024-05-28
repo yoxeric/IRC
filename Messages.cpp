@@ -1,8 +1,123 @@
 
 #include "inc/Server.hpp"
 
-
 //todo : fix time
+
+// ----------------------------------------- Messages -------------------------------------
+
+
+
+int	Server::send_msg_channel(Client& sender, Channel &chan, std::string msg)
+{
+	// send msg to all user in the channel
+	std::cout << "sending to membres ..." << std::endl;
+	for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
+	{
+		std::cout << " mbr = "<< it->get_nickname() << std::endl;
+		if (sender.get_socket() != it->get_socket())
+			send_msg(it->get_socket(), msg);
+	}
+	return 0;
+}
+
+int	Server::save_msg(Client& sender, int dest_fd, std::string msg)
+{
+	std::cout << "msg >> "<< msg;
+	sender.set_message(msg);
+	sender.set_destination(dest_fd);
+	// pool.set_pollout(sender.get_socket());
+	return 0;
+}
+
+int	Server::send_msg(int dest_fd, std::string msg)
+{
+	std::cout << "msg >> "<< msg;
+	if (send(dest_fd, msg.c_str(), msg.size(), 0) == -1)
+	{
+		std::cout << "Send error to client [" << dest_fd << "]";
+		return 1;
+	}
+	return 0;
+}
+
+std::string	Server::create_tag(Client& client)
+{
+	std::stringstream s;
+
+	s << client.get_nickname() << "!" << client.get_username() << "@" << client.get_address() << ".IP";
+
+	return s.str();
+}
+
+void	Server::send_reply(int code, Client &client, std::string arg, std::string msg)
+{
+	std::stringstream s;
+
+	if (arg.empty())
+		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
+	<< " " << client.get_nickname() << " :" << msg << "\r\n";
+	else if (msg.empty())
+		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
+	<< " " << client.get_nickname() << " " << arg << "\r\n";
+	else
+		s << ":" << servername << " " << std::setw(3) << std::setfill('0') << code 
+	<< " " << client.get_nickname() << " " << arg << " :" << msg << "\r\n";
+
+	send_msg(client.get_socket(), s.str());
+}
+
+
+// ------------------------------------- Error --------------------------------------------------------------------------
+
+
+void	Server::send_err(int code, Client &sender, std::string msg)
+{
+	std::stringstream s;
+
+	s << ":" << servername << " " << code << " " << sender.get_nickname() << " :" << msg << "\n";
+
+	send_msg(sender.get_socket(), s.str());
+}
+
+void	Server::send_err(int code, Client &sender, std::string arg1, std::string msg)
+{
+	std::stringstream s;
+
+	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " :" << msg << "\n";
+
+	send_msg(sender.get_socket(), s.str());
+}
+
+
+void	Server::send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string msg)
+{
+	std::stringstream s;
+
+	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " " << arg2 << " :" << msg << "\n";
+
+	send_msg(sender.get_socket(), s.str());
+}
+
+
+void	Server::send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string arg3, std::string msg)
+{
+	std::stringstream s;
+
+	// if (arg2.empty() && arg3.empty() )
+	// 	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " :" << msg << "\n";
+	// else if (arg3.empty())
+	// 	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " " << arg2 << " :" << msg << "\n";
+	// else
+	// 	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " " << arg2 << " " << arg3 << " :" << msg << "\n";
+
+	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " " << arg2 << " " << arg3 << " :" << msg << "\n";
+
+	send_msg(sender.get_socket(), s.str());
+}
+
+
+// ------------------------------------- Notices --------------------------------------------------------------------------
+
 
 void	Server::welcome_server(Client& client)
 {
@@ -97,7 +212,7 @@ void	Server::list_channel(Client& client, Channel &chan)
 
 	ss << "#" << chan.get_name() << " " << chan.count_membres();
 	ss2 << chan.get_topic();
-	send_reply(322, client, ss.str(), ss2.str());
+	send_reply(332, client, ss.str(), ss2.str());
 
 
 	ss.str("");
@@ -128,7 +243,7 @@ void	Server::list_channel(Client& client, Channel &chan)
 
 
 	ss.str("");
-	ss << "#" << chan.get_name() << " " << "1000000000";
+	ss << "#" << chan.get_name() << " " << "0000000001";
 	send_reply(329, client, ss.str(), "");
 
 	for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
@@ -237,55 +352,6 @@ void	Server::list_user(Client& client, Client &target_client)
 
 	send_reply(315, client, "", "End of /WHO list");
 
-}
-
-
-// ------------------------------------- Error --------------------------------------------------------------------------
-
-
-void	Server::send_err(int code, Client &sender, std::string msg)
-{
-	std::stringstream s;
-
-	s << ":" << servername << " " << code << " " << sender.get_nickname() << " :" << msg << "\n";
-
-	send_msg(sender.get_socket(), s.str());
-}
-
-void	Server::send_err(int code, Client &sender, std::string arg1, std::string msg)
-{
-	std::stringstream s;
-
-	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " :" << msg << "\n";
-
-	send_msg(sender.get_socket(), s.str());
-}
-
-
-void	Server::send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string msg)
-{
-	std::stringstream s;
-
-	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " " << arg2 << " :" << msg << "\n";
-
-	send_msg(sender.get_socket(), s.str());
-}
-
-
-void	Server::send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string arg3, std::string msg)
-{
-	std::stringstream s;
-
-	// if (arg2.empty() && arg3.empty() )
-	// 	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " :" << msg << "\n";
-	// else if (arg3.empty())
-	// 	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " " << arg2 << " :" << msg << "\n";
-	// else
-	// 	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " " << arg2 << " " << arg3 << " :" << msg << "\n";
-
-	s << ":" << servername << " " << code << " " << sender.get_nickname() << " " << arg1 << " " << arg2 << " " << arg3 << " :" << msg << "\n";
-
-	send_msg(sender.get_socket(), s.str());
 }
 
 

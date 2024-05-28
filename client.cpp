@@ -37,15 +37,19 @@ int			Client::is_mode(char m)
 
 // ----------------------  Setter -----------------------
 
-
-void		Client::set_mode(std::string str)
+void		Client::set_registred(int i)
 {
-	mode = str;
+	registred = i;
 }
 
 void 		Client::set_socket(int s)
 {
 	socket = s;
+}
+
+void		Client::set_mode(std::string str)
+{
+	mode = str;
 }
 
 void 		Client::set_nickname(std::string str)
@@ -73,18 +77,33 @@ void 		Client::set_pass(std::string str)
 	pass = str;
 }
 
+void 		Client::set_message(std::string str)
+{
+	message = str;
+}
+
+void 		Client::set_destination(int s)
+{
+	destination = s;
+}
 
 // ----------------------  Getter -----------------------
 
 
-std::string Client::get_mode()
+int		Client::is_registred()
 {
-	return (mode);
+	return registred;
 }
+
 
 int 		Client::get_socket()
 {
 	return (socket);
+}
+
+std::string Client::get_mode()
+{
+	return (mode);
 }
 
 std::string Client::get_nickname()
@@ -112,7 +131,15 @@ std::string Client::get_pass()
 	return (pass);
 }
 
+std::string Client::get_message()
+{
+	return (message);
+}
 
+int 		Client::get_destination()
+{
+	return (destination);
+}
 
 // ----------------------  Debug -----------------------
 

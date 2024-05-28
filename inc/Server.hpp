@@ -27,8 +27,10 @@ public:
 	// ----------------------  Server -----------------------
 
 	void		init_server(char* pass);
-	std::string parse(int sender_socket, std::string buffer);
-	std::string parse_register(int sender_socket, std::string buffer);
+
+	int			client_count();
+	int			operator_count();
+	int			channel_count();
 
 	// ----------------------  Channel -----------------------
 
@@ -36,8 +38,6 @@ public:
 	Channel*	find_channel(std::string name);
 	// void		remove_channel(std::string name);
 	void		remove_channel(Channel &chan);
-
-	int			channel_count();
 
 	// ----------------------  Client -----------------------
 
@@ -47,19 +47,51 @@ public:
 	Client*		find_client(std::string name);
 	void		remove_client(Client &client);
 
-	int			client_count();
-	int			operator_count();
+	// ----------------------  Parsing -----------------------
+
+	void		split_input(int index, std::string buffer);
+	std::string parse(int index, std::string line);
+	// std::string parse_register(int index, std::string line);
+	void		get_targets(std::string str, std::vector<std::string> &target);
+
+	// ----------------------  Commands -----------------------
+
+	void 		list(Client &client);
+	void 		who(Client& client, std::string buffer);
+	void 		ping(Client &client, std::string buffer);
+
+	void 		pass(Client &sender, std::string buffer);
+	void 		cap(Client &client, std::string buffer);
+	void 		nick(Client &client, std::string buffer);
+	void 		user(Client& client, std::string buffer);
+	void		prvmsg(Client& client, std::string buffer);
+
+	void 		mode(Client& client, std::string buffer);
+	void		oper(Client& sender, std::string buffer);
+
+	void 		join(Client &sender, std::string buffer);
+	void 		part(Client &sender, std::string buffer);
+	void 		topic(Client &client, std::string buffer);
+	void 		kick(Client &client, std::string buffer);
+	void 		invite(Client &client, std::string buffer);
+
+	void 		quit(Client &client, std::string buffer);
 
 	// ----------------------  Messages -----------------------
 
-
 	// int			send_msg_client(Client &client, std::string msg);
 	int			send_msg_channel(Client& sender, Channel &chan, std::string msg);
+	int			save_msg(Client& sender, int dest_fd, std::string msg);
 	int			send_msg(int dest_fd, std::string msg);
-
 	std::string	create_tag(Client& client);
 	void		send_reply(int code, Client &client, std::string arg, std::string msg);
 
+	// ----------------------  Error -----------------------
+
+	void		send_err(int code, Client &sender, std::string msg);
+	void		send_err(int code, Client &sender, std::string arg1, std::string msg);
+	void		send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string msg);
+	void		send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string arg3, std::string msg);
 
 	// ----------------------  Notices -----------------------
 
@@ -69,39 +101,6 @@ public:
 	void		list_channel(Client& client, Channel &chan);
 	void		list_channel_short(Client& client, Channel &chan);
 	void		list_user(Client& client, Client &target_client);
-
-
-	void		send_err(int code, Client &sender, std::string msg);
-	void		send_err(int code, Client &sender, std::string arg1, std::string msg);
-	void		send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string msg);
-	void		send_err(int code, Client &sender, std::string arg1, std::string arg2, std::string arg3, std::string msg);
-
-
-	// ----------------------  Commands -----------------------
-
-
-	void 		list(Client &client);
-	void 		who(Client& client, std::string target);
-	void 		oper(Client& sender, std::string name, std::string pswd);
-
-	void 		cap(Client &client, std::string str);
-	void 		nick(Client &client, std::string name);
-	void 		pass(Client &client, std::string password);
-	void 		user(Client& client, std::string user, std::string param, std::string addr,  std::string realname);
-	void		prvmsg(Client& client, std::vector<std::string> target, std::vector<int> type, std::string msg);
-
-	void 		join(Client &client, std::string chan_name, std::string key);
-	void 		part(Client &client, std::string chan_name, std::string msg);
-
-	void 		mode(Client& client, std::string target, std::string mode, std::string arg);
-	
-	void 		topic(Client &client, std::string target, std::string topic);
-	void 		kick(Client &client, std::string chan_name, std::string target);
-	void 		invite(Client &client, std::string target, std::string chan_name);
-
-	void 		ping(Client &client, std::string msg);
-
-	void 		quit(Client &client, std::string msg);
 
 
 	// ----------------------  Debug -----------------------

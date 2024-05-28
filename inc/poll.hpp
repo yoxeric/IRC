@@ -29,7 +29,6 @@ private:
 public:
 
 	void				init_poll(int sockfd);
-
 	void 				add_to_poll(int new_fd);
 	void 				remove_from_poll(int fd);
 
@@ -41,6 +40,9 @@ public:
 	std::string			read_data(int client_index);
 	int					accept_new_connection(int server_socket);
 	void				set_to_nonblocking(int);
+
+	void				set_pollin(int index);
+	void				set_pollout(int index);
 
 	int					check_pollin(int index);
 	int					check_pollout(int index);
