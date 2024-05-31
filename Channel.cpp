@@ -198,6 +198,16 @@ void	Channel::set_limit(int l)
 	limit = l;
 }
 
+void	Channel::set_time(std::string str)
+{
+	time = str;
+}
+
+void		Channel::set_topic_info(std::string user, std::string time)
+{
+	topic_user = user;
+	topic_time = time;
+}
 
 // ----------------------  Getter -----------------------
 
@@ -227,7 +237,18 @@ int Channel::get_limit()
 	return (limit);
 }
 
+std::string	Channel::get_time()
+{
+	return(time);
+}
 
+std::string Channel::get_topic_info()
+{
+	std::stringstream s;
+
+	s << topic_user << " " << topic_time;
+  	return (s.str());
+}
 
 // ----------------------  Debug -----------------------
 

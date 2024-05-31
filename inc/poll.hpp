@@ -15,8 +15,8 @@
 #include <poll.h>
 
 
-#define INIT_CLIENTS 10
-#define BUFFER_SIZE 255
+#define INIT_CLIENTS 100
+#define BUFFER_SIZE 4096
 typedef struct sockaddr_in ipv4_saddr;
 
 class s_poll

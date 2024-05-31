@@ -30,7 +30,7 @@ int main(int ac, char **av)
     	}
     	else if (ready_fds < 0)
     	{
-			std::cout << "Poll Error" << strerror(errno) << std::endl;
+			std::cout << "Poll Error :" << strerror(errno) << std::endl;
 			return 1;
 		}
 		// server.pool.print();
@@ -41,35 +41,30 @@ int main(int ac, char **av)
 			Client* client = server.add_client(client_socket);
 			if (server.operator_count() == 0)
 				client->set_mode("o");
-			server.send_msg(client_socket, "connected\n");
-			std::cout << client_socket << "> client connected" << std::endl;
+			// server.send_msg(client_socket, "connected\n");
+			std::cout << "<" << client_socket << "> client connected" << std::endl;
 		}
 		else
 		{
 			for (int i = 1; i < server.pool.get_count(); i++)
 			{
-				if (server.pool.check_pollin(i))
-				{
-					//todo  read input
-					std::cout << "[" << i << "]<" << server.pool.get_socket(i) << "> ready to receive msg..." << std::endl;
-					std::string msg = server.pool.read_data(i);
-					std::cout << "got message = \n\"" << msg << "\"\n";
-					server.split_input(i, msg);
-					// server.list_clients();
-				}
-				//todo send output
-				else if (server.pool.check_pollout(i))
-				{
-					std::cout << "[" << i << "]<" << server.pool.get_socket(i) << "> ready to send msg..." << std::endl;
-					// send data
-				}
-				else if (server.pool.check_pollhup(i))
+				int client_socket = server.pool.get_socket(i);
+				if (server.pool.check_pollhup(i))
 				{
 					// client disconnected
 					// send message to all channels this client is not here anymore abb
 					// remove the client from pollfd and delete his classs  && close socket fd 
-					std::cout << "[" << i << "]<" << server.pool.get_socket(i) << "> Disconnected" << std::endl;
-					server.quit( *server.find_client(server.pool.get_socket(i)) ,"QUIT : client died");
+					std::cout << "[" << i << "]<" << client_socket << "> Disconnected" << std::endl;
+					server.quit( *server.find_client(client_socket), "QUIT : client died");
+				}
+				else if (server.pool.check_pollin(i))
+				{
+					//todo  read input
+					std::cout << "[" << i << "]<" << client_socket << "> ready to receive msg..." << std::endl;
+					std::string msg = server.pool.read_data(i);
+					std::cout << "got message = \n\"" << msg << "\"\n";
+					server.split_input(i, msg);
+					// server.list_clients();
 				}
 			}
 		}

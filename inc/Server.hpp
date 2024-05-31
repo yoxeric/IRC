@@ -28,6 +28,10 @@ public:
 
 	void		init_server(char* pass);
 
+	std::string get_timestamp();
+	std::string get_time();
+	std::string generate_name();
+
 	int			client_count();
 	int			operator_count();
 	int			channel_count();
@@ -60,10 +64,10 @@ public:
 	void 		who(Client& client, std::string buffer);
 	void 		ping(Client &client, std::string buffer);
 
-	void 		pass(Client &sender, std::string buffer);
-	void 		cap(Client &client, std::string buffer);
-	void 		nick(Client &client, std::string buffer);
-	void 		user(Client& client, std::string buffer);
+	int 		pass(Client &sender, std::string buffer);
+	int 		cap(Client &client, std::string buffer);
+	int 		nick(Client &client, std::string buffer);
+	int 		user(Client& client, std::string buffer);
 	void		prvmsg(Client& client, std::string buffer);
 
 	void 		mode(Client& client, std::string buffer);

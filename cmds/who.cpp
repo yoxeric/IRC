@@ -18,7 +18,6 @@ void Server::who(Client& sender, std::string buffer)
 			send_err(403, sender, target, "No such channel");
 			return ;
 		}
-
 		list_channel(sender, *chan);
 	}
 	else

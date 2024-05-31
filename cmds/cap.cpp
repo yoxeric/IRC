@@ -1,19 +1,19 @@
 
 #include "../inc/Server.hpp"
 
-void Server::cap(Client& sender, std::string buffer)
+int Server::cap(Client& sender, std::string buffer)
 {
 	std::istringstream input(buffer);
 	std::string subcommand;
 	std::stringstream ss;
 
 	getline(input, subcommand, ' ');
-	std::cout << "subcommand =" << subcommand << "."<< std::endl;
-	std::cout << "buffer =" << buffer << "."<< std::endl;
+	// std::cout << "subcommand =" << subcommand << "."<< std::endl;
+	// std::cout << "buffer =" << buffer << "."<< std::endl;
 	if(subcommand.empty())
 	{
 		send_err(410, sender, subcommand, "Invalid CAP command");
-		return;
+		return 1;
 	}
 	if(!subcommand.compare("LIST") || !subcommand.compare("LS"))
 	{
@@ -27,11 +27,12 @@ void Server::cap(Client& sender, std::string buffer)
 	}
 	else if(!subcommand.compare("END"))
 	{
-		return;
+		return 1;
 	}
 	else
 	{
 		send_err(410, sender, subcommand, "Invalid CAP command");
-		return;
+		return 1;
 	}
+	return 0;
 }

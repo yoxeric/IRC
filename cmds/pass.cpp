@@ -1,7 +1,7 @@
 
 #include "../inc/Server.hpp"
 
-void 	Server::pass(Client &sender, std::string buffer)
+int 	Server::pass(Client &sender, std::string buffer)
 {
 	std::istringstream input(buffer);
 	std::string pswd;
@@ -12,24 +12,18 @@ void 	Server::pass(Client &sender, std::string buffer)
 	if(!sender.get_pass().empty())
 	{
 		send_err(462, sender, "You may not reregister");
-		return ;
+		return 1;
 	}
 	if(pswd.empty())
 	{
 		send_err(461, sender, "PASS", "Not enough parameters"); //return("ERR_NEEDMOREPARAMS");
-		return ;
+		return 1;
 	}	
 	if (pswd != password)
 	{
 		send_err(464, sender, "Password incorrect");
-		sender.set_registred(sender.is_registred() - 1);
-		return ;
+		return 1;
 	}
-	if (pswd == password)
-	{
-		sender.set_pass(pswd);
-		sender.set_registred(1);
-		std::cout << "password is correct !!! " << std::endl;
-	}
-	// send_err(462, sender, "You may not reregister");
+	sender.set_pass(pswd);
+	return 0;
 }

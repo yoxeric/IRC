@@ -1,5 +1,6 @@
 
 #include "inc/poll.hpp"
+
 void s_poll::init_poll(int server_socket)
 {
 	struct pollfd	tmp;
@@ -57,6 +58,13 @@ int	s_poll::make_server_socket(int portnb)
 	serv_addr.sin_addr.s_addr = INADDR_ANY;
 	serv_addr.sin_port = htons(portnb);
 
+	int enable = 1;
+	//set socket options
+	if (setsockopt(server_socket, SOL_SOCKET, SO_REUSEADDR, &enable, sizeof(enable)))
+	{
+		std::cout << "socket settings Failed :" << strerror(errno) << std::endl;
+		return (-1);
+	}
 	//bind server address
 	if (bind(server_socket, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0)
 	{

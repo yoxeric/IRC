@@ -1,29 +1,29 @@
 
 #include "../inc/Server.hpp"
 
-void Server::nick(Client& sender, std::string buffer)
+int Server::nick(Client& sender, std::string buffer)
 {
 	std::istringstream input(buffer);
-	std::string nick;
-	getline(input, nick, ' ');
-	if (nick.empty())
+	std::string name;
+	getline(input, name, ' ');
+	if (name.empty())
 	{
 		send_err(431, sender, "No nickname given");
-		return ;
+		return 1;
 	}
-	if(nick.find_first_not_of("0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM[]{}/|_-^") != std::string::npos)
+	if(name.find_first_not_of("0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM[]{}/|_-^") != std::string::npos)
 	{
-		send_err(431, sender, nick, "Erroneus nickname");
-		return ;
+		send_err(431, sender, name, "Erroneus nickname");
+		return 1;
 	}
-	Client* target_client = find_client(nick);
+	Client* target_client = find_client(name);
 	if (target_client != NULL && target_client->get_socket() != sender.get_socket())
 	{
-		send_err(431, sender, nick, "Nickname is already in use");
-		return ;
+		send_err(431, sender, name, "Nickname is already in use");
+		return 1;
 	}
 
-	std::cout << "nickname = " << name << "."<< std::endl;
+	// std::cout << "nickname = " << name << "."<< std::endl;
 	// change the client name inside the joined channel
 	for (std::vector<Channel>::iterator ch = channels.begin(); ch != channels.end(); ch++)
 	{
@@ -37,7 +37,5 @@ void Server::nick(Client& sender, std::string buffer)
 		}
 	}
 	sender.set_nickname(name);
-	// give it a random value
-	
-	sender.set_registred(sender.is_registred() + 1);
+	return 0;
 }

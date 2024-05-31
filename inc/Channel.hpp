@@ -20,11 +20,10 @@ private:
 	std::string topic_time;
 
 	int limit;
-	
-	std::vector<std::string> invited;
 
 public:
 	std::vector<Client> members;
+	std::vector<std::string> invited;
 
 	/**
 	 * Sum numbers in a vector.
@@ -66,6 +65,10 @@ public:
 	void		set_key(std::string str);
 	void		set_limit(int limit);
 
+	void 		set_time(std::string str);
+
+	void		set_topic_info(std::string user, std::string time);
+
 
 	// ----------------------  Getter -----------------------
 
@@ -75,6 +78,10 @@ public:
 	std::string	get_topic();
 	std::string	get_key();
 	int			get_limit();
+
+	std::string get_time();
+
+	std::string get_topic_info();
 
 
 	// ----------------------  Debug -----------------------

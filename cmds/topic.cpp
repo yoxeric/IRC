@@ -57,11 +57,14 @@ void Server::topic(Client& sender, std::string buffer)
 	if(topic == ":")
 	{
 		chan->set_topic(topic);
+		chan->set_topic_info(create_tag(sender), get_timestamp());
 	}
 	else
 	{
 		chan->set_topic("");
+		chan->set_topic_info(create_tag(sender), get_timestamp());
 	}
+
 	if(topic.empty())
 	{
 		ss << "#" << chan->get_name() << " " << chan->count_membres();

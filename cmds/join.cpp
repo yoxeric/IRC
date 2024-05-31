@@ -75,6 +75,7 @@ void 	Server::join(Client &sender, std::string buffer)
 		else
 		{
 			chan = add_channel(chan_name[i]);
+			chan->set_topic_info(create_tag(sender), get_timestamp());
 		}
 
 		chan->add_membre(sender);

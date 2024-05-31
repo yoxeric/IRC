@@ -1,6 +1,6 @@
 NAME = ircserv
 CC = c++
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -g
 
 SRC = ft_irc.cpp poll.cpp Client.cpp Channel.cpp Server.cpp parse.cpp Messages.cpp \
  		cmds/cap.cpp cmds/invite.cpp cmds/join.cpp cmds/kick.cpp cmds/list.cpp \

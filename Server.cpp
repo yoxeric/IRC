@@ -1,7 +1,7 @@
 
 #include "inc/Server.hpp"
 
-std::string get_time()
+std::string Server::get_time()
 {
 	time_t rawtime;
   	time (&rawtime);
@@ -11,6 +11,33 @@ std::string get_time()
   	strftime(buffer, sizeof(buffer), "%X %h %e %Y",timeinfo);
   	return (std::string(buffer));
 }
+
+
+std::string Server::get_timestamp()
+{
+	std::time_t t = std::time(0);  // t is an integer type
+    std::stringstream s;
+    s << t ;
+  	return (s.str());
+}
+
+std::string Server::generate_name()
+{
+	int nb = client_count();  // t is an integer type
+    std::stringstream s;
+    s << "user" << std::setw(4) << std::setfill('0') << nb;
+    while (true)
+    {
+    	Client* user = find_client(s.str());
+		if (user == NULL)
+			break ;
+		nb++;
+		s.str("");
+    	s << "user" << std::setw(4) << std::setfill('0') << nb;
+    }
+  	return (s.str());
+}
+
 
 // -----------------------------------  Server --------------------------------------
 
@@ -33,6 +60,7 @@ Channel*	Server::add_channel(std::string name)
 	// chan.set_topic("hot topic");
 	// chan.set_mode("");
 	chan.set_limit(1024);
+	chan.set_time(get_timestamp());
 
 	channels.push_back(chan);
 	return (&channels.back());
@@ -78,6 +106,7 @@ Client*	Server::add_client(int socket)
 	Client client;
 	client.set_socket(socket);
 	client.set_registred(0);
+	client.set_nickname(generate_name());
 	// client.set_mode("");
 
 	clients.push_back(client);
@@ -111,15 +140,16 @@ Client*	Server::find_client(std::string name)
 
 void	Server::remove_client(Client &client)
 {
+	int sock = client.get_socket();
 	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
 	{
-		if (it->get_socket() == client.get_socket())
+		if (it->get_socket() == sock)
 		{
 			clients.erase(it);
 			break ;
 		}
 	}
-	pool.remove_from_poll(client.get_socket());
+	pool.remove_from_poll(sock);
 }
 
 int			Server::client_count()

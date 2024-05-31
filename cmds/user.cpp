@@ -1,7 +1,7 @@
 
 #include "../inc/Server.hpp"
 
-void Server::user(Client& sender, std::string buffer)
+int Server::user(Client& sender, std::string buffer)
 {
 	// USER username hostname us.undernet.org :realname in (RFC 1459)
 	// USER username 0 * :realname in ( RFC 2812)
@@ -27,19 +27,17 @@ void Server::user(Client& sender, std::string buffer)
 		realname.front() != ':' || realname.size() < 2)
 	{
 		send_err(461, sender, "USER", "Not enough parameters");
-		return ;
+		return 1;
 	}
 	if(!sender.get_username().empty())
 	{
 		send_err(462, sender, "You may not reregister");
-		return ;
+		return 1;
 	}
 	realname = buffer.substr(buffer.find(":") + 1, buffer.length() - buffer.find(":"));
 	(void)(hostname);
 	sender.set_username(username);
 	sender.set_address(addr); // may have error here if adresse not added correctly
 	sender.set_realname(realname);
-	welcome_server(sender);
-	
-	sender.set_registred(sender.is_registred() + 1);
+	return 0;
 }

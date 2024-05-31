@@ -59,7 +59,7 @@ void Server::prvmsg(Client& sender, std::string buffer)
 			
 			// std::cout << "found = " << chan->get_name() << std::endl;
 
-			s << ":" << create_tag(sender) << " PRIVMSG #" << target[i] << " :" << msg;// << std::endl;
+			s << ":" << create_tag(sender) << " PRIVMSG #" << target[i] << " :" << msg << std::endl;
 
 			send_msg_channel(sender, *chan, s.str());
 
@@ -75,7 +75,7 @@ void Server::prvmsg(Client& sender, std::string buffer)
 			
 			// std::cout << "found = " << target_client->get_nickname() << std::endl;
 
-			s << ":" << create_tag(sender) << " PRIVMSG " << target[i] << " :" << msg;// << std::endl;
+			s << ":" << create_tag(sender) << " PRIVMSG " << target[i] << " :" << msg << std::endl;
 
 			send_msg(target_client->get_socket(), s.str());
 		}

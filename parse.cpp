@@ -49,8 +49,6 @@ std::string Server::parse(int index, std::string buffer)
 {
 	// Client &sender = server.clients[ index - 1];
 	Client &sender = *find_client(pool.get_socket(index));
-	// std::cout << "----- sender = " << sender.get_nickname() << std::endl;
-	// sender.print();
 
 	std::istringstream input(buffer);
 	std::string comand;
@@ -60,19 +58,33 @@ std::string Server::parse(int index, std::string buffer)
 	if(buffer.front() == ' ')
 		buffer = buffer.substr(buffer.find_first_not_of(" "), buffer.length());
 
-	if (!comand.compare("PASS")) //done
-		pass(sender, buffer);
-	else if (!comand.compare("CAP")) //done
+	if (!comand.compare("CAP")) //done
 		cap(sender, buffer);
+	else if (!comand.compare("PASS")) //done
+	{
+		if (!pass(sender, buffer))
+		{
+			sender.set_registred(1);
+			// std::cout << "password is correct !!! " << std::endl;
+		}
+		else
+			sender.set_registred(sender.is_registred() - 1);
+	}
 	else if (sender.is_registred() < 1) // done
 	{
 		send_err(421, sender, "You have not registered");
 		sender.set_registred(sender.is_registred() - 1);
 	}
 	else if (!comand.compare("USER"))  //done
-		user(sender, buffer);
+	{
+		if (!user(sender, buffer))
+			sender.set_registred(sender.is_registred() + 1);
+	}
 	else if (!comand.compare("NICK")) // done
-		nick(sender, buffer);
+	{
+		if (!nick(sender, buffer))
+			sender.set_registred(sender.is_registred() + 1);
+	}
 	else if (sender.is_registred() < 3) // done
 	{
 		send_err(421, sender, "You have not registered");
@@ -105,7 +117,17 @@ std::string Server::parse(int index, std::string buffer)
 		send_err(421, sender, comand, "Unknown command");
 
 	if (sender.is_registred() <= -3)
-			remove_client(sender);
+		remove_client(sender);
+	if (sender.is_registred() == 3)
+	{
+		welcome_server(sender);
+		sender.set_registred(sender.is_registred() + 1);
+	}
+
+
+	std::cout << "----- sender = " << sender.get_nickname() << std::endl;
+	sender.print();
+	
 
 	return ("");
 }
