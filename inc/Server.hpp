@@ -54,7 +54,7 @@ public:
 	// ----------------------  Parsing -----------------------
 
 	void		split_input(int index, std::string buffer);
-	std::string parse(int index, std::string line);
+ 	void		parse(int index, std::string line);
 	// std::string parse_register(int index, std::string line);
 	void		get_targets(std::string str, std::vector<std::string> &target);
 

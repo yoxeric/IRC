@@ -25,5 +25,7 @@ int 	Server::pass(Client &sender, std::string buffer)
 		return 1;
 	}
 	sender.set_pass(pswd);
+	sender.set_registred(1);
+	std::cout << "password is correct !!! " << std::endl;
 	return 0;
 }

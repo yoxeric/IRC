@@ -155,7 +155,7 @@ void Server::mode(Client& sender, std::string buffer)
 			{
 				target_client->remove_mode(mode[i]);
 			}
-			else if(mode.at(i) == 'o' && oper == '-')
+			else if(mode.at(i) == 'o' && oper == '+')
 			{
 				target_client->add_mode(mode[i]);
 			}

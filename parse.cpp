@@ -24,7 +24,6 @@ void Server::get_targets(std::string str, std::vector<std::string> &target)
 void		Server::split_input(int index, std::string msg)
 {
 	std::istringstream input(msg);
-	std::string error;
 
 	getline(input, msg, '\n');
 	while (!msg.empty())
@@ -33,19 +32,13 @@ void		Server::split_input(int index, std::string msg)
 			msg = msg.substr(msg.find_first_not_of(" "), msg.length());
 		if(msg.back() == '\r')
 			msg.pop_back();
-
-
-		error = parse(index, msg);
-
-
-		if (!error.empty())
-			std::cout << error << std::endl;
+		parse(index, msg);
 		getline(input, msg, '\n');
 	}
 }
 
 // To get what command to call, do a map with a string as a key (command name) and a pointer to function (it’s cool)
-std::string Server::parse(int index, std::string buffer)
+void Server::parse(int index, std::string buffer)
 {
 	// Client &sender = server.clients[ index - 1];
 	Client &sender = *find_client(pool.get_socket(index));
@@ -55,7 +48,7 @@ std::string Server::parse(int index, std::string buffer)
 	getline(input, comand, ' ');
 	
 	buffer.erase(0,comand.size());
-	if(buffer.front() == ' ')
+	if(buffer.front() == ' ' && buffer.find_first_not_of(" ") != std::string::npos)
 		buffer = buffer.substr(buffer.find_first_not_of(" "), buffer.length());
 
 	if (!comand.compare("CAP")) //done
@@ -127,7 +120,5 @@ std::string Server::parse(int index, std::string buffer)
 
 	std::cout << "----- sender = " << sender.get_nickname() << std::endl;
 	sender.print();
-	
 
-	return ("");
 }
