@@ -101,9 +101,9 @@ void Server::mode(Client& sender, std::string buffer)
 			{
 				std::string arg;
 				getline(input, arg, ' ');
-				if(std::stoi(arg) < 1)
+				if(std::strtod(arg.c_str(), NULL) < 1)
 					continue;
-				chan->set_limit(std::stoi(arg));
+				chan->set_limit(static_cast<int>(std::strtod(arg.c_str(), NULL)));
 				chan->add_mode('l');
 			}
 			else if((mode.at(i) == 'i' || mode.at(i) == 't') && oper == '+')
