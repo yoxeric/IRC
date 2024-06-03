@@ -9,7 +9,6 @@ void s_poll::init_poll(int server_socket)
     tmp.events = POLLIN;
     tmp.revents = 0;
 	fds.push_back(tmp);
-    count = 1;
 }
 
 void s_poll::add_to_poll(int new_fd)
@@ -20,22 +19,22 @@ void s_poll::add_to_poll(int new_fd)
     tmp.events = POLLIN;
     tmp.revents = 0;
 	fds.push_back(tmp);
-	count++;
 }
 
 void s_poll::remove_from_poll(int fd)
 {
-	for (int i = 0; i < count; ++i)
+	for (int i = 0; i < (int) fds.size(); ++i)
 	{
 		if (fds[i].fd == fd)
 		{
-			fds[i] = fds[count - 1];
+			// fds[i] = fds[count - 1];
+			fds.erase(fds.begin() + i);
 			break ;
 		}
 	}
-	count--;
 	close(fd);
 }
+
 
 // ----------------------  Networking -----------------------
 
@@ -172,9 +171,9 @@ int			s_poll::get_socket(int index)
 	return (fds[index].fd);
 }
 
-int			s_poll::get_count()
+int			s_poll::get_size()
 {
-	return (count);
+	return (fds.size());
 }
 
 
@@ -184,8 +183,7 @@ int			s_poll::get_count()
 
 void		s_poll::print()
 {
-	std::cout << count << std::endl;
-	for (int i = 0; i < count; ++i)
+	for (int i = 0; i < (int) fds.size(); ++i)
 	{
 		std::cout << "[" << i << "] socket = " << fds[i].fd << std::endl;
 	}

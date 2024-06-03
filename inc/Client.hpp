@@ -15,14 +15,16 @@ private:
 	std::string pass;
 	std::string mode;
 
-	std::string message;
-	int			destination;
+	// std::string message;
+	// int			destination;
 
 	int 		socket;
 	int			registred;
 
 public:
 
+	Client();
+	~Client();
 
 	// ----------------------  Mode -----------------------
 
@@ -41,11 +43,12 @@ public:
 	void 		set_address(std::string str);
 	void 		set_pass(std::string str);
 
-	void 		set_message(std::string str);
-	void 		set_destination(int fd);
+	// void 		set_message(std::string str);
+	// void 		set_destination(int fd);
 
 	void 		set_socket(int socket);
 	void		set_registred(int i);
+	void		add_registred(int i);
 
 	// ----------------------  Getter -----------------------
 
@@ -56,11 +59,11 @@ public:
 	std::string get_address();
 	std::string get_pass();
 
-	std::string get_message();
-	int			get_destination();
+	// std::string get_message();
+	// int			get_destination();
 
 	int 		get_socket();
-	int			is_registred();
+	int			get_registred();
 
 	// ----------------------  Debug -----------------------
 

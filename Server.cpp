@@ -38,16 +38,37 @@ std::string Server::generate_name()
   	return (s.str());
 }
 
+std::string get_ip()
+{
+	char host[256];
+    struct hostent *host_entry;
+
+    // Get the local hostname
+    if (gethostname(host, sizeof(host)) == -1) {
+        perror("gethostname");
+        return "";
+    }
+
+    // Get host entry for the local hostname
+    if ((host_entry = gethostbyname(host)) == NULL) {
+        perror("gethostbyname");
+        return "";
+    }
+
+    // Convert the IP address from binary form to string
+    std::string ip_address = inet_ntoa(*(struct in_addr *)host_entry->h_addr_list[0]);
+    return (std::string(host));
+}
 
 // -----------------------------------  Server --------------------------------------
 
 void	Server::init_server(char* pass)
 {
-	password = pass;
-	networkname = std::string("Scale Factor Communication");
-	servername = std::string("ScaleFactor.ma");
+	networkname = "Scale Factor Communication";
+	servername = get_ip();
 	datetime = get_time();
-	version = std::string("1.0.1");
+	password = pass;
+	version = "1.0.1";
 }
 
 // ----------------------------------- Channel -------------------------------------------
@@ -108,6 +129,8 @@ Client*	Server::add_client(int socket)
 	client.set_registred(0);
 	client.set_nickname(generate_name());
 	// client.set_mode("");
+	if (operator_count() == 0)
+		client.set_mode("o");
 
 	clients.push_back(client);
 	return (&clients.back());

@@ -2,6 +2,24 @@
 #include "inc/Client.hpp"
 
 
+Client::Client()
+{
+	nickname = "";
+	username = "";
+	hostname = "";
+	realname = "";
+	address = "";
+	pass = "";
+	mode = "";
+
+	socket = 0;
+	registred = 0;
+}
+
+Client::~Client()
+{
+}
+
 void		Client::add_mode(char m)
 {
 	for (int i = 0; i < (int) mode.size(); ++i)
@@ -42,6 +60,13 @@ void		Client::set_registred(int i)
 	registred = i;
 }
 
+
+void		Client::add_registred(int i)
+{
+	registred += i;
+}
+
+
 void 		Client::set_socket(int s)
 {
 	socket = s;
@@ -77,20 +102,20 @@ void 		Client::set_pass(std::string str)
 	pass = str;
 }
 
-void 		Client::set_message(std::string str)
-{
-	message = str;
-}
+// void 		Client::set_message(std::string str)
+// {
+// 	message = str;
+// }
 
-void 		Client::set_destination(int s)
-{
-	destination = s;
-}
+// void 		Client::set_destination(int s)
+// {
+// 	destination = s;
+// }
 
 // ----------------------  Getter -----------------------
 
 
-int		Client::is_registred()
+int		Client::get_registred()
 {
 	return registred;
 }
@@ -131,15 +156,15 @@ std::string Client::get_pass()
 	return (pass);
 }
 
-std::string Client::get_message()
-{
-	return (message);
-}
+// std::string Client::get_message()
+// {
+// 	return (message);
+// }
 
-int 		Client::get_destination()
-{
-	return (destination);
-}
+// int 		Client::get_destination()
+// {
+// 	return (destination);
+// }
 
 // ----------------------  Debug -----------------------
 

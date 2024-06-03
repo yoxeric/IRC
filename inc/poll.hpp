@@ -7,6 +7,7 @@
 #include <netinet/in.h>
 #include <netdb.h>
 #include <fcntl.h>
+#include <arpa/inet.h>
 
 #include <iostream>
 #include <sstream> 
@@ -16,7 +17,7 @@
 
 
 #define INIT_CLIENTS 100
-#define BUFFER_SIZE 4096
+#define BUFFER_SIZE 8192
 typedef struct sockaddr_in ipv4_saddr;
 
 class s_poll
@@ -24,7 +25,6 @@ class s_poll
 private:
 
 	std::vector<struct pollfd>	fds; // Array of socket file descriptors
-    int 						count;
 
 public:
 
@@ -54,7 +54,7 @@ public:
 
 	struct pollfd*		get_poll();
 	int					get_socket(int index);
-	int					get_count();
+	int					get_size();
 
 
 	// ----------------------  Debug -----------------------
