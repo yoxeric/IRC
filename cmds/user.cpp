@@ -35,8 +35,8 @@ int Server::user(Client& sender, std::string buffer)
 		return 1;
 	}
 	realname = buffer.substr(buffer.find(":") + 1, buffer.length() - buffer.find(":"));
-	(void)(hostname);
 	sender.set_username(username);
+	sender.set_hostname(hostname);
 	sender.set_address(addr); // may have error here if adresse not added correctly
 	sender.set_realname(realname);
 	return 0;

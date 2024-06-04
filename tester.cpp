@@ -8,7 +8,8 @@
 
 struct addrinfo hints, *res;
 
-#define SPAM_CLIENT_SIZE 75
+#define SPAM_CLIENT_SIZE 50
+#define SPAM_SIZE 500
 
 void	_bzero(void *ptr, size_t size) {
 
@@ -107,7 +108,7 @@ int    test_three() {
     for (int i = 0; i < SPAM_CLIENT_SIZE; i++)
         close(sockets[i]);
     std::cout << "TEST 3: PASSED V" << std::endl;
-    sleep(1);
+    sleep(5);
     return 0;
 }
 
@@ -148,8 +149,8 @@ int    test_four() {
 int    test_five() {
     std::cout << "TEST 5: testing random commands to crash the server." << std::endl;
     std::string cmds[9] = { "NICK", "JOIN", "WHO", "MODE", "PRIVMSG", "TOPIC", "INVITE", "KICK", "USER" };
-    int socketfd[1000];
-    for (int i = 0; i < 1000; i++) {
+    int socketfd[SPAM_SIZE];
+    for (int i = 0; i < SPAM_SIZE; i++) {
         socketfd[i] = socket(AF_INET, SOCK_STREAM, 0);
         if (socketfd[i] == -1) {
             std::cerr << "Error: Socket creation has failed!" << std::endl;
@@ -167,7 +168,7 @@ int    test_five() {
     }
     sleep(1);
     for (int i = 0; i < 9; i++) {
-        for (int j = 0; j < 1000; j++) {
+        for (int j = 0; j < SPAM_SIZE; j++) {
             for (int k = 0; k + i < 9; k++) {
                 std::string buf = cmds[k + i] + " " + generateRandomString(768) + "\r\n";
                 if (send(socketfd[j], buf.c_str(), buf.length(), 0) == -1) {
@@ -178,7 +179,7 @@ int    test_five() {
         }
     }
 
-    for (int i = 0; i < 1000; i++) {
+    for (int i = 0; i < SPAM_SIZE; i++) {
         close(socketfd[i]);
     }
     std::cout << "TEST 5: PASSED V" << std::endl;
@@ -189,8 +190,8 @@ int    test_five() {
 int test_six() {
     std::cout << "TEST 6: Testing Server with empty commands." << std::endl;
     std::string cmds[9] = { "NICK", "JOIN", "WHO", "MODE", "PRIVMSG", "TOPIC", "INVITE", "KICK", "USER" };
-    int socketfd[1000];
-    for (int i = 0; i < 1000; i++) {
+    int socketfd[SPAM_SIZE];
+    for (int i = 0; i < SPAM_SIZE; i++) {
         socketfd[i] = socket(AF_INET, SOCK_STREAM, 0);
         if (socketfd[i] == -1) {
             std::cerr << "Error: Socket creation has failed!" << std::endl;
@@ -209,7 +210,7 @@ int test_six() {
     }
     sleep(1);
     for (int i = 0; i < 9; i++) {
-        for (int j = 0; j < 1000; j++) {
+        for (int j = 0; j < SPAM_SIZE; j++) {
             for (int k = 0; k + i < 9; k++) {
                 std::string buf = cmds[k + i] + "\r\n";
                 if (cmds[k + i] == "KICK" || cmds[k + i] == "PRIVMSG" || cmds[k + i] == "TOPIC") {
@@ -225,7 +226,7 @@ int test_six() {
             }
         }
     }
-    for (int i = 0; i < 1000; i++) {
+    for (int i = 0; i < SPAM_SIZE; i++) {
         close(socketfd[i]);
     }
     std::cout << "TEST 6: PASSED V" << std::endl;

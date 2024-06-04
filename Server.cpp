@@ -1,6 +1,7 @@
 
 #include "inc/Server.hpp"
 
+
 std::string Server::get_time()
 {
 	time_t rawtime;
@@ -8,7 +9,7 @@ std::string Server::get_time()
   	struct tm *timeinfo = localtime (&rawtime);
 
     char buffer [100];
-  	strftime(buffer, sizeof(buffer), "%X %h %e %Y",timeinfo);
+  	strftime(buffer, sizeof(buffer), "%X %h%e %Y",timeinfo);
   	return (std::string(buffer));
 }
 
@@ -38,7 +39,7 @@ std::string Server::generate_name()
   	return (s.str());
 }
 
-std::string get_ip()
+std::string Server::get_ip()
 {
 	char host[256];
     struct hostent *host_entry;
@@ -61,6 +62,22 @@ std::string get_ip()
 }
 
 // -----------------------------------  Server --------------------------------------
+
+Server::Server()
+{
+	clients.reserve(10);
+	channels.reserve(10);
+	networkname = "";
+	servername = "";
+	datetime = "";
+	password = "";
+	version = "";
+}
+
+Server::~Server()
+{
+
+}
 
 void	Server::init_server(char* pass)
 {
@@ -131,7 +148,7 @@ Client*	Server::add_client(int socket)
 	// client.set_mode("");
 	if (operator_count() == 0)
 		client.set_mode("o");
-
+	
 	clients.push_back(client);
 	return (&clients.back());
 }
@@ -163,6 +180,9 @@ Client*	Server::find_client(std::string name)
 
 void	Server::remove_client(Client &client)
 {
+
+	// std::cout << "-----rm-----" << std::endl;
+
 	int sock = client.get_socket();
 	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
 	{
@@ -202,12 +222,23 @@ void Server::print()
 	std::cout << "servername : " << servername << std::endl;
 	std::cout << "datetime : " << datetime << std::endl;
 	std::cout << "version : " << version << std::endl;
-	std::cout << "------ all clients" << std::endl;
+
+	std::cout << "----------------- all channels" << std::endl;
 	int i = 0;
+
+	for (std::vector<Channel>::iterator it = channels.begin(); it != channels.end(); it++)
+	{
+		std::cout << "-------- channel nb." << i << std::endl;
+		it->print();
+		i++;
+	}
+
+	std::cout << "----------------- all clients" << std::endl;
+	i = 0;
 
 	for (std::vector<Client>::iterator it = clients.begin(); it != clients.end(); it++)
 	{
-		std::cout << "---client nb." << i << std::endl;
+		std::cout << "-------- client nb." << i << std::endl;
 		it->print();
 		i++;
 	}

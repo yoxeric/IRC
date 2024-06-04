@@ -12,7 +12,7 @@ void Server::oper(Client& sender, std::string buffer)
 
 	if(pswd.empty() || name.empty())
 	{
-		send_err(461, sender, "OPER", "Not enough parameters"); //return("ERR_NEEDMOREPARAMS");
+		send_err(461, sender, "OPER", "Not enough parameters");
 		return ;
 	}	
 	Client* target_client = find_client(name);
@@ -21,16 +21,7 @@ void Server::oper(Client& sender, std::string buffer)
 		send_err(431, sender, "Nickname is already in use");
 		return ;
 	}
-	// if (pswd != password)
-	// {
-	// 	send_err(464, sender, "Password incorrect");
-	// 	return ;
-	// }
-	// if (sender.is_mode('o'))
-	// {
-	// 	target_client->set_mode("o");
-		// "<client> :You are now an IRC operator"
-	// }
+
 
 	if (name != "admin")
 	{
@@ -43,5 +34,10 @@ void Server::oper(Client& sender, std::string buffer)
 		return ;
 	}
 	
-	sender.set_mode("o");
+	sender.add_mode('o');
+	for (std::vector<Channel>::iterator ch = channels.begin(); ch != channels.end(); ch++)
+	{
+		if (ch->is_membre(sender.get_nickname()))
+			ch->add_membre_mode(sender, 'o');;
+	}
 }

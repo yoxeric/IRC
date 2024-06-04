@@ -23,11 +23,10 @@ void s_poll::add_to_poll(int new_fd)
 
 void s_poll::remove_from_poll(int fd)
 {
-	for (int i = 0; i < (int) fds.size(); ++i)
+	for (size_t i = 0; i < fds.size(); ++i)
 	{
 		if (fds[i].fd == fd)
 		{
-			// fds[i] = fds[count - 1];
 			fds.erase(fds.begin() + i);
 			break ;
 		}
@@ -180,10 +179,9 @@ int			s_poll::get_size()
 // ----------------------  Debug -----------------------
 
 
-
 void		s_poll::print()
 {
-	for (int i = 0; i < (int) fds.size(); ++i)
+	for (size_t i = 0; i < fds.size(); ++i)
 	{
 		std::cout << "[" << i << "] socket = " << fds[i].fd << std::endl;
 	}

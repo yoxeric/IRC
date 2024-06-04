@@ -87,6 +87,11 @@ void 		Client::set_username(std::string str)
 	username = str;
 }
 
+void 		Client::set_hostname(std::string str)
+{
+	username = str;
+}
+
 void 		Client::set_realname(std::string str)
 {
 	realname = str;
@@ -104,7 +109,12 @@ void 		Client::set_pass(std::string str)
 
 // void 		Client::set_message(std::string str)
 // {
-// 	message = str;
+// 	message << str;
+// }
+
+// void 		Client::reset_message(std::string str)
+// {
+// 	message.str(str);
 // }
 
 // void 		Client::set_destination(int s)
@@ -141,6 +151,11 @@ std::string	Client::get_username()
 	return (username);
 }
 
+std::string	Client::get_hostname()
+{
+	return (username);
+}
+
 std::string	Client::get_realname()
 {
 	return (realname);
@@ -158,7 +173,7 @@ std::string Client::get_pass()
 
 // std::string Client::get_message()
 // {
-// 	return (message);
+// 	return (message.str());
 // }
 
 // int 		Client::get_destination()
@@ -175,6 +190,7 @@ void Client::print()
 
 	std::cout << "nickname : <" << nickname << ">" << std::endl;
 	std::cout << "username : <" << username << ">" << std::endl;
+	std::cout << "hostname : <" << hostname << ">" << std::endl;
 	std::cout << "address  : <" << address << ">" << std::endl;
 	std::cout << "pass     : <" << pass << ">" << std::endl;
 	std::cout << "mode     : <" << mode << ">" << std::endl;

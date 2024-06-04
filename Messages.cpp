@@ -4,14 +4,13 @@
 // ----------------------------------------- Messages -------------------------------------
 
 
-
 int	Server::send_msg_channel(Client& sender, Channel &chan, std::string msg)
 {
 	// send msg to all user in the channel
-	std::cout << "sending to membres ..." << std::endl;
+	// std::cout << "sending to membres ..." << std::endl;
 	for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
 	{
-		std::cout << " mbr = "<< it->get_nickname() << std::endl;
+		// std::cout << " ->> " << it->get_nickname() << std::endl;
 		if (sender.get_socket() != it->get_socket())
 			send_msg(it->get_socket(), msg);
 	}
@@ -29,10 +28,10 @@ int	Server::send_msg_channel(Client& sender, Channel &chan, std::string msg)
 
 int	Server::send_msg(int dest_fd, std::string msg)
 {
-	std::cout << "msg >> "<< msg;
+	// std::cout << dest_fd << " msg >> "<< msg;
 	if (send(dest_fd, msg.c_str(), msg.size(), 0) == -1)
 	{
-		std::cout << "Send error to client [" << dest_fd << "]";
+		std::cout << "Send error to client [" << dest_fd << "]" << std::endl;
 		return 1;
 	}
 	return 0;
@@ -208,14 +207,8 @@ void	Server::list_channel(Client& client, Channel &chan)
 	std::stringstream ss;
 	std::stringstream ss2;
 
-	// ss << "#" << chan.get_name() << " " << chan.count_membres();
-	// ss2 << chan.get_topic();
-	// send_reply(322, client, ss.str(), ss2.str());
-
-	ss.str("");
-	ss2.str("");
 	ss2 << chan.get_topic();
-	send_reply(332, client, "", ss2.str());
+	send_reply(332, client, ss.str(), ss2.str());
 
 	ss.str("");
 	ss << "#" << chan.get_name() << " " << chan.get_topic_info();
@@ -240,13 +233,29 @@ void	Server::list_channel(Client& client, Channel &chan)
 	ss.str("");
 	ss << "#" << chan.get_name() << " +" << chan.get_mode();
 	ss2.str("");
-	// ss2 << "#"  << target;
 	send_reply(324, client, ss.str(), ss2.str());
-
 
 	ss.str("");
 	ss << "#" << chan.get_name() << " " << chan.get_time();
 	send_reply(329, client, ss.str(), "");
+
+	for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
+	{
+		ss.str("");
+		ss << "#" << chan.get_name() << " ~" << it->get_username() << " " << it->get_address() << ".IP " << servername
+		<< " " << it->get_nickname() << " " <<  it->get_mode();
+		send_reply(352, client, ss.str(), it->get_realname());
+	}
+
+	ss.str("");
+	ss << "#" << chan.get_name();
+	send_reply(315, client, ss.str(), "End of /WHO list");
+}
+
+
+void	Server::list_channel_short(Client& client, Channel &chan)
+{
+	std::stringstream ss;
 
 	for (std::vector<Client>::iterator it = chan.members.begin(); it != chan.members.end(); it++)
 	{
@@ -317,119 +326,3 @@ void	Server::list_user(Client& client, Client &target_client)
 // >> :nexus.nl.eu.mixxnet.net 352 you #the_h00d ~yh2 197.230.24.20 nexus.nl.eu.mixxnet.net you H :0 realname
 // >> :nexus.nl.eu.mixxnet.net 352 you #the_h00d sid15183 etn.fm nexus.nl.eu.mixxnet.net jstar G@ :0 Juliet Star
 // >> :nexus.nl.eu.mixxnet.net 315 you #the_h00d :End of /WHO list.
-
-
-// :themis.sorcery.net 404 you #alice :Cannot send to channel (no external message)
-
-
-// ERR_UNKNOWNERROR (400)
-//   "<client> <command>{ <subcommand>} :<info>
-
-// This numeric indicates a very generalised error (which <info> should further explain).
-// If there is another more specific numeric which represents the error occuring, that should be used instead.
-
-
-
-
-
-// ERR_NOSUCHNICK (401)
-//   "<client> <nickname> :No such nick/channel
-
-// ERR_NOSUCHSERVER (402)
-//   "<client> <server name> :No such server
-
-// ERR_NOSUCHCHANNEL (403)
-//   "<client> <channel> :No such channel
-
-// ERR_CANNOTSENDTOCHAN (404)
-//   "<client> <channel> :Cannot send to channel
-
-// ERR_TOOMANYCHANNELS (405)
-//   "<client> <channel> :You have joined too many channels
-
-// ERR_WASNOSUCHNICK (406)
-//   "<client> :There was no such nickname
-
-// ERR_NOORIGIN (409)
-//   "<client> :No origin specified
-
-// ERR_NORECIPIENT (411)
-//   "<client> :No recipient given (<command>)
-
-// ERR_NOTEXTTOSEND (412)
-//   "<client> :No text to send
-
-// ERR_INPUTTOOLONG (417)
-//   "<client> :Input line was too long
-
-// ERR_UNKNOWNCOMMAND (421)
-//   "<client> <command> :Unknown command
-
-// ERR_NOMOTD (422)
-//   "<client> :MOTD File is missing
-
-// ERR_NONICKNAMEGIVEN (431)
-//   "<client> :No nickname given
-
-// ERR_ERRONEUSNICKNAME (432)
-//   "<client> <nick> :Erroneus nickname
-
-// ERR_NICKNAMEINUSE (433)
-//   "<client> <nick> :Nickname is already in use
-
-// ERR_NICKCOLLISION (436)
-//   "<client> <nick> :Nickname collision KILL from <user>@<host>
-
-// ERR_USERNOTINCHANNEL (441)
-//   "<client> <nick> <channel> :They aren't on that channel
-
-// ERR_NOTONCHANNEL (442)
-//   "<client> <channel> :You're not on that channel
-
-// ERR_USERONCHANNEL (443)
-//   "<client> <nick> <channel> :is already on channel
-
-// ERR_NOTREGISTERED (451)
-//   "<client> :You have not registered
-
-// ERR_NEEDMOREPARAMS (461)
-//   "<client> <command> :Not enough parameters
-
-// ERR_ALREADYREGISTERED (462)
-//   "<client> :You may not reregister
-
-// ERR_PASSWDMISMATCH (464)
-//   "<client> :Password incorrect
-
-// ERR_YOUREBANNEDCREEP (465)
-//   "<client> :You are banned from this server.
-
-// ERR_CHANNELISFULL (471)
-//   "<client> <channel> :Cannot join channel (+l)
-
-// ERR_UNKNOWNMODE (472)
-//   "<client> <modechar> :is unknown mode char to me
-
-// ERR_INVITEONLYCHAN (473)
-//   "<client> <channel> :Cannot join channel (+i)
-
-// ERR_BANNEDFROMCHAN (474)
-//   "<client> <channel> :Cannot join channel (+b)
-
-// ERR_BADCHANNELKEY (475)
-//   "<client> <channel> :Cannot join channel (+k)
-
-// ERR_BADCHANMASK (476)
-//   "<channel> :Bad Channel Mask
-
-// ERR_NOPRIVILEGES (481)
-//   "<client> :Permission Denied- You're not an IRC operator
-
-// ERR_CHANOPRIVSNEEDED (482)
-//   "<client> <channel> :You're not channel operator
-
-// ERR_CANTKILLSERVER (483)
-//   "<client> :You cant kill a server!
-
-// ERR_NOOPERHOST (491)
-//   "<client> :No O-lines for your host

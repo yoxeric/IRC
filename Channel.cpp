@@ -2,14 +2,31 @@
 
 #include "inc/Channel.hpp"
 
+Channel::Channel()
+{
+	name = "";
+	topic = "";
+	key = "";
+	mode = "";
+	time = "";
+	topic_user = "";
+	topic_time = "";
 
+	limit = 1024;
+}
+
+
+Channel::~Channel()
+{
+
+}
 
 void Channel::add_membre(Client& client)
 {
 	members.push_back(client);
 }
 
-int Channel::remove_membre(Client& client)
+void Channel::remove_membre(Client& client)
 {
 	for (std::vector<Client>::iterator it = members.begin(); it != members.end(); it++)
 	{
@@ -19,22 +36,7 @@ int Channel::remove_membre(Client& client)
 			break ;
 		}
 	}
-	if (members.size() == 1)
-		return (2);
-	return 0;
 }
-
-// int Channel::is_membre(Client& client)
-// {
-// 	for (std::vector<Client>::iterator it = members.begin(); it != members.end(); it++)
-// 	{
-// 		if (it->get_nickname() == client.get_nickname())
-// 		{
-// 			return 1;
-// 		}
-// 	}
-// 	return 0;
-// }
 
 int Channel::is_membre(std::string name)
 {
@@ -48,7 +50,7 @@ int Channel::is_membre(std::string name)
 	return 0;
 }
 
-int	Channel::count_membres()
+size_t	Channel::count_membres()
 {
 	return members.size();
 }

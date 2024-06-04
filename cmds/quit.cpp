@@ -15,20 +15,18 @@ void 	Server::quit(Client &sender, std::string buffer)
 		s << " :" << reason;
 	}
 	s << std::endl;
+
 	for (std::vector<Channel>::iterator ch = channels.begin(); ch != channels.end(); ch++)
 	{
-		for (std::vector<Client>::iterator cl = ch->members.begin(); cl != ch->members.end(); cl++)
-		{
-			if (sender.get_nickname() == cl->get_nickname())
-			{
-				send_msg_channel(sender, *ch, s.str());
-				break ;
-			}
-		}
+		if (ch->is_membre(sender.get_nickname()))
+			send_msg_channel(sender, *ch, s.str());
 	}
+	
 	send_msg(sender.get_socket(), s.str());
 
 	remove_client(sender);
+
+	// std::cout << "----- sender = " << &sender << std::endl;
 
 	// :dan-!d@localhost QUIT :Quit: Bye for now!
 }

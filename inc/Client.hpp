@@ -15,7 +15,7 @@ private:
 	std::string pass;
 	std::string mode;
 
-	// std::string message;
+	// std::stringstream message;
 	// int			destination;
 
 	int 		socket;
@@ -39,11 +39,13 @@ public:
 	void		set_mode(std::string str);
 	void 		set_nickname(std::string str);
 	void 		set_username(std::string str);
+	void 		set_hostname(std::string str);
 	void 		set_realname(std::string str);
 	void 		set_address(std::string str);
 	void 		set_pass(std::string str);
 
 	// void 		set_message(std::string str);
+	// void 		reset_message(std::string str);
 	// void 		set_destination(int fd);
 
 	void 		set_socket(int socket);
@@ -55,6 +57,7 @@ public:
 	std::string	get_mode();
 	std::string get_nickname();
 	std::string get_username();
+	std::string get_hostname();
 	std::string get_realname();
 	std::string get_address();
 	std::string get_pass();

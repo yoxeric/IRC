@@ -5,6 +5,9 @@
 #include <vector>
 #include <iomanip>
 
+#include <sys/types.h>
+#include <sys/socket.h>
+
 #include "poll.hpp"
 #include "Client.hpp"
 #include "Channel.hpp"
@@ -24,6 +27,9 @@ public:
 	std::vector<Channel>	channels;
 
 
+	Server();
+	~Server();
+
 	// ----------------------  Server -----------------------
 
 	void		init_server(char* pass);
@@ -31,6 +37,7 @@ public:
 	std::string get_timestamp();
 	std::string get_time();
 	std::string generate_name();
+	std::string get_ip();
 
 	int			client_count();
 	int			operator_count();
@@ -40,7 +47,6 @@ public:
 
 	Channel*	add_channel(std::string name);
 	Channel*	find_channel(std::string name);
-	// void		remove_channel(std::string name);
 	void		remove_channel(Channel &chan);
 
 	// ----------------------  Client -----------------------
@@ -54,8 +60,7 @@ public:
 	// ----------------------  Parsing -----------------------
 
 	void		split_input(int index, std::string buffer);
-	std::string parse(int index, std::string line);
-	// std::string parse_register(int index, std::string line);
+ 	int			parse(int index, std::string line);
 	void		get_targets(std::string str, std::vector<std::string> &target);
 
 	// ----------------------  Commands -----------------------

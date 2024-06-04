@@ -15,7 +15,7 @@ void 	Server::invite(Client &sender, std::string buffer)
 	{
 		send_err(461, sender, "INVITE", "Not enough parameters"); //return("ERR_NEEDMOREPARAMS");
 		return ;
-	}	
+	}
 
 	if (chan_name.at(0) != '#')
 	{

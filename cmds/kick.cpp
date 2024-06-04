@@ -29,7 +29,11 @@ void 	Server::kick(Client &sender, std::string buffer)
 		chan_name.erase(chan_name.begin()); // delete first charcater  ( # )
 
 	Channel* chan = find_channel(chan_name); 
-	if (chan != NULL)
+	if (chan == NULL)
+	{
+		send_err(403, sender, chan_name, "No such channel");
+	}
+	else if (chan != NULL)
 	{
 		Client* baduser = find_client(target);
 		if (baduser == NULL)
@@ -39,7 +43,7 @@ void 	Server::kick(Client &sender, std::string buffer)
 		}
 		if (!chan->is_membre_mode(sender, 'o'))
 		{
-			send_err(482, sender, target, "You're not channel operator");
+			send_err(482, sender, sender.get_nickname(), "You're not channel operator");
 			return ;
 		}
 
@@ -51,6 +55,7 @@ void 	Server::kick(Client &sender, std::string buffer)
 		if(reason.size() > 1 && reason.front() == ':')
 			s << " :" << buffer.substr(buffer.find(":") + 1, buffer.length() - 1 - buffer.find(":"));
 		s << std::endl ;
+
 		send_msg(baduser->get_socket(), s.str());
 
 	}
@@ -64,8 +69,7 @@ void 	Server::kick(Client &sender, std::string buffer)
 		}
 		if (!sender.is_mode('o'))
 		{
-			std::cout << "Error : #" << target << " You're not operator" << std::endl;
-			send_err(482, sender, target, "You're not operator");
+			send_err(482, sender, sender.get_nickname(), "You're not operator");
 			return ;
 		}
 
@@ -76,11 +80,6 @@ void 	Server::kick(Client &sender, std::string buffer)
 		send_msg(baduser->get_socket(), s.str());
 
 		remove_client(*baduser);
-	}
-	else
-	{
-		std::cout << "Error : " << chan_name << " channel not found" << std::endl;
-		send_err(403, sender, chan_name, "No such channel");
 	}
 
 	 // :WiZ!jto@tolsun.oulu.fi KICK #Finnish John

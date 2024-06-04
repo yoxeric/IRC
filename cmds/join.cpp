@@ -30,13 +30,9 @@ void 	Server::join(Client &sender, std::string buffer)
 		get_targets(all_keys, key);
 	}
   // std::cout << "--------------------" << all_targets << "." << all_targets.find_first_not_of(',') << "." << std::endl;
-  // todo : (461) "<client> <command> :Not enough parameters"
 
-	for(int i = 0; i < (int) chan_name.size(); i++)
+	for(size_t i = 0; i < chan_name.size(); i++)
 	{
-		std::cout << "chan_name = "  << chan_name[i] << "." << std::endl;
-		if( (int) key.size() > i)
-			std::cout << "key = "  << key[i] << "." << std::endl; 
 		if (chan_name[i].at(0) != '#')
 		{
 			send_err(403, sender, chan_name[i], "No such channel");
@@ -65,7 +61,7 @@ void 	Server::join(Client &sender, std::string buffer)
 					send_err(475, sender, chan_name[i], "Cannot join channel (key not supplied)");
 					continue ;
 				}
-				else if ( (int) key.size() <= i || chan->get_key() != key[i])
+				else if ( key.size() <= i || chan->get_key() != key[i])
 				{
 					send_err(475, sender, chan_name[i], "Cannot join channel (incorrect key)");
 					continue ;
@@ -77,8 +73,9 @@ void 	Server::join(Client &sender, std::string buffer)
 			chan = add_channel(chan_name[i]);
 			chan->set_topic_info(create_tag(sender), get_timestamp());
 		}
-
-		chan->add_membre(sender);
+		
+		if (!chan->is_membre(sender.get_nickname()))
+			chan->add_membre(sender);
 		if (chan->is_mode('i'))
 			chan->remove_invited(sender.get_nickname());
 		if (chan->count_operators() == 0)

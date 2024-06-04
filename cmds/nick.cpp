@@ -13,13 +13,13 @@ int Server::nick(Client& sender, std::string buffer)
 	}
 	if(name.find_first_not_of("0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM[]{}/|_-^") != std::string::npos)
 	{
-		send_err(431, sender, name, "Erroneus nickname");
+		send_err(432, sender, name, "Erroneus nickname");
 		return 1;
 	}
 	Client* target_client = find_client(name);
 	if (target_client != NULL && target_client->get_socket() != sender.get_socket())
 	{
-		send_err(431, sender, name, "Nickname is already in use");
+		send_err(433, sender, name, "Nickname is already in use");
 		return 1;
 	}
 

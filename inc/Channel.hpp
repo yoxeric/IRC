@@ -25,15 +25,11 @@ public:
 	std::vector<Client> members;
 	std::vector<std::string> invited;
 
-	/**
-	 * Sum numbers in a vector.
-	 *
-	 * @param client Container whose values are summed.
-	 * @return sum of `values`, or 0.0 if `values` is empty.
-	 */
+	Channel();
+	~Channel();
+
 	void		add_membre(Client& client);
-	int			remove_membre(Client& client);
-	// int			is_membre(Client& client);
+	void		remove_membre(Client& client);
 	int			is_membre(std::string name);
 
 	int			count_membres();

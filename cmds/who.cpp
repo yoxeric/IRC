@@ -18,7 +18,7 @@ void Server::who(Client& sender, std::string buffer)
 			send_err(403, sender, target, "No such channel");
 			return ;
 		}
-		list_channel(sender, *chan);
+		list_channel_short(sender, *chan);
 	}
 	else
 	{
@@ -31,6 +31,5 @@ void Server::who(Client& sender, std::string buffer)
 
 		list_user(sender, *target_client);
 	}
-	 
-	// get all names if target empty
+	
 }

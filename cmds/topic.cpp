@@ -38,8 +38,8 @@ void Server::topic(Client& sender, std::string buffer)
 		return ;
 	}
 
-	std::cout << "chan_name : " << chan_name << std::endl;
-	std::cout << "topic : " << topic << std::endl;
+	// std::cout << "chan_name : " << chan_name << std::endl;
+	// std::cout << "topic : " << topic << std::endl;
 
 	if (chan->is_mode('t'))
 	{

@@ -22,8 +22,8 @@ void Server::mode(Client& sender, std::string buffer)
 	std::string mode;
 	getline(input, mode, ' ');
 
-	std::cout << "target = "  << target << "." << std::endl;
-	std::cout << "mode = "  << mode << "." << std::endl;
+	// std::cout << "target = "  << target << "." << std::endl;
+	// std::cout << "mode = "  << mode << "." << std::endl;
 
 	char oper = '+';
 	if (target.at(0) == '#')
@@ -101,9 +101,9 @@ void Server::mode(Client& sender, std::string buffer)
 			{
 				std::string arg;
 				getline(input, arg, ' ');
-				if(std::stoi(arg) < 1)
+				if(std::strtod(arg.c_str(), NULL) < 1)
 					continue;
-				chan->set_limit(std::stoi(arg));
+				chan->set_limit(static_cast<int>(std::strtod(arg.c_str(), NULL)));
 				chan->add_mode('l');
 			}
 			else if((mode.at(i) == 'i' || mode.at(i) == 't') && oper == '+')
@@ -119,12 +119,12 @@ void Server::mode(Client& sender, std::string buffer)
 				send_err(472, sender, std::string(1,mode.at(i)), "Unknown MODE flag");
 			}
 		}
-			// else
-			// {
-			// 	chan->set_mode(mode);
-			// }
+		// else
+		// {
+		// 	chan->set_mode(mode);
+		// }
 
-			chan->print();
+		// chan->print();
 	}
 	else
 	{
@@ -155,7 +155,7 @@ void Server::mode(Client& sender, std::string buffer)
 			{
 				target_client->remove_mode(mode[i]);
 			}
-			else if(mode.at(i) == 'o' && oper == '-')
+			else if(mode.at(i) == 'o' && oper == '+')
 			{
 				target_client->add_mode(mode[i]);
 			}

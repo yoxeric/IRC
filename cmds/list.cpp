@@ -4,7 +4,7 @@
 void	Server::list(Client& sender)
 {
 
-	std::cout << "---LISTING-----" << std::endl;
+	// std::cout << "---LISTING-----" << std::endl;
 
 	send_reply(321, sender, "Channel", "Users Name");
 
