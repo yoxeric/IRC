@@ -50,7 +50,7 @@ int Channel::is_membre(std::string name)
 	return 0;
 }
 
-size_t	Channel::count_membres()
+int	Channel::count_membres()
 {
 	return members.size();
 }
