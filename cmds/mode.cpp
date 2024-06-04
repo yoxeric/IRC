@@ -40,11 +40,11 @@ void Server::mode(Client& sender, std::string buffer)
 		if (mode.empty())
 		{
 			std::stringstream ss;
-			ss << "+"  << chan->get_mode();
-			std::stringstream ch;
-			ch << "#"  << target;
+			ss << "#"  << target;
+			if(!chan->get_mode().empty())
+				ss << " +"  << chan->get_mode();
 
-			send_reply(324, sender, ch.str(), ss.str());
+			send_reply(324, sender, ss.str(), "");
 
 			// :irc.example.com 324 dan #foobar +nrt
 	  		// :irc.example.com 329 dan #foobar 1620807422

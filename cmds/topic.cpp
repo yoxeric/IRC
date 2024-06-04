@@ -39,7 +39,7 @@ void Server::topic(Client& sender, std::string buffer)
 	}
 
 	// std::cout << "chan_name : " << chan_name << std::endl;
-	// std::cout << "topic : " << topic << std::endl;
+	
 
 	if (chan->is_mode('t'))
 	{
@@ -54,22 +54,23 @@ void Server::topic(Client& sender, std::string buffer)
 			return ;
 		}
 	}
-	if(topic == ":")
-	{
-		chan->set_topic(topic);
-		chan->set_topic_info(create_tag(sender), get_timestamp());
-	}
-	else
-	{
-		chan->set_topic("");
-		chan->set_topic_info(create_tag(sender), get_timestamp());
-	}
-
 	if(topic.empty())
 	{
-		ss << "#" << chan->get_name() << " " << chan->count_membres();
+		ss << "#" << chan->get_name();
 		_ss_ << chan->get_topic();
 		send_reply(332, sender, ss.str(), _ss_.str());
 		return ;
 	}
+
+	if(topic == ":")
+	{
+		chan->set_topic("");
+		chan->set_topic_info(create_tag(sender), get_timestamp());
+	}
+	else
+	{
+		chan->set_topic(topic);
+		chan->set_topic_info(create_tag(sender), get_timestamp());
+	}
+
 }
